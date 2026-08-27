@@ -14,6 +14,7 @@ import type { Institution, Level, Sector } from "@/lib/types";
 import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_SHORT } from "@/lib/types";
 import { useFilters } from "@/context/FiltersContext";
 import InstitutionLogo from "./InstitutionLogo";
+import LevelTipBanner from "./LevelTipBanner";
 
 type Prioridad = "cercania" | "jornada" | "bilingue" | "tecnica" | "arancel";
 
@@ -245,7 +246,13 @@ export default function FamilyWizard() {
               </button>
             </div>
 
-            <div className="mt-4 flex flex-col gap-2">
+            {answers.level && (
+              <div className="mt-4">
+                <LevelTipBanner level={answers.level} />
+              </div>
+            )}
+
+            <div className="flex flex-col gap-2">
               {results.map((inst, i) => (
                 <button
                   key={inst.id}

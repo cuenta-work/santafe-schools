@@ -5,10 +5,12 @@ import { Compass } from "lucide-react";
 import { useFilters } from "@/context/FiltersContext";
 import FilterSidebar from "./FilterSidebar";
 import InstitutionCard from "./InstitutionCard";
+import LevelTipBanner from "./LevelTipBanner";
 import MobileFilters, { QuickLevelChips } from "./MobileFilters";
 
 export default function Explorer() {
-  const { filtered, setSelected } = useFilters();
+  const { filtered, filters, setSelected } = useFilters();
+  const singleLevel = filters.levels.size === 1 ? Array.from(filters.levels)[0] : null;
   const sectionRef = useRef<HTMLElement>(null);
   const prevFiltered = useRef(filtered);
 
@@ -49,6 +51,7 @@ export default function Explorer() {
         <FilterSidebar />
 
         <div className="flex-1 pb-20 lg:pb-0">
+          {singleLevel && <LevelTipBanner level={singleLevel} />}
           {filtered.length === 0 ? (
             <div className="flex h-64 flex-col items-center justify-center rounded-2xl border border-dashed border-border text-center text-muted">
               <p className="font-display text-lg">No encontramos instituciones así...</p>
