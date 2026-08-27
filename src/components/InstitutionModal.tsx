@@ -19,15 +19,24 @@ import {
   Wallet,
   GraduationCap,
   BookOpen,
+  Sparkles,
+  Library,
+  LogIn,
+  Users2,
+  Link as LinkIcon,
+  ChevronDown,
+  ChevronUp,
+  Monitor,
 } from "lucide-react";
 import type { Institution } from "@/lib/types";
-import { LEVEL_LABELS, SECTOR_LABELS } from "@/lib/types";
+import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS } from "@/lib/types";
 import { instagramUrl, instagramUsername, googleMapsUrl, locationLine, phoneHref } from "@/lib/format";
 import { useSwipeToDismiss } from "@/hooks/useSwipeToDismiss";
 import { useFilters } from "@/context/FiltersContext";
 import { copyToClipboard } from "@/lib/share";
 import { AUTHOR } from "@/lib/author";
 import InstitutionLogo from "./InstitutionLogo";
+import SafeIframe from "./SafeIframe";
 
 export default function InstitutionModal({
   institution,
@@ -39,6 +48,7 @@ export default function InstitutionModal({
   const { isFavorite, toggleFavorite } = useFilters();
   const favorite = isFavorite(institution.id);
   const [copied, setCopied] = useState(false);
+  const [showPreview, setShowPreview] = useState(false);
 
   const shareInstitution = async () => {
     const url = `${window.location.origin}/institucion/${institution.id}`;
@@ -71,6 +81,17 @@ export default function InstitutionModal({
   const hasCurricula = institution.orientaciones.length > 0 || institution.carreras.length > 0;
   const hasContact =
     institution.phone || institution.email || institution.website || institution.instagram;
+  const highlights = institution.highlights ?? [];
+  const resourceLinks = institution.resourceLinks ?? [];
+
+  const RESOURCE_ICON: Record<string, typeof Library> = {
+    biblioteca: Library,
+    ingreso: LogIn,
+    carreras: GraduationCap,
+    campus: Globe,
+    centro_estudiantes: Users2,
+    otro: LinkIcon,
+  };
 
   return (
     <div
@@ -99,7 +120,7 @@ export default function InstitutionModal({
             />
             <div>
               <p className="flex flex-wrap items-center gap-1 text-[11px] font-semibold uppercase tracking-wide text-primary">
-                {institution.levels.map((l) => LEVEL_LABELS[l]).join(" · ")}
+                {institution.levels.map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_LABELS[l]}`).join(" · ")}
                 <span className="text-muted"> · {SECTOR_LABELS[institution.sector]}</span>
               </p>
               <h3 className="font-display text-2xl font-semibold leading-tight text-foreground">
@@ -156,6 +177,22 @@ export default function InstitutionModal({
         <div className="scrollbar-thin flex-1 overflow-y-auto">
           <div className="flex flex-col gap-6 px-6 py-5">
             <p className="text-sm leading-relaxed text-foreground/85">{institution.description}</p>
+
+            {highlights.length > 0 && (
+              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+                {highlights.map((h) => (
+                  <div
+                    key={h.label}
+                    className="rounded-xl border border-border bg-background p-3.5"
+                  >
+                    <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wide text-primary-dark">
+                      <Sparkles size={11} /> {h.label}
+                    </p>
+                    <p className="text-xs leading-relaxed text-foreground/80">{h.text}</p>
+                  </div>
+                ))}
+              </div>
+            )}
 
             <div className="flex flex-wrap gap-2">
               {institution.modalidad && (
@@ -253,7 +290,11 @@ export default function InstitutionModal({
                 )}
 
                 {institution.carreras.length > 0 && (
-                  <ul className="flex flex-col divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
+                  <ul
+                    className={`scrollbar-thin flex flex-col divide-y divide-border overflow-hidden overflow-y-auto rounded-xl border border-border bg-background ${
+                      institution.carreras.length > 6 ? "max-h-72" : ""
+                    }`}
+                  >
                     {institution.carreras.map((c) => (
                       <li
                         key={c.nombre}
@@ -279,6 +320,77 @@ export default function InstitutionModal({
                 Todavía no tenemos el detalle de orientación u oferta académica de esta
                 institución.
               </p>
+            )}
+
+            {institution.posgrados && institution.posgrados.length > 0 && (
+              <div>
+                <p className="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted">
+                  <GraduationCap size={13} /> Posgrado
+                </p>
+                <ul className="flex flex-col gap-1.5">
+                  {institution.posgrados.map((p) => (
+                    <li
+                      key={p}
+                      className="flex items-start gap-2 rounded-xl border border-gold/25 bg-gold/5 px-3.5 py-2.5 text-xs text-foreground/85"
+                    >
+                      <Sparkles size={13} className="mt-0.5 shrink-0 text-gold" />
+                      {p}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {resourceLinks.length > 0 && (
+              <div>
+                <p className="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted">
+                  <Library size={13} /> Recursos y links útiles
+                </p>
+                <div className="scrollbar-thin -mx-1 flex gap-2 overflow-x-auto px-1 pb-1">
+                  {resourceLinks.map((link) => {
+                    const Icon = RESOURCE_ICON[link.kind] ?? LinkIcon;
+                    return (
+                      <a
+                        key={link.url}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="card-glow flex shrink-0 items-center gap-2 rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-medium text-foreground/85 transition hover:border-primary hover:text-primary-dark"
+                      >
+                        <Icon size={14} className="shrink-0 text-primary" />
+                        {link.label}
+                        <ExternalLink size={11} className="shrink-0 opacity-60" />
+                      </a>
+                    );
+                  })}
+                </div>
+              </div>
+            )}
+
+            {institution.website && (
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setShowPreview((v) => !v)}
+                  className="flex w-full items-center gap-2 rounded-xl border border-border bg-background px-4 py-3 text-left text-sm text-foreground transition hover:border-primary"
+                >
+                  <Monitor size={16} className="shrink-0 text-primary" />
+                  <span className="flex-1">Vista previa del sitio oficial</span>
+                  <span className="flex shrink-0 items-center gap-1 text-xs font-semibold text-primary-dark">
+                    {showPreview ? "Ocultar" : "Mostrar"}
+                    {showPreview ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                  </span>
+                </button>
+                {showPreview && (
+                  <div className="mt-2">
+                    <SafeIframe
+                      src={institution.website}
+                      title={`Sitio de ${institution.name}`}
+                      className="h-[50vh] w-full lg:h-[55vh]"
+                    />
+                  </div>
+                )}
+              </div>
             )}
 
             <p className="text-[11px] text-muted">

@@ -1,4 +1,4 @@
-import type { Level, Sector } from "./types";
+import type { Level, Sector, TipoSecundaria } from "./types";
 
 export interface FiltersState {
   levels: Set<Level>;
@@ -6,6 +6,7 @@ export interface FiltersState {
   localidad: string | null;
   modalidad: string | null;
   genero: string | null;
+  tipoSecundaria: TipoSecundaria | null;
   bilingueOnly: boolean;
   featuredOnly: boolean;
   search: string;
@@ -18,6 +19,7 @@ export function emptyFilters(): FiltersState {
     localidad: null,
     modalidad: null,
     genero: null,
+    tipoSecundaria: null,
     bilingueOnly: false,
     featuredOnly: false,
     search: "",

@@ -1,9 +1,25 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { MapPin, AtSign, Globe, Phone, Mail, Clock, ArrowLeft, Star } from "lucide-react";
+import {
+  MapPin,
+  AtSign,
+  Globe,
+  Phone,
+  Mail,
+  Clock,
+  ArrowLeft,
+  Star,
+  Sparkles,
+  GraduationCap,
+  Library,
+  LogIn,
+  Users2,
+  Link as LinkIcon,
+  ExternalLink,
+} from "lucide-react";
 import { institutions } from "@/lib/data";
-import { LEVEL_LABELS, SECTOR_LABELS } from "@/lib/types";
+import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS } from "@/lib/types";
 import { instagramUrl, instagramUsername, phoneHref, locationLine } from "@/lib/format";
 import { institutionTint } from "@/lib/institutionColor";
 import InstitutionLogo from "@/components/InstitutionLogo";
@@ -61,6 +77,16 @@ export default async function InstitutionPage({
   const tint = institutionTint(institution.id);
   const igUrl = instagramUrl(institution.instagram);
   const hasCurricula = institution.orientaciones.length > 0 || institution.carreras.length > 0;
+  const highlights = institution.highlights ?? [];
+  const resourceLinks = institution.resourceLinks ?? [];
+  const RESOURCE_ICON: Record<string, typeof Library> = {
+    biblioteca: Library,
+    ingreso: LogIn,
+    carreras: GraduationCap,
+    campus: Globe,
+    centro_estudiantes: Users2,
+    otro: LinkIcon,
+  };
 
   return (
     <div className="flex flex-1 flex-col bg-background">
@@ -93,7 +119,7 @@ export default async function InstitutionPage({
           <div className="flex flex-col gap-4 p-6 pt-9">
             <div className="min-w-0">
               <p className="flex flex-wrap items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-primary">
-                {institution.levels.map((l) => LEVEL_LABELS[l]).join(" · ")}
+                {institution.levels.map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_LABELS[l]}`).join(" · ")}
                 <span className="text-muted"> · {SECTOR_LABELS[institution.sector]}</span>
               </p>
               <h1 className="mt-0.5 font-display text-2xl font-semibold leading-tight text-foreground sm:text-3xl">
@@ -111,6 +137,19 @@ export default async function InstitutionPage({
             <p className="text-base leading-relaxed text-foreground/90">
               {institution.description}
             </p>
+
+            {highlights.length > 0 && (
+              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+                {highlights.map((h) => (
+                  <div key={h.label} className="rounded-xl border border-border bg-background p-3.5">
+                    <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wide text-primary-dark">
+                      <Sparkles size={11} /> {h.label}
+                    </p>
+                    <p className="text-xs leading-relaxed text-foreground/80">{h.text}</p>
+                  </div>
+                ))}
+              </div>
+            )}
 
             {hasCurricula && (
               <div className="border-t border-border pt-4">
@@ -144,6 +183,39 @@ export default async function InstitutionPage({
                     ))}
                   </ul>
                 )}
+              </div>
+            )}
+
+            {institution.posgrados && institution.posgrados.length > 0 && (
+              <ul className="flex flex-col gap-1.5">
+                {institution.posgrados.map((p) => (
+                  <li
+                    key={p}
+                    className="flex items-start gap-2 rounded-xl border border-gold/25 bg-gold/5 px-3.5 py-2.5 text-xs text-foreground/85"
+                  >
+                    <Sparkles size={13} className="mt-0.5 shrink-0 text-gold" />
+                    {p}
+                  </li>
+                ))}
+              </ul>
+            )}
+
+            {resourceLinks.length > 0 && (
+              <div className="flex flex-wrap gap-2">
+                {resourceLinks.map((link) => {
+                  const Icon = RESOURCE_ICON[link.kind] ?? LinkIcon;
+                  return (
+                    <a
+                      key={link.url}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-xs font-medium text-foreground/80 transition hover:border-primary hover:text-primary-dark"
+                    >
+                      <Icon size={13} /> {link.label} <ExternalLink size={10} className="opacity-60" />
+                    </a>
+                  );
+                })}
               </div>
             )}
 

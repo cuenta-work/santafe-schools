@@ -2,6 +2,7 @@ import NavBar from "@/components/NavBar";
 import Hero from "@/components/Hero";
 import LevelShowcase from "@/components/LevelShowcase";
 import Featured from "@/components/Featured";
+import FamilyWizard from "@/components/FamilyWizard";
 import CareerFinder from "@/components/CareerFinder";
 import Explorer from "@/components/Explorer";
 import ContactCTA from "@/components/ContactCTA";
@@ -23,6 +24,7 @@ export default function Home() {
         <Hero />
         <LevelShowcase />
         <Featured />
+        <FamilyWizard />
         <CareerFinder />
         <Explorer />
         <ContactCTA />

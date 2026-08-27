@@ -2,7 +2,14 @@
 
 import { useState } from "react";
 import { Search, GraduationCap } from "lucide-react";
-import { LEVEL_LABELS, SECTOR_LABELS, type Level, type Sector } from "@/lib/types";
+import {
+  LEVEL_LABELS,
+  LEVEL_EMOJI,
+  SECTOR_LABELS,
+  SECTOR_EMOJI,
+  type Level,
+  type Sector,
+} from "@/lib/types";
 import { useFilters } from "@/context/FiltersContext";
 import { emptyFilters } from "@/lib/filters";
 import CustomSelect from "./CustomSelect";
@@ -12,7 +19,8 @@ const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "
 const SECTOR_ORDER: Sector[] = ["publico", "privado"];
 
 export default function Hero() {
-  const { institutions, filters, setFilters, localidades } = useFilters();
+  const { institutions, filters, setFilters, localidades, levelCounts, sectorCounts } =
+    useFilters();
   const [pendingLevels, setPendingLevels] = useState<Set<Level>>(new Set(filters.levels));
   const [pendingSectors, setPendingSectors] = useState<Set<Sector>>(new Set(filters.sectors));
   const [pendingLocalidad, setPendingLocalidad] = useState<string>(filters.localidad ?? "");
@@ -58,19 +66,18 @@ export default function Hero() {
       />
       <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 pb-14 pt-10 lg:px-8 lg:pb-20 lg:pt-16">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
-          Santa Fe capital y su zona — a orillas del Salado y el Paraná
+          Santa Fe, Argentina — todos los niveles, toda la provincia
         </p>
         <div className="flex items-center gap-4 sm:gap-5">
           <SchoolMark className="h-16 w-16 shrink-0 -rotate-3 sm:h-20 sm:w-20 lg:h-24 lg:w-24" />
           <h1 className="max-w-2xl font-display text-4xl font-semibold leading-[1.05] text-foreground sm:text-5xl lg:text-6xl">
-            El mapa educativo de Santa Fe capital, para elegir{" "}
+            El mapa educativo de Santa Fe, para elegir{" "}
             <span className="whitespace-nowrap italic text-primary-dark">con tranquilidad</span>.
           </h1>
         </div>
         <p className="max-w-xl text-base text-muted sm:text-lg">
-          Jardines, primarias, secundarias, terciarios y universidades de Santa Fe capital y el
-          Gran Santa Fe: gestión, orientación, carreras y contacto de cada institución, en un
-          solo lugar.
+          Jardines, primarias, secundarias, terciarios y universidades de toda la provincia:
+          gestión, orientación, carreras y contacto de cada institución, en un solo lugar.
         </p>
 
         <div className="mt-2 grid grid-cols-2 gap-1.5 sm:flex sm:flex-wrap sm:gap-2">
@@ -110,7 +117,8 @@ export default function Hero() {
                     data-active={pendingLevels.has(level)}
                     onClick={() => toggleLevel(level)}
                   >
-                    {LEVEL_LABELS[level]}
+                    {LEVEL_EMOJI[level]} {LEVEL_LABELS[level]}
+                    <span className="opacity-60">({levelCounts[level]})</span>
                   </button>
                 ))}
               </div>
@@ -128,7 +136,8 @@ export default function Hero() {
                     data-active={pendingSectors.has(sector)}
                     onClick={() => toggleSector(sector)}
                   >
-                    {SECTOR_LABELS[sector]}
+                    {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
+                    <span className="opacity-60">({sectorCounts[sector]})</span>
                   </button>
                 ))}
               </div>
@@ -145,13 +154,15 @@ export default function Hero() {
               />
             </div>
           </div>
+          <div className="mt-4 flex justify-end">
           <button
             type="button"
             onClick={applyAndScroll}
-            className="shine mt-4 flex h-11 w-full items-center justify-center gap-2 rounded-full bg-primary text-sm font-semibold text-white shadow-md shadow-primary/20 transition active:scale-95 hover:bg-primary-dark sm:w-auto sm:px-8"
+            className="shine flex h-11 w-full items-center justify-center gap-2 rounded-full bg-primary text-sm font-semibold text-white shadow-md shadow-primary/20 transition active:scale-95 hover:bg-primary-dark sm:w-auto sm:px-8"
           >
             <Search size={15} /> Aplicar filtros
           </button>
+          </div>
         </div>
 
         <dl className="mt-2 grid grid-cols-3 gap-3 sm:max-w-md">

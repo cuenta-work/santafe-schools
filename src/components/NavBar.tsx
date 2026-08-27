@@ -1,10 +1,19 @@
-import { Star, LayoutGrid, GraduationCap, Compass, PlusCircle } from "lucide-react";
+import {
+  Star,
+  LayoutGrid,
+  GraduationCap,
+  Compass,
+  PlusCircle,
+  MessageCircleHeart,
+} from "lucide-react";
 import Logo from "./Logo";
+import { FungirakBadge } from "./FungirakCredit";
 import ThemeToggle from "./ThemeToggle";
 
 const LINKS = [
   { href: "#destacados", label: "Destacadas", icon: Star },
   { href: "#niveles", label: "Niveles", icon: LayoutGrid },
+  { href: "#orientador", label: "Orientador", icon: MessageCircleHeart },
   { href: "#carreras", label: "Carreras", icon: GraduationCap },
   { href: "#buscador", label: "Buscador", icon: Compass },
   { href: "#contacto", label: "Sumá tu institución", icon: PlusCircle },
@@ -37,6 +46,7 @@ export default function NavBar() {
           >
             Buscar instituciones
           </a>
+          <FungirakBadge className="hidden xl:inline-flex" />
         </div>
       </div>
     </div>

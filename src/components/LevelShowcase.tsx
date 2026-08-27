@@ -32,7 +32,7 @@ export default function LevelShowcase() {
               key={level}
               href="#buscador"
               onClick={() => showOnlyLevel(level)}
-              className="card-glow shine group flex flex-col gap-3 rounded-2xl border border-border bg-card p-5 text-left transition-transform active:scale-[0.98] hover:-translate-y-0.5"
+              className="card-glow shine group flex flex-col gap-3 rounded-2xl border border-border bg-card p-5 text-left transition-transform active:scale-[0.98]"
             >
               <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-background text-primary-dark">
                 <Icon size={22} />

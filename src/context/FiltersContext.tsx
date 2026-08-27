@@ -108,6 +108,7 @@ export function FiltersProvider({
       if (filters.localidad && i.localidad !== filters.localidad) return false;
       if (filters.modalidad && i.modalidad !== filters.modalidad) return false;
       if (filters.genero && i.genero !== filters.genero) return false;
+      if (filters.tipoSecundaria && i.tipoSecundaria !== filters.tipoSecundaria) return false;
       if (filters.bilingueOnly && !i.bilingue) return false;
       if (filters.featuredOnly && !i.featured) return false;
       if (search && !searchIndex.get(i.id)?.includes(search)) return false;

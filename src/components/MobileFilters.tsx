@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
-import { LEVEL_LABELS, type Level } from "@/lib/types";
+import { LEVEL_LABELS, LEVEL_EMOJI, type Level } from "@/lib/types";
 import { emptyFilters, hasActiveFilters, countActiveFilters } from "@/lib/filters";
 import { useFilters } from "@/context/FiltersContext";
 import { useSwipeToDismiss } from "@/hooks/useSwipeToDismiss";
@@ -30,7 +30,7 @@ export function QuickLevelChips() {
           data-active={filters.levels.has(level)}
           className="pill shrink-0 py-2.5"
         >
-          {LEVEL_LABELS[level]}
+          {LEVEL_EMOJI[level]} {LEVEL_LABELS[level]}
           <span className="opacity-60">({levelCounts[level]})</span>
         </button>
       ))}

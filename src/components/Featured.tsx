@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { Sparkles, MapPin, Heart, GraduationCap } from "lucide-react";
-import { LEVEL_LABELS, LEVEL_SHORT, type Level } from "@/lib/types";
+import { LEVEL_LABELS, LEVEL_SHORT, LEVEL_EMOJI, type Level } from "@/lib/types";
 import { institutionTint } from "@/lib/institutionColor";
 import { useFilters } from "@/context/FiltersContext";
 import InstitutionLogo from "./InstitutionLogo";
@@ -38,7 +38,7 @@ export default function Featured() {
           </div>
           <div className="flex flex-wrap gap-2">
             <button className="pill" data-active={level === null} onClick={() => setLevel(null)}>
-              Todas
+              ✨ Todas
             </button>
             {featuredLevels.map((l) => (
               <button
@@ -47,7 +47,7 @@ export default function Featured() {
                 data-active={level === l}
                 onClick={() => setLevel(level === l ? null : l)}
               >
-                {LEVEL_LABELS[l]}
+                {LEVEL_EMOJI[l]} {LEVEL_LABELS[l]}
               </button>
             ))}
           </div>
@@ -61,7 +61,7 @@ export default function Featured() {
               <button
                 key={i.id}
                 onClick={() => setSelected(i)}
-                className="card-glow shine flex w-[15.5rem] shrink-0 flex-col overflow-hidden rounded-2xl border border-border bg-background text-left transition-transform active:scale-[0.98] hover:-translate-y-0.5 lg:w-auto"
+                className="card-glow shine flex w-[15.5rem] shrink-0 flex-col overflow-hidden rounded-2xl border border-border bg-background text-left transition-transform active:scale-[0.98] lg:w-auto"
               >
                 <div
                   className="relative flex h-16 items-center justify-end px-4"
@@ -83,7 +83,7 @@ export default function Featured() {
                 <div className="flex flex-col gap-2 p-4 pt-7">
                   <div className="min-w-0">
                     <p className="flex items-center gap-1 text-[11px] font-semibold uppercase tracking-wide text-primary">
-                      {i.levels.map((l) => LEVEL_SHORT[l]).join(" · ")}
+                      {i.levels.map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_SHORT[l]}`).join(" · ")}
                     </p>
                     <div className="flex items-start justify-between gap-2">
                       <p className="line-clamp-2 font-display text-base font-semibold text-foreground">

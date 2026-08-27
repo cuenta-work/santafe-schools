@@ -6,6 +6,8 @@ export type Modalidad = "jornada simple" | "jornada completa" | "doble escolarid
 
 export type Genero = "mixto" | "solo mujeres" | "solo varones";
 
+export type TipoSecundaria = "tecnica" | "orientada";
+
 export type CostTier = "$" | "$$" | "$$$" | null;
 
 export interface Carrera {
@@ -14,6 +16,17 @@ export interface Carrera {
   duracionAnios: number;
   duracionLabel: string;
   modalidad?: string | null;
+}
+
+export interface ResourceLink {
+  label: string;
+  url: string;
+  kind: "biblioteca" | "ingreso" | "carreras" | "campus" | "centro_estudiantes" | "otro";
+}
+
+export interface Highlight {
+  label: string;
+  text: string;
 }
 
 export interface Institution {
@@ -36,7 +49,9 @@ export interface Institution {
   religioso: string | null;
   costTier: CostTier;
   orientaciones: string[];
+  tipoSecundaria?: TipoSecundaria | null;
   carreras: Carrera[];
+  posgrados?: string[];
   featured?: boolean;
   verified?: boolean;
   foundedYear?: number | null;
@@ -44,6 +59,8 @@ export interface Institution {
   lon?: number | null;
   logoDomain?: string | null;
   source?: string | null;
+  highlights?: Highlight[];
+  resourceLinks?: ResourceLink[];
 }
 
 export type LocalityKind = "ciudad" | "pueblo" | "comuna" | "barrio";
@@ -63,7 +80,7 @@ export interface Locality {
 }
 
 export const LEVEL_LABELS: Record<Level, string> = {
-  jardin: "Jardines de infantes",
+  jardin: "Maternales y jardines",
   primaria: "Escuelas primarias",
   secundaria: "Escuelas secundarias",
   terciario: "Institutos terciarios",
@@ -76,6 +93,29 @@ export const LEVEL_SHORT: Record<Level, string> = {
   secundaria: "Secundaria",
   terciario: "Terciario",
   universidad: "Universidad",
+};
+
+export const LEVEL_EMOJI: Record<Level, string> = {
+  jardin: "🎈",
+  primaria: "🎒",
+  secundaria: "📚",
+  terciario: "🔬",
+  universidad: "🎓",
+};
+
+export const SECTOR_EMOJI: Record<Sector, string> = {
+  publico: "🏛️",
+  privado: "🏫",
+};
+
+export const TIPO_SECUNDARIA_LABELS: Record<TipoSecundaria, string> = {
+  tecnica: "Técnica",
+  orientada: "Orientada (bachiller)",
+};
+
+export const TIPO_SECUNDARIA_EMOJI: Record<TipoSecundaria, string> = {
+  tecnica: "⚙️",
+  orientada: "📖",
 };
 
 export const LEVEL_BLURB: Record<Level, string> = {

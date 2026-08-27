@@ -37,6 +37,9 @@ export interface CarreraEntry extends Carrera {
   institutionId: string;
   institutionName: string;
   localidad: string;
+  sector: Sector;
+  levels: Level[];
+  logoDomain: string | null | undefined;
 }
 
 // Índice plano de todas las carreras/tecnicatuas/profesorados de terciarios
@@ -46,7 +49,15 @@ export function getAllCarreras(): CarreraEntry[] {
   const rows: CarreraEntry[] = [];
   institutions.forEach((i) => {
     i.carreras.forEach((c) => {
-      rows.push({ ...c, institutionId: i.id, institutionName: i.name, localidad: i.localidad });
+      rows.push({
+        ...c,
+        institutionId: i.id,
+        institutionName: i.name,
+        localidad: i.localidad,
+        sector: i.sector,
+        levels: i.levels,
+        logoDomain: i.logoDomain,
+      });
     });
   });
   return rows;

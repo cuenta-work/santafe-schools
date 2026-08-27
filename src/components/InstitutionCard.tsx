@@ -1,8 +1,8 @@
 "use client";
 
-import { MapPin, Star, Heart, Languages, GraduationCap } from "lucide-react";
+import { MapPin, Star, Heart, Languages, GraduationCap, Cog } from "lucide-react";
 import type { Institution } from "@/lib/types";
-import { LEVEL_SHORT, SECTOR_SHORT } from "@/lib/types";
+import { LEVEL_SHORT, LEVEL_EMOJI, SECTOR_SHORT, SECTOR_EMOJI } from "@/lib/types";
 import { locationLine } from "@/lib/format";
 import { institutionTint } from "@/lib/institutionColor";
 import { useFilters } from "@/context/FiltersContext";
@@ -22,7 +22,7 @@ export default function InstitutionCard({
   return (
     <button
       onClick={() => onOpen(institution)}
-      className="card-glow shine group relative flex h-full w-full min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm hover:-translate-y-0.5"
+      className="card-glow shine group relative flex h-full w-full min-w-0 flex-col overflow-hidden rounded-2xl border border-border bg-card text-left shadow-sm"
     >
       <div
         className="relative flex h-20 items-center justify-end px-4"
@@ -38,6 +38,11 @@ export default function InstitutionCard({
           {institution.featured && (
             <span className="flex items-center gap-1 rounded-full bg-card/90 px-2 py-1 text-[10px] font-semibold text-gold shadow-sm">
               <Star size={11} fill="currentColor" /> Destacada
+            </span>
+          )}
+          {institution.tipoSecundaria === "tecnica" && (
+            <span className="flex items-center gap-1 rounded-full bg-card/90 px-2 py-1 text-[10px] font-semibold text-accent-dark shadow-sm">
+              <Cog size={11} /> Técnica
             </span>
           )}
           {institution.bilingue && (
@@ -63,38 +68,39 @@ export default function InstitutionCard({
               key={l}
               className="rounded-full bg-background px-2 py-0.5 text-[10px] text-foreground/70"
             >
-              {LEVEL_SHORT[l]}
+              {LEVEL_EMOJI[l]} {LEVEL_SHORT[l]}
             </span>
           ))}
           <span className="ml-auto shrink-0 text-[11px] font-semibold text-muted">
-            {SECTOR_SHORT[institution.sector]}
+            {SECTOR_EMOJI[institution.sector]} {SECTOR_SHORT[institution.sector]}
           </span>
         </div>
 
-        <h3 className="mt-1.5 line-clamp-2 font-display text-lg font-semibold leading-snug text-foreground group-hover:text-primary-dark">
-          {institution.name}
-        </h3>
-
-        <span
-          role="button"
-          tabIndex={0}
-          aria-pressed={favorite}
-          aria-label={favorite ? "Quitar de favoritos" : "Guardar en favoritos"}
-          onClick={(e) => {
-            e.stopPropagation();
-            toggleFavorite(institution.id);
-          }}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" || e.key === " ") {
-              e.preventDefault();
+        <div className="mt-1.5 flex items-start justify-between gap-2">
+          <h3 className="line-clamp-2 font-display text-lg font-semibold leading-snug text-foreground group-hover:text-primary-dark">
+            {institution.name}
+          </h3>
+          <span
+            role="button"
+            tabIndex={0}
+            aria-pressed={favorite}
+            aria-label={favorite ? "Quitar de favoritos" : "Guardar en favoritos"}
+            onClick={(e) => {
               e.stopPropagation();
               toggleFavorite(institution.id);
-            }
-          }}
-          className="absolute right-4 top-8 shrink-0 p-0.5 transition hover:scale-110 active:scale-95"
-        >
-          <Heart size={18} className={favorite ? "fill-accent text-accent" : "text-muted"} />
-        </span>
+            }}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                e.stopPropagation();
+                toggleFavorite(institution.id);
+              }
+            }}
+            className="mt-0.5 shrink-0 p-0.5 transition hover:scale-110 active:scale-95"
+          >
+            <Heart size={18} className={favorite ? "fill-accent text-accent" : "text-muted"} />
+          </span>
+        </div>
 
         {(institution.address || institution.localidad) && (
           <p className="mt-2 flex items-start gap-1 text-xs text-muted">

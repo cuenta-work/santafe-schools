@@ -1,12 +1,23 @@
 "use client";
 
 import { GraduationCap, Star } from "lucide-react";
-import { LEVEL_LABELS, SECTOR_LABELS, type Level, type Sector } from "@/lib/types";
+import {
+  LEVEL_LABELS,
+  LEVEL_EMOJI,
+  SECTOR_LABELS,
+  SECTOR_EMOJI,
+  TIPO_SECUNDARIA_LABELS,
+  TIPO_SECUNDARIA_EMOJI,
+  type Level,
+  type Sector,
+  type TipoSecundaria,
+} from "@/lib/types";
 import { useFilters } from "@/context/FiltersContext";
 import CustomSelect from "./CustomSelect";
 
 const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "universidad"];
 const SECTOR_ORDER: Sector[] = ["publico", "privado"];
+const TIPO_SECUNDARIA_ORDER: TipoSecundaria[] = ["tecnica", "orientada"];
 const MODALIDADES = ["jornada simple", "jornada completa", "doble escolaridad"];
 const GENEROS = ["mixto", "solo mujeres", "solo varones"];
 
@@ -57,7 +68,7 @@ export default function FilterControls() {
                 })
               }
             >
-              {LEVEL_LABELS[level]}
+              {LEVEL_EMOJI[level]} {LEVEL_LABELS[level]}
               <span className="opacity-60">({levelCounts[level]})</span>
             </button>
           ))}
@@ -80,8 +91,32 @@ export default function FilterControls() {
                 })
               }
             >
-              {SECTOR_LABELS[sector]}
+              {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
               <span className="opacity-60">({sectorCounts[sector]})</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">
+          Secundaria: técnica u orientada
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {TIPO_SECUNDARIA_ORDER.map((t) => (
+            <button
+              key={t}
+              type="button"
+              className="pill"
+              data-active={filters.tipoSecundaria === t}
+              onClick={() =>
+                applyFilters({
+                  ...filters,
+                  tipoSecundaria: filters.tipoSecundaria === t ? null : t,
+                })
+              }
+            >
+              {TIPO_SECUNDARIA_EMOJI[t]} {TIPO_SECUNDARIA_LABELS[t]}
             </button>
           ))}
         </div>

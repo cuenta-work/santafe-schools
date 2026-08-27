@@ -81,13 +81,117 @@
         "titulo": "Diseñador/a Gráfico/a",
         "duracionAnios": 4,
         "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Kinesiología y Fisiatría",
+        "titulo": "Kinesiólogo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Fonoaudiología",
+        "titulo": "Fonoaudiólogo/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Nutrición",
+        "titulo": "Licenciado/a en Nutrición",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Diseño Industrial",
+        "titulo": "Diseñador/a Industrial",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ciencia Política",
+        "titulo": "Licenciado/a en Ciencia Política",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Biotecnología",
+        "titulo": "Licenciado/a en Biotecnología",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería en Recursos Hídricos",
+        "titulo": "Ingeniero/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Profesorado en Historia",
+        "titulo": "Profesor/a en Historia",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Bioingeniería",
+        "titulo": "Bioingeniero/a",
+        "duracionAnios": 6,
+        "duracionLabel": "5 años y medio",
+        "modalidad": "Una de las pocas carreras del país, dictada en la Fac. de Ingeniería Química"
+      },
+      {
+        "nombre": "Licenciatura en Música",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
       }
     ],
     "featured": true,
     "verified": true,
     "foundedYear": 1919,
     "logoDomain": "unl.edu.ar",
-    "source": "Sitio oficial UNL"
+    "source": "Sitio oficial UNL",
+    "highlights": [
+      {
+        "label": "Historia",
+        "text": "Fundada en 1919, es una de las universidades públicas más grandes y antiguas del centro del país, con rectorado en Santa Fe capital."
+      },
+      {
+        "label": "Distintivo",
+        "text": "Reúne más de diez facultades y dicta más de 140 carreras presenciales y a distancia en cinco áreas: Ciencias Biológicas y de la Salud, Ingeniería y Tecnologías, Exactas y Naturales, Humanas y Artes, y Sociales."
+      },
+      {
+        "label": "Vida académica",
+        "text": "Tiene una Biblioteca Virtual propia con tesis, publicaciones periódicas y producción científica de acceso abierto."
+      },
+      {
+        "label": "Para tener en cuenta",
+        "text": "El ingreso varía según la facultad -- varias carreras piden un curso de nivelación o ambientación previo al primer cuatrimestre."
+      },
+      {
+        "label": "Alcance",
+        "text": "Está organizada en 10 facultades (incluida Ingeniería Química, con la particular Bioingeniería) más institutos y centros universitarios en Rafaela y Reconquista."
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "Biblioteca Virtual UNL",
+        "url": "https://bibliotecavirtual.unl.edu.ar/",
+        "kind": "biblioteca"
+      },
+      {
+        "label": "Oferta académica",
+        "url": "https://www.unl.edu.ar/carreras",
+        "kind": "carreras"
+      },
+      {
+        "label": "Propuesta académica completa",
+        "url": "https://www.unl.edu.ar/academica/propuesta-academica/",
+        "kind": "carreras"
+      }
+    ],
+    "posgrados": [
+      "Maestrías y doctorados en ciencias biológicas, ingeniería, humanidades y ciencias sociales",
+      "Especializaciones médicas acreditadas por la Facultad de Ciencias Médicas"
+    ]
   },
   {
     "id": "unl-esperanza-agrarias",
@@ -129,7 +233,24 @@
     "verified": true,
     "foundedYear": 1961,
     "logoDomain": "unl.edu.ar",
-    "source": "Sitio oficial UNL"
+    "source": "Sitio oficial UNL",
+    "highlights": [
+      {
+        "label": "Distintivo",
+        "text": "Forma ingenieros agrónomos con fuerte trabajo de campo en la primera colonia agrícola organizada del país."
+      },
+      {
+        "label": "Para tener en cuenta",
+        "text": "Comparte biblioteca y sistema de ingreso con el resto de la UNL."
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "Biblioteca Virtual UNL",
+        "url": "https://bibliotecavirtual.unl.edu.ar/",
+        "kind": "biblioteca"
+      }
+    ]
   },
   {
     "id": "utn-frsf",
@@ -193,9 +314,330 @@
     ],
     "featured": true,
     "verified": true,
-    "foundedYear": 1970,
+    "foundedYear": 1953,
     "logoDomain": "frsf.utn.edu.ar",
-    "source": "Sitio oficial UTN FRSF"
+    "source": "Sitio oficial UTN FRSF",
+    "highlights": [
+      {
+        "label": "Historia",
+        "text": "Empezó a dictar clases en 1953, formando ingenieros para la industria metalúrgica y de software santafesina."
+      },
+      {
+        "label": "Distintivo",
+        "text": "Dicta Ingeniería Civil, Mecánica, Industrial, Eléctrica y en Sistemas de Información, todas con salida laboral fuerte en la región."
+      },
+      {
+        "label": "Para tener en cuenta",
+        "text": "El ingreso se gestiona por un portal propio, con inscripción online y cursos de nivelación en matemática y física."
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "Portal de ingreso",
+        "url": "https://ingreso.frsf.utn.edu.ar/",
+        "kind": "ingreso"
+      },
+      {
+        "label": "Carreras",
+        "url": "https://www.frsf.utn.edu.ar/carreras",
+        "kind": "carreras"
+      },
+      {
+        "label": "Recursos para estudiantes",
+        "url": "https://www.frsf.utn.edu.ar/recursos-estudiantes/",
+        "kind": "centro_estudiantes"
+      }
+    ]
+  },
+  {
+    "id": "utn-frro",
+    "name": "UTN — Facultad Regional Rosario",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "publico",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": "Zeballos 1341",
+    "phone": null,
+    "email": null,
+    "website": "https://www.frro.utn.edu.ar",
+    "instagram": "utnrosario",
+    "description": "La sede de ingeniería pública más grande del sur santafesino, con fuerte investigación aplicada a la industria y el agro.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Ingeniería Industrial",
+        "titulo": "Ingeniero/a Industrial",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Civil",
+        "titulo": "Ingeniero/a Civil",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Electrónica",
+        "titulo": "Ingeniero/a Electrónico/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Química",
+        "titulo": "Ingeniero/a Químico/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería en Sistemas de Información",
+        "titulo": "Ingeniero/a en Sistemas",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      }
+    ],
+    "featured": true,
+    "verified": true,
+    "foundedYear": 1958,
+    "logoDomain": "frro.utn.edu.ar",
+    "source": "Sitio oficial UTN FRRo"
+  },
+  {
+    "id": "utn-frra",
+    "name": "UTN — Facultad Regional Rafaela",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "publico",
+    "localidad": "Rafaela",
+    "region": "Región Centro",
+    "barrio": null,
+    "address": "Acuña 49",
+    "phone": null,
+    "email": null,
+    "website": "https://www.frra.utn.edu.ar",
+    "instagram": "utnrafaela",
+    "description": "Sede tecnológica del centro-oeste provincial, muy ligada a la industria láctea y metalmecánica que caracteriza a Rafaela.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Ingeniería Industrial",
+        "titulo": "Ingeniero/a Industrial",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería en Sistemas de Información",
+        "titulo": "Ingeniero/a en Sistemas",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Programación",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      }
+    ],
+    "featured": false,
+    "verified": true,
+    "foundedYear": 1975,
+    "logoDomain": "frra.utn.edu.ar",
+    "source": "Sitio oficial UTN FRRa"
+  },
+  {
+    "id": "utn-frvt",
+    "name": "UTN — Facultad Regional Venado Tuerto",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "publico",
+    "localidad": "Venado Tuerto",
+    "region": "Región Sur",
+    "barrio": null,
+    "address": "Laprida 651",
+    "phone": null,
+    "email": null,
+    "website": "https://www.frvt.utn.edu.ar",
+    "instagram": null,
+    "description": "Sede tecnológica del sudoeste provincial, con ingenierías orientadas a la agroindustria de la zona núcleo pampeana.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Ingeniería Industrial",
+        "titulo": "Ingeniero/a Industrial",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería en Sistemas de Información",
+        "titulo": "Ingeniero/a en Sistemas",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      }
+    ],
+    "featured": false,
+    "verified": true,
+    "foundedYear": 1990,
+    "logoDomain": "frvt.utn.edu.ar",
+    "source": "Sitio oficial UTN FRVT"
+  },
+  {
+    "id": "unr-rosario",
+    "name": "Universidad Nacional de Rosario (UNR)",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "publico",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": "Córdoba 1814",
+    "phone": null,
+    "email": null,
+    "website": "https://www.unr.edu.ar",
+    "instagram": "unr.edu.ar",
+    "description": "La universidad pública más grande del sur de Santa Fe, con doce facultades: Medicina, Derecho, Arquitectura, Ciencias Económicas, Psicología, Ingeniería y más.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Medicina",
+        "titulo": "Médico/a",
+        "duracionAnios": 6,
+        "duracionLabel": "6 años"
+      },
+      {
+        "nombre": "Abogacía",
+        "titulo": "Abogado/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Arquitectura",
+        "titulo": "Arquitecto/a",
+        "duracionAnios": 6,
+        "duracionLabel": "6 años"
+      },
+      {
+        "nombre": "Contador Público",
+        "titulo": "Contador/a Público/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Psicología",
+        "titulo": "Psicólogo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Química",
+        "titulo": "Ingeniero/a Químico/a",
+        "duracionAnios": 6,
+        "duracionLabel": "5 años y medio"
+      },
+      {
+        "nombre": "Ciencia Política y Relaciones Internacionales",
+        "titulo": "Licenciado/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      }
+    ],
+    "featured": true,
+    "verified": true,
+    "foundedYear": 1968,
+    "logoDomain": "unr.edu.ar",
+    "source": "Sitio oficial UNR",
+    "highlights": [
+      {
+        "label": "Historia",
+        "text": "Se independizó de la UBA en 1968 y hoy es la universidad pública más grande del sur santafesino, con doce facultades."
+      },
+      {
+        "label": "Distintivo",
+        "text": "Concentra Medicina, Derecho, Arquitectura y Ciencias Económicas entre las carreras con más historia e infraestructura de Rosario."
+      },
+      {
+        "label": "Vida académica",
+        "text": "El Repositorio Hipermedial UNR (RepHip) reúne de forma abierta tesis, cátedras y producción científica de todas las facultades."
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "Bibliotecas UNR",
+        "url": "https://unr.edu.ar/bibliotecasunr/",
+        "kind": "biblioteca"
+      },
+      {
+        "label": "Repositorio Hipermedial (RepHip)",
+        "url": "https://rephip.unr.edu.ar/",
+        "kind": "biblioteca"
+      }
+    ]
+  },
+  {
+    "id": "unraf-rafaela",
+    "name": "Universidad Nacional de Rafaela (UNRaf)",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "publico",
+    "localidad": "Rafaela",
+    "region": "Región Centro",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": "https://www.unraf.edu.ar",
+    "instagram": null,
+    "description": "Universidad pública joven, creada para llevar formación de grado a la región centro-oeste sin necesidad de migrar a Santa Fe o Rosario.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Licenciatura en Administración",
+        "titulo": "Licenciado/a en Administración",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura en Programación",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      }
+    ],
+    "featured": false,
+    "verified": false,
+    "foundedYear": 2014,
+    "logoDomain": null,
+    "source": null
   },
   {
     "id": "ucsf-santa-fe",
@@ -255,7 +697,431 @@
     "verified": true,
     "foundedYear": 1960,
     "logoDomain": "ucsf.edu.ar",
-    "source": "Sitio oficial UCSF"
+    "source": "Sitio oficial UCSF",
+    "highlights": [
+      {
+        "label": "Distintivo",
+        "text": "Universidad católica con sedes en varias ciudades de la provincia y un campus virtual propio (UCSF Virtual) usado por más de 12.000 alumnos y docentes."
+      },
+      {
+        "label": "Para tener en cuenta",
+        "text": "Tiene aranceles variables según carrera y suele ofrecer becas propias; conviene consultar el valor actualizado directamente."
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "Biblioteca UCSF",
+        "url": "https://www.ucsf.edu.ar/biblioteca/",
+        "kind": "biblioteca"
+      },
+      {
+        "label": "Campus Virtual",
+        "url": "https://campus.ucsfvirtual.edu.ar/",
+        "kind": "campus"
+      }
+    ]
+  },
+  {
+    "id": "ucsf-rosario",
+    "name": "Universidad Católica de Santa Fe (UCSF) — Sede Rosario",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": "https://www.ucsf.edu.ar",
+    "instagram": "ucsf.ar",
+    "description": "Sede rosarina de la UCSF, con carreras de grado en salud y ciencias sociales.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$$",
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Psicología",
+        "titulo": "Psicólogo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Enfermería",
+        "titulo": "Licenciado/a en Enfermería",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      }
+    ],
+    "featured": false,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": "ucsf.edu.ar",
+    "source": "Sitio oficial UCSF",
+    "highlights": [
+      {
+        "label": "Distintivo",
+        "text": "Universidad católica con sedes en varias ciudades de la provincia y un campus virtual propio (UCSF Virtual) usado por más de 12.000 alumnos y docentes."
+      },
+      {
+        "label": "Para tener en cuenta",
+        "text": "Tiene aranceles variables según carrera y suele ofrecer becas propias; conviene consultar el valor actualizado directamente."
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "Biblioteca UCSF",
+        "url": "https://www.ucsf.edu.ar/biblioteca/",
+        "kind": "biblioteca"
+      },
+      {
+        "label": "Campus Virtual",
+        "url": "https://campus.ucsfvirtual.edu.ar/",
+        "kind": "campus"
+      }
+    ]
+  },
+  {
+    "id": "ucsf-rafaela",
+    "name": "Universidad Católica de Santa Fe (UCSF) — Sede Rafaela",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "privado",
+    "localidad": "Rafaela",
+    "region": "Región Centro",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": "https://www.ucsf.edu.ar",
+    "instagram": "ucsf.ar",
+    "description": "Sede de la UCSF en el centro-oeste provincial.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$$",
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Contador Público",
+        "titulo": "Contador/a Público/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      }
+    ],
+    "featured": false,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": "ucsf.edu.ar",
+    "source": "Sitio oficial UCSF",
+    "highlights": [
+      {
+        "label": "Distintivo",
+        "text": "Universidad católica con sedes en varias ciudades de la provincia y un campus virtual propio (UCSF Virtual) usado por más de 12.000 alumnos y docentes."
+      },
+      {
+        "label": "Para tener en cuenta",
+        "text": "Tiene aranceles variables según carrera y suele ofrecer becas propias; conviene consultar el valor actualizado directamente."
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "Biblioteca UCSF",
+        "url": "https://www.ucsf.edu.ar/biblioteca/",
+        "kind": "biblioteca"
+      },
+      {
+        "label": "Campus Virtual",
+        "url": "https://campus.ucsfvirtual.edu.ar/",
+        "kind": "campus"
+      }
+    ]
+  },
+  {
+    "id": "ucsf-reconquista",
+    "name": "Universidad Católica de Santa Fe (UCSF) — Sede Reconquista",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "privado",
+    "localidad": "Reconquista",
+    "region": "Región Norte",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": "https://www.ucsf.edu.ar",
+    "instagram": "ucsf.ar",
+    "description": "Sede de la UCSF en el norte santafesino.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$$",
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Abogacía",
+        "titulo": "Abogado/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      }
+    ],
+    "featured": false,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": "ucsf.edu.ar",
+    "source": "Sitio oficial UCSF",
+    "highlights": [
+      {
+        "label": "Distintivo",
+        "text": "Universidad católica con sedes en varias ciudades de la provincia y un campus virtual propio (UCSF Virtual) usado por más de 12.000 alumnos y docentes."
+      },
+      {
+        "label": "Para tener en cuenta",
+        "text": "Tiene aranceles variables según carrera y suele ofrecer becas propias; conviene consultar el valor actualizado directamente."
+      }
+    ],
+    "resourceLinks": [
+      {
+        "label": "Biblioteca UCSF",
+        "url": "https://www.ucsf.edu.ar/biblioteca/",
+        "kind": "biblioteca"
+      },
+      {
+        "label": "Campus Virtual",
+        "url": "https://campus.ucsfvirtual.edu.ar/",
+        "kind": "campus"
+      }
+    ]
+  },
+  {
+    "id": "uca-rosario",
+    "name": "Pontificia Universidad Católica Argentina (UCA) — Sede Rosario",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": "https://www.uca.edu.ar",
+    "instagram": "ucaonline",
+    "description": "Sede rosarina de la UCA, con oferta en derecho, ciencias económicas y humanidades.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$$$",
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Abogacía",
+        "titulo": "Abogado/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Contador Público",
+        "titulo": "Contador/a Público/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      }
+    ],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": "uca.edu.ar",
+    "source": "Sitio oficial UCA"
+  },
+  {
+    "id": "uai-rosario",
+    "name": "Universidad Abierta Interamericana (UAI) — Rosario",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": "https://uai.edu.ar",
+    "instagram": "uai.ar",
+    "description": "Universidad privada con sede administrativa en Rosario, con más de 50 carreras de grado y posgrado.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": "$$",
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Abogacía",
+        "titulo": "Abogado/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Psicología",
+        "titulo": "Psicólogo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Relaciones Públicas",
+        "titulo": "Licenciado/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Ingeniería en Sistemas",
+        "titulo": "Ingeniero/a en Sistemas",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      }
+    ],
+    "featured": true,
+    "verified": true,
+    "foundedYear": 1995,
+    "logoDomain": "uai.edu.ar",
+    "source": "Sitio oficial UAI"
+  },
+  {
+    "id": "ucel-rosario",
+    "name": "Universidad del Centro Educativo Latinoamericano (UCEL)",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": "https://www.ucel.edu.ar",
+    "instagram": "ucel.edu.ar",
+    "description": "Universidad privada rosarina, fuerte en ciencias económicas, diseño y comunicación.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": "$$",
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Licenciatura en Comunicación Social",
+        "titulo": "Licenciado/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Contador Público",
+        "titulo": "Contador/a Público/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Diseño Gráfico",
+        "titulo": "Diseñador/a Gráfico/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      }
+    ],
+    "featured": false,
+    "verified": true,
+    "foundedYear": 1992,
+    "logoDomain": "ucel.edu.ar",
+    "source": "Sitio oficial UCEL"
+  },
+  {
+    "id": "iunir-rosario",
+    "name": "Instituto Universitario Italiano de Rosario (IUNIR)",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": "https://www.iunir.edu.ar",
+    "instagram": null,
+    "description": "Instituto universitario privado de la comunidad italiana de Rosario, con Medicina como carrera insignia.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": "$$$",
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Medicina",
+        "titulo": "Médico/a",
+        "duracionAnios": 6,
+        "duracionLabel": "6 años"
+      }
+    ],
+    "featured": false,
+    "verified": true,
+    "foundedYear": 2001,
+    "logoDomain": "iunir.edu.ar",
+    "source": "Sitio oficial IUNIR"
+  },
+  {
+    "id": "ugr-rosario",
+    "name": "Universidad del Gran Rosario (UGR)",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Universidad privada con sede de rectorado en Rosario, orientada a ciencias económicas y jurídicas.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": "$$",
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Abogacía",
+        "titulo": "Abogado/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Contador Público",
+        "titulo": "Contador/a Público/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      }
+    ],
+    "featured": false,
+    "verified": false,
+    "foundedYear": 2006,
+    "logoDomain": null,
+    "source": null
   },
   {
     "id": "eis-unl-santa-fe",
@@ -296,7 +1162,8 @@
     "verified": false,
     "foundedYear": 1911,
     "logoDomain": null,
-    "source": null
+    "source": null,
+    "tipoSecundaria": "tecnica"
   },
   {
     "id": "normal-32-santa-fe",
@@ -337,7 +1204,8 @@
     "verified": false,
     "foundedYear": null,
     "logoDomain": null,
-    "source": null
+    "source": null,
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "isp-8-almirante-brown",
@@ -642,7 +1510,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "esperanza-lux-capere",
@@ -820,7 +1689,22 @@
     "verified": true,
     "foundedYear": 1862,
     "logoDomain": "colegioinmaculada.edu.ar",
-    "source": "Sitio oficial + Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Sitio oficial + Ministerio de Educación de Santa Fe (SPEP)",
+    "highlights": [
+      {
+        "label": "Historia",
+        "text": "Fundado en 1862 por la Compañía de Jesús, es uno de los colegios más antiguos y reconocidos de Santa Fe capital."
+      },
+      {
+        "label": "Distintivo",
+        "text": "Sigue la pedagogía ignaciana, con fuerte impronta humanístico-científica y actividades de formación en valores."
+      },
+      {
+        "label": "Para tener en cuenta",
+        "text": "La demanda de vacantes suele superar la oferta -- conviene averiguar los plazos de inscripción con bastante anticipación."
+      }
+    ],
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "colegio-sagrado-corazon-santa-fe",
@@ -853,7 +1737,18 @@
     "verified": true,
     "foundedYear": 1889,
     "logoDomain": "sagradocorazonsf.edu.ar",
-    "source": "Sitio oficial"
+    "source": "Sitio oficial",
+    "highlights": [
+      {
+        "label": "Historia",
+        "text": "Fundado en 1889, es uno de los colegios católicos más antiguos de la capital santafesina, con más de 130 años de trayectoria."
+      },
+      {
+        "label": "Distintivo",
+        "text": "Dicta los tres niveles obligatorios (jardín, primaria y secundaria) en un mismo edificio del barrio céntrico."
+      }
+    ],
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-265-yapeyu",
@@ -884,7 +1779,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-8150-guadalupe",
@@ -915,7 +1811,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-391-zapata-gollan",
@@ -946,7 +1843,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-8031-nsra-calvario",
@@ -977,7 +1875,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-2035-santa-rosa",
@@ -1008,7 +1907,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-2042-jesus-resucitado",
@@ -1039,7 +1939,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-3059-fatima",
@@ -1070,7 +1971,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-3025-cristo-obrero",
@@ -1101,7 +2003,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-231-republica-nicaragua",
@@ -1132,7 +2035,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-261-jose-hernandez",
@@ -1163,7 +2067,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-256-bustos",
@@ -1194,7 +2099,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-382-vera-cruz",
@@ -1225,7 +2131,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-440-simon-iriondo",
@@ -1256,7 +2163,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "ees-3028-padre-monti",
@@ -1287,7 +2195,8 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
   },
   {
     "id": "esc-8-cristobal-colon",
@@ -1638,5 +2547,1136 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)"
+  },
+  {
+    "id": "colegio-san-bartolome-rosario",
+    "name": "Colegio San Bartolomé (Colegio Inglés)",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Uno de los colegios privados bilingües más tradicionales y de mayor arancel de Rosario, conocido popularmente como \"el Inglés\".",
+    "modalidad": "jornada completa",
+    "genero": "mixto",
+    "bilingue": "Inglés",
+    "religioso": null,
+    "costTier": "$$$",
+    "orientaciones": [
+      "Economía y Administración"
+    ],
+    "carreras": [],
+    "featured": true,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": null,
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "colegio-san-patricio-rosario",
+    "name": "Colegio San Patricio",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Colegio privado bilingüe de alto arancel en Rosario, con fuerte impronta angloargentina.",
+    "modalidad": "jornada completa",
+    "genero": "mixto",
+    "bilingue": "Inglés",
+    "religioso": null,
+    "costTier": "$$$",
+    "orientaciones": [
+      "Ciencias Naturales"
+    ],
+    "carreras": [],
+    "featured": true,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": null,
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "colegio-la-salle-rosario",
+    "name": "Colegio La Salle",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Colegio católico de los Hermanos de las Escuelas Cristianas, con larga tradición en la formación de varones y mixta en niveles iniciales.",
+    "modalidad": "jornada simple",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica (La Salle)",
+    "costTier": "$$",
+    "orientaciones": [
+      "Economía y Administración"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": null,
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "colegio-maristas-rosario",
+    "name": "Colegio Maristas",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Colegio católico de los Hermanos Maristas en Rosario, con fuerte identidad deportiva y comunitaria.",
+    "modalidad": "jornada simple",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica (Maristas)",
+    "costTier": "$$",
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": null,
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "colegio-del-sol-rosario",
+    "name": "Colegio del Sol",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Colegio privado laico de Rosario con orientación bilingüe y fuerte propuesta artística.",
+    "modalidad": "jornada completa",
+    "genero": "mixto",
+    "bilingue": "Inglés",
+    "religioso": null,
+    "costTier": "$$$",
+    "orientaciones": [
+      "Arte"
+    ],
+    "carreras": [],
+    "featured": true,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": null,
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "escuela-italiana-dante-alighieri-rosario",
+    "name": "Escuela Italiana \"Dante Alighieri\"",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela de la comunidad italiana de Rosario, con enseñanza bilingüe español-italiano.",
+    "modalidad": "jornada completa",
+    "genero": "mixto",
+    "bilingue": "Italiano",
+    "religioso": null,
+    "costTier": "$$",
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": null,
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "colegio-los-arrayanes-rosario",
+    "name": "Colegio Los Arrayanes",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Colegio privado de Rosario con propuesta bilingüe.",
+    "modalidad": "jornada completa",
+    "genero": "mixto",
+    "bilingue": "Inglés",
+    "religioso": null,
+    "costTier": "$$",
+    "orientaciones": [
+      "Economía y Administración"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": null,
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "colegio-cristo-rey-rosario",
+    "name": "Colegio Cristo Rey",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Colegio católico de Rosario con los tres niveles obligatorios.",
+    "modalidad": "jornada simple",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$",
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": false,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": null,
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "instituto-adoratrices-rosario",
+    "name": "Instituto Inmaculado Corazón de María — Adoratrices",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": "Centro",
+    "address": "Italia 733, Centro",
+    "phone": "341-4250914",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Colegio de las Hermanas Adoratrices en pleno centro de Rosario.",
+    "modalidad": "jornada simple",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica (Adoratrices)",
+    "costTier": "$",
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "normal-34-avellaneda-rosario",
+    "name": "Escuela Normal Superior N°34 \"Dr. Nicolás Avellaneda\"",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria",
+      "terciario"
+    ],
+    "sector": "publico",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": "Centro",
+    "address": "San Juan 1300, Centro",
+    "phone": "341-4721418",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela normal histórica de Rosario, con los cuatro niveles y profesorados propios.",
+    "modalidad": "jornada simple",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [
+      {
+        "nombre": "Profesorado de Educación Primaria",
+        "titulo": "Profesor/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      }
+    ],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "highlights": [
+      {
+        "label": "Historia",
+        "text": "Una de las escuelas normales históricas de Rosario, con los cuatro niveles educativos bajo un mismo techo desde hace más de un siglo."
+      },
+      {
+        "label": "Distintivo",
+        "text": "Forma tanto a alumnos de nivel inicial a secundario como a futuros docentes en su profesorado de nivel superior."
+      }
+    ],
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "ees-623-remedios-escalada",
+    "name": "E.E.S. N°623 \"Remedios Escalada de San Martín\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": "Centro",
+    "address": "Paraguay 1251, Centro",
+    "phone": "341-4721455",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública en pleno centro de Rosario.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "ees-8012-sagrado-corazon-rosario",
+    "name": "E.E.S. Part. Inc. N°8012 \"Sagrado Corazón\"",
+    "levels": [
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": "Microcentro",
+    "address": "Mendoza 1951, Microcentro",
+    "phone": "341-4487738",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Colegio católico del microcentro rosarino.",
+    "modalidad": "jornada simple",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$",
+    "orientaciones": [
+      "Economía y Administración"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "ees-257-castellanos",
+    "name": "E.E.S. N°257 \"Dr. Alfredo Castellanos\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": "Centro",
+    "address": "Mitre 1648, Centro",
+    "phone": "341-4721448",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública del centro de Rosario.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Naturales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "ees-406-salvador-mazza",
+    "name": "E.E.S. N°406 \"Dr. Salvador Mazza\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": "Zona Centro",
+    "address": "Salta 2560, Zona Centro",
+    "phone": "341-4409047",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública de Rosario.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Naturales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "ees-8144-stella-maris",
+    "name": "E.E.S. Part. Inc. N°8144 \"Stella Maris\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": "Fisherton",
+    "address": "Av. Brassey 8255, Fisherton",
+    "phone": "341-4724539",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria privada del barrio residencial de Fisherton.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$$",
+    "orientaciones": [
+      "Economía y Administración"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "ees-347-angel-guido",
+    "name": "E.E.S. N°347 \"Ángel Guido\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": "Fonavi",
+    "address": "Donado 1253, Fonavi",
+    "phone": "341-4727590",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública del barrio Fonavi.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Arte"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "ees-8087-guadalupe-rosario",
+    "name": "E.E.S. Part. Inc. N°8087 \"Nuestra Señora de Guadalupe\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": "Las Malvinas",
+    "address": "Av. Alberdi 338, Las Malvinas",
+    "phone": "341-4571645",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria privada del barrio Las Malvinas.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$",
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "casilda-ees-202-manuel-leiva",
+    "name": "E.E.S. N°202 \"Manuel Leiva\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Casilda",
+    "region": "Región Sur",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública de Casilda, cabecera del departamento Caseros.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Naturales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "puerto-san-martin-ees-328",
+    "name": "E.E.S. N°328 \"José General de San Martín\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Puerto General San Martín",
+    "region": "Región Rosario",
+    "barrio": "Iturralde",
+    "address": "Jujuy 1039, Iturralde",
+    "phone": "3476-435472",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública de la ciudad portuaria de Puerto General San Martín.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "puerto-san-martin-ees-3134-nino-jesus",
+    "name": "E.E.S. Part. Inc. N°3134 \"Niño Jesús\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Puerto General San Martín",
+    "region": "Región Rosario",
+    "barrio": "Centro",
+    "address": "Guillermo Kirk 515, Centro",
+    "phone": "3476-423062",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria privada religiosa de Puerto General San Martín.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$",
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "roldan-inst-superior-paul-harris",
+    "name": "Instituto Superior Part. Inc. N°9086 \"Paul Harris\"",
+    "levels": [
+      "terciario"
+    ],
+    "sector": "privado",
+    "localidad": "Roldán",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": "Entre Ríos 686",
+    "phone": "341-4961027",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Instituto terciario privado de Roldán, en el Gran Rosario.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": "$",
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Profesorado de Educación Primaria",
+        "titulo": "Profesor/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      }
+    ],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+  },
+  {
+    "id": "pujato-ees-241-kennedy",
+    "name": "E.E.S. N°241 \"John F. Kennedy\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Pujato",
+    "region": "Región Sur",
+    "barrio": null,
+    "address": "Simón de Iriondo 747",
+    "phone": "3464-494227",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública de Pujato, departamento Caseros.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Naturales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "rafaela-eeso-376-joaquin-dopazo",
+    "name": "E.E.S.O. N°376 \"Joaquín Dopazo\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Rafaela",
+    "region": "Región Centro",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria orientada pública de Rafaela.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Economía y Administración"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "rafaela-eeso-428-luisa-raimondi",
+    "name": "E.E.S.O. N°428 \"Luisa Raimondi de Barreiro\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Rafaela",
+    "region": "Región Centro",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria orientada pública de Rafaela.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "rafaela-8022-misericordia",
+    "name": "Escuela Secundaria N°8022 \"Nuestra Señora de la Misericordia\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rafaela",
+    "region": "Región Centro",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria privada religiosa de Rafaela.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$",
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "reconquista-eeso-203-alberdi",
+    "name": "E.E.S.O. N°203 \"Juan Bautista Alberdi\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Reconquista",
+    "region": "Región Norte",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria orientada pública de Reconquista, cabecera del norte santafesino.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Naturales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "reconquista-8101-inmaculada",
+    "name": "E.E.S.O. Particular N°8101 \"Inmaculada Concepción\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Reconquista",
+    "region": "Región Norte",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria privada religiosa de Reconquista.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$",
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "reconquista-8023-san-jose",
+    "name": "Escuela Secundaria N°8023 \"San José\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Reconquista",
+    "region": "Región Norte",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria privada religiosa de Reconquista.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$",
+    "orientaciones": [
+      "Economía y Administración"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "venado-tuerto-ees-584",
+    "name": "Escuela de Educación Secundaria Orientada N°584",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Venado Tuerto",
+    "region": "Región Sur",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria orientada pública de Venado Tuerto.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Economía y Administración"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "cap-bermudez-ees-325-de-la-plaza",
+    "name": "E.E.S. Orientada N°325 \"De la Plaza\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Capitán Bermúdez",
+    "region": "Región Rosario",
+    "barrio": "Centro",
+    "address": "Florida s/n, Centro",
+    "phone": "341-4912434",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública de Capitán Bermúdez.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "canada-de-gomez-esc-comercio-47",
+    "name": "Colegio Superior N°47 \"Florentino Ameghino\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Cañada de Gómez",
+    "region": "Región Sur",
+    "barrio": null,
+    "address": "Camino de la Posta 340",
+    "phone": "3471-497010",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública de Cañada de Gómez.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Naturales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "canada-de-gomez-8055-san-antonio",
+    "name": "E.E.S. Part. Inc. N°8055 \"San Antonio de Padua\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Cañada de Gómez",
+    "region": "Región Sur",
+    "barrio": "Centro",
+    "address": "Rivadavia 938, Centro",
+    "phone": "3471-423084",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria privada religiosa de Cañada de Gómez.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "Católica",
+    "costTier": "$",
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "arequito-ees-219-sarmiento",
+    "name": "E.E.S. N°219 \"Domingo Faustino Sarmiento\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Casilda",
+    "region": "Región Sur",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria pública de la zona de Casilda, departamento Caseros.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Ciencias Sociales"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "orientada"
+  },
+  {
+    "id": "villa-constitucion-esc-comercio-51",
+    "name": "Escuela Superior de Comercio N°51 \"Dr. Manuel Belgrano\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Villa Constitución",
+    "region": "Región Sur",
+    "barrio": null,
+    "address": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria técnico-comercial pública de Villa Constitución.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [
+      "Economía y Administración"
+    ],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "foundedYear": null,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "tipoSecundaria": "tecnica"
   }
 ]

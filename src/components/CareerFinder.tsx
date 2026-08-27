@@ -1,9 +1,11 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Search, GraduationCap, MapPin, Clock } from "lucide-react";
+import { Search, GraduationCap, MapPin, Clock, ArrowRight, Landmark, ChevronDown } from "lucide-react";
+import { SECTOR_SHORT } from "@/lib/types";
 import { getAllCarreras, getAllOrientaciones } from "@/lib/data";
 import { useFilters } from "@/context/FiltersContext";
+import InstitutionLogo from "./InstitutionLogo";
 
 type DurationBucket = "corta" | "media" | "larga";
 
@@ -17,9 +19,19 @@ export default function CareerFinder() {
   const { institutions, setSelected } = useFilters();
   const [query, setQuery] = useState("");
   const [bucket, setBucket] = useState<DurationBucket | null>(null);
+  const [visibleCount, setVisibleCount] = useState(12);
 
   const carreras = useMemo(() => getAllCarreras(), []);
   const orientaciones = useMemo(() => getAllOrientaciones(), []);
+
+  // Nombres únicos de carreras para el autocompletado nativo del buscador --
+  // así el padre/madre puede ver toda la oferta disponible sin tener que
+  // adivinar cómo se llama exactamente cada carrera.
+  const uniqueCareerNames = useMemo(() => {
+    const set = new Set<string>();
+    carreras.forEach((c) => set.add(c.nombre));
+    return Array.from(set).sort((a, b) => a.localeCompare(b, "es"));
+  }, [carreras]);
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -39,9 +51,24 @@ export default function CareerFinder() {
     return orientaciones.filter((o) => o.toLowerCase().includes(q));
   }, [orientaciones, query]);
 
+  const institutionCount = useMemo(
+    () => new Set(results.map((r) => r.institutionId)).size,
+    [results]
+  );
+
   const openInstitution = (id: string) => {
     const inst = institutions.find((i) => i.id === id);
     if (inst) setSelected(inst);
+  };
+
+  const updateQuery = (v: string) => {
+    setQuery(v);
+    setVisibleCount(12);
+  };
+
+  const updateBucket = (b: DurationBucket | null) => {
+    setBucket(b);
+    setVisibleCount(12);
   };
 
   return (
@@ -55,7 +82,7 @@ export default function CareerFinder() {
         </h2>
         <p className="mb-5 max-w-2xl text-sm text-muted">
           Buscá una carrera, tecnicatura, profesorado u orientación secundaria y mirá en qué
-          institutos y universidades de Santa Fe capital y su zona se dicta.
+          institutos y universidades de la provincia se dicta.
         </p>
 
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -66,10 +93,16 @@ export default function CareerFinder() {
             />
             <input
               value={query}
-              onChange={(e) => setQuery(e.target.value)}
-              placeholder="Ej: Medicina, Ingeniería en Sistemas, Enfermería, Ciencias Naturales..."
+              onChange={(e) => updateQuery(e.target.value)}
+              list="carreras-disponibles"
+              placeholder="Escribí o elegí de la lista: Medicina, Enfermería, Ciencias Naturales..."
               className="w-full rounded-full border border-border bg-background py-3 pl-9 pr-3 text-sm text-foreground placeholder:text-muted focus:border-primary focus:outline-none"
             />
+            <datalist id="carreras-disponibles">
+              {uniqueCareerNames.map((name) => (
+                <option key={name} value={name} />
+              ))}
+            </datalist>
           </div>
           <div className="flex flex-wrap gap-1.5">
             {BUCKETS.map((b) => (
@@ -78,49 +111,104 @@ export default function CareerFinder() {
                 type="button"
                 className="pill pill-accent"
                 data-active={bucket === b.key}
-                onClick={() => setBucket(bucket === b.key ? null : b.key)}
+                onClick={() => updateBucket(bucket === b.key ? null : b.key)}
               >
                 <Clock size={13} /> {b.label}
               </button>
             ))}
           </div>
         </div>
+        <p className="mt-2 text-[11px] text-muted">
+          💡 Tocá la lupa del campo o empezá a escribir para ver sugerencias con toda la oferta
+          cargada -- dejalo vacío para navegar la lista completa.
+        </p>
 
-        {orientationMatches.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-2">
-            <span className="text-xs text-muted">Orientaciones secundarias que coinciden:</span>
-            {orientationMatches.map((o) => (
-              <span
-                key={o}
-                className="rounded-full bg-background px-2.5 py-1 text-xs text-foreground/80"
-              >
-                {o}
-              </span>
-            ))}
-          </div>
-        )}
+        <div className="mt-3 flex flex-wrap items-center gap-3">
+          <p className="text-xs text-muted">
+            <strong className="font-semibold text-foreground/80">{results.length}</strong>{" "}
+            {results.length === 1 ? "carrera" : "carreras"} en{" "}
+            <strong className="font-semibold text-foreground/80">{institutionCount}</strong>{" "}
+            {institutionCount === 1 ? "institución" : "instituciones"}
+          </p>
+          {orientationMatches.length > 0 && (
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="text-xs text-muted">Orientaciones secundarias:</span>
+              {orientationMatches.map((o) => (
+                <span
+                  key={o}
+                  className="rounded-full border border-primary/25 bg-primary/10 px-2.5 py-1 text-xs font-medium text-primary-dark"
+                >
+                  {o}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
 
         <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          {results.slice(0, 24).map((c, idx) => (
+          {results.slice(0, visibleCount).map((c, idx) => (
             <button
               key={`${c.institutionId}-${c.nombre}-${idx}`}
               onClick={() => openInstitution(c.institutionId)}
-              className="card-glow flex flex-col gap-1 rounded-xl border border-border bg-background p-4 text-left transition hover:-translate-y-0.5"
+              className="card-glow shine group flex flex-col gap-3 rounded-2xl border border-border bg-background p-4 text-left transition"
             >
-              <p className="font-display text-sm font-semibold text-foreground">{c.nombre}</p>
-              <p className="text-xs text-muted">{c.titulo ?? "Título"}</p>
-              <div className="mt-1 flex items-center gap-1.5 text-[11px] text-accent-dark">
-                <Clock size={11} /> {c.duracionLabel}
-              </div>
-              <div className="mt-2 flex items-center gap-1.5 border-t border-border pt-2 text-xs text-muted">
-                <MapPin size={11} className="shrink-0" />
-                <span className="truncate">
-                  {c.institutionName} · {c.localidad}
+              <div className="flex items-start justify-between gap-2">
+                <span className="flex items-center gap-1 rounded-full bg-card px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-muted">
+                  {c.levels.includes("universidad") ? (
+                    <Landmark size={11} />
+                  ) : (
+                    <GraduationCap size={11} />
+                  )}
+                  {c.levels.includes("universidad") ? "Universidad" : "Terciario"}
                 </span>
+                <span className="flex shrink-0 items-center gap-1 rounded-full bg-accent/10 px-2 py-0.5 text-[11px] font-semibold text-accent-dark">
+                  <Clock size={11} /> {c.duracionLabel}
+                </span>
+              </div>
+
+              <div>
+                <p className="font-display text-base font-semibold leading-snug text-foreground group-hover:text-primary-dark">
+                  {c.nombre}
+                </p>
+                <p className="text-xs text-muted">{c.titulo ?? "Título a definir"}</p>
+              </div>
+
+              <div className="mt-auto flex items-center gap-2 border-t border-border pt-3">
+                <InstitutionLogo
+                  id={c.institutionId}
+                  name={c.institutionName}
+                  domain={c.logoDomain}
+                  size={28}
+                />
+                <div className="min-w-0 flex-1">
+                  <p className="truncate text-xs font-medium text-foreground/80">
+                    {c.institutionName}
+                  </p>
+                  <p className="flex items-center gap-1 truncate text-[11px] text-muted">
+                    <MapPin size={10} className="shrink-0" />
+                    {c.localidad} · {SECTOR_SHORT[c.sector]}
+                  </p>
+                </div>
+                <ArrowRight
+                  size={14}
+                  className="shrink-0 text-muted transition group-hover:translate-x-0.5 group-hover:text-primary-dark"
+                />
               </div>
             </button>
           ))}
         </div>
+
+        {visibleCount < results.length && (
+          <div className="mt-5 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setVisibleCount((v) => v + 12)}
+              className="flex items-center gap-1.5 rounded-full border border-border bg-background px-5 py-2.5 text-sm font-semibold text-foreground transition hover:border-primary hover:text-primary-dark"
+            >
+              Ver más carreras ({results.length - visibleCount} más) <ChevronDown size={15} />
+            </button>
+          </div>
+        )}
 
         {results.length === 0 && (
           <p className="mt-6 text-center text-sm text-muted">

@@ -1,6 +1,7 @@
 import Logo from "./Logo";
 import { LEVEL_LABELS } from "@/lib/types";
 import { AUTHOR } from "@/lib/author";
+import { FungirakBadge, FungirakFullCredit } from "./FungirakCredit";
 
 export default function Footer() {
   return (
@@ -9,8 +10,8 @@ export default function Footer() {
         <div>
           <Logo size={32} />
           <p className="mt-3 max-w-xs text-sm text-muted">
-            Guía independiente de instituciones educativas de Santa Fe capital y el Gran Santa
-            Fe, para ayudar a las familias a elegir con información real.
+            Guía independiente de instituciones educativas de la provincia de Santa Fe, para
+            ayudar a las familias a elegir con información real.
           </p>
         </div>
 
@@ -40,15 +41,16 @@ export default function Footer() {
 
         <div>
           <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">
-            Contacto
+            Estudio
           </p>
-          <a href={`mailto:${AUTHOR.email}`} className="text-sm text-muted hover:text-primary-dark">
-            {AUTHOR.email}
-          </a>
+          <FungirakFullCredit />
         </div>
       </div>
       <div className="flex flex-col items-center gap-3 border-t border-border px-4 py-5 text-center text-xs text-muted sm:flex-row sm:justify-between sm:gap-4 lg:px-8">
-        <span>Santa Fe Schools · guía educativa independiente, hecha en Santa Fe</span>
+        <span className="sm:flex-1 sm:text-left">
+          Santa Fe Schools · guía educativa independiente, hecha en Santa Fe
+        </span>
+        <FungirakBadge href={`mailto:${AUTHOR.email}`} className="sm:flex-1 sm:justify-end" />
       </div>
     </footer>
   );
