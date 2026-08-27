@@ -253,7 +253,10 @@ export default function FamilyWizard() {
 
             {answers.level && (
               <div className="mt-4">
-                <LevelTipBanner level={answers.level} />
+                <LevelTipBanner
+                  level={answers.level}
+                  sectors={answers.sector === "cualquiera" ? new Set() : new Set([answers.sector])}
+                />
               </div>
             )}
 

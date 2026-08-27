@@ -62,7 +62,7 @@ export default function Explorer() {
         <FilterSidebar />
 
         <div className="flex-1 pb-20 lg:pb-0">
-          {singleLevel && <LevelTipBanner level={singleLevel} />}
+          {singleLevel && <LevelTipBanner level={singleLevel} sectors={filters.sectors} />}
 
           {/* El mapa solo se ve en desktop, al lado del sidebar de filtros
               -- en mobile ocupaba una pantalla entera antes de llegar a
