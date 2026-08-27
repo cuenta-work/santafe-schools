@@ -16,9 +16,9 @@ const inter = Inter({
 });
 
 const SITE_URL = "https://santafe-schools.vercel.app";
-const TITLE = "Santa Fe Schools — Guía de instituciones educativas de Santa Fe";
+const TITLE = "Santa Fe Schools — Guía de instituciones educativas de Santa Fe capital";
 const DESCRIPTION =
-  "Buscador de jardines, escuelas primarias y secundarias, institutos terciarios y universidades de la provincia de Santa Fe (Argentina): gestión, orientación, carreras y contacto de cada institución.";
+  "Buscador de jardines, escuelas primarias y secundarias, institutos terciarios y universidades de Santa Fe capital y el Gran Santa Fe (Argentina): gestión, orientación, carreras y contacto de cada institución.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -37,9 +37,8 @@ export const metadata: Metadata = {
     "universidades Santa Fe",
     "UNL",
     "UTN Santa Fe",
-    "UNR",
-    "colegios privados Rosario",
-    "educación Santa Fe Argentina",
+    "colegios Gran Santa Fe",
+    "educación Santa Fe capital Argentina",
   ],
   authors: [{ name: "Santa Fe Schools" }],
   creator: "Santa Fe Schools",

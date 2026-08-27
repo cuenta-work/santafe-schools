@@ -69,7 +69,7 @@ export default async function Image() {
             display: "flex",
           }}
         >
-          Jardines, escuelas, terciarios y universidades de Santa Fe
+          Jardines, escuelas, terciarios y universidades de Santa Fe capital
         </div>
         <div style={{ marginTop: 28, fontSize: 26, color: "#5b6b85", display: "flex" }}>
           Gestión, orientación, carreras y contacto — en un solo lugar

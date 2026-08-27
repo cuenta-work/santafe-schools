@@ -20,8 +20,8 @@ export default function ContactCTA() {
             ¿Tu institución todavía no está en la guía?
           </h2>
           <p className="max-w-xl text-sm text-muted sm:text-base">
-            Si dirigís un jardín, escuela, terciario o universidad en Santa Fe y querés sumarte
-            a la guía — o si nosotros nos perdimos algún dato tuyo — escribinos.
+            Si dirigís un jardín, escuela, terciario o universidad en Santa Fe capital o su zona
+            y querés sumarte a la guía — o si nosotros nos perdimos algún dato tuyo — escribinos.
           </p>
           <a
             href={`mailto:${AUTHOR.email}?subject=${encodeURIComponent(

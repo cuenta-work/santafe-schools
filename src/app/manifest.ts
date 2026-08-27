@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Santa Fe Schools — Guía de instituciones educativas",
     short_name: "Santa Fe Schools",
     description:
-      "Buscador de jardines, escuelas, terciarios y universidades de la provincia de Santa Fe.",
+      "Buscador de jardines, escuelas, terciarios y universidades de Santa Fe capital y su zona.",
     start_url: "/",
     display: "standalone",
     background_color: "#f4f7fb",

@@ -58,18 +58,19 @@ export default function Hero() {
       />
       <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 pb-14 pt-10 lg:px-8 lg:pb-20 lg:pt-16">
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
-          Santa Fe, Argentina — todos los niveles, toda la provincia
+          Santa Fe capital y su zona — a orillas del Salado y el Paraná
         </p>
         <div className="flex items-center gap-4 sm:gap-5">
           <SchoolMark className="h-16 w-16 shrink-0 -rotate-3 sm:h-20 sm:w-20 lg:h-24 lg:w-24" />
           <h1 className="max-w-2xl font-display text-4xl font-semibold leading-[1.05] text-foreground sm:text-5xl lg:text-6xl">
-            El mapa educativo de Santa Fe, para elegir{" "}
+            El mapa educativo de Santa Fe capital, para elegir{" "}
             <span className="whitespace-nowrap italic text-primary-dark">con tranquilidad</span>.
           </h1>
         </div>
         <p className="max-w-xl text-base text-muted sm:text-lg">
-          Jardines, primarias, secundarias, terciarios y universidades de toda la provincia:
-          gestión, orientación, carreras y contacto de cada institución, en un solo lugar.
+          Jardines, primarias, secundarias, terciarios y universidades de Santa Fe capital y el
+          Gran Santa Fe: gestión, orientación, carreras y contacto de cada institución, en un
+          solo lugar.
         </p>
 
         <div className="mt-2 grid grid-cols-2 gap-1.5 sm:flex sm:flex-wrap sm:gap-2">

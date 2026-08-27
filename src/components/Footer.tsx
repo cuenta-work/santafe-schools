@@ -9,8 +9,8 @@ export default function Footer() {
         <div>
           <Logo size={32} />
           <p className="mt-3 max-w-xs text-sm text-muted">
-            Guía independiente de instituciones educativas de la provincia de Santa Fe, para
-            ayudar a las familias a elegir con información real.
+            Guía independiente de instituciones educativas de Santa Fe capital y el Gran Santa
+            Fe, para ayudar a las familias a elegir con información real.
           </p>
         </div>
 

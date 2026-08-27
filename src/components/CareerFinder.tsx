@@ -55,7 +55,7 @@ export default function CareerFinder() {
         </h2>
         <p className="mb-5 max-w-2xl text-sm text-muted">
           Buscá una carrera, tecnicatura, profesorado u orientación secundaria y mirá en qué
-          institutos y universidades de la provincia se dicta.
+          institutos y universidades de Santa Fe capital y su zona se dicta.
         </p>
 
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
