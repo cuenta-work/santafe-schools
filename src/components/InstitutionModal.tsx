@@ -29,7 +29,7 @@ import {
   Monitor,
 } from "lucide-react";
 import type { Institution } from "@/lib/types";
-import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS } from "@/lib/types";
+import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS, sortLevels } from "@/lib/types";
 import { instagramUrl, instagramUsername, googleMapsUrl, locationLine, phoneHref } from "@/lib/format";
 import { useSwipeToDismiss } from "@/hooks/useSwipeToDismiss";
 import { useFilters } from "@/context/FiltersContext";
@@ -49,6 +49,19 @@ export default function InstitutionModal({
   const favorite = isFavorite(institution.id);
   const [copied, setCopied] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
+  const previewRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (showPreview) {
+      // Se renderiza más abajo del botón que lo despliega -- sin este
+      // scroll manual quedaba fuera de vista hasta que el usuario
+      // scrolleaba el modal a mano para encontrarlo.
+      const id = requestAnimationFrame(() => {
+        previewRef.current?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      });
+      return () => cancelAnimationFrame(id);
+    }
+  }, [showPreview]);
 
   const shareInstitution = async () => {
     const url = `${window.location.origin}/institucion/${institution.id}`;
@@ -120,7 +133,9 @@ export default function InstitutionModal({
             />
             <div>
               <p className="flex flex-wrap items-center gap-1 text-[11px] font-semibold uppercase tracking-wide text-primary">
-                {institution.levels.map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_LABELS[l]}`).join(" · ")}
+                {sortLevels(institution.levels)
+                  .map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_LABELS[l]}`)
+                  .join(" · ")}
                 <span className="text-muted"> · {SECTOR_LABELS[institution.sector]}</span>
               </p>
               <h3 className="font-display text-2xl font-semibold leading-tight text-foreground">
@@ -382,7 +397,7 @@ export default function InstitutionModal({
                   </span>
                 </button>
                 {showPreview && (
-                  <div className="mt-2">
+                  <div ref={previewRef} className="mt-2 scroll-mt-4">
                     <SafeIframe
                       src={institution.website}
                       title={`Sitio de ${institution.name}`}

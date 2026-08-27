@@ -2,25 +2,28 @@
 
 import { useMemo, useState } from "react";
 import { Sparkles, MapPin, Heart, GraduationCap } from "lucide-react";
-import { LEVEL_LABELS, LEVEL_SHORT, LEVEL_EMOJI, type Level } from "@/lib/types";
+import { LEVEL_LABELS, LEVEL_SHORT, LEVEL_EMOJI, sortLevels, type Level } from "@/lib/types";
 import { institutionTint } from "@/lib/institutionColor";
+import { capitalFirst } from "@/lib/localityPriority";
 import { useFilters } from "@/context/FiltersContext";
 import InstitutionLogo from "./InstitutionLogo";
+
+// Orden pedagógico fijo -- de maternal a posgrado -- para que los filtros
+// de nivel siempre aparezcan en el mismo orden sin importar en qué orden
+// vengan cargadas las instituciones destacadas.
+const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "universidad"];
 
 export default function Featured() {
   const { institutions, setSelected, isFavorite, toggleFavorite } = useFilters();
   const [level, setLevel] = useState<Level | null>(null);
-  const featured = useMemo(
-    () => institutions.filter((i) => i.featured && (!level || i.levels.includes(level))),
-    [institutions, level]
-  );
-  const featuredLevels = useMemo(
-    () =>
-      Array.from(
-        new Set(institutions.filter((i) => i.featured).flatMap((i) => i.levels))
-      ),
-    [institutions]
-  );
+  const featured = useMemo(() => {
+    const list = institutions.filter((i) => i.featured && (!level || i.levels.includes(level)));
+    return capitalFirst(list, (i) => i.localidad);
+  }, [institutions, level]);
+  const featuredLevels = useMemo(() => {
+    const set = new Set(institutions.filter((i) => i.featured).flatMap((i) => i.levels));
+    return LEVEL_ORDER.filter((l) => set.has(l));
+  }, [institutions]);
 
   if (institutions.filter((i) => i.featured).length === 0) return null;
 
@@ -83,7 +86,9 @@ export default function Featured() {
                 <div className="flex flex-col gap-2 p-4 pt-7">
                   <div className="min-w-0">
                     <p className="flex items-center gap-1 text-[11px] font-semibold uppercase tracking-wide text-primary">
-                      {i.levels.map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_SHORT[l]}`).join(" · ")}
+                      {sortLevels(i.levels)
+                        .map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_SHORT[l]}`)
+                        .join(" · ")}
                     </p>
                     <div className="flex items-start justify-between gap-2">
                       <p className="line-clamp-2 font-display text-base font-semibold text-foreground">

@@ -4,6 +4,7 @@ import LevelShowcase from "@/components/LevelShowcase";
 import Featured from "@/components/Featured";
 import FamilyWizard from "@/components/FamilyWizard";
 import CareerFinder from "@/components/CareerFinder";
+import NearMe from "@/components/NearMe";
 import Explorer from "@/components/Explorer";
 import ContactCTA from "@/components/ContactCTA";
 import Footer from "@/components/Footer";
@@ -26,6 +27,7 @@ export default function Home() {
         <Featured />
         <FamilyWizard />
         <CareerFinder />
+        <NearMe />
         <Explorer />
         <ContactCTA />
         <Footer />

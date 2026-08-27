@@ -1,39 +1,557 @@
 [
-  { "slug": "santa-fe", "name": "Santa Fe (Capital)", "region": "Región Capital", "kind": "ciudad", "description": "Capital de la provincia, a orillas del río Salado y el Paraná. Concentra la mayor oferta educativa: sedes de la UNL, la UTN y decenas de colegios históricos.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Santa_Fe_(Argentina)" }] },
-  { "slug": "santo-tome", "name": "Santo Tomé", "region": "Región Capital", "kind": "ciudad", "description": "Ciudad satélite de Santa Fe capital, unida por el puente Oroño, con buena oferta de escuelas primarias y secundarias.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Santo_Tom%C3%A9_(Santa_Fe)" }] },
-  { "slug": "recreo", "name": "Recreo", "region": "Región Capital", "kind": "ciudad", "description": "Localidad del Gran Santa Fe sobre la RN 11, en pleno crecimiento residencial y educativo.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Recreo_(Santa_Fe)" }] },
-  { "slug": "sauce-viejo", "name": "Sauce Viejo", "region": "Región Capital", "kind": "ciudad", "description": "Sobre la laguna Setúbal, al sur de la capital, con escuelas de doble jornada y colonias educativas.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Sauce_Viejo" }] },
-  { "slug": "san-jose-del-rincon", "name": "San José del Rincón", "region": "Región Capital", "kind": "ciudad", "description": "Balneario y zona residencial frente a la capital, cruzando los puentes, con oferta educativa en expansión.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/San_Jos%C3%A9_del_Rinc%C3%B3n" }] },
-  { "slug": "monte-vera", "name": "Monte Vera", "region": "Región Capital", "kind": "ciudad", "description": "Comuna del Gran Santa Fe conocida por sus quintas y escuelas rurales y urbanas.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Monte_Vera" }] },
-  { "slug": "laguna-paiva", "name": "Laguna Paiva", "region": "Región Capital", "kind": "ciudad", "description": "Nudo ferroviario a 20 km de la capital, con escuelas técnicas de tradición ferroviaria.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Laguna_Paiva" }] },
-  { "slug": "esperanza", "name": "Esperanza", "region": "Región Capital", "kind": "ciudad", "description": "Primera colonia agrícola organizada del país, cabecera del departamento Las Colonias, con fuerte identidad educativa.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Esperanza_(Argentina)" }] },
-  { "slug": "coronda", "name": "Coronda", "region": "Región Capital", "kind": "ciudad", "description": "Ciudad de la costa del Paraná, conocida por la frutilla, con escuelas técnicas agropecuarias.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Coronda" }] },
-  { "slug": "gálvez", "name": "Gálvez", "region": "Región Capital", "kind": "ciudad", "description": "Ciudad industrial del departamento San Jerónimo, entre Santa Fe y Rosario.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/G%C3%A1lvez_(Santa_Fe)" }] },
-  { "slug": "rosario", "name": "Rosario", "region": "Región Rosario", "kind": "ciudad", "description": "La ciudad más poblada de la provincia, con la mayor concentración de universidades (UNR, UTN, UCA, UAI, Austral y más) y colegios del sur santafesino.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Rosario_(Argentina)" }] },
-  { "slug": "funes", "name": "Funes", "region": "Región Rosario", "kind": "ciudad", "description": "Ciudad del Gran Rosario en pleno crecimiento, con fuerte oferta de colegios privados bilingües.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Funes_(Santa_Fe)" }] },
-  { "slug": "roldan", "name": "Roldán", "region": "Región Rosario", "kind": "ciudad", "description": "Ciudad del Gran Rosario sobre la RN 9, con escuelas técnicas y agrotécnicas de referencia.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Roldán_(Santa_Fe)" }] },
-  { "slug": "perez", "name": "Pérez", "region": "Región Rosario", "kind": "ciudad", "description": "Localidad del Gran Rosario, departamento Rosario, con escuelas de gestión pública y privada.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/P%C3%A9rez_(Santa_Fe)" }] },
-  { "slug": "san-lorenzo", "name": "San Lorenzo", "region": "Región Rosario", "kind": "ciudad", "description": "Ciudad histórica del cordón industrial rosarino, sede de institutos terciarios y escuelas técnicas.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/San_Lorenzo_(Santa_Fe)" }] },
-  { "slug": "granadero-baigorria", "name": "Granadero Baigorria", "region": "Región Rosario", "kind": "ciudad", "description": "Ciudad del Gran Rosario sobre el río Paraná, al norte de la capital provincial del sur.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Granadero_Baigorria" }] },
-  { "slug": "villa-gobernador-galvez", "name": "Villa Gobernador Gálvez", "region": "Región Rosario", "kind": "ciudad", "description": "Ciudad industrial al sur de Rosario, con escuelas técnicas ligadas al polo siderúrgico.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Villa_Gobernador_G%C3%A1lvez" }] },
-  { "slug": "capitan-bermudez", "name": "Capitán Bermúdez", "region": "Región Rosario", "kind": "ciudad", "description": "Ciudad del cordón industrial norte de Rosario, con escuelas públicas y privadas de trayectoria.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Capit%C3%A1n_Berm%C3%BAdez" }] },
-  { "slug": "puerto-general-san-martin", "name": "Puerto General San Martín", "region": "Región Rosario", "kind": "ciudad", "description": "Ciudad portuaria del Gran Rosario, sede de escuelas técnicas vinculadas a la industria aceitera.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Puerto_General_San_Mart%C3%ADn" }] },
-  { "slug": "fray-luis-beltran", "name": "Fray Luis Beltrán", "region": "Región Rosario", "kind": "ciudad", "description": "Localidad del cordón industrial norte de Rosario, departamento San Lorenzo.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Fray_Luis_Beltr%C3%A1n_(Santa_Fe)" }] },
-  { "slug": "casilda", "name": "Casilda", "region": "Región Sur", "kind": "ciudad", "description": "Cabecera del departamento Caseros, con escuelas agrotécnicas de larga tradición en la Pampa Gringa.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Casilda_(Argentina)" }] },
-  { "slug": "cañada-de-gomez", "name": "Cañada de Gómez", "region": "Región Sur", "kind": "ciudad", "description": "Ciudad del departamento Iriondo, nudo ferroviario con escuelas técnicas e institutos terciarios.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Ca%C3%B1ada_de_G%C3%B3mez" }] },
-  { "slug": "villa-constitucion", "name": "Villa Constitución", "region": "Región Sur", "kind": "ciudad", "description": "Ciudad industrial siderúrgica al sur de la provincia, sobre el Paraná.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Villa_Constituci%C3%B3n" }] },
-  { "slug": "venado-tuerto", "name": "Venado Tuerto", "region": "Región Sur", "kind": "ciudad", "description": "Cabecera del departamento General López, principal ciudad del sudoeste santafesino con fuerte oferta terciaria.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Venado_Tuerto" }] },
-  { "slug": "rufino", "name": "Rufino", "region": "Región Sur", "kind": "ciudad", "description": "Ciudad del extremo sudoeste provincial, sobre la RN 7, con escuelas agrotécnicas.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Rufino_(Santa_Fe)" }] },
-  { "slug": "firmat", "name": "Firmat", "region": "Región Sur", "kind": "ciudad", "description": "Ciudad del departamento General López, cuna de escuelas técnicas industriales.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Firmat" }] },
-  { "slug": "rafaela", "name": "Rafaela", "region": "Región Centro", "kind": "ciudad", "description": "Cabecera del departamento Castellanos y principal ciudad del centro-oeste provincial, con universidades y terciarios técnicos ligados a la industria láctea y metalmecánica.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Rafaela" }] },
-  { "slug": "sunchales", "name": "Sunchales", "region": "Región Centro", "kind": "ciudad", "description": "Ciudad cooperativa del departamento Castellanos, con escuelas técnicas y agropecuarias.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Sunchales" }] },
-  { "slug": "san-cristobal", "name": "San Cristóbal", "region": "Región Centro", "kind": "ciudad", "description": "Cabecera del departamento homónimo, en el centro-norte de la provincia.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/San_Crist%C3%B3bal_(Santa_Fe)" }] },
-  { "slug": "ceres", "name": "Ceres", "region": "Región Centro", "kind": "ciudad", "description": "Ciudad del norte del departamento San Cristóbal, límite con Córdoba y Santiago del Estero.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Ceres_(Argentina)" }] },
-  { "slug": "san-jorge", "name": "San Jorge", "region": "Región Centro", "kind": "ciudad", "description": "Ciudad del departamento San Martín, entre Santa Fe y Rafaela, con escuelas técnicas agroindustriales.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/San_Jorge_(Santa_Fe)" }] },
-  { "slug": "maria-juana", "name": "María Juana", "region": "Región Centro", "kind": "pueblo", "description": "Localidad rural del departamento Castellanos, con escuela agrotécnica de referencia zonal.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Mar%C3%ADa_Juana" }] },
-  { "slug": "reconquista", "name": "Reconquista", "region": "Región Norte", "kind": "ciudad", "description": "Cabecera del departamento General Obligado y principal ciudad del norte santafesino, sobre el río Paraná.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Reconquista_(Argentina)" }] },
-  { "slug": "avellaneda", "name": "Avellaneda", "region": "Región Norte", "kind": "ciudad", "description": "Ciudad hermana de Reconquista, unida por el puente sobre el arroyo, en el norte provincial.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Avellaneda_(Santa_Fe)" }] },
-  { "slug": "vera", "name": "Vera", "region": "Región Norte", "kind": "ciudad", "description": "Cabecera del departamento más extenso de la provincia, en pleno norte santafesino.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Vera_(Santa_Fe)" }] },
-  { "slug": "tostado", "name": "Tostado", "region": "Región Norte", "kind": "ciudad", "description": "Cabecera del departamento Nueve de Julio, en el extremo noroeste de la provincia.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Tostado" }] },
-  { "slug": "villa-ocampo", "name": "Villa Ocampo", "region": "Región Norte", "kind": "ciudad", "description": "Ciudad del departamento General Obligado, en el norte santafesino sobre la RN 11.", "links": [{ "label": "Wikipedia", "url": "https://es.wikipedia.org/wiki/Villa_Ocampo_(Santa_Fe)" }] }
+  {
+    "slug": "santa-fe",
+    "name": "Santa Fe (Capital)",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Capital de la provincia, a orillas del río Salado y el Paraná. Concentra la mayor oferta educativa: sedes de la UNL, la UTN y decenas de colegios históricos.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Santa_Fe_(Argentina)"
+      }
+    ],
+    "lat": -31.6474914,
+    "lon": -60.6428557
+  },
+  {
+    "slug": "santo-tome",
+    "name": "Santo Tomé",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Ciudad satélite de Santa Fe capital, unida por el puente Oroño, con buena oferta de escuelas primarias y secundarias.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Santo_Tom%C3%A9_(Santa_Fe)"
+      }
+    ],
+    "lat": -31.6630458,
+    "lon": -60.7618282
+  },
+  {
+    "slug": "recreo",
+    "name": "Recreo",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Localidad del Gran Santa Fe sobre la RN 11, en pleno crecimiento residencial y educativo.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Recreo_(Santa_Fe)"
+      }
+    ],
+    "lat": -31.4909067,
+    "lon": -60.7354891
+  },
+  {
+    "slug": "sauce-viejo",
+    "name": "Sauce Viejo",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Sobre la laguna Setúbal, al sur de la capital, con escuelas de doble jornada y colonias educativas.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Sauce_Viejo"
+      }
+    ],
+    "lat": -31.7710276,
+    "lon": -60.8372302
+  },
+  {
+    "slug": "san-jose-del-rincon",
+    "name": "San José del Rincón",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Balneario y zona residencial frente a la capital, cruzando los puentes, con oferta educativa en expansión.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/San_Jos%C3%A9_del_Rinc%C3%B3n"
+      }
+    ],
+    "lat": -31.6064264,
+    "lon": -60.5674713
+  },
+  {
+    "slug": "monte-vera",
+    "name": "Monte Vera",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Comuna del Gran Santa Fe conocida por sus quintas y escuelas rurales y urbanas.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Monte_Vera"
+      }
+    ],
+    "lat": -31.5168247,
+    "lon": -60.6758789
+  },
+  {
+    "slug": "laguna-paiva",
+    "name": "Laguna Paiva",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Nudo ferroviario a 20 km de la capital, con escuelas técnicas de tradición ferroviaria.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Laguna_Paiva"
+      }
+    ],
+    "lat": -31.3076471,
+    "lon": -60.6598837
+  },
+  {
+    "slug": "esperanza",
+    "name": "Esperanza",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Primera colonia agrícola organizada del país, cabecera del departamento Las Colonias, con fuerte identidad educativa.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Esperanza_(Argentina)"
+      }
+    ],
+    "lat": -31.448994,
+    "lon": -60.9304048
+  },
+  {
+    "slug": "coronda",
+    "name": "Coronda",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Ciudad de la costa del Paraná, conocida por la frutilla, con escuelas técnicas agropecuarias.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Coronda"
+      }
+    ],
+    "lat": -31.9744568,
+    "lon": -60.915983
+  },
+  {
+    "slug": "gálvez",
+    "name": "Gálvez",
+    "region": "Región Capital",
+    "kind": "ciudad",
+    "description": "Ciudad industrial del departamento San Jerónimo, entre Santa Fe y Rosario.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/G%C3%A1lvez_(Santa_Fe)"
+      }
+    ],
+    "lat": -32.0253403,
+    "lon": -61.2196794
+  },
+  {
+    "slug": "rosario",
+    "name": "Rosario",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "La ciudad más poblada de la provincia, con la mayor concentración de universidades (UNR, UTN, UCA, UAI, Austral y más) y colegios del sur santafesino.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Rosario_(Argentina)"
+      }
+    ],
+    "lat": -32.9593609,
+    "lon": -60.6617024
+  },
+  {
+    "slug": "funes",
+    "name": "Funes",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "Ciudad del Gran Rosario en pleno crecimiento, con fuerte oferta de colegios privados bilingües.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Funes_(Santa_Fe)"
+      }
+    ],
+    "lat": -32.9168704,
+    "lon": -60.8105603
+  },
+  {
+    "slug": "roldan",
+    "name": "Roldán",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "Ciudad del Gran Rosario sobre la RN 9, con escuelas técnicas y agrotécnicas de referencia.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Roldán_(Santa_Fe)"
+      }
+    ],
+    "lat": -32.9000832,
+    "lon": -60.9066116
+  },
+  {
+    "slug": "perez",
+    "name": "Pérez",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "Localidad del Gran Rosario, departamento Rosario, con escuelas de gestión pública y privada.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/P%C3%A9rez_(Santa_Fe)"
+      }
+    ],
+    "lat": -32.9982237,
+    "lon": -60.7708529
+  },
+  {
+    "slug": "san-lorenzo",
+    "name": "San Lorenzo",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "Ciudad histórica del cordón industrial rosarino, sede de institutos terciarios y escuelas técnicas.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/San_Lorenzo_(Santa_Fe)"
+      }
+    ],
+    "lat": -32.7454865,
+    "lon": -60.743091
+  },
+  {
+    "slug": "granadero-baigorria",
+    "name": "Granadero Baigorria",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "Ciudad del Gran Rosario sobre el río Paraná, al norte de la capital provincial del sur.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Granadero_Baigorria"
+      }
+    ],
+    "lat": -32.8547765,
+    "lon": -60.7074143
+  },
+  {
+    "slug": "villa-gobernador-galvez",
+    "name": "Villa Gobernador Gálvez",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "Ciudad industrial al sur de Rosario, con escuelas técnicas ligadas al polo siderúrgico.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Villa_Gobernador_G%C3%A1lvez"
+      }
+    ],
+    "lat": -33.0250796,
+    "lon": -60.633744
+  },
+  {
+    "slug": "capitan-bermudez",
+    "name": "Capitán Bermúdez",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "Ciudad del cordón industrial norte de Rosario, con escuelas públicas y privadas de trayectoria.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Capit%C3%A1n_Berm%C3%BAdez"
+      }
+    ],
+    "lat": -32.8166653,
+    "lon": -60.7166716
+  },
+  {
+    "slug": "puerto-general-san-martin",
+    "name": "Puerto General San Martín",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "Ciudad portuaria del Gran Rosario, sede de escuelas técnicas vinculadas a la industria aceitera.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Puerto_General_San_Mart%C3%ADn"
+      }
+    ],
+    "lat": -32.7116197,
+    "lon": -60.7341243
+  },
+  {
+    "slug": "fray-luis-beltran",
+    "name": "Fray Luis Beltrán",
+    "region": "Región Rosario",
+    "kind": "ciudad",
+    "description": "Localidad del cordón industrial norte de Rosario, departamento San Lorenzo.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Fray_Luis_Beltr%C3%A1n_(Santa_Fe)"
+      }
+    ],
+    "lat": -32.7874256,
+    "lon": -60.7295083
+  },
+  {
+    "slug": "casilda",
+    "name": "Casilda",
+    "region": "Región Sur",
+    "kind": "ciudad",
+    "description": "Cabecera del departamento Caseros, con escuelas agrotécnicas de larga tradición en la Pampa Gringa.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Casilda_(Argentina)"
+      }
+    ],
+    "lat": -33.0443368,
+    "lon": -61.1641779
+  },
+  {
+    "slug": "cañada-de-gomez",
+    "name": "Cañada de Gómez",
+    "region": "Región Sur",
+    "kind": "ciudad",
+    "description": "Ciudad del departamento Iriondo, nudo ferroviario con escuelas técnicas e institutos terciarios.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Ca%C3%B1ada_de_G%C3%B3mez"
+      }
+    ],
+    "lat": -32.8234448,
+    "lon": -61.3905125
+  },
+  {
+    "slug": "villa-constitucion",
+    "name": "Villa Constitución",
+    "region": "Región Sur",
+    "kind": "ciudad",
+    "description": "Ciudad industrial siderúrgica al sur de la provincia, sobre el Paraná.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Villa_Constituci%C3%B3n"
+      }
+    ],
+    "lat": -33.227206,
+    "lon": -60.3298225
+  },
+  {
+    "slug": "venado-tuerto",
+    "name": "Venado Tuerto",
+    "region": "Región Sur",
+    "kind": "ciudad",
+    "description": "Cabecera del departamento General López, principal ciudad del sudoeste santafesino con fuerte oferta terciaria.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Venado_Tuerto"
+      }
+    ],
+    "lat": -33.7455871,
+    "lon": -61.9686068
+  },
+  {
+    "slug": "rufino",
+    "name": "Rufino",
+    "region": "Región Sur",
+    "kind": "ciudad",
+    "description": "Ciudad del extremo sudoeste provincial, sobre la RN 7, con escuelas agrotécnicas.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Rufino_(Santa_Fe)"
+      }
+    ],
+    "lat": -34.2617313,
+    "lon": -62.7110819
+  },
+  {
+    "slug": "firmat",
+    "name": "Firmat",
+    "region": "Región Sur",
+    "kind": "ciudad",
+    "description": "Ciudad del departamento General López, cuna de escuelas técnicas industriales.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Firmat"
+      }
+    ],
+    "lat": -33.4581071,
+    "lon": -61.4860292
+  },
+  {
+    "slug": "rafaela",
+    "name": "Rafaela",
+    "region": "Región Centro",
+    "kind": "ciudad",
+    "description": "Cabecera del departamento Castellanos y principal ciudad del centro-oeste provincial, con universidades y terciarios técnicos ligados a la industria láctea y metalmecánica.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Rafaela"
+      }
+    ],
+    "lat": -31.2526923,
+    "lon": -61.4916758
+  },
+  {
+    "slug": "sunchales",
+    "name": "Sunchales",
+    "region": "Región Centro",
+    "kind": "ciudad",
+    "description": "Ciudad cooperativa del departamento Castellanos, con escuelas técnicas y agropecuarias.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Sunchales"
+      }
+    ],
+    "lat": -30.9450891,
+    "lon": -61.5608072
+  },
+  {
+    "slug": "san-cristobal",
+    "name": "San Cristóbal",
+    "region": "Región Centro",
+    "kind": "ciudad",
+    "description": "Cabecera del departamento homónimo, en el centro-norte de la provincia.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/San_Crist%C3%B3bal_(Santa_Fe)"
+      }
+    ],
+    "lat": -30.311107,
+    "lon": -61.2418955
+  },
+  {
+    "slug": "ceres",
+    "name": "Ceres",
+    "region": "Región Centro",
+    "kind": "ciudad",
+    "description": "Ciudad del norte del departamento San Cristóbal, límite con Córdoba y Santiago del Estero.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Ceres_(Argentina)"
+      }
+    ],
+    "lat": -29.8819399,
+    "lon": -61.9451954
+  },
+  {
+    "slug": "san-jorge",
+    "name": "San Jorge",
+    "region": "Región Centro",
+    "kind": "ciudad",
+    "description": "Ciudad del departamento San Martín, entre Santa Fe y Rafaela, con escuelas técnicas agroindustriales.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/San_Jorge_(Santa_Fe)"
+      }
+    ],
+    "lat": -31.8962813,
+    "lon": -61.8597235
+  },
+  {
+    "slug": "maria-juana",
+    "name": "María Juana",
+    "region": "Región Centro",
+    "kind": "pueblo",
+    "description": "Localidad rural del departamento Castellanos, con escuela agrotécnica de referencia zonal.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Mar%C3%ADa_Juana"
+      }
+    ],
+    "lat": -31.6755638,
+    "lon": -61.7516598
+  },
+  {
+    "slug": "reconquista",
+    "name": "Reconquista",
+    "region": "Región Norte",
+    "kind": "ciudad",
+    "description": "Cabecera del departamento General Obligado y principal ciudad del norte santafesino, sobre el río Paraná.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Reconquista_(Argentina)"
+      }
+    ],
+    "lat": -29.1443478,
+    "lon": -59.6437728
+  },
+  {
+    "slug": "avellaneda",
+    "name": "Avellaneda",
+    "region": "Región Norte",
+    "kind": "ciudad",
+    "description": "Ciudad hermana de Reconquista, unida por el puente sobre el arroyo, en el norte provincial.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Avellaneda_(Santa_Fe)"
+      }
+    ],
+    "lat": -29.1175471,
+    "lon": -59.6586236
+  },
+  {
+    "slug": "vera",
+    "name": "Vera",
+    "region": "Región Norte",
+    "kind": "ciudad",
+    "description": "Cabecera del departamento más extenso de la provincia, en pleno norte santafesino.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Vera_(Santa_Fe)"
+      }
+    ],
+    "lat": -29.4577916,
+    "lon": -60.2158054
+  },
+  {
+    "slug": "tostado",
+    "name": "Tostado",
+    "region": "Región Norte",
+    "kind": "ciudad",
+    "description": "Cabecera del departamento Nueve de Julio, en el extremo noroeste de la provincia.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Tostado"
+      }
+    ],
+    "lat": -29.2323991,
+    "lon": -61.7710504
+  },
+  {
+    "slug": "villa-ocampo",
+    "name": "Villa Ocampo",
+    "region": "Región Norte",
+    "kind": "ciudad",
+    "description": "Ciudad del departamento General Obligado, en el norte santafesino sobre la RN 11.",
+    "links": [
+      {
+        "label": "Wikipedia",
+        "url": "https://es.wikipedia.org/wiki/Villa_Ocampo_(Santa_Fe)"
+      }
+    ],
+    "lat": -28.4867657,
+    "lon": -59.3547373
+  }
 ]

@@ -2,7 +2,7 @@
 
 import { MapPin, Star, Heart, Languages, GraduationCap, Cog } from "lucide-react";
 import type { Institution } from "@/lib/types";
-import { LEVEL_SHORT, LEVEL_EMOJI, SECTOR_SHORT, SECTOR_EMOJI } from "@/lib/types";
+import { LEVEL_SHORT, LEVEL_EMOJI, SECTOR_SHORT, SECTOR_EMOJI, sortLevels } from "@/lib/types";
 import { locationLine } from "@/lib/format";
 import { institutionTint } from "@/lib/institutionColor";
 import { useFilters } from "@/context/FiltersContext";
@@ -11,9 +11,11 @@ import InstitutionLogo from "./InstitutionLogo";
 export default function InstitutionCard({
   institution,
   onOpen,
+  distanceLabel,
 }: {
   institution: Institution;
   onOpen: (i: Institution) => void;
+  distanceLabel?: string;
 }) {
   const tint = institutionTint(institution.id);
   const { isFavorite, toggleFavorite } = useFilters();
@@ -63,7 +65,7 @@ export default function InstitutionCard({
 
       <div className="relative flex min-w-0 flex-1 flex-col p-5 pt-8">
         <div className="flex flex-wrap items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-muted">
-          {institution.levels.map((l) => (
+          {sortLevels(institution.levels).map((l) => (
             <span
               key={l}
               className="rounded-full bg-background px-2 py-0.5 text-[10px] text-foreground/70"
@@ -75,6 +77,12 @@ export default function InstitutionCard({
             {SECTOR_EMOJI[institution.sector]} {SECTOR_SHORT[institution.sector]}
           </span>
         </div>
+
+        {distanceLabel && (
+          <span className="mt-1.5 inline-flex w-fit items-center gap-1 rounded-full bg-primary/10 px-2 py-0.5 text-[10px] font-semibold text-primary-dark">
+            <MapPin size={10} /> {distanceLabel}
+          </span>
+        )}
 
         <div className="mt-1.5 flex items-start justify-between gap-2">
           <h3 className="line-clamp-2 font-display text-lg font-semibold leading-snug text-foreground group-hover:text-primary-dark">

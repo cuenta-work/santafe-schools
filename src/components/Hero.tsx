@@ -1,17 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { Search, GraduationCap } from "lucide-react";
-import {
-  LEVEL_LABELS,
-  LEVEL_EMOJI,
-  SECTOR_LABELS,
-  SECTOR_EMOJI,
-  type Level,
-  type Sector,
-} from "@/lib/types";
+import { LEVEL_LABELS, SECTOR_LABELS, type Level, type Sector } from "@/lib/types";
 import { useFilters } from "@/context/FiltersContext";
 import { emptyFilters } from "@/lib/filters";
+import { capitalFirst } from "@/lib/localityPriority";
 import CustomSelect from "./CustomSelect";
 import SchoolMark from "./SchoolMark";
 
@@ -24,6 +18,10 @@ export default function Hero() {
   const [pendingLevels, setPendingLevels] = useState<Set<Level>>(new Set(filters.levels));
   const [pendingSectors, setPendingSectors] = useState<Set<Sector>>(new Set(filters.sectors));
   const [pendingLocalidad, setPendingLocalidad] = useState<string>(filters.localidad ?? "");
+  const localidadesOrdenadas = useMemo(
+    () => capitalFirst(localidades, (l) => l),
+    [localidades]
+  );
 
   const universities = institutions.filter((i) => i.levels.includes("universidad")).length;
 
@@ -108,16 +106,16 @@ export default function Hero() {
               <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                 Nivel
               </p>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-col items-start gap-1.5">
                 {LEVEL_ORDER.map((level) => (
                   <button
                     key={level}
                     type="button"
-                    className="pill !py-1.5 !text-xs"
+                    className="pill !w-full !justify-between !py-1.5 !text-xs"
                     data-active={pendingLevels.has(level)}
                     onClick={() => toggleLevel(level)}
                   >
-                    {LEVEL_EMOJI[level]} {LEVEL_LABELS[level]}
+                    {LEVEL_LABELS[level]}
                     <span className="opacity-60">({levelCounts[level]})</span>
                   </button>
                 ))}
@@ -127,16 +125,16 @@ export default function Hero() {
               <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                 Gestión
               </p>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-col items-start gap-1.5">
                 {SECTOR_ORDER.map((sector) => (
                   <button
                     key={sector}
                     type="button"
-                    className="pill pill-accent !py-1.5 !text-xs"
+                    className="pill pill-accent !w-full !justify-between !py-1.5 !text-xs"
                     data-active={pendingSectors.has(sector)}
                     onClick={() => toggleSector(sector)}
                   >
-                    {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
+                    {SECTOR_LABELS[sector]}
                     <span className="opacity-60">({sectorCounts[sector]})</span>
                   </button>
                 ))}
@@ -149,7 +147,7 @@ export default function Hero() {
               <CustomSelect
                 value={pendingLocalidad}
                 onChange={setPendingLocalidad}
-                options={localidades}
+                options={localidadesOrdenadas}
                 placeholder="Toda la provincia"
               />
             </div>
@@ -165,21 +163,21 @@ export default function Hero() {
           </div>
         </div>
 
-        <dl className="mt-2 grid grid-cols-3 gap-3 sm:max-w-md">
+        <dl className="mt-2 grid grid-cols-3 gap-3 sm:max-w-xl">
           <div className="rounded-2xl border border-border bg-background/60 px-3 py-3 text-center sm:px-4">
-            <dt className="text-[11px] uppercase tracking-wide text-muted">Instituciones</dt>
+            <dt className="text-[11px] uppercase tracking-wide text-muted whitespace-nowrap">Instituciones</dt>
             <dd className="font-display text-2xl font-semibold text-foreground">
               {institutions.length}
             </dd>
           </div>
           <div className="rounded-2xl border border-border bg-background/60 px-3 py-3 text-center sm:px-4">
-            <dt className="text-[11px] uppercase tracking-wide text-muted">Localidades</dt>
+            <dt className="text-[11px] uppercase tracking-wide text-muted whitespace-nowrap">Localidades</dt>
             <dd className="font-display text-2xl font-semibold text-foreground">
               {localidades.length}+
             </dd>
           </div>
           <div className="rounded-2xl border border-border bg-background/60 px-3 py-3 text-center sm:px-4">
-            <dt className="text-[11px] uppercase tracking-wide text-muted">Univ. y terciarios</dt>
+            <dt className="text-[11px] uppercase tracking-wide text-muted whitespace-nowrap">Univ. y terciarios</dt>
             <dd className="font-display text-2xl font-semibold text-foreground">
               {universities}
             </dd>

@@ -4,12 +4,18 @@ import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import type { Institution, Level, Sector } from "@/lib/types";
 import { emptyFilters, type FiltersState } from "@/lib/filters";
 import { getLocalityNames } from "@/lib/localities";
+import { distanceKm } from "@/lib/geo";
+import { isCapital } from "@/lib/localityPriority";
 
 interface FiltersContextValue {
   institutions: Institution[];
   filters: FiltersState;
   setFilters: (f: FiltersState) => void;
   filtered: Institution[];
+  // Distancia (en km) al origen elegido en "¿Dónde estás?", solo para las
+  // instituciones que quedaron en `filtered` cuando filters.origin está
+  // activo.
+  distances: Map<string, number>;
   localidades: string[];
   levelCounts: Record<Level, number>;
   sectorCounts: Record<Sector, number>;
@@ -99,9 +105,10 @@ export function FiltersProvider({
     return index;
   }, [institutions]);
 
-  const filtered = useMemo(() => {
+  const { filtered, distances } = useMemo(() => {
     const search = filters.search.trim().toLowerCase();
-    return institutions.filter((i) => {
+    const distances = new Map<string, number>();
+    const list = institutions.filter((i) => {
       if (filters.levels.size > 0 && !i.levels.some((l) => filters.levels.has(l)))
         return false;
       if (filters.sectors.size > 0 && !filters.sectors.has(i.sector)) return false;
@@ -111,9 +118,24 @@ export function FiltersProvider({
       if (filters.tipoSecundaria && i.tipoSecundaria !== filters.tipoSecundaria) return false;
       if (filters.bilingueOnly && !i.bilingue) return false;
       if (filters.featuredOnly && !i.featured) return false;
+      if (filters.origin) {
+        if (i.lat == null || i.lon == null) return false;
+        const km = distanceKm(filters.origin, { lat: i.lat, lon: i.lon });
+        if (km > filters.radiusKm) return false;
+        distances.set(i.id, km);
+      }
       if (search && !searchIndex.get(i.id)?.includes(search)) return false;
       return true;
     });
+    if (filters.origin) {
+      list.sort((a, b) => (distances.get(a.id) ?? Infinity) - (distances.get(b.id) ?? Infinity));
+    } else if (!filters.localidad) {
+      // Sin zona ni ubicación elegida, el surtido por defecto encabeza con
+      // Santa Fe capital -- el resto de la provincia sigue ahí abajo,
+      // totalmente buscable con los demás filtros.
+      list.sort((a, b) => Number(isCapital(b.localidad)) - Number(isCapital(a.localidad)));
+    }
+    return { filtered: list, distances };
   }, [institutions, filters, searchIndex]);
 
   const showOnlyLevel = (level: Level) => {
@@ -127,6 +149,7 @@ export function FiltersProvider({
         filters,
         setFilters,
         filtered,
+        distances,
         localidades,
         levelCounts,
         sectorCounts,

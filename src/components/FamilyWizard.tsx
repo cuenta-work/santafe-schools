@@ -13,6 +13,7 @@ import {
 import type { Institution, Level, Sector } from "@/lib/types";
 import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_SHORT } from "@/lib/types";
 import { useFilters } from "@/context/FiltersContext";
+import { capitalFirst } from "@/lib/localityPriority";
 import InstitutionLogo from "./InstitutionLogo";
 import LevelTipBanner from "./LevelTipBanner";
 
@@ -54,6 +55,10 @@ function scoreInstitution(inst: Institution, answers: Answers): number {
 
 export default function FamilyWizard() {
   const { institutions, localidades, setSelected } = useFilters();
+  const localidadesOrdenadas = useMemo(
+    () => capitalFirst(localidades, (l) => l),
+    [localidades]
+  );
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({
     level: null,
@@ -137,7 +142,7 @@ export default function FamilyWizard() {
           >
             🗺️ Me da igual la zona
           </button>
-          {localidades.slice(0, 12).map((loc) => (
+          {localidadesOrdenadas.slice(0, 12).map((loc) => (
             <button
               key={loc}
               type="button"

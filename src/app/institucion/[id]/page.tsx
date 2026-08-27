@@ -19,7 +19,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { institutions } from "@/lib/data";
-import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS } from "@/lib/types";
+import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS, sortLevels } from "@/lib/types";
 import { instagramUrl, instagramUsername, phoneHref, locationLine } from "@/lib/format";
 import { institutionTint } from "@/lib/institutionColor";
 import InstitutionLogo from "@/components/InstitutionLogo";
@@ -41,7 +41,7 @@ export async function generateMetadata({
   const institution = institutions.find((i) => i.id === id);
   if (!institution) return {};
 
-  const title = `${institution.name} — ${institution.levels.map((l) => LEVEL_LABELS[l]).join(", ")} en ${institution.localidad}`;
+  const title = `${institution.name} — ${sortLevels(institution.levels).map((l) => LEVEL_LABELS[l]).join(", ")} en ${institution.localidad}`;
   const description =
     institution.description.length > 155
       ? `${institution.description.slice(0, 152)}...`
@@ -119,7 +119,9 @@ export default async function InstitutionPage({
           <div className="flex flex-col gap-4 p-6 pt-9">
             <div className="min-w-0">
               <p className="flex flex-wrap items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-primary">
-                {institution.levels.map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_LABELS[l]}`).join(" · ")}
+                {sortLevels(institution.levels)
+                  .map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_LABELS[l]}`)
+                  .join(" · ")}
                 <span className="text-muted"> · {SECTOR_LABELS[institution.sector]}</span>
               </p>
               <h1 className="mt-0.5 font-display text-2xl font-semibold leading-tight text-foreground sm:text-3xl">

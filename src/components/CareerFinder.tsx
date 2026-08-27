@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { Search, GraduationCap, MapPin, Clock, ArrowRight, Landmark, ChevronDown } from "lucide-react";
 import { SECTOR_SHORT } from "@/lib/types";
 import { getAllCarreras, getAllOrientaciones } from "@/lib/data";
+import { isCapital } from "@/lib/localityPriority";
 import { useFilters } from "@/context/FiltersContext";
 import InstitutionLogo from "./InstitutionLogo";
 
@@ -42,7 +43,14 @@ export default function CareerFinder() {
         const b = BUCKETS.find((b) => b.key === bucket);
         return b ? b.test(c.duracionAnios) : true;
       })
-      .sort((a, b) => a.nombre.localeCompare(b.nombre, "es"));
+      .sort((a, b) => {
+        // Sin ninguna zona elegida, el surtido por defecto encabeza con
+        // Santa Fe capital -- el resto de la provincia sigue ahí abajo,
+        // totalmente buscable, solo que no es lo primero que se ve.
+        const capitalDiff = Number(isCapital(b.localidad)) - Number(isCapital(a.localidad));
+        if (capitalDiff !== 0) return capitalDiff;
+        return a.nombre.localeCompare(b.nombre, "es");
+      });
   }, [carreras, query, bucket]);
 
   const orientationMatches = useMemo(() => {
@@ -77,12 +85,17 @@ export default function CareerFinder() {
         <p className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-accent-dark">
           <GraduationCap size={13} /> Buscador de carreras y orientaciones
         </p>
-        <h2 className="mb-1 font-display text-2xl font-semibold text-foreground sm:text-3xl">
+        <h2 className="font-display text-2xl font-semibold text-foreground sm:text-3xl">
           ¿Qué querés estudiar?
         </h2>
+        <p className="mb-1 text-xs font-medium text-accent-dark">
+          Para cuando ya se viene el terciario o la universidad -- buscá la carrera y mirá dónde
+          se cursa.
+        </p>
         <p className="mb-5 max-w-2xl text-sm text-muted">
-          Buscá una carrera, tecnicatura, profesorado u orientación secundaria y mirá en qué
-          institutos y universidades de la provincia se dicta.
+          Escribí una carrera, tecnicatura o profesorado y mirá en qué institutos y universidades
+          de la provincia se dicta, con su duración. Si buscás la orientación de una secundaria,
+          usá el buscador de instituciones de más abajo.
         </p>
 
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">

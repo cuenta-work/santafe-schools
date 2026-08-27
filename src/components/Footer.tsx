@@ -2,6 +2,7 @@ import Logo from "./Logo";
 import { LEVEL_LABELS } from "@/lib/types";
 import { AUTHOR } from "@/lib/author";
 import { FungirakBadge, FungirakFullCredit } from "./FungirakCredit";
+import GabiCredit from "./GabiCredit";
 
 export default function Footer() {
   return (
@@ -47,10 +48,14 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col items-center gap-3 border-t border-border px-4 py-5 text-center text-xs text-muted sm:flex-row sm:justify-between sm:gap-4 lg:px-8">
-        <span className="sm:flex-1 sm:text-left">
+        <GabiCredit className="order-1 sm:order-none" />
+        <span className="order-2 sm:order-none sm:flex-1 sm:text-center">
           Santa Fe Schools · guía educativa independiente, hecha en Santa Fe
         </span>
-        <FungirakBadge href={`mailto:${AUTHOR.email}`} className="sm:flex-1 sm:justify-end" />
+        <FungirakBadge
+          href={`mailto:${AUTHOR.email}`}
+          className="order-3 mt-2 sm:order-none sm:mt-0 sm:flex-1 sm:justify-end"
+        />
       </div>
     </footer>
   );

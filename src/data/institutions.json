@@ -191,7 +191,10 @@
     "posgrados": [
       "Maestrías y doctorados en ciencias biológicas, ingeniería, humanidades y ciencias sociales",
       "Especializaciones médicas acreditadas por la Facultad de Ciencias Médicas"
-    ]
+    ],
+    "lat": -31.6357774,
+    "lon": -60.7017227,
+    "geoPrecision": "direccion"
   },
   {
     "id": "unl-esperanza-agrarias",
@@ -250,7 +253,10 @@
         "url": "https://bibliotecavirtual.unl.edu.ar/",
         "kind": "biblioteca"
       }
-    ]
+    ],
+    "lat": -31.4394028,
+    "lon": -60.9430733,
+    "geoPrecision": "direccion"
   },
   {
     "id": "utn-frsf",
@@ -347,7 +353,10 @@
         "url": "https://www.frsf.utn.edu.ar/recursos-estudiantes/",
         "kind": "centro_estudiantes"
       }
-    ]
+    ],
+    "lat": -31.6167562,
+    "lon": -60.6752372,
+    "geoPrecision": "direccion"
   },
   {
     "id": "utn-frro",
@@ -407,7 +416,10 @@
     "verified": true,
     "foundedYear": 1958,
     "logoDomain": "frro.utn.edu.ar",
-    "source": "Sitio oficial UTN FRRo"
+    "source": "Sitio oficial UTN FRRo",
+    "lat": -32.9547078,
+    "lon": -60.6437761,
+    "geoPrecision": "direccion"
   },
   {
     "id": "utn-frra",
@@ -455,7 +467,10 @@
     "verified": true,
     "foundedYear": 1975,
     "logoDomain": "frra.utn.edu.ar",
-    "source": "Sitio oficial UTN FRRa"
+    "source": "Sitio oficial UTN FRRa",
+    "lat": -31.2479331,
+    "lon": -61.4693872,
+    "geoPrecision": "direccion"
   },
   {
     "id": "utn-frvt",
@@ -497,7 +512,10 @@
     "verified": true,
     "foundedYear": 1990,
     "logoDomain": "frvt.utn.edu.ar",
-    "source": "Sitio oficial UTN FRVT"
+    "source": "Sitio oficial UTN FRVT",
+    "lat": -33.7411371,
+    "lon": -61.9490602,
+    "geoPrecision": "direccion"
   },
   {
     "id": "unr-rosario",
@@ -595,7 +613,10 @@
         "url": "https://rephip.unr.edu.ar/",
         "kind": "biblioteca"
       }
-    ]
+    ],
+    "lat": -32.9446062,
+    "lon": -60.6481206,
+    "geoPrecision": "direccion"
   },
   {
     "id": "unraf-rafaela",
@@ -637,7 +658,10 @@
     "verified": false,
     "foundedYear": 2014,
     "logoDomain": null,
-    "source": null
+    "source": null,
+    "lat": -31.2526923,
+    "lon": -61.4916758,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ucsf-santa-fe",
@@ -719,7 +743,10 @@
         "url": "https://campus.ucsfvirtual.edu.ar/",
         "kind": "campus"
       }
-    ]
+    ],
+    "lat": -31.6070892,
+    "lon": -60.6709465,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ucsf-rosario",
@@ -783,7 +810,10 @@
         "url": "https://campus.ucsfvirtual.edu.ar/",
         "kind": "campus"
       }
-    ]
+    ],
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ucsf-rafaela",
@@ -841,7 +871,10 @@
         "url": "https://campus.ucsfvirtual.edu.ar/",
         "kind": "campus"
       }
-    ]
+    ],
+    "lat": -31.2526923,
+    "lon": -61.4916758,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ucsf-reconquista",
@@ -899,7 +932,10 @@
         "url": "https://campus.ucsfvirtual.edu.ar/",
         "kind": "campus"
       }
-    ]
+    ],
+    "lat": -29.1443478,
+    "lon": -59.6437728,
+    "geoPrecision": "localidad"
   },
   {
     "id": "uca-rosario",
@@ -941,7 +977,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": "uca.edu.ar",
-    "source": "Sitio oficial UCA"
+    "source": "Sitio oficial UCA",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "uai-rosario",
@@ -995,7 +1034,10 @@
     "verified": true,
     "foundedYear": 1995,
     "logoDomain": "uai.edu.ar",
-    "source": "Sitio oficial UAI"
+    "source": "Sitio oficial UAI",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ucel-rosario",
@@ -1043,7 +1085,10 @@
     "verified": true,
     "foundedYear": 1992,
     "logoDomain": "ucel.edu.ar",
-    "source": "Sitio oficial UCEL"
+    "source": "Sitio oficial UCEL",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "iunir-rosario",
@@ -1079,7 +1124,10 @@
     "verified": true,
     "foundedYear": 2001,
     "logoDomain": "iunir.edu.ar",
-    "source": "Sitio oficial IUNIR"
+    "source": "Sitio oficial IUNIR",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ugr-rosario",
@@ -1121,7 +1169,10 @@
     "verified": false,
     "foundedYear": 2006,
     "logoDomain": null,
-    "source": null
+    "source": null,
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "eis-unl-santa-fe",
@@ -1163,7 +1214,10 @@
     "foundedYear": 1911,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "tecnica"
+    "tipoSecundaria": "tecnica",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "normal-32-santa-fe",
@@ -1205,7 +1259,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "isp-8-almirante-brown",
@@ -1247,7 +1304,10 @@
     "verified": false,
     "foundedYear": null,
     "logoDomain": null,
-    "source": null
+    "source": null,
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ispi-9017-san-jose-adoratrices",
@@ -1283,7 +1343,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6369101,
+    "lon": -60.6963234,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ispi-9105-sara-faisal",
@@ -1319,7 +1382,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -30.945717,
+    "lon": -61.5627856,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ispi-9195-cruz-roja",
@@ -1361,7 +1427,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ispi-9233-estudios-superiores",
@@ -1397,7 +1466,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6463758,
+    "lon": -60.7082708,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ispa-4097-mecanica-dental",
@@ -1433,7 +1505,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "coronda-is-6-chizzini-melo",
@@ -1469,7 +1544,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.9737312,
+    "lon": -60.9163173,
+    "geoPrecision": "direccion"
   },
   {
     "id": "esperanza-normal-30",
@@ -1511,7 +1589,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.444119,
+    "lon": -60.9294578,
+    "geoPrecision": "direccion"
   },
   {
     "id": "esperanza-lux-capere",
@@ -1547,7 +1628,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.4542348,
+    "lon": -60.9329916,
+    "geoPrecision": "direccion"
   },
   {
     "id": "galvez-ispi-9133",
@@ -1583,7 +1667,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -32.0357502,
+    "lon": -61.2126614,
+    "geoPrecision": "direccion"
   },
   {
     "id": "laguna-paiva-ispi-9100",
@@ -1619,7 +1706,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.3076471,
+    "lon": -60.6598837,
+    "geoPrecision": "localidad"
   },
   {
     "id": "santo-tome-ispa-4089",
@@ -1655,7 +1745,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6686159,
+    "lon": -60.7532547,
+    "geoPrecision": "direccion"
   },
   {
     "id": "colegio-inmaculada-concepcion",
@@ -1704,7 +1797,10 @@
         "text": "La demanda de vacantes suele superar la oferta -- conviene averiguar los plazos de inscripción con bastante anticipación."
       }
     ],
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9764777,
+    "lon": -60.6372639,
+    "geoPrecision": "direccion"
   },
   {
     "id": "colegio-sagrado-corazon-santa-fe",
@@ -1748,7 +1844,10 @@
         "text": "Dicta los tres niveles obligatorios (jardín, primaria y secundaria) en un mismo edificio del barrio céntrico."
       }
     ],
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9191727,
+    "lon": -60.8198788,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-265-yapeyu",
@@ -1780,7 +1879,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ees-8150-guadalupe",
@@ -1812,7 +1914,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.604946,
+    "lon": -60.6719114,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-391-zapata-gollan",
@@ -1844,7 +1949,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6157695,
+    "lon": -60.67285,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-8031-nsra-calvario",
@@ -1876,7 +1984,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ees-2035-santa-rosa",
@@ -1908,7 +2019,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ees-2042-jesus-resucitado",
@@ -1940,7 +2054,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6660966,
+    "lon": -60.6981291,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-3059-fatima",
@@ -1972,7 +2089,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.629369,
+    "lon": -60.7095322,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-3025-cristo-obrero",
@@ -2004,7 +2124,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ees-231-republica-nicaragua",
@@ -2036,7 +2159,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ees-261-jose-hernandez",
@@ -2068,7 +2194,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ees-256-bustos",
@@ -2100,7 +2229,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -30.5698192,
+    "lon": -59.9291687,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-382-vera-cruz",
@@ -2132,7 +2264,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ees-440-simon-iriondo",
@@ -2164,7 +2299,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.6478767,
+    "lon": -60.7129851,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-3028-padre-monti",
@@ -2196,7 +2334,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9759517,
+    "lon": -60.6289833,
+    "geoPrecision": "direccion"
   },
   {
     "id": "esc-8-cristobal-colon",
@@ -2225,7 +2366,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "esc-2-belgrano",
@@ -2254,7 +2398,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -32.9722287,
+    "lon": -60.6445844,
+    "geoPrecision": "direccion"
   },
   {
     "id": "esc-38-brigadier-lopez",
@@ -2283,7 +2430,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6053522,
+    "lon": -60.6759822,
+    "geoPrecision": "direccion"
   },
   {
     "id": "esc-6341-juan-de-garay",
@@ -2312,7 +2462,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.5794213,
+    "lon": -60.7279001,
+    "geoPrecision": "direccion"
   },
   {
     "id": "esc-1001-san-francisco",
@@ -2342,7 +2495,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -32.9764777,
+    "lon": -60.6372639,
+    "geoPrecision": "direccion"
   },
   {
     "id": "esc-1304-paz-pan-trabajo",
@@ -2372,7 +2528,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "esc-1321-zapata-gollan",
@@ -2401,7 +2560,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "esc-1258-simon-bolivar",
@@ -2430,7 +2592,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "jardin-28-libertador",
@@ -2459,7 +2624,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "jardin-26-san-luis-gonzaga",
@@ -2488,7 +2656,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6478657,
+    "lon": -60.7109288,
+    "geoPrecision": "direccion"
   },
   {
     "id": "jardin-33-juana-manso",
@@ -2517,7 +2688,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.5839994,
+    "lon": -60.7306772,
+    "geoPrecision": "direccion"
   },
   {
     "id": "jardin-1227-san-pablo",
@@ -2546,7 +2720,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -31.6474914,
+    "lon": -60.6428557,
+    "geoPrecision": "localidad"
   },
   {
     "id": "colegio-san-bartolome-rosario",
@@ -2580,7 +2757,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "colegio-san-patricio-rosario",
@@ -2614,7 +2794,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "colegio-la-salle-rosario",
@@ -2648,7 +2831,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "colegio-maristas-rosario",
@@ -2682,7 +2868,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "colegio-del-sol-rosario",
@@ -2716,7 +2905,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "escuela-italiana-dante-alighieri-rosario",
@@ -2750,7 +2942,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "colegio-los-arrayanes-rosario",
@@ -2784,7 +2979,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "colegio-cristo-rey-rosario",
@@ -2818,7 +3016,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": null,
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "instituto-adoratrices-rosario",
@@ -2852,7 +3053,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9438311,
+    "lon": -60.6475976,
+    "geoPrecision": "direccion"
   },
   {
     "id": "normal-34-avellaneda-rosario",
@@ -2904,7 +3108,10 @@
         "text": "Forma tanto a alumnos de nivel inicial a secundario como a futuros docentes en su profesorado de nivel superior."
       }
     ],
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9496226,
+    "lon": -60.6417731,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-623-remedios-escalada",
@@ -2936,7 +3143,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9513352,
+    "lon": -60.6448291,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-8012-sagrado-corazon-rosario",
@@ -2969,7 +3179,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ees-257-castellanos",
@@ -3001,7 +3214,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9564007,
+    "lon": -60.6421889,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-406-salvador-mazza",
@@ -3033,7 +3249,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad"
   },
   {
     "id": "ees-8144-stella-maris",
@@ -3065,7 +3284,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9230879,
+    "lon": -60.7349521,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-347-angel-guido",
@@ -3097,7 +3319,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.9385653,
+    "lon": -60.7270628,
+    "geoPrecision": "direccion"
   },
   {
     "id": "ees-8087-guadalupe-rosario",
@@ -3129,7 +3354,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.923618,
+    "lon": -60.6788371,
+    "geoPrecision": "direccion"
   },
   {
     "id": "casilda-ees-202-manuel-leiva",
@@ -3161,7 +3389,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -33.0443368,
+    "lon": -61.1641779,
+    "geoPrecision": "localidad"
   },
   {
     "id": "puerto-san-martin-ees-328",
@@ -3193,7 +3424,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.7126536,
+    "lon": -60.7369174,
+    "geoPrecision": "direccion"
   },
   {
     "id": "puerto-san-martin-ees-3134-nino-jesus",
@@ -3225,7 +3459,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.7116197,
+    "lon": -60.7341243,
+    "geoPrecision": "localidad"
   },
   {
     "id": "roldan-inst-superior-paul-harris",
@@ -3261,7 +3498,10 @@
     "verified": true,
     "foundedYear": null,
     "logoDomain": null,
-    "source": "Ministerio de Educación de Santa Fe (SPEP)"
+    "source": "Ministerio de Educación de Santa Fe (SPEP)",
+    "lat": -32.9031903,
+    "lon": -60.9074165,
+    "geoPrecision": "direccion"
   },
   {
     "id": "pujato-ees-241-kennedy",
@@ -3293,7 +3533,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -33.0182865,
+    "lon": -61.0418396,
+    "geoPrecision": "direccion"
   },
   {
     "id": "rafaela-eeso-376-joaquin-dopazo",
@@ -3325,7 +3568,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.2526923,
+    "lon": -61.4916758,
+    "geoPrecision": "localidad"
   },
   {
     "id": "rafaela-eeso-428-luisa-raimondi",
@@ -3357,7 +3603,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.2526923,
+    "lon": -61.4916758,
+    "geoPrecision": "localidad"
   },
   {
     "id": "rafaela-8022-misericordia",
@@ -3389,7 +3638,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -31.2526923,
+    "lon": -61.4916758,
+    "geoPrecision": "localidad"
   },
   {
     "id": "reconquista-eeso-203-alberdi",
@@ -3421,7 +3673,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -29.1443478,
+    "lon": -59.6437728,
+    "geoPrecision": "localidad"
   },
   {
     "id": "reconquista-8101-inmaculada",
@@ -3453,7 +3708,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -29.1443478,
+    "lon": -59.6437728,
+    "geoPrecision": "localidad"
   },
   {
     "id": "reconquista-8023-san-jose",
@@ -3485,7 +3743,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -29.1443478,
+    "lon": -59.6437728,
+    "geoPrecision": "localidad"
   },
   {
     "id": "venado-tuerto-ees-584",
@@ -3517,7 +3778,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -33.7455871,
+    "lon": -61.9686068,
+    "geoPrecision": "localidad"
   },
   {
     "id": "cap-bermudez-ees-325-de-la-plaza",
@@ -3549,7 +3813,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.8259993,
+    "lon": -60.7175837,
+    "geoPrecision": "direccion"
   },
   {
     "id": "canada-de-gomez-esc-comercio-47",
@@ -3581,7 +3848,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.8234448,
+    "lon": -61.3905125,
+    "geoPrecision": "localidad"
   },
   {
     "id": "canada-de-gomez-8055-san-antonio",
@@ -3613,7 +3883,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -32.8234448,
+    "lon": -61.3905125,
+    "geoPrecision": "localidad"
   },
   {
     "id": "arequito-ees-219-sarmiento",
@@ -3645,7 +3918,10 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "orientada"
+    "tipoSecundaria": "orientada",
+    "lat": -33.0443368,
+    "lon": -61.1641779,
+    "geoPrecision": "localidad"
   },
   {
     "id": "villa-constitucion-esc-comercio-51",
@@ -3677,6 +3953,9 @@
     "foundedYear": null,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
-    "tipoSecundaria": "tecnica"
+    "tipoSecundaria": "tecnica",
+    "lat": -33.227206,
+    "lon": -60.3298225,
+    "geoPrecision": "localidad"
   }
 ]

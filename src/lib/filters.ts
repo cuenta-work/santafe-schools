@@ -1,4 +1,5 @@
 import type { Level, Sector, TipoSecundaria } from "./types";
+import type { LatLon } from "./geo";
 
 export interface FiltersState {
   levels: Set<Level>;
@@ -10,6 +11,11 @@ export interface FiltersState {
   bilingueOnly: boolean;
   featuredOnly: boolean;
   search: string;
+  // Filtro de cercanía ("¿Dónde estás?"): se combina con el resto (AND),
+  // no los reemplaza -- se puede buscar "jardines públicos a menos de
+  // 3km de mi ubicación" al mismo tiempo.
+  origin: LatLon | null;
+  radiusKm: number;
 }
 
 export function emptyFilters(): FiltersState {
@@ -23,6 +29,8 @@ export function emptyFilters(): FiltersState {
     bilingueOnly: false,
     featuredOnly: false,
     search: "",
+    origin: null,
+    radiusKm: 10,
   };
 }
 
@@ -33,9 +41,11 @@ export function hasActiveFilters(f: FiltersState): boolean {
     !!f.localidad ||
     !!f.modalidad ||
     !!f.genero ||
+    !!f.tipoSecundaria ||
     f.bilingueOnly ||
     f.featuredOnly ||
-    f.search.length > 0
+    f.search.length > 0 ||
+    !!f.origin
   );
 }
 
@@ -46,8 +56,10 @@ export function countActiveFilters(f: FiltersState): number {
     (f.localidad ? 1 : 0) +
     (f.modalidad ? 1 : 0) +
     (f.genero ? 1 : 0) +
+    (f.tipoSecundaria ? 1 : 0) +
     (f.bilingueOnly ? 1 : 0) +
     (f.featuredOnly ? 1 : 0) +
-    (f.search ? 1 : 0)
+    (f.search ? 1 : 0) +
+    (f.origin ? 1 : 0)
   );
 }

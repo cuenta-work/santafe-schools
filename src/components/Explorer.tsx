@@ -1,15 +1,26 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
 import { Compass } from "lucide-react";
 import { useFilters } from "@/context/FiltersContext";
+import { formatDistance } from "@/lib/geo";
 import FilterSidebar from "./FilterSidebar";
 import InstitutionCard from "./InstitutionCard";
 import LevelTipBanner from "./LevelTipBanner";
 import MobileFilters, { QuickLevelChips } from "./MobileFilters";
 
+const CityMap = dynamic(() => import("./CityMap"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex h-[320px] w-full items-center justify-center rounded-2xl border border-border bg-background text-sm text-muted">
+      Cargando el mapa...
+    </div>
+  ),
+});
+
 export default function Explorer() {
-  const { filtered, filters, setSelected } = useFilters();
+  const { filtered, filters, distances, setSelected } = useFilters();
   const singleLevel = filters.levels.size === 1 ? Array.from(filters.levels)[0] : null;
   const sectionRef = useRef<HTMLElement>(null);
   const prevFiltered = useRef(filtered);
@@ -52,6 +63,20 @@ export default function Explorer() {
 
         <div className="flex-1 pb-20 lg:pb-0">
           {singleLevel && <LevelTipBanner level={singleLevel} />}
+
+          {/* El mapa solo se ve en desktop, al lado del sidebar de filtros
+              -- en mobile ocupaba una pantalla entera antes de llegar a
+              ningún resultado, igual que en santafe-gourmet. */}
+          <div className="mb-5 hidden lg:block">
+            <CityMap
+              institutions={filtered}
+              origin={filters.origin}
+              radiusKm={filters.origin ? filters.radiusKm : undefined}
+              onSelect={setSelected}
+              height="320px"
+            />
+          </div>
+
           {filtered.length === 0 ? (
             <div className="flex h-64 flex-col items-center justify-center rounded-2xl border border-dashed border-border text-center text-muted">
               <p className="font-display text-lg">No encontramos instituciones así...</p>
@@ -65,7 +90,13 @@ export default function Explorer() {
                   className="fade-up min-w-0"
                   style={{ animationDelay: `${Math.min(i, 8) * 40}ms` }}
                 >
-                  <InstitutionCard institution={inst} onOpen={setSelected} />
+                  <InstitutionCard
+                    institution={inst}
+                    onOpen={setSelected}
+                    distanceLabel={
+                      filters.origin ? formatDistance(distances.get(inst.id) ?? 0) : undefined
+                    }
+                  />
                 </div>
               ))}
             </div>

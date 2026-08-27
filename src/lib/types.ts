@@ -57,6 +57,11 @@ export interface Institution {
   foundedYear?: number | null;
   lat?: number | null;
   lon?: number | null;
+  // "direccion": geocodificado desde la calle y altura reales.
+  // "localidad": no encontramos la dirección exacta -- es el centro de la
+  // ciudad/pueblo, útil para ubicar la zona pero no la puerta exacta.
+  geoPrecision?: "direccion" | "localidad" | null;
+  turno?: "mañana" | "tarde" | "noche" | "completo" | null;
   logoDomain?: string | null;
   source?: string | null;
   highlights?: Highlight[];
@@ -77,6 +82,21 @@ export interface Locality {
   kind: LocalityKind;
   description: string;
   links: LocalityLink[];
+}
+
+// Orden pedagógico fijo -- maternal/jardín primero, universidad al final --
+// para que cualquier lista de niveles se muestre siempre igual sin
+// importar el orden en que estén cargados en los datos.
+export const LEVEL_ORDER: Level[] = [
+  "jardin",
+  "primaria",
+  "secundaria",
+  "terciario",
+  "universidad",
+];
+
+export function sortLevels(levels: Level[]): Level[] {
+  return LEVEL_ORDER.filter((l) => levels.includes(l));
 }
 
 export const LEVEL_LABELS: Record<Level, string> = {

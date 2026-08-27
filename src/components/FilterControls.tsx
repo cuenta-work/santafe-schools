@@ -1,6 +1,7 @@
 "use client";
 
-import { GraduationCap, Star } from "lucide-react";
+import { useMemo, useState } from "react";
+import { GraduationCap, Star, MapPin, X, LocateFixed, Loader2 } from "lucide-react";
 import {
   LEVEL_LABELS,
   LEVEL_EMOJI,
@@ -12,6 +13,8 @@ import {
   type Sector,
   type TipoSecundaria,
 } from "@/lib/types";
+import { RADII } from "@/lib/geo";
+import { capitalFirst } from "@/lib/localityPriority";
 import { useFilters } from "@/context/FiltersContext";
 import CustomSelect from "./CustomSelect";
 
@@ -30,6 +33,11 @@ export default function FilterControls() {
     sectorCounts,
   } = useFilters();
 
+  const localidadesOrdenadas = useMemo(
+    () => capitalFirst(localidades, (l) => l),
+    [localidades]
+  );
+
   const toggleInSet = (set: Set<string>, value: string) => {
     const next = new Set(set);
     if (next.has(value)) next.delete(value);
@@ -37,8 +45,90 @@ export default function FilterControls() {
     return next;
   };
 
+  // Este es el ÚNICO lugar de la app donde se elige una ubicación de
+  // origen -- vive adentro del sistema de filtros de siempre en vez de
+  // tener su propia copia en otro lado, así la cercanía es un filtro más
+  // que se combina con el resto sin duplicar nada (igual que en
+  // santafe-gourmet).
+  const [locating, setLocating] = useState(false);
+  const [locationError, setLocationError] = useState<string | null>(null);
+
+  const useMyLocation = () => {
+    if (!("geolocation" in navigator)) {
+      setLocationError("Tu navegador no soporta geolocalización.");
+      return;
+    }
+    setLocating(true);
+    setLocationError(null);
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        applyFilters({
+          ...filters,
+          origin: { lat: pos.coords.latitude, lon: pos.coords.longitude },
+        });
+        setLocating(false);
+      },
+      () => {
+        setLocationError(
+          "No pudimos acceder a tu ubicación. Probá eligiendo tu localidad más abajo."
+        );
+        setLocating(false);
+      },
+      { timeout: 8000 }
+    );
+  };
+
   return (
     <div className="flex flex-col gap-6">
+      <div>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">
+          Cerca tuyo
+        </p>
+        {filters.origin ? (
+          <div className="flex flex-col gap-2 rounded-xl border border-primary/30 bg-primary/10 p-3 text-xs text-primary-dark">
+            <div className="flex items-center justify-between gap-2">
+              <span className="flex items-center gap-1.5 font-medium">
+                <MapPin size={13} className="shrink-0" />
+                Ubicación activa
+              </span>
+              <button
+                type="button"
+                onClick={() => applyFilters({ ...filters, origin: null })}
+                className="flex shrink-0 items-center gap-1 font-semibold hover:underline"
+              >
+                <X size={12} /> Quitar
+              </button>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {RADII.map((r) => (
+                <button
+                  key={r.km}
+                  type="button"
+                  className="pill !py-1.5 !text-xs"
+                  data-active={filters.radiusKm === r.km}
+                  onClick={() => applyFilters({ ...filters, radiusKm: r.km })}
+                >
+                  {r.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="flex flex-col gap-2">
+            <button
+              type="button"
+              onClick={useMyLocation}
+              disabled={locating}
+              className="inline-flex h-10 items-center justify-center gap-2 rounded-full bg-primary px-4 text-sm font-semibold text-white shadow-sm shadow-primary/20 transition active:scale-95 hover:bg-primary-dark disabled:opacity-60"
+            >
+              {locating ? <Loader2 size={14} className="animate-spin" /> : <LocateFixed size={14} />}
+              Usar mi ubicación
+            </button>
+            {locationError && <p className="text-xs text-accent-dark">{locationError}</p>}
+          </div>
+        )}
+      </div>
+
       <div className="relative">
         <GraduationCap
           size={16}
@@ -129,7 +219,7 @@ export default function FilterControls() {
         <CustomSelect
           value={filters.localidad ?? ""}
           onChange={(v) => applyFilters({ ...filters, localidad: v || null })}
-          options={localidades}
+          options={localidadesOrdenadas}
           placeholder="Toda la provincia"
         />
       </div>
