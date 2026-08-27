@@ -1,0 +1,149 @@
+"use client";
+
+import { GraduationCap, Star } from "lucide-react";
+import { LEVEL_LABELS, SECTOR_LABELS, type Level, type Sector } from "@/lib/types";
+import { useFilters } from "@/context/FiltersContext";
+import CustomSelect from "./CustomSelect";
+
+const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "universidad"];
+const SECTOR_ORDER: Sector[] = ["publico", "privado"];
+const MODALIDADES = ["jornada simple", "jornada completa", "doble escolaridad"];
+const GENEROS = ["mixto", "solo mujeres", "solo varones"];
+
+export default function FilterControls() {
+  const {
+    filters,
+    setFilters: applyFilters,
+    localidades,
+    levelCounts,
+    sectorCounts,
+  } = useFilters();
+
+  const toggleInSet = (set: Set<string>, value: string) => {
+    const next = new Set(set);
+    if (next.has(value)) next.delete(value);
+    else next.add(value);
+    return next;
+  };
+
+  return (
+    <div className="flex flex-col gap-6">
+      <div className="relative">
+        <GraduationCap
+          size={16}
+          className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-muted"
+        />
+        <input
+          value={filters.search}
+          onChange={(e) => applyFilters({ ...filters, search: e.target.value })}
+          placeholder="Buscar por nombre, carrera u orientación..."
+          className="w-full rounded-full border border-border bg-card py-3 pl-9 pr-3 text-base text-foreground placeholder:text-muted focus:border-primary focus:outline-none sm:py-2 sm:text-sm"
+        />
+      </div>
+
+      <div>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Nivel</p>
+        <div className="flex flex-wrap gap-2">
+          {LEVEL_ORDER.map((level) => (
+            <button
+              key={level}
+              type="button"
+              className="pill"
+              data-active={filters.levels.has(level)}
+              onClick={() =>
+                applyFilters({
+                  ...filters,
+                  levels: toggleInSet(filters.levels, level) as Set<Level>,
+                })
+              }
+            >
+              {LEVEL_LABELS[level]}
+              <span className="opacity-60">({levelCounts[level]})</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Gestión</p>
+        <div className="flex flex-wrap gap-2">
+          {SECTOR_ORDER.map((sector) => (
+            <button
+              key={sector}
+              type="button"
+              className="pill pill-accent"
+              data-active={filters.sectors.has(sector)}
+              onClick={() =>
+                applyFilters({
+                  ...filters,
+                  sectors: toggleInSet(filters.sectors, sector) as Set<Sector>,
+                })
+              }
+            >
+              {SECTOR_LABELS[sector]}
+              <span className="opacity-60">({sectorCounts[sector]})</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">
+          Localidad o zona
+        </p>
+        <CustomSelect
+          value={filters.localidad ?? ""}
+          onChange={(v) => applyFilters({ ...filters, localidad: v || null })}
+          options={localidades}
+          placeholder="Toda la provincia"
+        />
+      </div>
+
+      <div>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Jornada</p>
+        <CustomSelect
+          value={filters.modalidad ?? ""}
+          onChange={(v) => applyFilters({ ...filters, modalidad: v || null })}
+          options={MODALIDADES}
+          placeholder="Cualquier jornada"
+        />
+      </div>
+
+      <div>
+        <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-muted">Alumnado</p>
+        <CustomSelect
+          value={filters.genero ?? ""}
+          onChange={(v) => applyFilters({ ...filters, genero: v || null })}
+          options={GENEROS}
+          placeholder="Cualquiera"
+        />
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
+          <span>
+            Solo <strong className="font-semibold">bilingües</strong>
+          </span>
+          <input
+            type="checkbox"
+            checked={filters.bilingueOnly}
+            onChange={(e) => applyFilters({ ...filters, bilingueOnly: e.target.checked })}
+            className="switch"
+          />
+        </label>
+        <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
+          <span className="flex items-center gap-1.5">
+            Solo <strong className="font-semibold">destacadas</strong>{" "}
+            <Star size={13} className="text-gold" />
+          </span>
+          <input
+            type="checkbox"
+            checked={filters.featuredOnly}
+            onChange={(e) => applyFilters({ ...filters, featuredOnly: e.target.checked })}
+            className="switch"
+          />
+        </label>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,56 @@
+export function LogoMark({ size = 36 }: { size?: number }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <rect width="40" height="40" rx="12" fill="var(--primary)" />
+      <path
+        d="M20 10.5 L33 15.5 L20 20.5 L7 15.5 Z"
+        fill="var(--card)"
+      />
+      <path
+        d="M13 17.6 V24 c0 1.8 3.1 3.4 7 3.4 s7 -1.6 7 -3.4 v-6.4"
+        stroke="var(--card)"
+        strokeWidth="2"
+        strokeLinecap="round"
+        fill="none"
+      />
+      <path
+        d="M33 15.5 V23"
+        stroke="var(--gold)"
+        strokeWidth="2.4"
+        strokeLinecap="round"
+      />
+      <circle cx="33" cy="25.3" r="1.7" fill="var(--gold)" />
+    </svg>
+  );
+}
+
+export default function Logo({
+  size = 36,
+  withTagline = false,
+}: {
+  size?: number;
+  withTagline?: boolean;
+}) {
+  return (
+    <div className="flex items-center gap-2.5">
+      <LogoMark size={size} />
+      <div className="leading-none">
+        <span className="font-display text-lg font-semibold tracking-tight text-foreground">
+          Santa Fe <span className="italic text-primary-dark">Schools</span>
+        </span>
+        {withTagline && (
+          <p className="mt-0.5 text-[11px] uppercase tracking-[0.16em] text-muted">
+            Guía educativa de la provincia
+          </p>
+        )}
+      </div>
+    </div>
+  );
+}
