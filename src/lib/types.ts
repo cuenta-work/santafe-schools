@@ -29,6 +29,17 @@ export interface Highlight {
   text: string;
 }
 
+// "nacional": programas del Estado (Beca Progresar, Beca Manuel Belgrano,
+// etc.) que no son un beneficio propio de la institución -- están
+// disponibles, con sus propios requisitos, en la mayoría de las
+// universidades públicas del país. "institucional": becas que otorga la
+// propia institución (por promedio, deportivas, por hermanos, etc.).
+export interface Beca {
+  nombre: string;
+  alcance: "nacional" | "institucional";
+  descripcion?: string | null;
+}
+
 export interface Institution {
   id: string;
   name: string;
@@ -66,6 +77,7 @@ export interface Institution {
   source?: string | null;
   highlights?: Highlight[];
   resourceLinks?: ResourceLink[];
+  becas?: Beca[];
 }
 
 export type LocalityKind = "ciudad" | "pueblo" | "comuna" | "barrio";
@@ -117,9 +129,9 @@ export const LEVEL_SHORT: Record<Level, string> = {
 
 export const LEVEL_EMOJI: Record<Level, string> = {
   jardin: "🧸",
-  primaria: "✏️",
-  secundaria: "🧪",
-  terciario: "📜",
+  primaria: "🎒",
+  secundaria: "✏️",
+  terciario: "🎓",
   universidad: "🎓",
 };
 

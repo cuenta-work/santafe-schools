@@ -194,7 +194,19 @@
     ],
     "lat": -31.6357774,
     "lon": -60.7017227,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "becas": [
+      {
+        "nombre": "Beca Pablo Vrillaud",
+        "alcance": "institucional",
+        "descripcion": "Para ingresantes y estudiantes en situación de vulnerabilidad social y económica."
+      },
+      {
+        "nombre": "Becas de Comedor y de Residencia universitaria",
+        "alcance": "institucional",
+        "descripcion": null
+      }
+    ]
   },
   {
     "id": "unl-esperanza-agrarias",
@@ -256,7 +268,23 @@
     ],
     "lat": -31.4394028,
     "lon": -60.9430733,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "posgrados": [
+      "Doctorado en Ciencias Agrarias",
+      "Doctorado en Ciencia y Tecnología de los Alimentos"
+    ],
+    "becas": [
+      {
+        "nombre": "Beca Pablo Vrillaud",
+        "alcance": "institucional",
+        "descripcion": "Para ingresantes y estudiantes en situación de vulnerabilidad social y económica."
+      },
+      {
+        "nombre": "Becas de Comedor y de Residencia universitaria",
+        "alcance": "institucional",
+        "descripcion": null
+      }
+    ]
   },
   {
     "id": "utn-frsf",
@@ -356,7 +384,19 @@
     ],
     "lat": -31.6167562,
     "lon": -60.6752372,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "posgrados": [
+      "Maestría en Ingeniería en Calidad",
+      "Doctorado en Ingeniería, mención Industrial",
+      "Especialización en Higiene y Seguridad en el Trabajo"
+    ],
+    "becas": [
+      {
+        "nombre": "Becas SAE",
+        "alcance": "institucional",
+        "descripcion": "Secretaría de Asuntos Estudiantiles: ayuda para transporte, apuntes y residencia."
+      }
+    ]
   },
   {
     "id": "utn-frro",
@@ -419,7 +459,19 @@
     "source": "Sitio oficial UTN FRRo",
     "lat": -32.9547078,
     "lon": -60.6437761,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "posgrados": [
+      "Maestría en Administración de Negocios",
+      "Maestría en Ingeniería Ambiental",
+      "Doctorado en Ingeniería"
+    ],
+    "becas": [
+      {
+        "nombre": "Becas SAE",
+        "alcance": "institucional",
+        "descripcion": "Secretaría de Asuntos Estudiantiles: ayuda para transporte, apuntes y residencia."
+      }
+    ]
   },
   {
     "id": "utn-frra",
@@ -470,7 +522,19 @@
     "source": "Sitio oficial UTN FRRa",
     "lat": -31.2479331,
     "lon": -61.4693872,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "posgrados": [
+      "Maestría en Desarrollo Territorial",
+      "Maestría en Energías Renovables",
+      "Especialización en Higiene y Seguridad en el Trabajo"
+    ],
+    "becas": [
+      {
+        "nombre": "Becas SAE",
+        "alcance": "institucional",
+        "descripcion": "Secretaría de Asuntos Estudiantiles: ayuda para transporte, apuntes y residencia."
+      }
+    ]
   },
   {
     "id": "utn-frvt",
@@ -515,7 +579,17 @@
     "source": "Sitio oficial UTN FRVT",
     "lat": -33.7411371,
     "lon": -61.9490602,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "posgrados": [
+      "Especialización en Ingeniería Gerencial"
+    ],
+    "becas": [
+      {
+        "nombre": "Becas SAE",
+        "alcance": "institucional",
+        "descripcion": "Secretaría de Asuntos Estudiantiles: ayuda para transporte, apuntes y residencia."
+      }
+    ]
   },
   {
     "id": "unr-rosario",
@@ -616,7 +690,18 @@
     ],
     "lat": -32.9446062,
     "lon": -60.6481206,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "posgrados": [
+      "Doctorados en Ciencias Biológicas, Químicas, Humanidades y Artes",
+      "Más de 60 maestrías y 119 especializaciones en distintas áreas"
+    ],
+    "becas": [
+      {
+        "nombre": "Programa de Becas UNR",
+        "alcance": "institucional",
+        "descripcion": "Becas de acceso, permanencia, egreso y de formación y excelencia académica."
+      }
+    ]
   },
   {
     "id": "unraf-rafaela",
@@ -661,7 +746,24 @@
     "source": null,
     "lat": -31.2526923,
     "lon": -61.4916758,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Maestría en Administración de Empresas",
+      "Maestría en Energías Renovables",
+      "Especialización en Robótica e Inteligencia Artificial"
+    ],
+    "becas": [
+      {
+        "nombre": "Plan de Bienestar Universitario +U",
+        "alcance": "institucional",
+        "descripcion": "Ayuda económica, becas deportivas y de material de estudio."
+      },
+      {
+        "nombre": "Beca Elisa Bachofen",
+        "alcance": "institucional",
+        "descripcion": "Para mujeres que estudian carreras de corte tecnológico."
+      }
+    ]
   },
   {
     "id": "ucsf-santa-fe",
@@ -746,7 +848,25 @@
     ],
     "lat": -31.6070892,
     "lon": -60.6709465,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "posgrados": [
+      "Doctorado en Educación",
+      "Doctorado en Ciencia Jurídica",
+      "Maestría en Relaciones Internacionales",
+      "Maestría en Educación"
+    ],
+    "becas": [
+      {
+        "nombre": "Beca Monseñor Zazpe",
+        "alcance": "institucional",
+        "descripcion": "Cubre entre 25% y 100% del arancel, según mérito académico y situación económica."
+      },
+      {
+        "nombre": "Préstamos académicos",
+        "alcance": "institucional",
+        "descripcion": "Descuentos arancelarios de hasta el 50%."
+      }
+    ]
   },
   {
     "id": "ucsf-rosario",
@@ -813,7 +933,22 @@
     ],
     "lat": -32.9593609,
     "lon": -60.6617024,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Programas de posgrado de la UCSF (doctorados, maestrías y especializaciones), según sede y modalidad"
+    ],
+    "becas": [
+      {
+        "nombre": "Beca Monseñor Zazpe",
+        "alcance": "institucional",
+        "descripcion": "Cubre entre 25% y 100% del arancel, según mérito académico y situación económica."
+      },
+      {
+        "nombre": "Préstamos académicos",
+        "alcance": "institucional",
+        "descripcion": "Descuentos arancelarios de hasta el 50%."
+      }
+    ]
   },
   {
     "id": "ucsf-rafaela",
@@ -874,7 +1009,22 @@
     ],
     "lat": -31.2526923,
     "lon": -61.4916758,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Programas de posgrado de la UCSF (doctorados, maestrías y especializaciones), según sede y modalidad"
+    ],
+    "becas": [
+      {
+        "nombre": "Beca Monseñor Zazpe",
+        "alcance": "institucional",
+        "descripcion": "Cubre entre 25% y 100% del arancel, según mérito académico y situación económica."
+      },
+      {
+        "nombre": "Préstamos académicos",
+        "alcance": "institucional",
+        "descripcion": "Descuentos arancelarios de hasta el 50%."
+      }
+    ]
   },
   {
     "id": "ucsf-reconquista",
@@ -935,7 +1085,22 @@
     ],
     "lat": -29.1443478,
     "lon": -59.6437728,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Programas de posgrado de la UCSF (doctorados, maestrías y especializaciones), según sede y modalidad"
+    ],
+    "becas": [
+      {
+        "nombre": "Beca Monseñor Zazpe",
+        "alcance": "institucional",
+        "descripcion": "Cubre entre 25% y 100% del arancel, según mérito académico y situación económica."
+      },
+      {
+        "nombre": "Préstamos académicos",
+        "alcance": "institucional",
+        "descripcion": "Descuentos arancelarios de hasta el 50%."
+      }
+    ]
   },
   {
     "id": "uca-rosario",
@@ -980,7 +1145,24 @@
     "source": "Sitio oficial UCA",
     "lat": -32.9593609,
     "lon": -60.6617024,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Doctorado en Derecho",
+      "Maestría en Ingeniería Ambiental y Desarrollo Sustentable",
+      "Especialización en Derecho Tributario"
+    ],
+    "becas": [
+      {
+        "nombre": "Beca al Mérito Académico (PRIUNES)",
+        "alcance": "institucional",
+        "descripcion": null
+      },
+      {
+        "nombre": "Beca UCA Prioridad Educación",
+        "alcance": "institucional",
+        "descripcion": "Entre 20% y 80% para carreras de Educación."
+      }
+    ]
   },
   {
     "id": "uai-rosario",
@@ -1037,7 +1219,19 @@
     "source": "Sitio oficial UAI",
     "lat": -32.9593609,
     "lon": -60.6617024,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Maestría en Psicología Organizacional con Orientación Gerencial",
+      "Especialización en Docencia Universitaria",
+      "Especialización en Inteligencia Artificial (a distancia)"
+    ],
+    "becas": [
+      {
+        "nombre": "Concurso Anual de Becas",
+        "alcance": "institucional",
+        "descripcion": "25% o 50% de descuento por promedio alto y situación económica."
+      }
+    ]
   },
   {
     "id": "ucel-rosario",
@@ -1088,7 +1282,19 @@
     "source": "Sitio oficial UCEL",
     "lat": -32.9593609,
     "lon": -60.6617024,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Maestría en Relaciones Laborales y Recursos Humanos",
+      "Especialización en Tributación",
+      "Especialización en Gestión Ambiental"
+    ],
+    "becas": [
+      {
+        "nombre": "Programa de Becas UCEL",
+        "alcance": "institucional",
+        "descripcion": "Por mérito académico, hermanos/cónyuge que estudian, o estudio socioeconómico."
+      }
+    ]
   },
   {
     "id": "iunir-rosario",
@@ -1127,7 +1333,19 @@
     "source": "Sitio oficial IUNIR",
     "lat": -32.9593609,
     "lon": -60.6617024,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Doctorado en Ciencias de la Salud",
+      "Maestría en Educación de Ciencias de la Salud",
+      "Especializaciones médicas y odontológicas"
+    ],
+    "becas": [
+      {
+        "nombre": "Becas al Mérito Académico",
+        "alcance": "institucional",
+        "descripcion": "Entre 30% y 50% de descuento en la cuota."
+      }
+    ]
   },
   {
     "id": "ugr-rosario",
@@ -1172,7 +1390,24 @@
     "source": null,
     "lat": -32.9593609,
     "lon": -60.6617024,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Maestría en Kinesiología y Fisioterapia Cardiorrespiratoria",
+      "Especialización en Kinesiología del Deporte",
+      "Especialización en Kinesiología Neurológica"
+    ],
+    "becas": [
+      {
+        "nombre": "Becas Ordinarias",
+        "alcance": "institucional",
+        "descripcion": "Para estudiantes con dificultad económica acreditada."
+      },
+      {
+        "nombre": "Becas Comunidad UGR",
+        "alcance": "institucional",
+        "descripcion": "Para familiares de estudiantes/personal o egresados de instituciones asociadas."
+      }
+    ]
   },
   {
     "id": "eis-unl-santa-fe",
@@ -1277,7 +1512,7 @@
     "address": null,
     "phone": null,
     "email": null,
-    "website": null,
+    "website": "https://www.ispbrown.edu.ar",
     "instagram": null,
     "description": "Instituto público de formación docente de larga trayectoria en la capital provincial.",
     "modalidad": null,
@@ -1321,8 +1556,8 @@
     "barrio": "Candioti",
     "address": "Bv. Gálvez 1978, Candioti",
     "phone": "342-4538271",
-    "email": null,
-    "website": null,
+    "email": "msuperior9017_santafe@santafe.edu.ar",
+    "website": "https://sanjoseadoratricessf.edu.ar",
     "instagram": null,
     "description": "Instituto terciario privado incorporado, con formación docente y técnica.",
     "modalidad": null,
@@ -1361,7 +1596,7 @@
     "address": "25 de Mayo 1810, Sur",
     "phone": "342-4596997",
     "email": null,
-    "website": null,
+    "website": "https://www.afpsarafaisal.org.ar",
     "instagram": null,
     "description": "Instituto terciario privado con tecnicaturas cortas orientadas al mundo laboral.",
     "modalidad": null,
@@ -1399,8 +1634,8 @@
     "barrio": "Sur",
     "address": "Cruz Roja Argentina 1963, Sur",
     "phone": "342-4527756",
-    "email": null,
-    "website": null,
+    "email": "s-fe@cruzroja.org.ar",
+    "website": "https://www.cruzroja.org.ar/santafe",
     "instagram": null,
     "description": "Instituto terciario de la Cruz Roja Argentina, formando técnicos en enfermería y emergencias.",
     "modalidad": null,
@@ -1444,8 +1679,8 @@
     "barrio": "Centro",
     "address": "Tucumán 2718, Centro",
     "phone": "342-4558371",
-    "email": null,
-    "website": null,
+    "email": "secundario@iessantafe.edu.ar",
+    "website": "https://iessantafe.edu.ar",
     "instagram": null,
     "description": "Instituto terciario privado del centro de la capital, con carreras administrativas y técnicas.",
     "modalidad": null,
@@ -1464,7 +1699,7 @@
     ],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1982,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.6463758,
@@ -1483,8 +1718,8 @@
     "barrio": null,
     "address": "Yrigoyen Freyre 2664",
     "phone": "342-4540131",
-    "email": null,
-    "website": null,
+    "email": "superior4097_santafe@santafe.edu.ar",
+    "website": "https://imdmecanicadental.com.ar",
     "instagram": null,
     "description": "Instituto terciario técnico especializado en mecánica dental, poco común y muy puntual en su oferta.",
     "modalidad": null,
@@ -1503,7 +1738,7 @@
     ],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1969,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.6474914,
@@ -1523,7 +1758,7 @@
     "address": "San Martín 1152",
     "phone": "342-4910921",
     "email": null,
-    "website": null,
+    "website": "https://isp6-sfe.infd.edu.ar/sitio/",
     "instagram": null,
     "description": "Instituto terciario público de Coronda, referencia de formación docente en la costa del Paraná.",
     "modalidad": null,
@@ -1606,8 +1841,8 @@
     "barrio": null,
     "address": "Sarmiento 1452",
     "phone": null,
-    "email": null,
-    "website": null,
+    "email": "superior4095_esperanza@santafe.edu.ar",
+    "website": "https://www.luxcapere.com.ar",
     "instagram": null,
     "description": "Instituto terciario técnico privado de Esperanza.",
     "modalidad": null,
@@ -1626,7 +1861,7 @@
     ],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 2010,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.4542348,
@@ -1645,7 +1880,7 @@
     "barrio": null,
     "address": "Jorge Newbery 271",
     "phone": "3404-481216",
-    "email": null,
+    "email": "msuperior9133_galvez@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Instituto terciario religioso de Gálvez, con formación docente.",
@@ -1684,7 +1919,7 @@
     "barrio": "Centro",
     "address": "Maipú 2229, Centro",
     "phone": "342-4940147",
-    "email": null,
+    "email": "msuperior9100_lagunapaiva@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Instituto terciario privado de Laguna Paiva.",
@@ -1704,7 +1939,7 @@
     ],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1958,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.3076471,
@@ -1723,8 +1958,8 @@
     "barrio": null,
     "address": "9 de Julio 1144",
     "phone": "342-4026529",
-    "email": null,
-    "website": null,
+    "email": "superior4089_santotome@santafe.edu.ar",
+    "website": "https://ispa4089-sfe.infd.edu.ar/sitio/",
     "instagram": null,
     "description": "Instituto terciario privado de Santo Tomé, con formación docente.",
     "modalidad": null,
@@ -1743,7 +1978,7 @@
     ],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 2004,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.6686159,
@@ -1861,7 +2096,7 @@
     "barrio": "Yapeyú",
     "address": "12 de Octubre 9300, Yapeyú",
     "phone": "342-4561732",
-    "email": null,
+    "email": "sec265_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria pública del barrio Yapeyú, al norte de la capital.",
@@ -1896,8 +2131,8 @@
     "barrio": "Guadalupe",
     "address": "Patricio Cullen 7397, Guadalupe",
     "phone": "342-4579297",
-    "email": null,
-    "website": null,
+    "email": "secundario8150@escuelansguadalupe.edu.ar",
+    "website": "https://escuelansguadalupe.edu.ar",
     "instagram": null,
     "description": "Escuela secundaria privada del barrio Guadalupe.",
     "modalidad": null,
@@ -1932,7 +2167,7 @@
     "address": "Pedro de Vega 591, Guadalupe Este",
     "phone": null,
     "email": null,
-    "website": null,
+    "website": "https://eeso391.net.ar",
     "instagram": null,
     "description": "Escuela secundaria pública de Guadalupe Este.",
     "modalidad": null,
@@ -1966,8 +2201,8 @@
     "barrio": "Constituyentes",
     "address": "Urquiza 3155, Constituyentes",
     "phone": "342-4191937",
-    "email": null,
-    "website": null,
+    "email": "sec8031_santafe@santafe.edu.ar",
+    "website": "https://sites.google.com/calvariosantafe.edu.ar/colegio",
     "instagram": null,
     "description": "Escuela secundaria privada religiosa del barrio Constituyentes.",
     "modalidad": null,
@@ -2001,8 +2236,8 @@
     "barrio": "Santa Rosa de Lima",
     "address": "Sgo. de Liniers 4649, Santa Rosa de Lima",
     "phone": "342-4579023",
-    "email": null,
-    "website": null,
+    "email": "spep2035@gmail.com",
+    "website": "https://sites.google.com/view/escuela2035/pagina-principal",
     "instagram": null,
     "description": "Escuela secundaria privada del barrio Santa Rosa de Lima.",
     "modalidad": null,
@@ -2036,7 +2271,7 @@
     "barrio": "Alto Verde",
     "address": "Alto Verde",
     "phone": "342-4599705",
-    "email": null,
+    "email": "sec2042_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria de la isla Alto Verde, frente a la costanera de la capital.",
@@ -2071,8 +2306,8 @@
     "barrio": "Barranquitas",
     "address": "Domingo Silva 3175, Barranquitas",
     "phone": "342-4533977",
-    "email": null,
-    "website": null,
+    "email": "sec3059_santafe@santafe.edu.ar",
+    "website": "https://www.escuelafatimastafe.edu.ar",
     "instagram": null,
     "description": "Escuela secundaria privada del barrio Barranquitas.",
     "modalidad": null,
@@ -2086,7 +2321,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1991,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "tipoSecundaria": "orientada",
@@ -2106,7 +2341,7 @@
     "barrio": "Villa del Parque",
     "address": "Pje. Osvaldo Catena 4255, Villa del Parque",
     "phone": "342-4564261",
-    "email": null,
+    "email": "sec3025_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria privada del barrio Villa del Parque.",
@@ -2127,7 +2362,8 @@
     "tipoSecundaria": "orientada",
     "lat": -31.6474914,
     "lon": -60.6428557,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "turno": "noche"
   },
   {
     "id": "ees-231-republica-nicaragua",
@@ -2143,7 +2379,7 @@
     "phone": "342-4522287",
     "email": null,
     "website": null,
-    "instagram": null,
+    "instagram": "lanica231_oficial",
     "description": "Escuela secundaria pública del barrio Sargento Cabral.",
     "modalidad": null,
     "genero": "mixto",
@@ -2176,7 +2412,7 @@
     "barrio": "Sur",
     "address": "Gral. Estanislao López 3217, Sur",
     "phone": "342-4558356",
-    "email": null,
+    "email": "sec261_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria pública del sur de la capital.",
@@ -2213,7 +2449,7 @@
     "phone": "342-4578985",
     "email": null,
     "website": null,
-    "instagram": null,
+    "instagram": "escuela256jbbustos",
     "description": "Escuela secundaria pública de la capital provincial.",
     "modalidad": null,
     "genero": "mixto",
@@ -2226,7 +2462,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1973,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "tipoSecundaria": "orientada",
@@ -2316,11 +2552,11 @@
     "barrio": "Sur",
     "address": "Juan José Paso 3150, Sur",
     "phone": "342-4535591",
-    "email": null,
+    "email": "sec3028_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria privada del sur de la capital.",
-    "modalidad": null,
+    "modalidad": "jornada simple",
     "genero": "mixto",
     "bilingue": null,
     "religioso": "Católica",
@@ -2351,8 +2587,8 @@
     "barrio": "Sur",
     "address": "Francia 1557, Sur",
     "phone": "342-4572942",
-    "email": null,
-    "website": null,
+    "email": "escuela8colon@gmail.com",
+    "website": "https://sites.google.com/view/escuelan8cristobalcolon/",
     "instagram": null,
     "description": "Escuela primaria pública del sur de la capital.",
     "modalidad": "jornada simple",
@@ -2396,7 +2632,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1893,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -32.9722287,
@@ -2415,7 +2651,7 @@
     "barrio": "Guadalupe",
     "address": "General Paz 7237, Guadalupe",
     "phone": "342-4578984",
-    "email": null,
+    "email": "prim38_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela primaria pública del barrio Guadalupe.",
@@ -2428,7 +2664,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1879,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.6053522,
@@ -2480,7 +2716,7 @@
     "barrio": "Sur",
     "address": "San Martín 1326, Sur",
     "phone": "342-4591477",
-    "email": null,
+    "email": "dg@cef-sanfrancisco-sf.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela primaria privada del sur de la capital, con jardín de infantes propio.",
@@ -2558,7 +2794,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1988,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.6474914,
@@ -2577,7 +2813,7 @@
     "barrio": "San Jerónimo",
     "address": "Malvinas Argentinas y 10 de Junio, San Jerónimo",
     "phone": "342-4572926",
-    "email": null,
+    "email": "prim1258_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela primaria pública del barrio San Jerónimo.",
@@ -2641,7 +2877,7 @@
     "barrio": "Centro",
     "address": "1° de Mayo 2328, Centro",
     "phone": "342-4572512",
-    "email": null,
+    "email": "jardin26_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Jardín de infantes público en pleno centro de la capital.",
@@ -2654,7 +2890,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1951,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.6478657,
@@ -2673,7 +2909,7 @@
     "barrio": "Estanislao López",
     "address": "Edmundo Rosas 8308, Estanislao López",
     "phone": "342-4597779",
-    "email": null,
+    "email": "jardin33_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Jardín de infantes público del barrio Estanislao López.",
@@ -2705,7 +2941,7 @@
     "barrio": "Guadalupe Este",
     "address": "Juan José Castelli 681, Guadalupe Este",
     "phone": "342-4604733",
-    "email": null,
+    "email": "jardin1227_santafe@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Jardín de infantes privado del barrio Guadalupe Este.",
@@ -3125,8 +3361,8 @@
     "barrio": "Centro",
     "address": "Paraguay 1251, Centro",
     "phone": "341-4721455",
-    "email": null,
-    "website": null,
+    "email": "inscripciones623@gmail.com",
+    "website": "http://eeso623rosario.blogspot.com/",
     "instagram": null,
     "description": "Escuela secundaria pública en pleno centro de Rosario.",
     "modalidad": null,
@@ -3146,7 +3382,8 @@
     "tipoSecundaria": "orientada",
     "lat": -32.9513352,
     "lon": -60.6448291,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "turno": "noche"
   },
   {
     "id": "ees-8012-sagrado-corazon-rosario",
@@ -3196,7 +3433,7 @@
     "barrio": "Centro",
     "address": "Mitre 1648, Centro",
     "phone": "341-4721448",
-    "email": null,
+    "email": "sec257_rosario@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria pública del centro de Rosario.",
@@ -3231,7 +3468,7 @@
     "barrio": "Zona Centro",
     "address": "Salta 2560, Zona Centro",
     "phone": "341-4409047",
-    "email": null,
+    "email": "sec406_rosario@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria pública de Rosario.",
@@ -3266,7 +3503,7 @@
     "barrio": "Fisherton",
     "address": "Av. Brassey 8255, Fisherton",
     "phone": "341-4724539",
-    "email": null,
+    "email": "sec8144_rosario@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria privada del barrio residencial de Fisherton.",
@@ -3301,7 +3538,7 @@
     "barrio": "Fonavi",
     "address": "Donado 1253, Fonavi",
     "phone": "341-4727590",
-    "email": null,
+    "email": "sec347_rosario@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria pública del barrio Fonavi.",
@@ -3336,8 +3573,8 @@
     "barrio": "Las Malvinas",
     "address": "Av. Alberdi 338, Las Malvinas",
     "phone": "341-4571645",
-    "email": null,
-    "website": null,
+    "email": "sec8087_rosario@santafe.edu.ar",
+    "website": "https://colegioguadalupe.edu.ar",
     "instagram": null,
     "description": "Escuela secundaria privada del barrio Las Malvinas.",
     "modalidad": null,
@@ -3372,8 +3609,8 @@
     "address": null,
     "phone": null,
     "email": null,
-    "website": null,
-    "instagram": null,
+    "website": "https://sites.google.com/view/sitio-202-manuel-leiva/pagina-principal",
+    "instagram": "escuelamanuelleiva",
     "description": "Escuela secundaria pública de Casilda, cabecera del departamento Caseros.",
     "modalidad": null,
     "genero": "mixto",
@@ -3407,7 +3644,7 @@
     "address": "Jujuy 1039, Iturralde",
     "phone": "3476-435472",
     "email": null,
-    "website": null,
+    "website": "https://sites.google.com/view/eeso328/pagina-principal",
     "instagram": null,
     "description": "Escuela secundaria pública de la ciudad portuaria de Puerto General San Martín.",
     "modalidad": null,
@@ -3441,7 +3678,7 @@
     "barrio": "Centro",
     "address": "Guillermo Kirk 515, Centro",
     "phone": "3476-423062",
-    "email": null,
+    "email": "sec3134_puertogralsanmartin@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria privada religiosa de Puerto General San Martín.",
@@ -3515,7 +3752,7 @@
     "barrio": null,
     "address": "Simón de Iriondo 747",
     "phone": "3464-494227",
-    "email": null,
+    "email": "sec241_pujato@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria pública de Pujato, departamento Caseros.",
@@ -3550,7 +3787,7 @@
     "barrio": null,
     "address": null,
     "phone": null,
-    "email": null,
+    "email": "sec376_rafaela@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria orientada pública de Rafaela.",
@@ -3565,7 +3802,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1988,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
     "tipoSecundaria": "orientada",
@@ -3585,8 +3822,8 @@
     "barrio": null,
     "address": null,
     "phone": null,
-    "email": null,
-    "website": null,
+    "email": "sec428_rafaela@santafe.edu.ar",
+    "website": "http://www.eem428.edu.ar",
     "instagram": null,
     "description": "Escuela secundaria orientada pública de Rafaela.",
     "modalidad": null,
@@ -3621,7 +3858,7 @@
     "address": null,
     "phone": null,
     "email": null,
-    "website": null,
+    "website": "https://www.misericordiarafaela.com.ar",
     "instagram": null,
     "description": "Escuela secundaria privada religiosa de Rafaela.",
     "modalidad": null,
@@ -3635,7 +3872,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1899,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
     "tipoSecundaria": "orientada",
@@ -3655,8 +3892,8 @@
     "barrio": null,
     "address": null,
     "phone": null,
-    "email": null,
-    "website": null,
+    "email": "sec203_reconquista@santafe.edu.ar",
+    "website": "http://eeso203jbalberdi.blogspot.com/",
     "instagram": null,
     "description": "Escuela secundaria orientada pública de Reconquista, cabecera del norte santafesino.",
     "modalidad": null,
@@ -3725,11 +3962,11 @@
     "barrio": null,
     "address": null,
     "phone": null,
-    "email": null,
+    "email": "sec8023_reconquista@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria privada religiosa de Reconquista.",
-    "modalidad": null,
+    "modalidad": "jornada simple",
     "genero": "mixto",
     "bilingue": null,
     "religioso": "Católica",
@@ -3760,7 +3997,7 @@
     "barrio": null,
     "address": null,
     "phone": null,
-    "email": null,
+    "email": "sec584_venadotuerto@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria orientada pública de Venado Tuerto.",
@@ -3795,7 +4032,7 @@
     "barrio": "Centro",
     "address": "Florida s/n, Centro",
     "phone": "341-4912434",
-    "email": null,
+    "email": "sec325_capitanbermudez@santafe.edu.ar",
     "website": null,
     "instagram": null,
     "description": "Escuela secundaria pública de Capitán Bermúdez.",
@@ -3831,7 +4068,7 @@
     "address": "Camino de la Posta 340",
     "phone": "3471-497010",
     "email": null,
-    "website": null,
+    "website": "https://www.csfa47.edu.ar",
     "instagram": null,
     "description": "Escuela secundaria pública de Cañada de Gómez.",
     "modalidad": null,
@@ -3845,7 +4082,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1931,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "tipoSecundaria": "orientada",
@@ -3865,8 +4102,8 @@
     "barrio": "Centro",
     "address": "Rivadavia 938, Centro",
     "phone": "3471-423084",
-    "email": null,
-    "website": null,
+    "email": "sec8055_canadadegomez@santafe.edu.ar",
+    "website": "https://ccsanantoniodepadua.com/secundaria/",
     "instagram": null,
     "description": "Escuela secundaria privada religiosa de Cañada de Gómez.",
     "modalidad": null,
@@ -3900,9 +4137,9 @@
     "barrio": null,
     "address": null,
     "phone": null,
-    "email": null,
+    "email": "sec219_arequito@santafe.edu.ar",
     "website": null,
-    "instagram": null,
+    "instagram": "eeso219",
     "description": "Escuela secundaria pública de la zona de Casilda, departamento Caseros.",
     "modalidad": null,
     "genero": "mixto",
@@ -3915,7 +4152,7 @@
     "carreras": [],
     "featured": false,
     "verified": true,
-    "foundedYear": null,
+    "foundedYear": 1960,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "tipoSecundaria": "orientada",

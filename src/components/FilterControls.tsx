@@ -31,6 +31,8 @@ export default function FilterControls() {
     localidades,
     levelCounts,
     sectorCounts,
+    posgradoCount,
+    becasCount,
   } = useFilters();
 
   const localidadesOrdenadas = useMemo(
@@ -265,6 +267,30 @@ export default function FilterControls() {
             type="checkbox"
             checked={filters.featuredOnly}
             onChange={(e) => applyFilters({ ...filters, featuredOnly: e.target.checked })}
+            className="switch"
+          />
+        </label>
+        <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
+          <span className="flex items-center gap-1.5">
+            Solo con <strong className="font-semibold">posgrado</strong> 🎓
+            <span className="opacity-60">({posgradoCount})</span>
+          </span>
+          <input
+            type="checkbox"
+            checked={filters.posgradoOnly}
+            onChange={(e) => applyFilters({ ...filters, posgradoOnly: e.target.checked })}
+            className="switch"
+          />
+        </label>
+        <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
+          <span className="flex items-center gap-1.5">
+            Solo con <strong className="font-semibold">becas</strong> 💸
+            <span className="opacity-60">({becasCount})</span>
+          </span>
+          <input
+            type="checkbox"
+            checked={filters.becasOnly}
+            onChange={(e) => applyFilters({ ...filters, becasOnly: e.target.checked })}
             className="switch"
           />
         </label>

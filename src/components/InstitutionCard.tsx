@@ -32,7 +32,7 @@ export default function InstitutionCard({
         style={{ background: tint.bg }}
       >
         <LevelCoverIcon
-          level={sortLevels(institution.levels)[0]}
+          levels={institution.levels}
           size={60}
           strokeWidth={1.25}
           style={{ color: tint.icon }}
@@ -149,7 +149,7 @@ export default function InstitutionCard({
 
         {institution.costTier && (
           <div className="mt-4 flex items-center gap-3 border-t border-border pt-3 text-xs text-muted">
-            <span className="font-medium">{institution.costTier} arancel</span>
+            <span className="font-medium">🪙 {institution.costTier} arancel</span>
           </div>
         )}
       </div>

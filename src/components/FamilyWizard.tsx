@@ -202,7 +202,7 @@ export default function FamilyWizard() {
         {!showResults ? (
           <div className="relative mt-3">
             <h2 className="font-display text-xl font-semibold text-foreground sm:text-2xl">
-              Contame por quién estás preguntando y te tiro 5 opciones para arrancar.
+              Contanos para quién estás buscando y te acercamos 5 opciones para empezar.
             </h2>
             <p className="mt-1 text-sm text-muted">
               4 preguntas rápidas, como charlarlo con una vecina que ya investigó todo.

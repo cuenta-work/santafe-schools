@@ -10,6 +10,8 @@ export interface FiltersState {
   tipoSecundaria: TipoSecundaria | null;
   bilingueOnly: boolean;
   featuredOnly: boolean;
+  posgradoOnly: boolean;
+  becasOnly: boolean;
   search: string;
   // Filtro de cercanía ("¿Dónde estás?"): se combina con el resto (AND),
   // no los reemplaza -- se puede buscar "jardines públicos a menos de
@@ -28,6 +30,8 @@ export function emptyFilters(): FiltersState {
     tipoSecundaria: null,
     bilingueOnly: false,
     featuredOnly: false,
+    posgradoOnly: false,
+    becasOnly: false,
     search: "",
     origin: null,
     radiusKm: 3,
@@ -44,6 +48,8 @@ export function hasActiveFilters(f: FiltersState): boolean {
     !!f.tipoSecundaria ||
     f.bilingueOnly ||
     f.featuredOnly ||
+    f.posgradoOnly ||
+    f.becasOnly ||
     f.search.length > 0 ||
     !!f.origin
   );
@@ -59,6 +65,8 @@ export function countActiveFilters(f: FiltersState): number {
     (f.tipoSecundaria ? 1 : 0) +
     (f.bilingueOnly ? 1 : 0) +
     (f.featuredOnly ? 1 : 0) +
+    (f.posgradoOnly ? 1 : 0) +
+    (f.becasOnly ? 1 : 0) +
     (f.search ? 1 : 0) +
     (f.origin ? 1 : 0)
   );

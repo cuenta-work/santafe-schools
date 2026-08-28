@@ -72,7 +72,7 @@ export default function Featured() {
                   style={{ background: tint.bg }}
                 >
                   <LevelCoverIcon
-                    level={sortLevels(i.levels)[0]}
+                    levels={i.levels}
                     size={44}
                     strokeWidth={1.25}
                     style={{ color: tint.icon }}

@@ -17,21 +17,26 @@ function WhatsAppIcon({ size = 16, className = "" }: { size?: number; className?
 export default function GabiCredit({ className = "" }: { className?: string }) {
   return (
     <div
-      className={`flex w-full items-start justify-center gap-1.5 text-center text-[10px] text-muted sm:mx-auto sm:max-w-sm sm:text-xs ${className}`}
+      className={`flex w-full items-start justify-center gap-1.5 text-center text-[10px] text-muted sm:mx-auto sm:w-auto sm:text-xs ${className}`}
     >
       <WhatsAppIcon size={13} className="mt-0.5 shrink-0 text-[#25D366]" />
-      <span className="min-w-0 text-left leading-snug">
-        Gabi: &ldquo;¿Y si elegir colegio para tus hijos fuera tan fácil como elegir dónde comer?
-        Lo hice posible con{" "}
-        <a
-          href="https://santafe-schools.vercel.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="whitespace-nowrap font-semibold text-primary underline underline-offset-2 hover:text-primary-dark"
-        >
-          santafe-schools.vercel.app
-        </a>{" "}
-        🎓&rdquo;
+      <span className="min-w-0 text-center leading-snug">
+        <span className="block whitespace-nowrap">
+          Gabi: &ldquo;¿Y si elegir colegio para tus hijos fuera tan fácil como elegir dónde
+          comer?
+        </span>
+        <span className="block whitespace-nowrap">
+          Lo hice posible con{" "}
+          <a
+            href="https://santafe-schools.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-primary underline underline-offset-2 hover:text-primary-dark"
+          >
+            santafe-schools.vercel.app
+          </a>{" "}
+          🎓&rdquo;
+        </span>
       </span>
     </div>
   );

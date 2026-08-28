@@ -13,11 +13,19 @@ const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "
 const SECTOR_ORDER: Sector[] = ["publico", "privado"];
 
 export default function Hero() {
-  const { institutions, filters, setFilters, localidades, levelCounts, sectorCounts } =
-    useFilters();
+  const {
+    institutions,
+    filters,
+    setFilters,
+    localidades,
+    levelCounts,
+    sectorCounts,
+    posgradoCount,
+  } = useFilters();
   const [pendingLevels, setPendingLevels] = useState<Set<Level>>(new Set(filters.levels));
   const [pendingSectors, setPendingSectors] = useState<Set<Sector>>(new Set(filters.sectors));
   const [pendingLocalidad, setPendingLocalidad] = useState<string>(filters.localidad ?? "");
+  const [pendingPosgrado, setPendingPosgrado] = useState<boolean>(filters.posgradoOnly);
   const localidadesOrdenadas = useMemo(
     () => capitalFirst(localidades, (l) => l),
     [localidades]
@@ -49,6 +57,7 @@ export default function Hero() {
       levels: pendingLevels,
       sectors: pendingSectors,
       localidad: pendingLocalidad || null,
+      posgradoOnly: pendingPosgrado,
     });
     document.getElementById("buscador")?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
@@ -97,8 +106,8 @@ export default function Hero() {
             recién ahí confirma la selección contra el listado de abajo —
             a propósito no reactivo como el resto de los toggles del sitio,
             porque acá el usuario arma varias elecciones antes de decidir. */}
-        <div className="mt-4 overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
-          <div className="flex items-center gap-2.5 border-b border-border bg-background/60 px-4 py-3.5 sm:px-6">
+        <div className="mt-4 rounded-3xl border border-border bg-card shadow-sm">
+          <div className="flex items-center gap-2.5 rounded-t-3xl border-b border-border bg-background/60 px-4 py-3.5 sm:px-6">
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary-dark">
               <SlidersHorizontal size={15} />
             </span>
@@ -130,6 +139,15 @@ export default function Hero() {
                     <span className="opacity-60">({levelCounts[level]})</span>
                   </button>
                 ))}
+                <button
+                  type="button"
+                  className="pill !w-full !justify-between !py-1.5 !text-xs"
+                  data-active={pendingPosgrado}
+                  onClick={() => setPendingPosgrado((v) => !v)}
+                >
+                  <span>🎓 Posgrado</span>
+                  <span className="opacity-60">({posgradoCount})</span>
+                </button>
               </div>
             </div>
             <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
@@ -166,7 +184,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="flex justify-end border-t border-border bg-background/40 px-4 py-3.5 sm:px-6">
+          <div className="flex justify-end rounded-b-3xl border-t border-border bg-background/40 px-4 py-3.5 sm:px-6">
             <button
               type="button"
               onClick={applyAndScroll}

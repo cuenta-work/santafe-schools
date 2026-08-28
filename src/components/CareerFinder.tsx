@@ -122,8 +122,7 @@ export default function CareerFinder() {
         <p className="mb-5 max-w-2xl text-sm text-muted">
           Para cuando ya se viene el terciario o la universidad: buscá la carrera, tecnicatura o
           profesorado y mirá en qué institutos y universidades de la provincia se dicta, con su
-          duración. Si buscás la orientación de una secundaria, usá el buscador de instituciones
-          de más abajo.
+          duración.
         </p>
 
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">

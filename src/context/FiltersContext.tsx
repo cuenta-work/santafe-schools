@@ -19,6 +19,8 @@ interface FiltersContextValue {
   localidades: string[];
   levelCounts: Record<Level, number>;
   sectorCounts: Record<Sector, number>;
+  posgradoCount: number;
+  becasCount: number;
   showOnlyLevel: (level: Level) => void;
   selected: Institution | null;
   setSelected: (v: Institution | null) => void;
@@ -87,6 +89,16 @@ export function FiltersProvider({
     return counts;
   }, [institutions]);
 
+  const posgradoCount = useMemo(
+    () => institutions.filter((i) => i.posgrados && i.posgrados.length > 0).length,
+    [institutions]
+  );
+
+  const becasCount = useMemo(
+    () => institutions.filter((i) => i.becas && i.becas.length > 0).length,
+    [institutions]
+  );
+
   const searchIndex = useMemo(() => {
     const index = new Map<string, string>();
     institutions.forEach((i) => {
@@ -118,6 +130,8 @@ export function FiltersProvider({
       if (filters.tipoSecundaria && i.tipoSecundaria !== filters.tipoSecundaria) return false;
       if (filters.bilingueOnly && !i.bilingue) return false;
       if (filters.featuredOnly && !i.featured) return false;
+      if (filters.posgradoOnly && !(i.posgrados && i.posgrados.length > 0)) return false;
+      if (filters.becasOnly && !(i.becas && i.becas.length > 0)) return false;
       if (filters.origin) {
         if (i.lat == null || i.lon == null) return false;
         const km = distanceKm(filters.origin, { lat: i.lat, lon: i.lon });
@@ -153,6 +167,8 @@ export function FiltersProvider({
         localidades,
         levelCounts,
         sectorCounts,
+        posgradoCount,
+        becasCount,
         showOnlyLevel,
         selected,
         setSelected,

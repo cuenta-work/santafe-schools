@@ -28,6 +28,9 @@ import {
   ChevronDown,
   ChevronUp,
   Monitor,
+  HeartHandshake,
+  Award,
+  Star,
 } from "lucide-react";
 import type { Institution } from "@/lib/types";
 import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS, sortLevels } from "@/lib/types";
@@ -107,6 +110,13 @@ export default function InstitutionModal({
     institution.phone || institution.email || institution.website || institution.instagram;
   const highlights = institution.highlights ?? [];
   const resourceLinks = institution.resourceLinks ?? [];
+  const becas = institution.becas ?? [];
+  // La Beca Progresar y la Beca Manuel Belgrano son programas del Estado
+  // nacional, no un beneficio propio de la institución -- solo tiene
+  // sentido mencionarlos en terciarios y universidades (público o privado),
+  // que es donde de verdad se usan; en jardín/primaria/secundaria no aplica.
+  const showsNationalBecasNote =
+    institution.levels.includes("universidad") || institution.levels.includes("terciario");
 
   const RESOURCE_ICON: Record<string, typeof Library> = {
     biblioteca: Library,
@@ -213,7 +223,7 @@ export default function InstitutionModal({
                 <button
                   type="button"
                   onClick={() => setShowPreview((v) => !v)}
-                  className="flex w-full items-center gap-2 rounded-xl border border-border bg-background px-4 py-3 text-left text-sm text-foreground transition hover:border-primary"
+                  className="flex w-full items-center gap-2 rounded-xl border border-border bg-card px-4 py-3 text-left text-sm text-primary-dark transition hover:border-primary"
                 >
                   <Monitor size={16} className="shrink-0 text-primary" />
                   <span className="flex-1">Vista previa del sitio oficial</span>
@@ -278,7 +288,7 @@ export default function InstitutionModal({
                 <button
                   type="button"
                   onClick={() => setShowMap((v) => !v)}
-                  className="flex w-full items-center gap-2 rounded-xl border border-border bg-background px-4 py-3 text-left text-sm text-foreground transition hover:border-primary"
+                  className="flex w-full items-center gap-2 rounded-xl border border-border bg-card px-4 py-3 text-left text-sm text-primary-dark transition hover:border-primary"
                 >
                   <MapPin size={16} className="shrink-0 text-primary" />
                   <span className="flex-1">{locationLine(institution)}</span>
@@ -304,7 +314,7 @@ export default function InstitutionModal({
                       )}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center justify-center gap-1.5 border-t border-border bg-background px-4 py-2.5 text-xs font-semibold text-primary-dark transition hover:bg-card"
+                      className="flex items-center justify-center gap-1.5 border-t border-border bg-card px-4 py-2.5 text-xs font-semibold text-primary-dark transition hover:bg-primary/5"
                     >
                       Abrir en Google Maps <ExternalLink size={12} />
                     </a>
@@ -436,7 +446,7 @@ export default function InstitutionModal({
                         href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="card-glow flex shrink-0 items-center gap-2 rounded-xl border border-border bg-background px-3.5 py-2.5 text-xs font-medium text-foreground/85 transition hover:border-primary hover:text-primary-dark"
+                        className="card-glow flex shrink-0 items-center gap-2 rounded-xl border border-border bg-card px-3.5 py-2.5 text-xs font-medium text-primary-dark transition hover:border-primary"
                       >
                         <Icon size={14} className="shrink-0 text-primary" />
                         {link.label}
@@ -445,6 +455,55 @@ export default function InstitutionModal({
                     );
                   })}
                 </div>
+              </div>
+            )}
+
+            {(institution.address || institution.localidad) && (
+              <div>
+                <p className="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-sage">
+                  <HeartHandshake size={13} /> Vida estudiantil
+                </p>
+
+                {becas.length > 0 && (
+                  <div className="mb-2.5 flex flex-wrap gap-1.5">
+                    {becas.map((b) => (
+                      <span
+                        key={b.nombre}
+                        title={b.descripcion ?? undefined}
+                        className={
+                          b.alcance === "institucional"
+                            ? "inline-flex items-center gap-1.5 rounded-full border border-sage/30 bg-sage/10 px-3 py-1.5 text-xs font-medium text-sage"
+                            : "inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground/70"
+                        }
+                      >
+                        <Award size={12} className="shrink-0" />
+                        {b.nombre}
+                        {b.alcance === "nacional" && (
+                          <span className="opacity-70">· nacional</span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {showsNationalBecasNote && (
+                  <p className="mb-2.5 text-[11px] leading-relaxed text-muted">
+                    💡 Además de sus propias becas, este tipo de institución suele participar de
+                    programas nacionales como la Beca Progresar o la Beca Manuel Belgrano --
+                    consultá los requisitos actualizados directamente con la institución.
+                  </p>
+                )}
+
+                <a
+                  href={googleMapsUrl(institution.name, institution.address, institution.localidad)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card-glow inline-flex items-center gap-2 rounded-xl border border-border bg-card px-3.5 py-2.5 text-xs font-medium text-sage transition hover:border-sage/50"
+                >
+                  <Star size={14} className="shrink-0" />
+                  Ver reseñas en Google Maps
+                  <ExternalLink size={11} className="shrink-0 opacity-60" />
+                </a>
               </div>
             )}
 
