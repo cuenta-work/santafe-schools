@@ -48,10 +48,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col items-center gap-3 border-t border-border px-4 py-5 text-center text-xs text-muted sm:flex-row sm:justify-between sm:gap-4 lg:px-8">
-        <GabiCredit className="order-1 sm:order-none" />
-        <span className="order-2 sm:order-none sm:flex-1 sm:text-center">
+        <span className="order-1 sm:order-none sm:flex-1 sm:whitespace-nowrap sm:text-left">
           Santa Fe Schools · guía educativa independiente, hecha en Santa Fe
         </span>
+        <GabiCredit className="order-2 sm:order-none sm:flex-[1.4]" />
         <FungirakBadge
           href={`mailto:${AUTHOR.email}`}
           className="order-3 mt-2 sm:order-none sm:mt-0 sm:flex-1 sm:justify-end"

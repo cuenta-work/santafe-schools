@@ -116,10 +116,10 @@ export const LEVEL_SHORT: Record<Level, string> = {
 };
 
 export const LEVEL_EMOJI: Record<Level, string> = {
-  jardin: "🎈",
-  primaria: "🎒",
-  secundaria: "📚",
-  terciario: "🔬",
+  jardin: "🧸",
+  primaria: "✏️",
+  secundaria: "🧪",
+  terciario: "📜",
   universidad: "🎓",
 };
 

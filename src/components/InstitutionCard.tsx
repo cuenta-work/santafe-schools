@@ -1,12 +1,13 @@
 "use client";
 
-import { MapPin, Star, Heart, Languages, GraduationCap, Cog } from "lucide-react";
+import { MapPin, Star, Heart, Languages, Cog } from "lucide-react";
 import type { Institution } from "@/lib/types";
 import { LEVEL_SHORT, LEVEL_EMOJI, SECTOR_SHORT, SECTOR_EMOJI, sortLevels } from "@/lib/types";
 import { locationLine } from "@/lib/format";
 import { institutionTint } from "@/lib/institutionColor";
 import { useFilters } from "@/context/FiltersContext";
 import InstitutionLogo from "./InstitutionLogo";
+import LevelCoverIcon from "./LevelCoverIcon";
 
 export default function InstitutionCard({
   institution,
@@ -30,13 +31,14 @@ export default function InstitutionCard({
         className="relative flex h-20 items-center justify-end px-4"
         style={{ background: tint.bg }}
       >
-        <GraduationCap
+        <LevelCoverIcon
+          level={sortLevels(institution.levels)[0]}
           size={60}
           strokeWidth={1.25}
           style={{ color: tint.icon }}
           className="-mr-2 -mt-2 opacity-70 transition group-hover:scale-110 group-hover:opacity-90"
         />
-        <div className="absolute left-3 top-3 flex flex-col items-start gap-1">
+        <div className="absolute left-3 top-3 flex max-w-[calc(100%-2.5rem)] flex-row flex-wrap items-start gap-1">
           {institution.featured && (
             <span className="flex items-center gap-1 rounded-full bg-card/90 px-2 py-1 text-[10px] font-semibold text-gold shadow-sm">
               <Star size={11} fill="currentColor" /> Destacada
@@ -85,9 +87,14 @@ export default function InstitutionCard({
         )}
 
         <div className="mt-1.5 flex items-start justify-between gap-2">
-          <h3 className="line-clamp-2 font-display text-lg font-semibold leading-snug text-foreground group-hover:text-primary-dark">
-            {institution.name}
-          </h3>
+          <div className="group/name relative min-w-0">
+            <h3 className="line-clamp-2 font-display text-lg font-semibold leading-snug text-foreground group-hover:text-primary-dark">
+              {institution.name}
+            </h3>
+            <span className="pointer-events-none absolute left-0 top-full z-30 mt-1.5 w-max max-w-[16rem] rounded-lg bg-foreground px-2.5 py-1.5 text-xs font-medium leading-snug text-background opacity-0 shadow-lg transition-opacity duration-150 group-hover/name:opacity-100">
+              {institution.name}
+            </span>
+          </div>
           <span
             role="button"
             tabIndex={0}

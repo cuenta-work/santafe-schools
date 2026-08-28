@@ -30,7 +30,7 @@ export function emptyFilters(): FiltersState {
     featuredOnly: false,
     search: "",
     origin: null,
-    radiusKm: 10,
+    radiusKm: 3,
   };
 }
 

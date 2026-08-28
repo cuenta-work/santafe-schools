@@ -272,7 +272,12 @@ export default function FamilyWizard() {
                   </span>
                   <InstitutionLogo id={inst.id} name={inst.name} domain={inst.logoDomain} size={36} />
                   <div className="min-w-0 flex-1">
-                    <p className="truncate text-sm font-semibold text-foreground">{inst.name}</p>
+                    <div className="group/name relative min-w-0">
+                      <p className="truncate text-sm font-semibold text-foreground">{inst.name}</p>
+                      <span className="pointer-events-none absolute left-0 top-full z-30 mt-1.5 w-max max-w-[15rem] rounded-lg bg-foreground px-2.5 py-1.5 text-xs font-medium leading-snug text-background opacity-0 shadow-lg transition-opacity duration-150 group-hover/name:opacity-100">
+                        {inst.name}
+                      </span>
+                    </div>
                     <p className="truncate text-xs text-muted">
                       {inst.localidad} · {SECTOR_SHORT[inst.sector]}
                       {inst.bilingue ? " · Bilingüe" : ""}

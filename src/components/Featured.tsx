@@ -1,12 +1,13 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Sparkles, MapPin, Heart, GraduationCap } from "lucide-react";
+import { Sparkles, MapPin, Heart } from "lucide-react";
 import { LEVEL_LABELS, LEVEL_SHORT, LEVEL_EMOJI, sortLevels, type Level } from "@/lib/types";
 import { institutionTint } from "@/lib/institutionColor";
 import { capitalFirst } from "@/lib/localityPriority";
 import { useFilters } from "@/context/FiltersContext";
 import InstitutionLogo from "./InstitutionLogo";
+import LevelCoverIcon from "./LevelCoverIcon";
 
 // Orden pedagógico fijo -- de maternal a posgrado -- para que los filtros
 // de nivel siempre aparezcan en el mismo orden sin importar en qué orden
@@ -64,20 +65,21 @@ export default function Featured() {
               <button
                 key={i.id}
                 onClick={() => setSelected(i)}
-                className="card-glow shine flex w-[15.5rem] shrink-0 flex-col overflow-hidden rounded-2xl border border-border bg-background text-left transition-transform active:scale-[0.98] lg:w-auto"
+                className="card-glow shine flex w-[15.5rem] shrink-0 flex-col overflow-hidden rounded-2xl border border-border bg-card text-left transition-transform active:scale-[0.98] lg:w-auto"
               >
                 <div
                   className="relative flex h-16 items-center justify-end px-4"
                   style={{ background: tint.bg }}
                 >
-                  <GraduationCap
+                  <LevelCoverIcon
+                    level={sortLevels(i.levels)[0]}
                     size={44}
                     strokeWidth={1.25}
                     style={{ color: tint.icon }}
                     className="-mr-2 -mt-2 opacity-70"
                   />
                   <span
-                    className="absolute left-4 z-10 rounded-xl ring-4 ring-background"
+                    className="absolute left-4 z-10 rounded-xl ring-4 ring-card"
                     style={{ bottom: -24 }}
                   >
                     <InstitutionLogo id={i.id} name={i.name} domain={i.logoDomain} size={48} />
@@ -91,9 +93,14 @@ export default function Featured() {
                         .join(" · ")}
                     </p>
                     <div className="flex items-start justify-between gap-2">
-                      <p className="line-clamp-2 font-display text-base font-semibold text-foreground">
-                        {i.name}
-                      </p>
+                      <div className="group/name relative min-w-0">
+                        <p className="line-clamp-2 font-display text-base font-semibold text-foreground">
+                          {i.name}
+                        </p>
+                        <span className="pointer-events-none absolute left-0 top-full z-30 mt-1.5 w-max max-w-[15rem] rounded-lg bg-foreground px-2.5 py-1.5 text-xs font-medium leading-snug text-background opacity-0 shadow-lg transition-opacity duration-150 group-hover/name:opacity-100">
+                          {i.name}
+                        </span>
+                      </div>
                       <span
                         role="button"
                         tabIndex={0}

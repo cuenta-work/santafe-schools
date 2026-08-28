@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 import {
   X,
   AtSign,
@@ -38,6 +39,15 @@ import { AUTHOR } from "@/lib/author";
 import InstitutionLogo from "./InstitutionLogo";
 import SafeIframe from "./SafeIframe";
 
+const CityMap = dynamic(() => import("./CityMap"), {
+  ssr: false,
+  loading: () => (
+    <div className="flex h-[220px] w-full items-center justify-center rounded-xl border border-border bg-background text-sm text-muted">
+      Cargando el mapa...
+    </div>
+  ),
+});
+
 export default function InstitutionModal({
   institution,
   onClose,
@@ -49,6 +59,7 @@ export default function InstitutionModal({
   const favorite = isFavorite(institution.id);
   const [copied, setCopied] = useState(false);
   const [showPreview, setShowPreview] = useState(false);
+  const [showMap, setShowMap] = useState(false);
   const previewRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -193,6 +204,36 @@ export default function InstitutionModal({
           <div className="flex flex-col gap-6 px-6 py-5">
             <p className="text-sm leading-relaxed text-foreground/85">{institution.description}</p>
 
+            <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground/80">
+              <Users size={13} /> {institution.genero}
+            </span>
+
+            {institution.website && (
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setShowPreview((v) => !v)}
+                  className="flex w-full items-center gap-2 rounded-xl border border-border bg-background px-4 py-3 text-left text-sm text-foreground transition hover:border-primary"
+                >
+                  <Monitor size={16} className="shrink-0 text-primary" />
+                  <span className="flex-1">Vista previa del sitio oficial</span>
+                  <span className="flex shrink-0 items-center gap-1 text-xs font-semibold text-primary-dark">
+                    {showPreview ? "Ocultar" : "Mostrar"}
+                    {showPreview ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                  </span>
+                </button>
+                {showPreview && (
+                  <div ref={previewRef} className="mt-2 scroll-mt-4">
+                    <SafeIframe
+                      src={institution.website}
+                      title={`Sitio de ${institution.name}`}
+                      className="h-[50vh] w-full lg:h-[55vh]"
+                    />
+                  </div>
+                )}
+              </div>
+            )}
+
             {highlights.length > 0 && (
               <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
                 {highlights.map((h) => (
@@ -215,9 +256,6 @@ export default function InstitutionModal({
                   <Clock size={13} /> {institution.modalidad}
                 </span>
               )}
-              <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground/80">
-                <Users size={13} /> {institution.genero}
-              </span>
               {institution.bilingue && (
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-primary/30 bg-primary/10 px-3 py-1.5 text-xs font-semibold text-primary-dark">
                   <Languages size={13} /> Bilingüe · {institution.bilingue}
@@ -236,18 +274,43 @@ export default function InstitutionModal({
             </div>
 
             {(institution.address || institution.localidad) && (
-              <a
-                href={googleMapsUrl(institution.name, institution.address, institution.localidad)}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground transition hover:border-primary"
-              >
-                <MapPin size={16} className="shrink-0 text-primary" />
-                <span className="flex-1">{locationLine(institution)}</span>
-                <span className="shrink-0 text-xs font-semibold text-primary-dark">
-                  Cómo llegar
-                </span>
-              </a>
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setShowMap((v) => !v)}
+                  className="flex w-full items-center gap-2 rounded-xl border border-border bg-background px-4 py-3 text-left text-sm text-foreground transition hover:border-primary"
+                >
+                  <MapPin size={16} className="shrink-0 text-primary" />
+                  <span className="flex-1">{locationLine(institution)}</span>
+                  <span className="flex shrink-0 items-center gap-1 text-xs font-semibold text-primary-dark">
+                    Cómo llegar
+                    {showMap ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                  </span>
+                </button>
+                {showMap && (
+                  <div className="mt-2 overflow-hidden rounded-xl border border-border">
+                    {institution.lat != null && institution.lon != null && (
+                      <CityMap
+                        institutions={[institution]}
+                        onSelect={() => {}}
+                        height="220px"
+                      />
+                    )}
+                    <a
+                      href={googleMapsUrl(
+                        institution.name,
+                        institution.address,
+                        institution.localidad
+                      )}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-1.5 border-t border-border bg-background px-4 py-2.5 text-xs font-semibold text-primary-dark transition hover:bg-card"
+                    >
+                      Abrir en Google Maps <ExternalLink size={12} />
+                    </a>
+                  </div>
+                )}
+              </div>
             )}
 
             {hasContact && (
@@ -306,7 +369,7 @@ export default function InstitutionModal({
 
                 {institution.carreras.length > 0 && (
                   <ul
-                    className={`scrollbar-thin flex flex-col divide-y divide-border overflow-hidden overflow-y-auto rounded-xl border border-border bg-background ${
+                    className={`scrollbar-thin flex flex-col divide-y divide-border overflow-hidden overflow-y-auto rounded-xl border border-border bg-card ${
                       institution.carreras.length > 6 ? "max-h-72" : ""
                     }`}
                   >
@@ -315,9 +378,12 @@ export default function InstitutionModal({
                         key={c.nombre}
                         className="flex items-start justify-between gap-3 px-3.5 py-2.5 text-sm"
                       >
-                        <div className="min-w-0">
-                          <p className="text-foreground">{c.nombre}</p>
-                          {c.titulo && <p className="text-xs text-muted">{c.titulo}</p>}
+                        <div className="flex min-w-0 items-start gap-2">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                          <div className="min-w-0">
+                            <p className="text-foreground">{c.nombre}</p>
+                            {c.titulo && <p className="text-xs text-muted">{c.titulo}</p>}
+                          </div>
                         </div>
                         <span className="flex shrink-0 items-center gap-1 rounded-full bg-accent/10 px-2 py-0.5 text-[11px] font-semibold text-accent-dark">
                           <Clock size={11} /> {c.duracionLabel}
@@ -379,32 +445,6 @@ export default function InstitutionModal({
                     );
                   })}
                 </div>
-              </div>
-            )}
-
-            {institution.website && (
-              <div>
-                <button
-                  type="button"
-                  onClick={() => setShowPreview((v) => !v)}
-                  className="flex w-full items-center gap-2 rounded-xl border border-border bg-background px-4 py-3 text-left text-sm text-foreground transition hover:border-primary"
-                >
-                  <Monitor size={16} className="shrink-0 text-primary" />
-                  <span className="flex-1">Vista previa del sitio oficial</span>
-                  <span className="flex shrink-0 items-center gap-1 text-xs font-semibold text-primary-dark">
-                    {showPreview ? "Ocultar" : "Mostrar"}
-                    {showPreview ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                  </span>
-                </button>
-                {showPreview && (
-                  <div ref={previewRef} className="mt-2 scroll-mt-4">
-                    <SafeIframe
-                      src={institution.website}
-                      title={`Sitio de ${institution.name}`}
-                      className="h-[50vh] w-full lg:h-[55vh]"
-                    />
-                  </div>
-                )}
               </div>
             )}
 

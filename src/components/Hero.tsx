@@ -1,8 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Search, GraduationCap } from "lucide-react";
-import { LEVEL_LABELS, SECTOR_LABELS, type Level, type Sector } from "@/lib/types";
+import { Search, GraduationCap, SlidersHorizontal } from "lucide-react";
+import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS, SECTOR_EMOJI, type Level, type Sector } from "@/lib/types";
 import { useFilters } from "@/context/FiltersContext";
 import { emptyFilters } from "@/lib/filters";
 import { capitalFirst } from "@/lib/localityPriority";
@@ -97,12 +97,21 @@ export default function Hero() {
             recién ahí confirma la selección contra el listado de abajo —
             a propósito no reactivo como el resto de los toggles del sitio,
             porque acá el usuario arma varias elecciones antes de decidir. */}
-        <div className="mt-4 rounded-3xl border border-border bg-background/70 p-4 sm:p-6">
-          <p className="mb-3 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted">
-            Armá tu búsqueda
-          </p>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-            <div>
+        <div className="mt-4 overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
+          <div className="flex items-center gap-2.5 border-b border-border bg-background/60 px-4 py-3.5 sm:px-6">
+            <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary-dark">
+              <SlidersHorizontal size={15} />
+            </span>
+            <div className="min-w-0">
+              <p className="text-sm font-semibold text-foreground">Armá tu búsqueda</p>
+              <p className="text-xs text-muted">
+                Elegí lo que te importa y te llevamos directo a los resultados.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-3 p-4 sm:grid-cols-3 sm:gap-4 sm:p-6">
+            <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
               <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                 Nivel
               </p>
@@ -115,13 +124,15 @@ export default function Hero() {
                     data-active={pendingLevels.has(level)}
                     onClick={() => toggleLevel(level)}
                   >
-                    {LEVEL_LABELS[level]}
+                    <span>
+                      {LEVEL_EMOJI[level]} {LEVEL_LABELS[level]}
+                    </span>
                     <span className="opacity-60">({levelCounts[level]})</span>
                   </button>
                 ))}
               </div>
             </div>
-            <div>
+            <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
               <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                 Gestión
               </p>
@@ -134,13 +145,15 @@ export default function Hero() {
                     data-active={pendingSectors.has(sector)}
                     onClick={() => toggleSector(sector)}
                   >
-                    {SECTOR_LABELS[sector]}
+                    <span>
+                      {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
+                    </span>
                     <span className="opacity-60">({sectorCounts[sector]})</span>
                   </button>
                 ))}
               </div>
             </div>
-            <div>
+            <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
               <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                 Zona
               </p>
@@ -152,14 +165,15 @@ export default function Hero() {
               />
             </div>
           </div>
-          <div className="mt-4 flex justify-end">
-          <button
-            type="button"
-            onClick={applyAndScroll}
-            className="shine flex h-11 w-full items-center justify-center gap-2 rounded-full bg-primary text-sm font-semibold text-white shadow-md shadow-primary/20 transition active:scale-95 hover:bg-primary-dark sm:w-auto sm:px-8"
-          >
-            <Search size={15} /> Aplicar filtros
-          </button>
+
+          <div className="flex justify-end border-t border-border bg-background/40 px-4 py-3.5 sm:px-6">
+            <button
+              type="button"
+              onClick={applyAndScroll}
+              className="shine flex h-11 w-full items-center justify-center gap-2 rounded-full bg-primary text-sm font-semibold text-white shadow-md shadow-primary/20 transition active:scale-95 hover:bg-primary-dark sm:w-auto sm:px-8"
+            >
+              <Search size={15} /> Aplicar filtros
+            </button>
           </div>
         </div>
 

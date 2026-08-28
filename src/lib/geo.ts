@@ -7,7 +7,9 @@ export interface LatLon {
 // están repartidos por toda la provincia, así que "cerca tuyo" tiene que
 // poder significar tanto "a 10 cuadras" como "en el pueblo de al lado".
 export const RADII = [
+  { km: 1, label: "1 km" },
   { km: 3, label: "3 km" },
+  { km: 5, label: "5 km" },
   { km: 10, label: "10 km" },
   { km: 30, label: "30 km" },
   { km: 100, label: "100 km" },
