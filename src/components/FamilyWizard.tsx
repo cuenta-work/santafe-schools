@@ -16,18 +16,62 @@ import { useFilters } from "@/context/FiltersContext";
 import { capitalFirst } from "@/lib/localityPriority";
 import InstitutionLogo from "./InstitutionLogo";
 import LevelTipBanner from "./LevelTipBanner";
+import TruncatedTooltip from "./TruncatedTooltip";
 
-type Prioridad = "cercania" | "jornada" | "bilingue" | "tecnica" | "arancel";
+type Prioridad =
+  | "cercania"
+  | "jornada"
+  | "bilingue"
+  | "tecnica"
+  | "religioso"
+  | "arancel"
+  | "publica"
+  | "corta"
+  | "posgrado"
+  | "becas";
 
 const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "universidad"];
 
-const PRIORIDADES: { key: Prioridad; label: string; emoji: string }[] = [
-  { key: "cercania", label: "Que quede cerca de casa", emoji: "📍" },
-  { key: "jornada", label: "Jornada extendida o doble escolaridad", emoji: "⏰" },
-  { key: "bilingue", label: "Que sea bilingüe", emoji: "🌐" },
-  { key: "tecnica", label: "Orientación técnica", emoji: "⚙️" },
-  { key: "arancel", label: "Que la cuota sea accesible", emoji: "💸" },
-];
+// Las opciones cambian según el nivel elegido en el paso 1 -- no tiene
+// sentido preguntar "orientación técnica" para un jardín, ni "jornada
+// extendida" para una universidad. Cada una, además, tiene que poder
+// puntuar algo real en scoreInstitution: si no hay un dato que la
+// respalde, no aparece como opción.
+const PRIORIDADES_BY_LEVEL: Record<Level, { key: Prioridad; label: string; emoji: string }[]> = {
+  jardin: [
+    { key: "cercania", label: "Que quede cerca de casa", emoji: "📍" },
+    { key: "jornada", label: "Jornada extendida o doble escolaridad", emoji: "⏰" },
+    { key: "bilingue", label: "Que sea bilingüe", emoji: "🌐" },
+    { key: "religioso", label: "Con orientación religiosa", emoji: "🙏" },
+    { key: "arancel", label: "Que la cuota sea accesible", emoji: "💸" },
+  ],
+  primaria: [
+    { key: "cercania", label: "Que quede cerca de casa", emoji: "📍" },
+    { key: "jornada", label: "Jornada extendida o doble escolaridad", emoji: "⏰" },
+    { key: "bilingue", label: "Que sea bilingüe", emoji: "🌐" },
+    { key: "religioso", label: "Con orientación religiosa", emoji: "🙏" },
+    { key: "arancel", label: "Que la cuota sea accesible", emoji: "💸" },
+  ],
+  secundaria: [
+    { key: "cercania", label: "Que quede cerca de casa", emoji: "📍" },
+    { key: "jornada", label: "Jornada extendida o doble escolaridad", emoji: "⏰" },
+    { key: "bilingue", label: "Que sea bilingüe", emoji: "🌐" },
+    { key: "tecnica", label: "Orientación técnica", emoji: "⚙️" },
+    { key: "arancel", label: "Que la cuota sea accesible", emoji: "💸" },
+  ],
+  terciario: [
+    { key: "cercania", label: "Que quede cerca de casa", emoji: "📍" },
+    { key: "publica", label: "Gestión pública, sin arancel", emoji: "🏛️" },
+    { key: "corta", label: "Que tenga carreras cortas (hasta 2 años)", emoji: "⏱️" },
+    { key: "arancel", label: "Que la cuota sea accesible", emoji: "💸" },
+  ],
+  universidad: [
+    { key: "cercania", label: "Que quede cerca de casa", emoji: "📍" },
+    { key: "publica", label: "Gestión pública, sin arancel", emoji: "🏛️" },
+    { key: "posgrado", label: "Que tenga oferta de posgrado", emoji: "🎓" },
+    { key: "becas", label: "Que ofrezca becas propias", emoji: "💸" },
+  ],
+};
 
 interface Answers {
   level: Level | null;
@@ -39,7 +83,12 @@ interface Answers {
 function scoreInstitution(inst: Institution, answers: Answers): number {
   let score = 0;
   if (answers.sector !== "cualquiera" && inst.sector === answers.sector) score += 3;
-  if (answers.localidad && inst.localidad === answers.localidad) score += 4;
+  if (answers.localidad && inst.localidad === answers.localidad) {
+    // Si "cercanía" fue justo lo que más le importa, que pese más que el
+    // resto de los cruces -- si no, un empate de puntos podía terminar
+    // arriba de la lista con una institución lejos de la zona elegida.
+    score += answers.prioridad === "cercania" ? 6 : 4;
+  }
   if (answers.prioridad === "bilingue" && inst.bilingue) score += 5;
   if (
     answers.prioridad === "jornada" &&
@@ -47,6 +96,15 @@ function scoreInstitution(inst: Institution, answers: Answers): number {
   )
     score += 5;
   if (answers.prioridad === "tecnica" && inst.tipoSecundaria === "tecnica") score += 5;
+  if (answers.prioridad === "religioso" && inst.religioso) score += 5;
+  if (answers.prioridad === "publica" && inst.sector === "publico") score += 5;
+  if (
+    answers.prioridad === "corta" &&
+    inst.carreras.some((c) => c.duracionAnios <= 2)
+  )
+    score += 5;
+  if (answers.prioridad === "posgrado" && (inst.posgrados?.length ?? 0) > 0) score += 5;
+  if (answers.prioridad === "becas" && (inst.becas?.length ?? 0) > 0) score += 5;
   if (answers.prioridad === "arancel" && (inst.sector === "publico" || inst.costTier === "$"))
     score += 5;
   if (inst.featured) score += 1;
@@ -163,7 +221,7 @@ export default function FamilyWizard() {
       question: "Si tuvieras que elegir una sola cosa, ¿qué es lo que más te importa?",
       body: (
         <div className="flex flex-col gap-2">
-          {PRIORIDADES.map((p) => (
+          {(answers.level ? PRIORIDADES_BY_LEVEL[answers.level] : []).map((p) => (
             <button
               key={p.key}
               type="button"
@@ -272,12 +330,10 @@ export default function FamilyWizard() {
                   </span>
                   <InstitutionLogo id={inst.id} name={inst.name} domain={inst.logoDomain} size={36} />
                   <div className="min-w-0 flex-1">
-                    <div className="group/name relative min-w-0">
-                      <p className="truncate text-sm font-semibold text-foreground">{inst.name}</p>
-                      <span className="pointer-events-none absolute left-0 top-full z-30 mt-1.5 w-max max-w-[15rem] rounded-lg bg-foreground px-2.5 py-1.5 text-xs font-medium leading-snug text-background opacity-0 shadow-lg transition-opacity duration-150 group-hover/name:opacity-100">
-                        {inst.name}
-                      </span>
-                    </div>
+                    <TruncatedTooltip
+                      text={inst.name}
+                      className="min-w-0 truncate text-sm font-semibold text-foreground"
+                    />
                     <p className="truncate text-xs text-muted">
                       {inst.localidad} · {SECTOR_SHORT[inst.sector]}
                       {inst.bilingue ? " · Bilingüe" : ""}

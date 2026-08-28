@@ -72,13 +72,16 @@ export default function Hero() {
         }}
       />
       <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 pb-14 pt-10 lg:px-8 lg:pb-20 lg:pt-16">
-        <p className="text-xs font-semibold uppercase tracking-[0.22em] text-primary">
-          Santa Fe, Argentina — todos los niveles, toda la provincia
+        <p className="text-center text-xs font-semibold uppercase tracking-[0.1em] text-primary sm:text-left sm:tracking-[0.22em]">
+          Santa Fe, Argentina —{" "}
+          <br className="sm:hidden" />
+          todos los niveles, toda la provincia
         </p>
         <div className="flex items-center gap-4 sm:gap-5">
           <SchoolMark className="h-16 w-16 shrink-0 -rotate-3 sm:h-20 sm:w-20 lg:h-24 lg:w-24" />
-          <h1 className="max-w-2xl font-display text-4xl font-semibold leading-[1.05] text-foreground sm:text-5xl lg:text-6xl">
-            El mapa educativo de Santa Fe, para elegir{" "}
+          <h1 className="max-w-2xl font-display text-3xl font-semibold leading-[1.1] text-foreground sm:text-5xl sm:leading-[1.05] lg:text-6xl">
+            El mapa educativo de Santa Fe,
+            <br className="sm:hidden" /> para elegir{" "}
             <span className="whitespace-nowrap italic text-primary-dark">con tranquilidad</span>.
           </h1>
         </div>
@@ -124,28 +127,26 @@ export default function Hero() {
               <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                 Nivel
               </p>
-              <div className="flex flex-col items-start gap-1.5">
+              <div className="flex flex-wrap gap-1.5">
                 {LEVEL_ORDER.map((level) => (
                   <button
                     key={level}
                     type="button"
-                    className="pill !w-full !justify-between !py-1.5 !text-xs"
+                    className="pill !py-1.5 !text-xs"
                     data-active={pendingLevels.has(level)}
                     onClick={() => toggleLevel(level)}
                   >
-                    <span>
-                      {LEVEL_EMOJI[level]} {LEVEL_LABELS[level]}
-                    </span>
+                    {LEVEL_EMOJI[level]} {LEVEL_LABELS[level]}
                     <span className="opacity-60">({levelCounts[level]})</span>
                   </button>
                 ))}
                 <button
                   type="button"
-                  className="pill !w-full !justify-between !py-1.5 !text-xs"
+                  className="pill !py-1.5 !text-xs"
                   data-active={pendingPosgrado}
                   onClick={() => setPendingPosgrado((v) => !v)}
                 >
-                  <span>🎓 Posgrado</span>
+                  🎓 Posgrado
                   <span className="opacity-60">({posgradoCount})</span>
                 </button>
               </div>
@@ -154,18 +155,16 @@ export default function Hero() {
               <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                 Gestión
               </p>
-              <div className="flex flex-col items-start gap-1.5">
+              <div className="flex flex-wrap gap-1.5">
                 {SECTOR_ORDER.map((sector) => (
                   <button
                     key={sector}
                     type="button"
-                    className="pill pill-accent !w-full !justify-between !py-1.5 !text-xs"
+                    className="pill pill-accent !py-1.5 !text-xs"
                     data-active={pendingSectors.has(sector)}
                     onClick={() => toggleSector(sector)}
                   >
-                    <span>
-                      {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
-                    </span>
+                    {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
                     <span className="opacity-60">({sectorCounts[sector]})</span>
                   </button>
                 ))}

@@ -26,20 +26,36 @@ export function useSwipeToDismiss({ onDismiss, scrollRef, disabled }: Options) {
     const el = sheetRef.current;
     if (!el || disabled) return;
 
-    let startY = 0;
+    // dismissStartY es null mientras el contenido interno todavía puede
+    // scrollear -- recién se fija (al Y del dedo en ese instante) la
+    // primera vez que el contenido llega arriba del todo durante ESTE
+    // arrastre. Si midiéramos siempre contra el touchstart original, un
+    // arrastre largo para volver a subir el contenido (el dedo ya venía
+    // bajando hace rato) se malinterpretaba como "correr para cerrar" en
+    // cuanto el scroll tocaba el techo, cerrando la hoja sin querer.
+    let dismissStartY: number | null = null;
     let dragging = false;
 
-    const onStart = (e: TouchEvent) => {
-      startY = e.touches[0].clientY;
+    const onStart = () => {
+      dismissStartY = null;
       dragging = true;
     };
 
     const onMove = (e: TouchEvent) => {
       if (!dragging) return;
-      const delta = e.touches[0].clientY - startY;
+      const y = e.touches[0].clientY;
       const scrollEl = scrollRef?.current;
       const atTop = !scrollEl || scrollEl.scrollTop <= 0;
-      if (delta > 4 && atTop) {
+
+      if (!atTop) {
+        dismissStartY = null;
+        setDragY(0);
+        return;
+      }
+
+      if (dismissStartY === null) dismissStartY = y;
+      const delta = y - dismissStartY;
+      if (delta > 4) {
         setIsDragging(true);
         setDragY(delta);
         if (e.cancelable) e.preventDefault();

@@ -79,16 +79,22 @@ export default function InstitutionModal({
 
   const shareInstitution = async () => {
     const url = `${window.location.origin}/institucion/${institution.id}`;
+    // Un mensaje propio en vez de compartir la URL pelada -- así lo que
+    // llega por WhatsApp/redes se lee como una recomendación, no como un
+    // link a secas, y menciona el sitio en el proceso.
+    const text = `📚 ${institution.name}${
+      institution.localidad ? ` (${institution.localidad})` : ""
+    } -- la encontré en Santa Fe Schools, la guía educativa de la provincia:`;
     if (navigator.share) {
       try {
-        await navigator.share({ title: institution.name, url });
+        await navigator.share({ title: institution.name, text, url });
         return;
       } catch (err) {
         if (err instanceof Error && err.name === "AbortError") return;
       }
     }
     try {
-      await copyToClipboard(url);
+      await copyToClipboard(`${text}\n${url}`);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch {}
@@ -144,31 +150,81 @@ export default function InstitutionModal({
         <div className="flex justify-center pt-2 sm:hidden" aria-hidden="true">
           <span className="h-1.5 w-10 rounded-full bg-border" />
         </div>
-        <div className="flex items-start justify-between gap-4 border-b border-border px-6 py-4">
-          <div className="flex items-start gap-3">
+        <div className="flex flex-col gap-3 border-b border-border px-6 py-4 sm:flex-row sm:items-start sm:gap-4">
+          <div className="flex items-start justify-between gap-3 sm:justify-start">
             <InstitutionLogo
               id={institution.id}
               name={institution.name}
               domain={institution.logoDomain}
               size={48}
             />
-            <div>
-              <p className="flex flex-wrap items-center gap-1 text-[11px] font-semibold uppercase tracking-wide text-primary">
-                {sortLevels(institution.levels)
-                  .map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_LABELS[l]}`)
-                  .join(" · ")}
-                <span className="text-muted"> · {SECTOR_LABELS[institution.sector]}</span>
-              </p>
-              <h3 className="font-display text-2xl font-semibold leading-tight text-foreground">
-                {institution.name}
-              </h3>
-              <p className="mt-0.5 text-xs text-muted">
-                {institution.localidad}
-                {institution.foundedYear && ` · fundada en ${institution.foundedYear}`}
-              </p>
+            {/* En mobile los botones van en esta misma fila, a la altura
+                del logo -- así el título de abajo queda libre para usar
+                todo el ancho de la hoja en vez de compartir renglón con
+                ellos y terminar partido en un montón de líneas. */}
+            <div className="flex shrink-0 items-center gap-1 sm:hidden">
+              {institution.phone && (
+                <a
+                  href={phoneHref(institution.phone)}
+                  aria-label={`Llamar a ${institution.name}`}
+                  className="rounded-full p-1.5 text-muted hover:bg-background hover:text-primary-dark"
+                >
+                  <Phone size={18} />
+                </a>
+              )}
+              <button
+                onClick={() => toggleFavorite(institution.id)}
+                aria-pressed={favorite}
+                aria-label={favorite ? "Quitar de favoritos" : "Guardar en favoritos"}
+                className="rounded-full p-1.5 text-muted hover:bg-background hover:text-primary-dark"
+              >
+                <Heart size={19} className={favorite ? "fill-accent text-accent" : ""} />
+              </button>
+              <div className="relative">
+                <button
+                  onClick={shareInstitution}
+                  aria-label={copied ? "Link copiado" : "Compartir esta institución"}
+                  className="rounded-full p-1.5 text-muted hover:bg-background hover:text-primary-dark"
+                >
+                  {copied ? <Check size={18} className="text-sage" /> : <Share2 size={18} />}
+                </button>
+                {copied && (
+                  <span className="pointer-events-none absolute right-0 top-full mt-1 whitespace-nowrap rounded-full bg-foreground px-2 py-1 text-[11px] font-medium text-background shadow-md">
+                    Link copiado
+                  </span>
+                )}
+              </div>
+              <button
+                onClick={onClose}
+                aria-label="Cerrar"
+                className="rounded-full p-1.5 text-muted hover:bg-background hover:text-foreground"
+              >
+                <X size={20} />
+              </button>
             </div>
           </div>
-          <div className="flex shrink-0 items-center gap-1">
+
+          <div className="flex min-w-0 flex-1 flex-col">
+            {/* En mobile el nombre va primero (order-1) para poder usar
+                todo el ancho de la hoja; el renglón de nivel/gestión baja
+                a una línea propia debajo. En desktop se mantiene el orden
+                de siempre. */}
+            <p className="order-2 flex flex-wrap items-center gap-1 text-[11px] font-semibold uppercase tracking-wide text-primary sm:order-1">
+              {sortLevels(institution.levels)
+                .map((l) => `${LEVEL_EMOJI[l]} ${LEVEL_LABELS[l]}`)
+                .join(" · ")}
+              <span className="text-muted"> · {SECTOR_LABELS[institution.sector]}</span>
+            </p>
+            <h3 className="order-1 font-display text-2xl font-semibold leading-tight text-foreground sm:order-2">
+              {institution.name}
+            </h3>
+            <p className="order-3 mt-0.5 text-xs text-muted">
+              {institution.localidad}
+              {institution.foundedYear && ` · fundada en ${institution.foundedYear}`}
+            </p>
+          </div>
+
+          <div className="hidden shrink-0 items-center gap-1 sm:flex">
             {institution.phone && (
               <a
                 href={phoneHref(institution.phone)}
@@ -437,7 +493,7 @@ export default function InstitutionModal({
                 <p className="mb-2.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-muted">
                   <Library size={13} /> Recursos y links útiles
                 </p>
-                <div className="scrollbar-thin -mx-1 flex gap-2 overflow-x-auto px-1 pb-1">
+                <div className="scrollbar-thin -mx-1 flex gap-2 overflow-x-auto px-1 pb-2.5">
                   {resourceLinks.map((link) => {
                     const Icon = RESOURCE_ICON[link.kind] ?? LinkIcon;
                     return (
@@ -498,11 +554,11 @@ export default function InstitutionModal({
                   href={googleMapsUrl(institution.name, institution.address, institution.localidad)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="card-glow inline-flex items-center gap-2 rounded-xl border border-border bg-card px-3.5 py-2.5 text-xs font-medium text-sage transition hover:border-sage/50"
+                  className="inline-flex items-center gap-1 text-xs text-muted underline decoration-muted/40 underline-offset-2 transition hover:text-sage hover:decoration-sage/50"
                 >
-                  <Star size={14} className="shrink-0" />
-                  Ver reseñas en Google Maps
-                  <ExternalLink size={11} className="shrink-0 opacity-60" />
+                  <Star size={11} className="shrink-0" />
+                  Ver más reseñas en Google Maps
+                  <ExternalLink size={10} className="shrink-0 opacity-60" />
                 </a>
               </div>
             )}

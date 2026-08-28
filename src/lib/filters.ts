@@ -3,6 +3,11 @@ import type { LatLon } from "./geo";
 
 export interface FiltersState {
   levels: Set<Level>;
+  // false (default): institución con AL MENOS uno de los niveles marcados.
+  // true: institución que tenga TODOS los niveles marcados a la vez -- para
+  // buscar, por ejemplo, "que tenga primaria y secundaria" en un mismo
+  // colegio, no cualquiera de las dos por separado.
+  levelsMatchAll: boolean;
   sectors: Set<Sector>;
   localidad: string | null;
   modalidad: string | null;
@@ -23,6 +28,7 @@ export interface FiltersState {
 export function emptyFilters(): FiltersState {
   return {
     levels: new Set(),
+    levelsMatchAll: false,
     sectors: new Set(),
     localidad: null,
     modalidad: null,

@@ -8,6 +8,7 @@ import { capitalFirst } from "@/lib/localityPriority";
 import { useFilters } from "@/context/FiltersContext";
 import InstitutionLogo from "./InstitutionLogo";
 import LevelCoverIcon from "./LevelCoverIcon";
+import TruncatedTooltip from "./TruncatedTooltip";
 
 // Orden pedagógico fijo -- de maternal a posgrado -- para que los filtros
 // de nivel siempre aparezcan en el mismo orden sin importar en qué orden
@@ -93,14 +94,10 @@ export default function Featured() {
                         .join(" · ")}
                     </p>
                     <div className="flex items-start justify-between gap-2">
-                      <div className="group/name relative min-w-0">
-                        <p className="line-clamp-2 font-display text-base font-semibold text-foreground">
-                          {i.name}
-                        </p>
-                        <span className="pointer-events-none absolute left-0 top-full z-30 mt-1.5 w-max max-w-[15rem] rounded-lg bg-foreground px-2.5 py-1.5 text-xs font-medium leading-snug text-background opacity-0 shadow-lg transition-opacity duration-150 group-hover/name:opacity-100">
-                          {i.name}
-                        </span>
-                      </div>
+                      <TruncatedTooltip
+                        text={i.name}
+                        className="line-clamp-2 min-w-0 font-display text-base font-semibold text-foreground"
+                      />
                       <span
                         role="button"
                         tabIndex={0}

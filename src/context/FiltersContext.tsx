@@ -121,8 +121,12 @@ export function FiltersProvider({
     const search = filters.search.trim().toLowerCase();
     const distances = new Map<string, number>();
     const list = institutions.filter((i) => {
-      if (filters.levels.size > 0 && !i.levels.some((l) => filters.levels.has(l)))
-        return false;
+      if (filters.levels.size > 0) {
+        const matches = filters.levelsMatchAll
+          ? Array.from(filters.levels).every((l) => i.levels.includes(l))
+          : i.levels.some((l) => filters.levels.has(l));
+        if (!matches) return false;
+      }
       if (filters.sectors.size > 0 && !filters.sectors.has(i.sector)) return false;
       if (filters.localidad && i.localidad !== filters.localidad) return false;
       if (filters.modalidad && i.modalidad !== filters.modalidad) return false;

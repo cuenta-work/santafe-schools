@@ -165,6 +165,20 @@ export default function FilterControls() {
             </button>
           ))}
         </div>
+        {filters.levels.size > 1 && (
+          <label className="mt-2 flex cursor-pointer items-center justify-between gap-2.5 text-xs text-muted">
+            <span>
+              Que tenga <strong className="font-semibold text-foreground">todos</strong> esos
+              niveles a la vez (no cualquiera de ellos)
+            </span>
+            <input
+              type="checkbox"
+              checked={filters.levelsMatchAll}
+              onChange={(e) => applyFilters({ ...filters, levelsMatchAll: e.target.checked })}
+              className="switch shrink-0"
+            />
+          </label>
+        )}
       </div>
 
       <div>

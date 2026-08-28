@@ -7,6 +7,7 @@ import { getAllCarreras, getAllOrientaciones } from "@/lib/data";
 import { isCapital } from "@/lib/localityPriority";
 import { useFilters } from "@/context/FiltersContext";
 import InstitutionLogo from "./InstitutionLogo";
+import TruncatedTooltip from "./TruncatedTooltip";
 
 type DurationBucket = "corta" | "media" | "larga";
 
@@ -240,14 +241,10 @@ export default function CareerFinder() {
                   size={28}
                 />
                 <div className="min-w-0 flex-1">
-                  <div className="group/name relative min-w-0">
-                    <p className="truncate text-xs font-medium text-foreground/80">
-                      {c.institutionName}
-                    </p>
-                    <span className="pointer-events-none absolute left-0 top-full z-30 mt-1.5 w-max max-w-[14rem] rounded-lg bg-foreground px-2.5 py-1.5 text-xs font-medium leading-snug text-background opacity-0 shadow-lg transition-opacity duration-150 group-hover/name:opacity-100">
-                      {c.institutionName}
-                    </span>
-                  </div>
+                  <TruncatedTooltip
+                    text={c.institutionName}
+                    className="min-w-0 truncate text-xs font-medium text-foreground/80"
+                  />
                   <p className="flex items-center gap-1 truncate text-[11px] text-muted">
                     <MapPin size={10} className="shrink-0" />
                     {c.localidad} · {SECTOR_SHORT[c.sector]}

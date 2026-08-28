@@ -8,6 +8,7 @@ import { institutionTint } from "@/lib/institutionColor";
 import { useFilters } from "@/context/FiltersContext";
 import InstitutionLogo from "./InstitutionLogo";
 import LevelCoverIcon from "./LevelCoverIcon";
+import TruncatedTooltip from "./TruncatedTooltip";
 
 export default function InstitutionCard({
   institution,
@@ -87,14 +88,11 @@ export default function InstitutionCard({
         )}
 
         <div className="mt-1.5 flex items-start justify-between gap-2">
-          <div className="group/name relative min-w-0">
-            <h3 className="line-clamp-2 font-display text-lg font-semibold leading-snug text-foreground group-hover:text-primary-dark">
-              {institution.name}
-            </h3>
-            <span className="pointer-events-none absolute left-0 top-full z-30 mt-1.5 w-max max-w-[16rem] rounded-lg bg-foreground px-2.5 py-1.5 text-xs font-medium leading-snug text-background opacity-0 shadow-lg transition-opacity duration-150 group-hover/name:opacity-100">
-              {institution.name}
-            </span>
-          </div>
+          <TruncatedTooltip
+            heading
+            text={institution.name}
+            className="line-clamp-2 min-w-0 font-display text-lg font-semibold leading-snug text-foreground group-hover:text-primary-dark"
+          />
           <span
             role="button"
             tabIndex={0}
