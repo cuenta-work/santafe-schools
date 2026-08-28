@@ -65,7 +65,7 @@ export default function InstallPrompt() {
   if (!visible) return null;
 
   return (
-    <div className="fixed bottom-4 left-1/2 z-[1800] flex w-[calc(100vw-2rem)] -translate-x-1/2 items-center gap-3 rounded-2xl border border-border bg-card p-3 pr-2.5 shadow-lg sm:left-auto sm:right-6 sm:w-auto sm:max-w-xs sm:translate-x-0">
+    <div className="fixed bottom-4 left-1/2 z-[1800] flex w-[calc(100vw-2rem)] -translate-x-1/2 items-center gap-3 rounded-2xl border border-border bg-card p-3 pr-2.5 shadow-lg sm:left-auto sm:right-8 sm:w-auto sm:max-w-xs sm:translate-x-0">
       <LogoMark size={32} />
       <div className="min-w-0 flex-1">
         <p className="truncate text-sm font-semibold text-foreground">Santa Fe Schools</p>

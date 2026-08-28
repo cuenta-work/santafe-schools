@@ -124,7 +124,7 @@ export default function Hero() {
               <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                 Nivel
               </p>
-              <div className="flex flex-wrap gap-1.5">
+              <div className="flex flex-col items-start gap-1.5 sm:flex-row sm:flex-wrap sm:items-center">
                 {LEVEL_ORDER.map((level) => (
                   <button
                     key={level}
