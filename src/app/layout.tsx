@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import InstallPrompt from "@/components/InstallPrompt";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -97,6 +98,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className="min-h-full flex flex-col overflow-x-hidden bg-background text-foreground">
         {children}
+        <InstallPrompt />
         <Analytics />
       </body>
     </html>

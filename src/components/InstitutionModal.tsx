@@ -105,10 +105,8 @@ export default function InstitutionModal({
     return () => document.body.classList.remove("modal-open");
   }, []);
 
-  const scrollAreaRef = useRef<HTMLDivElement>(null);
-  const { sheetRef, dragY, isDragging } = useSwipeToDismiss({
+  const { sheetRef, handleRef, dragY, isDragging } = useSwipeToDismiss({
     onDismiss: onClose,
-    scrollRef: scrollAreaRef,
   });
 
   const hasCurricula = institution.orientaciones.length > 0 || institution.carreras.length > 0;
@@ -147,6 +145,11 @@ export default function InstitutionModal({
         }}
         onClick={(e) => e.stopPropagation()}
       >
+        {/* handleRef cubre la barrita + toda la cabecera -- es la única
+            zona de la que se puede arrastrar la hoja para cerrarla. El
+            contenido scrolleable de más abajo queda totalmente afuera de
+            este gesto, así nunca compite con el scroll normal. */}
+        <div ref={handleRef}>
         <div className="flex justify-center pt-2 sm:hidden" aria-hidden="true">
           <span className="h-1.5 w-10 rounded-full bg-border" />
         </div>
@@ -265,58 +268,16 @@ export default function InstitutionModal({
             </button>
           </div>
         </div>
+        </div>
 
         <div className="scrollbar-thin flex-1 overflow-y-auto">
           <div className="flex flex-col gap-6 px-6 py-5">
             <p className="text-sm leading-relaxed text-foreground/85">{institution.description}</p>
 
-            <span className="inline-flex w-fit items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground/80">
-              <Users size={13} /> {institution.genero}
-            </span>
-
-            {institution.website && (
-              <div>
-                <button
-                  type="button"
-                  onClick={() => setShowPreview((v) => !v)}
-                  className="flex w-full items-center gap-2 rounded-xl border border-border bg-card px-4 py-3 text-left text-sm text-primary-dark transition hover:border-primary"
-                >
-                  <Monitor size={16} className="shrink-0 text-primary" />
-                  <span className="flex-1">Vista previa del sitio oficial</span>
-                  <span className="flex shrink-0 items-center gap-1 text-xs font-semibold text-primary-dark">
-                    {showPreview ? "Ocultar" : "Mostrar"}
-                    {showPreview ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                  </span>
-                </button>
-                {showPreview && (
-                  <div ref={previewRef} className="mt-2 scroll-mt-4">
-                    <SafeIframe
-                      src={institution.website}
-                      title={`Sitio de ${institution.name}`}
-                      className="h-[50vh] w-full lg:h-[55vh]"
-                    />
-                  </div>
-                )}
-              </div>
-            )}
-
-            {highlights.length > 0 && (
-              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-                {highlights.map((h) => (
-                  <div
-                    key={h.label}
-                    className="rounded-xl border border-border bg-background p-3.5"
-                  >
-                    <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wide text-primary-dark">
-                      <Sparkles size={11} /> {h.label}
-                    </p>
-                    <p className="text-xs leading-relaxed text-foreground/80">{h.text}</p>
-                  </div>
-                ))}
-              </div>
-            )}
-
             <div className="flex flex-wrap gap-2">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground/80">
+                <Users size={13} /> {institution.genero}
+              </span>
               {institution.modalidad && (
                 <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-3 py-1.5 text-xs font-medium text-foreground/80">
                   <Clock size={13} /> {institution.modalidad}
@@ -339,7 +300,55 @@ export default function InstitutionModal({
               )}
             </div>
 
-            {(institution.address || institution.localidad) && (
+            {highlights.length > 0 && (
+              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+                {highlights.map((h) => (
+                  <div
+                    key={h.label}
+                    className="rounded-xl border border-border bg-background p-3.5"
+                  >
+                    <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wide text-primary-dark">
+                      <Sparkles size={11} /> {h.label}
+                    </p>
+                    <p className="text-xs leading-relaxed text-foreground/80">{h.text}</p>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {/* Vista previa y Cómo llegar son la misma familia de
+                elemento (accordion angosto, colapsado por defecto) --
+                agrupados así quedan pegados entre sí en vez de heredar el
+                mismo espaciado grande que separa al resto de las
+                secciones más "pesadas" del modal. */}
+            <div className="flex flex-col gap-2">
+              {institution.website && (
+                <div>
+                  <button
+                    type="button"
+                    onClick={() => setShowPreview((v) => !v)}
+                    className="flex w-full items-center gap-2 rounded-xl border border-border bg-card px-4 py-3 text-left text-sm text-primary-dark transition hover:border-primary"
+                  >
+                    <Monitor size={16} className="shrink-0 text-primary" />
+                    <span className="flex-1">Vista previa del sitio oficial</span>
+                    <span className="flex shrink-0 items-center gap-1 text-xs font-semibold text-primary-dark">
+                      {showPreview ? "Ocultar" : "Mostrar"}
+                      {showPreview ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+                    </span>
+                  </button>
+                  {showPreview && (
+                    <div ref={previewRef} className="mt-2 scroll-mt-4">
+                      <SafeIframe
+                        src={institution.website}
+                        title={`Sitio de ${institution.name}`}
+                        className="h-[50vh] w-full lg:h-[55vh]"
+                      />
+                    </div>
+                  )}
+                </div>
+              )}
+
+              {(institution.address || institution.localidad) && (
               <div>
                 <button
                   type="button"
@@ -377,7 +386,8 @@ export default function InstitutionModal({
                   </div>
                 )}
               </div>
-            )}
+              )}
+            </div>
 
             {hasContact && (
               <div className="flex flex-wrap gap-2">

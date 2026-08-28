@@ -55,7 +55,7 @@ export default function Footer() {
         <GabiCredit className="order-2 sm:order-none sm:flex-[1.4]" />
         <FungirakBadge
           href={`mailto:${AUTHOR.email}`}
-          className="order-3 mt-2 sm:order-none sm:mt-0 sm:flex-1 sm:justify-end"
+          className="order-3 mt-5 sm:order-none sm:mt-0 sm:flex-1 sm:justify-end"
         />
       </div>
     </footer>

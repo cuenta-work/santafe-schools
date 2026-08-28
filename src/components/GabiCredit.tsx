@@ -19,7 +19,7 @@ export default function GabiCredit({ className = "" }: { className?: string }) {
     <div
       className={`flex w-full items-start justify-center gap-1.5 text-center text-[10px] text-muted sm:mx-auto sm:w-auto sm:text-xs ${className}`}
     >
-      <WhatsAppIcon size={13} className="mt-0.5 shrink-0 text-[#25D366]" />
+      <WhatsAppIcon size={13} className="mt-px shrink-0 text-[#25D366]" />
       <span className="min-w-0 text-center leading-snug">
         <span className="block whitespace-nowrap">
           Gabi: &ldquo;¿Y si elegir colegio para tus hijos fuera tan fácil como elegir dónde

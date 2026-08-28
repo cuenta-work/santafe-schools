@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Santa Fe Schools — Guía de instituciones educativas",
+    name: "Santa Fe Schools",
     short_name: "Santa Fe Schools",
     description:
       "Buscador de jardines, escuelas, terciarios y universidades de la provincia de Santa Fe.",

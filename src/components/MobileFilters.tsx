@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
 import { LEVEL_LABELS, LEVEL_EMOJI, type Level } from "@/lib/types";
 import { emptyFilters, hasActiveFilters, countActiveFilters } from "@/lib/filters";
@@ -49,10 +49,8 @@ export default function MobileFilters() {
     return () => document.body.classList.remove("modal-open");
   }, [open]);
 
-  const scrollAreaRef = useRef<HTMLDivElement>(null);
-  const { sheetRef, dragY, isDragging } = useSwipeToDismiss({
+  const { sheetRef, handleRef, dragY, isDragging } = useSwipeToDismiss({
     onDismiss: () => setOpen(false),
-    scrollRef: scrollAreaRef,
     disabled: !open,
   });
 
@@ -84,22 +82,24 @@ export default function MobileFilters() {
               transition: isDragging ? "none" : "transform 0.25s ease",
             }}
           >
-            <div className="flex items-center justify-center pt-3">
-              <div className="h-1.5 w-10 rounded-full bg-border" />
+            <div ref={handleRef}>
+              <div className="flex items-center justify-center pt-3">
+                <div className="h-1.5 w-10 rounded-full bg-border" />
+              </div>
+
+              <div className="flex items-center justify-between px-5 pb-2 pt-3">
+                <h2 className="font-display text-lg font-semibold">Filtros</h2>
+                <button
+                  onClick={() => setOpen(false)}
+                  aria-label="Cerrar"
+                  className="rounded-full p-1.5 text-muted hover:bg-background"
+                >
+                  <X size={20} />
+                </button>
+              </div>
             </div>
 
-            <div className="flex items-center justify-between px-5 pb-2 pt-3">
-              <h2 className="font-display text-lg font-semibold">Filtros</h2>
-              <button
-                onClick={() => setOpen(false)}
-                aria-label="Cerrar"
-                className="rounded-full p-1.5 text-muted hover:bg-background"
-              >
-                <X size={20} />
-              </button>
-            </div>
-
-            <div ref={scrollAreaRef} className="scrollbar-thin flex-1 overflow-y-auto px-5 py-3">
+            <div className="scrollbar-thin flex-1 overflow-y-auto px-5 py-3">
               <FilterControls />
             </div>
 

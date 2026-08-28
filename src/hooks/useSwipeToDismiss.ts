@@ -4,57 +4,42 @@ import { useEffect, useRef, useState } from "react";
 
 interface Options {
   onDismiss: () => void;
-  // Si el sheet tiene contenido scrolleable adentro, el arrastre para
-  // cerrar solo se activa cuando ese contenido ya está arriba de todo --
-  // así no le come el scroll normal al dedo del usuario.
-  scrollRef?: React.RefObject<HTMLElement | null>;
   disabled?: boolean;
 }
 
 const DISMISS_THRESHOLD = 110;
 
 // Arrastrar hacia abajo para cerrar, como cualquier bottom sheet nativo de
-// Android/iOS. Se engancha con listeners nativos (no los sintéticos de
-// React) porque necesitamos poder cancelar el scroll de la página mientras
-// se arrastra, y React marca los touch handlers como pasivos por defecto.
-export function useSwipeToDismiss({ onDismiss, scrollRef, disabled }: Options) {
+// Android/iOS -- pero el gesto se engancha SOLO en `handleRef` (la
+// barrita + cabecera de arriba), nunca en el contenido scrolleable de
+// abajo. Antes escuchábamos en toda la hoja y tratábamos de adivinar,
+// mirando el scrollTop del contenido, si el usuario quería scrollear o
+// cerrar -- pero scrollear hacia arriba (que técnicamente es arrastrar el
+// dedo hacia abajo) se confundía con el gesto de cierre apenas el
+// contenido llegaba al tope. Separando la zona de arrastre de la zona de
+// scroll, la ambigüedad desaparece: agarrás la cabecera para cerrar,
+// scrolleás el contenido para scrollear, sin que se pisen nunca.
+export function useSwipeToDismiss({ onDismiss, disabled }: Options) {
   const sheetRef = useRef<HTMLDivElement>(null);
+  const handleRef = useRef<HTMLDivElement>(null);
   const [dragY, setDragY] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
 
   useEffect(() => {
-    const el = sheetRef.current;
-    if (!el || disabled) return;
+    const handle = handleRef.current;
+    if (!handle || disabled) return;
 
-    // dismissStartY es null mientras el contenido interno todavía puede
-    // scrollear -- recién se fija (al Y del dedo en ese instante) la
-    // primera vez que el contenido llega arriba del todo durante ESTE
-    // arrastre. Si midiéramos siempre contra el touchstart original, un
-    // arrastre largo para volver a subir el contenido (el dedo ya venía
-    // bajando hace rato) se malinterpretaba como "correr para cerrar" en
-    // cuanto el scroll tocaba el techo, cerrando la hoja sin querer.
-    let dismissStartY: number | null = null;
+    let startY = 0;
     let dragging = false;
 
-    const onStart = () => {
-      dismissStartY = null;
+    const onStart = (e: TouchEvent) => {
+      startY = e.touches[0].clientY;
       dragging = true;
     };
 
     const onMove = (e: TouchEvent) => {
       if (!dragging) return;
-      const y = e.touches[0].clientY;
-      const scrollEl = scrollRef?.current;
-      const atTop = !scrollEl || scrollEl.scrollTop <= 0;
-
-      if (!atTop) {
-        dismissStartY = null;
-        setDragY(0);
-        return;
-      }
-
-      if (dismissStartY === null) dismissStartY = y;
-      const delta = y - dismissStartY;
+      const delta = e.touches[0].clientY - startY;
       if (delta > 4) {
         setIsDragging(true);
         setDragY(delta);
@@ -73,18 +58,18 @@ export function useSwipeToDismiss({ onDismiss, scrollRef, disabled }: Options) {
       });
     };
 
-    el.addEventListener("touchstart", onStart, { passive: true });
-    el.addEventListener("touchmove", onMove, { passive: false });
-    el.addEventListener("touchend", onEnd);
-    el.addEventListener("touchcancel", onEnd);
+    handle.addEventListener("touchstart", onStart, { passive: true });
+    handle.addEventListener("touchmove", onMove, { passive: false });
+    handle.addEventListener("touchend", onEnd);
+    handle.addEventListener("touchcancel", onEnd);
 
     return () => {
-      el.removeEventListener("touchstart", onStart);
-      el.removeEventListener("touchmove", onMove);
-      el.removeEventListener("touchend", onEnd);
-      el.removeEventListener("touchcancel", onEnd);
+      handle.removeEventListener("touchstart", onStart);
+      handle.removeEventListener("touchmove", onMove);
+      handle.removeEventListener("touchend", onEnd);
+      handle.removeEventListener("touchcancel", onEnd);
     };
-  }, [onDismiss, scrollRef, disabled]);
+  }, [onDismiss, disabled]);
 
-  return { sheetRef, dragY, isDragging };
+  return { sheetRef, handleRef, dragY, isDragging };
 }
