@@ -22,6 +22,7 @@ export default function InstitutionCard({
   const tint = institutionTint(institution.id);
   const { isFavorite, toggleFavorite } = useFilters();
   const favorite = isFavorite(institution.id);
+  const manyLevels = institution.levels.length > 3;
 
   return (
     <button
@@ -67,15 +68,19 @@ export default function InstitutionCard({
       </div>
 
       <div className="relative flex min-w-0 flex-1 flex-col p-5 pt-8">
-        {/* Posición fija en la esquina, no metido en el mismo renglón que
-            los niveles -- con 4 o 5 niveles esa fila se llena y el dato de
-            gestión terminaba "cayendo" a una línea propia, pegado justo
-            debajo del último nivel en vez de quedar prolijo arriba a la
-            derecha. */}
-        <span className="absolute right-5 top-5 shrink-0 text-[11px] font-semibold text-muted">
-          {SECTOR_EMOJI[institution.sector]} {SECTOR_SHORT[institution.sector]}
-        </span>
-        <div className="flex flex-wrap items-center gap-1.5 pr-16 text-xs font-medium uppercase tracking-wide text-muted">
+        {/* Con 4 o 5 niveles la fila de niveles se llena y el dato de
+            gestión termina "cayendo" a una línea propia, pegado debajo del
+            último nivel -- para esos casos lo sacamos a una posición fija
+            en la esquina. Con 3 niveles o menos entra bien en el mismo
+            renglón, como siempre. */}
+        {manyLevels && (
+          <span className="absolute right-5 top-5 shrink-0 text-[11px] font-semibold text-muted">
+            {SECTOR_EMOJI[institution.sector]} {SECTOR_SHORT[institution.sector]}
+          </span>
+        )}
+        <div
+          className={`flex flex-wrap items-center gap-1.5 text-xs font-medium uppercase tracking-wide text-muted ${manyLevels ? "pr-16" : ""}`}
+        >
           {sortLevels(institution.levels).map((l) => (
             <span
               key={l}
@@ -84,6 +89,11 @@ export default function InstitutionCard({
               {LEVEL_EMOJI[l]} {LEVEL_SHORT[l]}
             </span>
           ))}
+          {!manyLevels && (
+            <span className="ml-auto shrink-0 text-[11px] font-semibold text-muted">
+              {SECTOR_EMOJI[institution.sector]} {SECTOR_SHORT[institution.sector]}
+            </span>
+          )}
         </div>
 
         {distanceLabel && (

@@ -32,7 +32,7 @@ import {
   Award,
   Star,
 } from "lucide-react";
-import type { Institution } from "@/lib/types";
+import type { Institution, Highlight } from "@/lib/types";
 import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS, sortLevels } from "@/lib/types";
 import { instagramUrl, instagramUsername, googleMapsUrl, locationLine, phoneHref } from "@/lib/format";
 import { useSwipeToDismiss } from "@/hooks/useSwipeToDismiss";
@@ -105,7 +105,7 @@ export default function InstitutionModal({
     return () => document.body.classList.remove("modal-open");
   }, []);
 
-  const { sheetRef, handleRef, dragY, isDragging } = useSwipeToDismiss({
+  const { sheetRef, handleRef, contentRef, dragY, isDragging } = useSwipeToDismiss({
     onDismiss: onClose,
   });
 
@@ -113,6 +113,12 @@ export default function InstitutionModal({
   const hasContact =
     institution.phone || institution.email || institution.website || institution.instagram;
   const highlights = institution.highlights ?? [];
+  // En mobile, "Distintivo" se queda arriba (donde ya estaba) y el resto
+  // de los datos-condimento (Historia, Vida académica, Para tener en
+  // cuenta) se mandan al final del todo, después de Vida estudiantil. En
+  // desktop no se separan -- van todos juntos como siempre.
+  const distintivoHighlight = highlights.find((h) => h.label === "Distintivo");
+  const otherHighlights = highlights.filter((h) => h.label !== "Distintivo");
   const resourceLinks = institution.resourceLinks ?? [];
   const becas = institution.becas ?? [];
   // La Beca Progresar y la Beca Manuel Belgrano son programas del Estado
@@ -270,7 +276,11 @@ export default function InstitutionModal({
         </div>
         </div>
 
-        <div className="scrollbar-thin flex-1 overflow-y-auto">
+        {/* contentRef: acá el gesto de cerrar solo se activa cuando el
+            scroll ya está en el tope y el dedo sigue bajando (como
+            "pull to dismiss" nativo) -- mientras haya contenido para
+            scrollear, el scroll normal manda. */}
+        <div ref={contentRef} className="scrollbar-thin flex-1 overflow-y-auto">
           <div className="flex flex-col gap-6 px-6 py-5">
             <p className="text-sm leading-relaxed text-foreground/85">{institution.description}</p>
 
@@ -300,19 +310,21 @@ export default function InstitutionModal({
               )}
             </div>
 
+            {/* Desktop: todos los highlights juntos, como siempre. */}
             {highlights.length > 0 && (
-              <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
+              <div className="hidden gap-2.5 sm:grid sm:grid-cols-2">
                 {highlights.map((h) => (
-                  <div
-                    key={h.label}
-                    className="rounded-xl border border-border bg-background p-3.5"
-                  >
-                    <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wide text-primary-dark">
-                      <Sparkles size={11} /> {h.label}
-                    </p>
-                    <p className="text-xs leading-relaxed text-foreground/80">{h.text}</p>
-                  </div>
+                  <HighlightCard key={h.label} highlight={h} />
                 ))}
+              </div>
+            )}
+
+            {/* Mobile: solo "Distintivo" queda acá arriba -- el resto
+                (Historia, Vida académica, Para tener en cuenta) se
+                renderiza más abajo de todo, después de Vida estudiantil. */}
+            {distintivoHighlight && (
+              <div className="grid grid-cols-1 gap-2.5 sm:hidden">
+                <HighlightCard highlight={distintivoHighlight} />
               </div>
             )}
 
@@ -573,6 +585,16 @@ export default function InstitutionModal({
               </div>
             )}
 
+            {/* Mobile: el resto de los datos-condimento, mandados al
+                final del todo (ver nota más arriba, junto a "Distintivo"). */}
+            {otherHighlights.length > 0 && (
+              <div className="grid grid-cols-1 gap-2.5 sm:hidden">
+                {otherHighlights.map((h) => (
+                  <HighlightCard key={h.label} highlight={h} />
+                ))}
+              </div>
+            )}
+
             <p className="text-[11px] text-muted">
               {institution.source
                 ? `Fuente: ${institution.source}.`
@@ -586,6 +608,17 @@ export default function InstitutionModal({
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function HighlightCard({ highlight }: { highlight: Highlight }) {
+  return (
+    <div className="rounded-xl border border-border bg-background p-3.5">
+      <p className="mb-1 flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wide text-primary-dark">
+        <Sparkles size={11} /> {highlight.label}
+      </p>
+      <p className="text-xs leading-relaxed text-foreground/80">{highlight.text}</p>
     </div>
   );
 }
