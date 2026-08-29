@@ -1015,7 +1015,8 @@
         "alcance": "institucional",
         "descripcion": "Secretaría de Asuntos Estudiantiles: ayuda para transporte, apuntes y residencia."
       }
-    ]
+    ],
+    "fungirakPick": true
   },
   {
     "id": "utn-frro",
@@ -8408,7 +8409,7 @@
     "orientaciones": [],
     "tipoSecundaria": "tecnica",
     "carreras": [],
-    "featured": false,
+    "featured": true,
     "verified": true,
     "logoDomain": null,
     "source": "Ministerio de Educación de Santa Fe",
@@ -8424,7 +8425,8 @@
     "description": "Escuela técnica pública de Santa Fe capital.",
     "geoPrecision": "direccion",
     "lat": -31.6537623,
-    "lon": -60.7148719
+    "lon": -60.7148719,
+    "fungirakPick": true
   },
   {
     "id": "eet-478-avellaneda-santafe",

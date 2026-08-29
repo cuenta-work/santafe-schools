@@ -1,9 +1,20 @@
 import type { CSSProperties } from "react";
+import { Baby, Backpack, School, BookOpen, Landmark } from "lucide-react";
 
 // Inspirado en el SantaFeMapArt de santafe-gourmet (el mapa de líneas con
-// el "río" animado) -- acá, en vez de un río, son rutas punteadas que
-// conectan instituciones de distintos niveles a lo largo de la provincia,
-// como el "mapa educativo" del que habla el título.
+// el "río" animado) -- acá, en vez de un río, es el recorrido educativo:
+// las mismas rutas punteadas animadas, pero conectando los mismos 5
+// íconos que usa el resto del sitio para cada nivel (ver LEVEL_ICON en
+// LevelShowcase.tsx), de jardín a universidad, como una línea de tiempo
+// escolar dibujada en el mapa.
+const STOPS: { Icon: typeof Baby; x: number; y: number; color: string; big?: boolean }[] = [
+  { Icon: Baby, x: 190, y: 150, color: "var(--accent)" },
+  { Icon: Backpack, x: 360, y: 230, color: "var(--sage)" },
+  { Icon: School, x: 540, y: 175, color: "var(--gold)" },
+  { Icon: BookOpen, x: 700, y: 260, color: "var(--primary)" },
+  { Icon: Landmark, x: 640, y: 400, color: "var(--primary)", big: true },
+];
+
 export default function EduMapArt({
   className = "",
   style,
@@ -45,10 +56,11 @@ export default function EduMapArt({
       <rect x="0" y="0" width="800" height="720" fill="url(#eduWash)" />
       <g opacity="0.5">{gridLines}</g>
 
+      {/* El recorrido: jardín -> primaria -> secundaria -> terciario -> universidad */}
       <path
         className="edu-route"
-        style={{ animationDuration: "18s" }}
-        d="M-100 180C60 210 140 130 300 160C440 187 500 260 660 230C770 209 850 250 1000 220"
+        style={{ animationDuration: "20s" }}
+        d="M190 150C260 200 300 235 360 230C430 224 480 178 540 175C610 171 650 225 700 260C670 320 655 360 640 400"
         stroke="var(--primary)"
         strokeWidth="3"
         strokeLinecap="round"
@@ -56,32 +68,28 @@ export default function EduMapArt({
       />
       <path
         className="edu-route"
-        style={{ animationDuration: "23s", animationDirection: "reverse" }}
-        d="M-100 380C80 350 170 430 330 400C480 372 540 300 710 330C820 350 890 300 1040 340"
-        stroke="var(--gold)"
-        strokeWidth="3.5"
-        strokeLinecap="round"
-        opacity="0.38"
-      />
-      <path
-        className="edu-route"
-        style={{ animationDuration: "27s" }}
+        style={{ animationDuration: "26s", animationDirection: "reverse" }}
         d="M-100 550C100 515 200 590 370 560C530 533 590 460 760 490C870 508 940 460 1080 495"
-        stroke="var(--accent)"
+        stroke="var(--gold)"
         strokeWidth="3"
         strokeLinecap="round"
-        opacity="0.32"
+        opacity="0.3"
       />
 
-      {/* Jardín */}
-      <circle cx="300" cy="160" r="5" fill="var(--accent)" />
-      {/* Primaria */}
-      <circle cx="500" cy="260" r="5" fill="var(--sage)" />
-      {/* Secundaria */}
-      <circle cx="710" cy="330" r="5" fill="var(--gold)" />
-      {/* Universidad -- destacado, con halo */}
-      <circle cx="640" cy="220" r="6" fill="var(--primary)" />
-      <circle cx="640" cy="220" r="15" stroke="var(--primary)" strokeWidth="2" opacity="0.35" />
+      {STOPS.map(({ Icon, x, y, color, big }, i) => (
+        <g key={i}>
+          {big && <circle cx={x} cy={y} r={26} stroke={color} strokeWidth="2" opacity="0.35" />}
+          <circle cx={x} cy={y} r={big ? 20 : 16} fill="var(--card)" stroke={color} strokeWidth="2" />
+          <Icon
+            x={x - (big ? 11 : 9)}
+            y={y - (big ? 11 : 9)}
+            width={big ? 22 : 18}
+            height={big ? 22 : 18}
+            color={color}
+            strokeWidth={2}
+          />
+        </g>
+      ))}
     </svg>
   );
 }

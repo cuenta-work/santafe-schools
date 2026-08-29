@@ -64,6 +64,10 @@ export interface Institution {
   carreras: Carrera[];
   posgrados?: string[];
   featured?: boolean;
+  // Pick personal del equipo (mismo criterio que "fungirakPick" en
+  // santafe-gourmet) -- independiente de "featured", que es más bien
+  // institucional/curatorial.
+  fungirakPick?: boolean;
   verified?: boolean;
   foundedYear?: number | null;
   lat?: number | null;

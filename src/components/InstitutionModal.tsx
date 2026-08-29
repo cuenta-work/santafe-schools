@@ -524,7 +524,7 @@ export default function InstitutionModal({
                         href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="card-glow flex shrink-0 items-center gap-2 rounded-xl border border-border bg-card px-3.5 py-2.5 text-xs font-medium text-primary-dark transition hover:border-primary"
+                        className="flex shrink-0 items-center gap-2 rounded-xl border border-border bg-card px-3.5 py-2.5 text-xs font-medium text-primary-dark transition hover:border-primary hover:bg-background"
                       >
                         <Icon size={14} className="shrink-0 text-primary" />
                         {link.label}

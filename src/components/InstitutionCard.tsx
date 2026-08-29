@@ -96,6 +96,16 @@ export default function InstitutionCard({
       </div>
 
       <div className="relative flex min-w-0 flex-1 flex-col p-5 pt-8">
+        {/* Va como primera línea del cuerpo, no superpuesta al header --
+            ahí arriba ya hay hasta 3 badges (Destacada/Técnica/Bilingüe)
+            más el logo pisando la esquina, así que sumar esta acá evita
+            que se corten o se encimen entre sí, tanto en mobile como en
+            desktop. */}
+        {institution.fungirakPick && (
+          <span className="mb-2 inline-flex w-fit items-center gap-1 rounded-full bg-sage/10 px-2.5 py-1 text-[10px] font-semibold text-sage">
+            <Heart size={11} className="fill-sage" /> Favorito de FUNGIRAK
+          </span>
+        )}
         {/* Mobile: con 4 o 5 niveles la fila se llena y el dato de gestión
             termina "cayendo" a una línea propia -- para esos casos lo
             sacamos a una posición fija en la esquina. Con 3 o menos entra
