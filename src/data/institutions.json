@@ -142,6 +142,600 @@
         "titulo": "Licenciado/a en Música",
         "duracionAnios": 4,
         "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura en Composición de Parques y Jardines",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura en Interiorismo y Decoración",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Arquitectura y Urbanismo",
+        "titulo": "Arquitecto/a",
+        "duracionAnios": 6,
+        "duracionLabel": "5 años y medio"
+      },
+      {
+        "nombre": "Licenciatura en Artes Visuales",
+        "titulo": "Licenciado/a en Artes Visuales",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Diseño de la Comunicación Visual",
+        "titulo": "Licenciado/a en Diseño de la Comunicación Visual",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Diseño Industrial",
+        "titulo": "Diseñador/a Industrial",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Tecnicatura en Administración y Gestión Pública",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Administración de Empresas Agropecuarias",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Control y Auditoría Gubernamental",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencia de Datos",
+        "titulo": "Licenciado/a en Ciencia de Datos",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Economía",
+        "titulo": "Licenciado/a en Economía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura en Estadísticas de Salud",
+        "titulo": "Técnico/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura en Higiene y Seguridad en el Trabajo",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura en Podología",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura en Seguridad Contra Incendios",
+        "titulo": "Técnico/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Administración de Salud",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Gerontología",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Gestión Deportiva",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Preparación Física y Entrenamiento Deportivo",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Salud Ambiental",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Licenciatura en Administración de Salud",
+        "titulo": "Licenciado/a en Administración de Salud",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencia y Tecnología de los Alimentos",
+        "titulo": "Licenciado/a en Ciencia y Tecnología de los Alimentos",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Educación Especial",
+        "titulo": "Licenciado/a en Educación Especial",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Educación Física",
+        "titulo": "Licenciado/a en Educación Física",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Higiene y Seguridad en el Trabajo",
+        "titulo": "Licenciado/a en Higiene y Seguridad en el Trabajo",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Podología",
+        "titulo": "Licenciado/a en Podología",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Saneamiento Ambiental",
+        "titulo": "Licenciado/a en Saneamiento Ambiental",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Seguridad y Salud Ocupacional",
+        "titulo": "Licenciado/a en Seguridad y Salud Ocupacional",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Terapia Ocupacional",
+        "titulo": "Licenciado/a en Terapia Ocupacional",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Cosmiatría y Cosmetología",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Emergencia Prehospitalaria, Rescate y Trauma",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Licenciatura en Instrumentación Quirúrgica y Gestión del Quirófano",
+        "titulo": "Licenciado/a en Instrumentación Quirúrgica y Gestión del Quirófano",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Obstetricia",
+        "titulo": "Licenciado/a en Obstetricia",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Producción de Bioimágenes",
+        "titulo": "Licenciado/a en Producción de Bioimágenes",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura en Bibliotecología",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura en Martillero Público y Corredor de Comercio",
+        "titulo": "Martillero/a Público/a y Corredor/a de Comercio",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura en Previsión Social",
+        "titulo": "Técnico/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Ciclo de Licenciatura en Criminología y Seguridad Ciudadana",
+        "titulo": "Licenciado/a en Criminología y Seguridad Ciudadana",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Licenciatura en Bibliotecología",
+        "titulo": "Licenciado/a en Bibliotecología",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Trabajo Social",
+        "titulo": "Licenciado/a en Trabajo Social",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Biodiversidad",
+        "titulo": "Licenciado/a en Biodiversidad",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencia Política",
+        "titulo": "Licenciado/a en Ciencia Política",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Educación en Primeras Infancias",
+        "titulo": "Licenciado/a en Educación en Primeras Infancias",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Enseñanza de Lengua y Literatura",
+        "titulo": "Licenciado/a en Enseñanza de Lengua y Literatura",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Filosofía",
+        "titulo": "Licenciado/a en Filosofía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Geografía",
+        "titulo": "Licenciado/a en Geografía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Gestión Educativa",
+        "titulo": "Licenciado/a en Gestión Educativa",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Historia",
+        "titulo": "Licenciado/a en Historia",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Inglés",
+        "titulo": "Licenciado/a en Inglés",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Letras",
+        "titulo": "Licenciado/a en Letras",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Periodismo y Comunicación",
+        "titulo": "Licenciado/a en Periodismo y Comunicación",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Sociología",
+        "titulo": "Licenciado/a en Sociología",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Profesorado de Filosofía",
+        "titulo": "Profesor/a en Filosofía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Profesorado de Geografía",
+        "titulo": "Profesor/a en Geografía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Profesorado de Historia",
+        "titulo": "Profesor/a en Historia",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Profesorado de Letras",
+        "titulo": "Profesor/a en Letras",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Profesorado en Biología",
+        "titulo": "Profesor/a en Biología",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Profesorado en Matemática",
+        "titulo": "Profesor/a en Matemática",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Analista Industrial",
+        "titulo": "Analista Industrial",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Químico Analista",
+        "titulo": "Químico/a Analista",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Ingeniería Ambiental",
+        "titulo": "Ingeniero/a Ambiental",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería en Alimentos",
+        "titulo": "Ingeniero/a en Alimentos",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería en Materiales",
+        "titulo": "Ingeniero/a en Materiales",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Industrial",
+        "titulo": "Ingeniero/a Industrial",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Química",
+        "titulo": "Ingeniero/a Químico/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Física",
+        "titulo": "Licenciado/a en Física",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Matemática Aplicada",
+        "titulo": "Licenciado/a en Matemática Aplicada",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Química",
+        "titulo": "Licenciado/a en Química",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Profesorado en Química",
+        "titulo": "Profesor/a en Química",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Perito Topocartógrafo",
+        "titulo": "Perito/a Topocartógrafo/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura en Diseño y Programación de Videojuegos",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Automatización y Robótica",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Informática aplicada a la Gráfica y Animación Digital",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Informática aplicada al Diseño Multimedia y de Sitios Web",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Informática de Gestión",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Software Libre",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Ingeniería en Agrimensura",
+        "titulo": "Agrimensor/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería en Inteligencia Artificial",
+        "titulo": "Ingeniero/a en Inteligencia Artificial",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Tecnologías para la Gestión de las Organizaciones",
+        "titulo": "Licenciado/a en Tecnologías para la Gestión de las Organizaciones",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Arreglos Musicales",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Composición con Medios Electroacústicos",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Canto",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Clarinete",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Composición",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Contrabajo",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Dirección Coral",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Dirección Orquestal",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Flauta",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Guitarra",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Percusión",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Piano",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Saxofón",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Viola",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Violín",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música con orientación en Violonchelo",
+        "titulo": "Licenciado/a en Música",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Música Popular",
+        "titulo": "Licenciado/a en Música Popular",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Sonorización y Grabación",
+        "titulo": "Licenciado/a en Sonorización y Grabación",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Teoría y Crítica de la Música",
+        "titulo": "Licenciado/a en Teoría y Crítica de la Música",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Profesorado de Música",
+        "titulo": "Profesor/a de Música",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
       }
     ],
     "featured": true,
@@ -206,7 +800,8 @@
         "alcance": "institucional",
         "descripcion": null
       }
-    ]
+    ],
+    "coverImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Unl.JPG/330px-Unl.JPG?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "id": "unl-esperanza-agrarias",
@@ -232,16 +827,34 @@
     "orientaciones": [],
     "carreras": [
       {
+        "nombre": "Tecnicatura Universitaria en Administración de Empresas Agropecuarias",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Gestión y Producción Apícola",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Poscosecha de Granos y Semillas",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
         "nombre": "Ingeniería Agronómica",
         "titulo": "Ingeniero/a Agrónomo/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Tecnicatura en Producción Vegetal Orgánica",
-        "titulo": "Técnico/a",
-        "duracionAnios": 3,
-        "duracionLabel": "3 años"
+        "nombre": "Licenciatura en Ciencia y Tecnología de los Alimentos",
+        "titulo": "Licenciado/a en Ciencia y Tecnología de los Alimentos",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
       }
     ],
     "featured": false,
@@ -316,14 +929,8 @@
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Ingeniería Mecánica",
-        "titulo": "Ingeniero/a Mecánico/a",
-        "duracionAnios": 5,
-        "duracionLabel": "5 años"
-      },
-      {
-        "nombre": "Ingeniería en Sistemas de Información",
-        "titulo": "Ingeniero/a en Sistemas",
+        "nombre": "Ingeniería en Energía Eléctrica",
+        "titulo": "Ingeniero/a en Energía Eléctrica",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
@@ -334,13 +941,25 @@
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Ingeniería Eléctrica",
-        "titulo": "Ingeniero/a Electricista",
+        "nombre": "Ingeniería Mecánica",
+        "titulo": "Ingeniero/a Mecánico/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Tecnicatura Universitaria en Programación",
+        "nombre": "Ingeniería en Sistemas de Información",
+        "titulo": "Ingeniero/a en Sistemas de Información",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Mecatrónica",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Tecnología de la Información",
         "titulo": "Técnico/a Universitario/a",
         "duracionAnios": 3,
         "duracionLabel": "3 años"
@@ -422,20 +1041,20 @@
     "orientaciones": [],
     "carreras": [
       {
-        "nombre": "Ingeniería Industrial",
-        "titulo": "Ingeniero/a Industrial",
-        "duracionAnios": 5,
-        "duracionLabel": "5 años"
-      },
-      {
         "nombre": "Ingeniería Civil",
         "titulo": "Ingeniero/a Civil",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Ingeniería Electrónica",
-        "titulo": "Ingeniero/a Electrónico/a",
+        "nombre": "Ingeniería en Energía Eléctrica",
+        "titulo": "Ingeniero/a en Energía Eléctrica",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Mecánica",
+        "titulo": "Ingeniero/a Mecánico/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
@@ -447,9 +1066,57 @@
       },
       {
         "nombre": "Ingeniería en Sistemas de Información",
-        "titulo": "Ingeniero/a en Sistemas",
+        "titulo": "Ingeniero/a en Sistemas de Información",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Programación",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Saneamiento y Producción de Agua Potable",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Higiene y Seguridad en el Trabajo",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencias Aplicadas",
+        "titulo": "Licenciado/a en Ciencias Aplicadas",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (ciclo de licenciatura)"
+      },
+      {
+        "nombre": "Licenciatura en Tecnología Educativa",
+        "titulo": "Licenciado/a en Tecnología Educativa",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (ciclo de licenciatura)"
+      },
+      {
+        "nombre": "Licenciatura en Tecnología Médica",
+        "titulo": "Licenciado/a en Tecnología Médica",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (ciclo de licenciatura)"
+      },
+      {
+        "nombre": "Licenciatura en Negocios Agroalimentarios",
+        "titulo": "Licenciado/a en Negocios Agroalimentarios",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (ciclo de licenciatura)"
+      },
+      {
+        "nombre": "Licenciatura en Comercialización",
+        "titulo": "Licenciado/a en Comercialización",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (ciclo de licenciatura)"
       }
     ],
     "featured": true,
@@ -471,7 +1138,8 @@
         "alcance": "institucional",
         "descripcion": "Secretaría de Asuntos Estudiantiles: ayuda para transporte, apuntes y residencia."
       }
-    ]
+    ],
+    "coverImage": null
   },
   {
     "id": "utn-frra",
@@ -497,19 +1165,49 @@
     "orientaciones": [],
     "carreras": [
       {
+        "nombre": "Ingeniería Civil",
+        "titulo": "Ingeniero/a Civil",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
         "nombre": "Ingeniería Industrial",
         "titulo": "Ingeniero/a Industrial",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Ingeniería en Sistemas de Información",
-        "titulo": "Ingeniero/a en Sistemas",
+        "nombre": "Ingeniería Electromecánica",
+        "titulo": "Ingeniero/a Electromecánico/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
+        "nombre": "Licenciatura en Administración Rural",
+        "titulo": "Licenciado/a en Administración Rural",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (ciclo de licenciatura)"
+      },
+      {
+        "nombre": "Licenciatura en Organización Industrial",
+        "titulo": "Licenciado/a en Organización Industrial",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (ciclo de licenciatura)"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Industrias de Alimentos",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
         "nombre": "Tecnicatura Universitaria en Programación",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Administración Rural",
         "titulo": "Técnico/a Universitario/a",
         "duracionAnios": 3,
         "duracionLabel": "3 años"
@@ -560,16 +1258,40 @@
     "orientaciones": [],
     "carreras": [
       {
-        "nombre": "Ingeniería Industrial",
-        "titulo": "Ingeniero/a Industrial",
+        "nombre": "Ingeniería Electromecánica",
+        "titulo": "Ingeniero/a Electromecánico/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Civil con orientación en Construcciones",
+        "titulo": "Ingeniero/a Civil",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
         "nombre": "Ingeniería en Sistemas de Información",
-        "titulo": "Ingeniero/a en Sistemas",
+        "titulo": "Ingeniero/a en Sistemas de Información",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Programación",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Mantenimiento Industrial",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Industria Alimentaria",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
       }
     ],
     "featured": false,
@@ -615,22 +1337,64 @@
     "orientaciones": [],
     "carreras": [
       {
-        "nombre": "Medicina",
-        "titulo": "Médico/a",
+        "nombre": "Arquitectura",
+        "titulo": "Arquitecto/a",
         "duracionAnios": 6,
-        "duracionLabel": "6 años"
+        "duracionLabel": "5 años y medio"
       },
       {
-        "nombre": "Abogacía",
-        "titulo": "Abogado/a",
+        "nombre": "Licenciatura en Diseño Industrial",
+        "titulo": "Diseñador/a Industrial",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Arquitectura",
-        "titulo": "Arquitecto/a",
-        "duracionAnios": 6,
-        "duracionLabel": "6 años"
+        "nombre": "Licenciatura en Diseño Gráfico",
+        "titulo": "Diseñador/a Gráfico/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Ingeniería Agronómica",
+        "titulo": "Ingeniero/a Agrónomo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Recursos Naturales",
+        "titulo": "Licenciado/a en Recursos Naturales",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Bioquímica",
+        "titulo": "Bioquímico/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Farmacia",
+        "titulo": "Farmacéutico/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Biotecnología",
+        "titulo": "Licenciado/a en Biotecnología",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Química",
+        "titulo": "Licenciado/a en Química",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencia y Tecnología de los Alimentos",
+        "titulo": "Licenciado/a en Ciencia y Tecnología de los Alimentos",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
       },
       {
         "nombre": "Contador Público",
@@ -639,20 +1403,314 @@
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Psicología",
-        "titulo": "Psicólogo/a",
+        "nombre": "Licenciatura en Administración",
+        "titulo": "Licenciado/a en Administración",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Economía",
+        "titulo": "Licenciado/a en Economía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Estadística",
+        "titulo": "Licenciado/a en Estadística",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Turismo",
+        "titulo": "Licenciado/a en Turismo",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Ciencia de Datos",
+        "titulo": "Licenciado/a en Ciencia de Datos",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Agrimensura",
+        "titulo": "Agrimensor/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Ingeniería Química",
-        "titulo": "Ingeniero/a Químico/a",
+        "nombre": "Ingeniería Civil",
+        "titulo": "Ingeniero/a Civil",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Eléctrica",
+        "titulo": "Ingeniero/a Electricista",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Electrónica",
+        "titulo": "Ingeniero/a Electrónico/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Industrial",
+        "titulo": "Ingeniero/a Industrial",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Ingeniería Mecánica",
+        "titulo": "Ingeniero/a Mecánico/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Física",
+        "titulo": "Licenciado/a en Física",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Matemática",
+        "titulo": "Licenciado/a en Matemática",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencias de la Computación",
+        "titulo": "Licenciado/a en Ciencias de la Computación",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Medicina",
+        "titulo": "Médico/a",
+        "duracionAnios": 6,
+        "duracionLabel": "6 años"
+      },
+      {
+        "nombre": "Fonoaudiología",
+        "titulo": "Fonoaudiólogo/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Enfermería",
+        "titulo": "Licenciado/a en Enfermería",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Terapia Ocupacional",
+        "titulo": "Licenciado/a en Terapia Ocupacional",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencia Política",
+        "titulo": "Licenciado/a en Ciencia Política",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Comunicación Social",
+        "titulo": "Licenciado/a en Comunicación Social",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Relaciones Internacionales",
+        "titulo": "Licenciado/a en Relaciones Internacionales",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Trabajo Social",
+        "titulo": "Licenciado/a en Trabajo Social",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Seguridad Ciudadana",
+        "titulo": "Licenciado/a en Seguridad Ciudadana",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Medicina Veterinaria",
+        "titulo": "Médico/a Veterinario/a",
         "duracionAnios": 6,
         "duracionLabel": "5 años y medio"
       },
       {
-        "nombre": "Ciencia Política y Relaciones Internacionales",
-        "titulo": "Licenciado/a",
+        "nombre": "Abogacía",
+        "titulo": "Abogado/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Notariado",
+        "titulo": "Escribano/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (posterior a Abogacía)"
+      },
+      {
+        "nombre": "Corretaje Inmobiliario",
+        "titulo": "Corredor/a Inmobiliario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Licenciatura en Antropología",
+        "titulo": "Licenciado/a en Antropología",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Bellas Artes",
+        "titulo": "Licenciado/a en Bellas Artes",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencias de la Educación",
+        "titulo": "Licenciado/a en Ciencias de la Educación",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Diseño de Indumentaria",
+        "titulo": "Licenciado/a en Diseño de Indumentaria",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Filosofía",
+        "titulo": "Licenciado/a en Filosofía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Gestión Cultural",
+        "titulo": "Licenciado/a en Gestión Cultural",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Historia",
+        "titulo": "Licenciado/a en Historia",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Letras",
+        "titulo": "Licenciado/a en Letras",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Portugués",
+        "titulo": "Licenciado/a en Portugués",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Traductor Público Nacional de Portugués",
+        "titulo": "Traductor/a Público/a de Portugués",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Canto",
+        "titulo": "Licenciado/a en Música con orientación en Canto",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Composición",
+        "titulo": "Licenciado/a en Música con orientación en Composición",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Educación Musical",
+        "titulo": "Licenciado/a en Educación Musical",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Dirección Coral",
+        "titulo": "Licenciado/a en Música con orientación en Dirección Coral",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Tecnologías Aplicadas al Arte Sonoro",
+        "titulo": "Licenciado/a en Tecnologías Aplicadas al Arte Sonoro",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Interpretación",
+        "titulo": "Licenciado/a en Interpretación",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Órgano",
+        "titulo": "Licenciado/a en Música con orientación en Órgano",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Cuerdas",
+        "titulo": "Licenciado/a en Música con orientación en Cuerdas",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Guitarra",
+        "titulo": "Licenciado/a en Música con orientación en Guitarra",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Piano",
+        "titulo": "Licenciado/a en Música con orientación en Piano",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Vientos",
+        "titulo": "Licenciado/a en Música con orientación en Vientos",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Odontología",
+        "titulo": "Odontólogo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Psicología",
+        "titulo": "Licenciado/a en Psicología",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Actividad Física y Deporte",
+        "titulo": "Licenciado/a en Actividad Física y Deporte",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Sistemas Integrales de Cuidado",
+        "titulo": "Licenciado/a en Sistemas Integrales de Cuidado",
         "duracionAnios": 4,
         "duracionLabel": "4 años"
       }
@@ -701,7 +1759,8 @@
         "alcance": "institucional",
         "descripcion": "Becas de acceso, permanencia, egreso y de formación y excelencia académica."
       }
-    ]
+    ],
+    "coverImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Universidad_Nacional_de_Rosario_campus.jpg/330px-Universidad_Nacional_de_Rosario_campus.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "id": "unraf-rafaela",
@@ -727,13 +1786,85 @@
     "orientaciones": [],
     "carreras": [
       {
-        "nombre": "Licenciatura en Administración",
-        "titulo": "Licenciado/a en Administración",
+        "nombre": "Ingeniería en Computación",
+        "titulo": "Ingeniero/a en Computación",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Diseño Industrial",
+        "titulo": "Diseñador/a Industrial",
         "duracionAnios": 4,
         "duracionLabel": "4 años"
       },
       {
-        "nombre": "Tecnicatura en Programación",
+        "nombre": "Licenciatura en Medios Audiovisuales y Digitales",
+        "titulo": "Licenciado/a en Medios Audiovisuales y Digitales",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Producción de Videojuegos y Entretenimiento Digital",
+        "titulo": "Licenciado/a en Producción de Videojuegos y Entretenimiento Digital",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Relaciones del Trabajo",
+        "titulo": "Licenciado/a en Relaciones del Trabajo",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Bioinformática",
+        "titulo": "Licenciado/a en Bioinformática",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Agroinformática",
+        "titulo": "Licenciado/a en Agroinformática",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Tecnología Ambiental y Energías Renovables",
+        "titulo": "Licenciado/a en Tecnología Ambiental y Energías Renovables",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Industrias Creativas",
+        "titulo": "Licenciado/a en Industrias Creativas",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura en Mecatrónica",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura en Entrenamiento Deportivo",
+        "titulo": "Técnico/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura en Análisis de Datos",
+        "titulo": "Técnico/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura en Biotecnología",
+        "titulo": "Técnico/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura en Industria y Tecnología de la Maquinaria Agrícola",
         "titulo": "Técnico/a",
         "duracionAnios": 3,
         "duracionLabel": "3 años"
@@ -763,7 +1894,8 @@
         "alcance": "institucional",
         "descripcion": "Para mujeres que estudian carreras de corte tecnológico."
       }
-    ]
+    ],
+    "coverImage": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/E4-UNRaf.jpg/330px-E4-UNRaf.jpg?utm_source=es.wikipedia.org&utm_campaign=api&utm_content=thumbnail"
   },
   {
     "id": "ucsf-santa-fe",
@@ -795,28 +1927,112 @@
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Psicología",
-        "titulo": "Psicólogo/a",
-        "duracionAnios": 5,
-        "duracionLabel": "5 años"
-      },
-      {
-        "nombre": "Licenciatura en Enfermería",
-        "titulo": "Licenciado/a en Enfermería",
-        "duracionAnios": 4,
-        "duracionLabel": "4 años"
-      },
-      {
         "nombre": "Contador Público",
         "titulo": "Contador/a Público/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Ingeniería Industrial",
-        "titulo": "Ingeniero/a Industrial",
+        "nombre": "Licenciatura en Administración",
+        "titulo": "Licenciado/a en Administración",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Arquitectura",
+        "titulo": "Arquitecto/a",
+        "duracionAnios": 6,
+        "duracionLabel": "5 años y medio"
+      },
+      {
+        "nombre": "Licenciatura en Diseño Industrial",
+        "titulo": "Diseñador/a Industrial",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Diseño de Videojuegos y Tecnologías Creativas",
+        "titulo": "Licenciado/a en Diseño de Videojuegos y Tecnologías Creativas",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Farmacia",
+        "titulo": "Farmacéutico/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Fonoaudiología",
+        "titulo": "Fonoaudiólogo/a",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Kinesiología y Fisiatría",
+        "titulo": "Kinesiólogo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Nutrición",
+        "titulo": "Licenciado/a en Nutrición",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Obstetricia",
+        "titulo": "Licenciado/a en Obstetricia",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Terapia Ocupacional",
+        "titulo": "Licenciado/a en Terapia Ocupacional",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Relaciones Internacionales",
+        "titulo": "Licenciado/a en Relaciones Internacionales",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Martillero Público y Corredor Inmobiliario",
+        "titulo": "Martillero/a Público/a y Corredor/a Inmobiliario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Notariado",
+        "titulo": "Escribano/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (posterior a Abogacía)"
+      },
+      {
+        "nombre": "Licenciatura en Ciencias de la Comunicación",
+        "titulo": "Licenciado/a en Ciencias de la Comunicación",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Profesorado en Ciencias de la Educación",
+        "titulo": "Profesor/a en Ciencias de la Educación",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Psicología",
+        "titulo": "Licenciado/a en Psicología",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Psicopedagogía",
+        "titulo": "Licenciado/a en Psicopedagogía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
       }
     ],
     "featured": true,
@@ -866,7 +2082,8 @@
         "alcance": "institucional",
         "descripcion": "Descuentos arancelarios de hasta el 50%."
       }
-    ]
+    ],
+    "coverImage": null
   },
   {
     "id": "ucsf-rosario",
@@ -892,16 +2109,28 @@
     "orientaciones": [],
     "carreras": [
       {
-        "nombre": "Psicología",
-        "titulo": "Psicólogo/a",
-        "duracionAnios": 5,
-        "duracionLabel": "5 años"
+        "nombre": "Arquitectura",
+        "titulo": "Arquitecto/a",
+        "duracionAnios": 6,
+        "duracionLabel": "5 años y medio"
       },
       {
-        "nombre": "Licenciatura en Enfermería",
-        "titulo": "Licenciado/a en Enfermería",
+        "nombre": "Licenciatura en Obstetricia",
+        "titulo": "Licenciado/a en Obstetricia",
         "duracionAnios": 4,
         "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Gestión de la Educación",
+        "titulo": "Licenciado/a en Gestión de la Educación",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Psicología",
+        "titulo": "Licenciado/a en Psicología",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
       }
     ],
     "featured": false,
@@ -948,7 +2177,8 @@
         "alcance": "institucional",
         "descripcion": "Descuentos arancelarios de hasta el 50%."
       }
-    ]
+    ],
+    "coverImage": null
   },
   {
     "id": "ucsf-rafaela",
@@ -974,10 +2204,28 @@
     "orientaciones": [],
     "carreras": [
       {
-        "nombre": "Contador Público",
-        "titulo": "Contador/a Público/a",
-        "duracionAnios": 5,
-        "duracionLabel": "5 años"
+        "nombre": "Arquitectura",
+        "titulo": "Arquitecto/a",
+        "duracionAnios": 6,
+        "duracionLabel": "5 años y medio"
+      },
+      {
+        "nombre": "Licenciatura en Obstetricia",
+        "titulo": "Licenciado/a en Obstetricia",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Terapia Ocupacional",
+        "titulo": "Licenciado/a en Terapia Ocupacional",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Producción Agropecuaria",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
       }
     ],
     "featured": false,
@@ -1024,7 +2272,8 @@
         "alcance": "institucional",
         "descripcion": "Descuentos arancelarios de hasta el 50%."
       }
-    ]
+    ],
+    "coverImage": null
   },
   {
     "id": "ucsf-reconquista",
@@ -1050,10 +2299,16 @@
     "orientaciones": [],
     "carreras": [
       {
-        "nombre": "Abogacía",
-        "titulo": "Abogado/a",
+        "nombre": "Medicina Veterinaria",
+        "titulo": "Médico/a Veterinario/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria Administrativo-Contable",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
       }
     ],
     "featured": false,
@@ -1100,7 +2355,8 @@
         "alcance": "institucional",
         "descripcion": "Descuentos arancelarios de hasta el 50%."
       }
-    ]
+    ],
+    "coverImage": null
   },
   {
     "id": "uca-rosario",
@@ -1132,10 +2388,40 @@
         "duracionLabel": "5 años"
       },
       {
+        "nombre": "Licenciatura en Administración de Empresas",
+        "titulo": "Licenciado/a en Administración de Empresas",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
         "nombre": "Contador Público",
         "titulo": "Contador/a Público/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Economía",
+        "titulo": "Licenciado/a en Economía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencias Políticas",
+        "titulo": "Licenciado/a en Ciencias Políticas",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Relaciones Internacionales",
+        "titulo": "Licenciado/a en Relaciones Internacionales",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Notariado",
+        "titulo": "Escribano/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años (posterior a Abogacía)"
       }
     ],
     "featured": false,
@@ -1162,7 +2448,8 @@
         "alcance": "institucional",
         "descripcion": "Entre 20% y 80% para carreras de Educación."
       }
-    ]
+    ],
+    "coverImage": null
   },
   {
     "id": "uai-rosario",
@@ -1188,28 +2475,202 @@
     "orientaciones": [],
     "carreras": [
       {
+        "nombre": "Arquitectura",
+        "titulo": "Arquitecto/a",
+        "duracionAnios": 6,
+        "duracionLabel": "5 años y medio"
+      },
+      {
+        "nombre": "Licenciatura en Diseño de Interiores",
+        "titulo": "Licenciado/a en Diseño de Interiores",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Diseño de Comunicación Visual",
+        "titulo": "Licenciado/a en Diseño de Comunicación Visual",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Periodismo, Gestión y Producción de Contenidos",
+        "titulo": "Licenciado/a en Periodismo, Gestión y Producción de Contenidos",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Publicidad",
+        "titulo": "Licenciado/a en Publicidad",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Producción y Realización Audiovisual",
+        "titulo": "Licenciado/a en Producción y Realización Audiovisual",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Relaciones Públicas",
+        "titulo": "Licenciado/a en Relaciones Públicas",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencias de la Educación",
+        "titulo": "Licenciado/a en Ciencias de la Educación",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Psicopedagogía",
+        "titulo": "Licenciado/a en Psicopedagogía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Contador Público",
+        "titulo": "Contador/a Público/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Administración",
+        "titulo": "Licenciado/a en Administración",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Comercialización",
+        "titulo": "Licenciado/a en Comercialización",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Comercio Internacional",
+        "titulo": "Licenciado/a en Comercio Internacional",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Economía",
+        "titulo": "Licenciado/a en Economía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
         "nombre": "Abogacía",
         "titulo": "Abogado/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Psicología",
-        "titulo": "Psicólogo/a",
-        "duracionAnios": 5,
-        "duracionLabel": "5 años"
-      },
-      {
-        "nombre": "Relaciones Públicas",
-        "titulo": "Licenciado/a",
+        "nombre": "Licenciatura en Ciencia Política y Gobierno",
+        "titulo": "Licenciado/a en Ciencia Política y Gobierno",
         "duracionAnios": 4,
         "duracionLabel": "4 años"
       },
       {
-        "nombre": "Ingeniería en Sistemas",
-        "titulo": "Ingeniero/a en Sistemas",
+        "nombre": "Licenciatura en Relaciones Internacionales",
+        "titulo": "Licenciado/a en Relaciones Internacionales",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Martillero Público, Corredor y Administrador de Consorcio",
+        "titulo": "Martillero/a Público/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Licenciatura en Enfermería",
+        "titulo": "Licenciado/a en Enfermería",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Instrumentación Quirúrgica",
+        "titulo": "Licenciado/a en Instrumentación Quirúrgica",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Kinesiología y Fisiatría",
+        "titulo": "Kinesiólogo/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Nutrición",
+        "titulo": "Licenciado/a en Nutrición",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Medicina",
+        "titulo": "Médico/a",
+        "duracionAnios": 6,
+        "duracionLabel": "6 años"
+      },
+      {
+        "nombre": "Odontología",
+        "titulo": "Odontólogo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Actividad Física y Deportes",
+        "titulo": "Licenciado/a en Actividad Física y Deportes",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Psicología",
+        "titulo": "Licenciado/a en Psicología",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Terapia Ocupacional",
+        "titulo": "Licenciado/a en Terapia Ocupacional",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Ingeniería en Sistemas Informáticos",
+        "titulo": "Ingeniero/a en Sistemas Informáticos",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Gestión de Tecnología Informática",
+        "titulo": "Licenciado/a en Gestión de Tecnología Informática",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Producción de Simuladores y Videojuegos",
+        "titulo": "Licenciado/a en Producción de Simuladores y Videojuegos",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Gastronomía",
+        "titulo": "Licenciado/a en Gastronomía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Hotelería",
+        "titulo": "Licenciado/a en Hotelería",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Turismo",
+        "titulo": "Licenciado/a en Turismo",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
       }
     ],
     "featured": true,
@@ -1231,7 +2692,8 @@
         "alcance": "institucional",
         "descripcion": "25% o 50% de descuento por promedio alto y situación económica."
       }
-    ]
+    ],
+    "coverImage": null
   },
   {
     "id": "ucel-rosario",
@@ -1257,22 +2719,58 @@
     "orientaciones": [],
     "carreras": [
       {
-        "nombre": "Licenciatura en Comunicación Social",
-        "titulo": "Licenciado/a",
-        "duracionAnios": 4,
-        "duracionLabel": "4 años"
-      },
-      {
         "nombre": "Contador Público",
         "titulo": "Contador/a Público/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Diseño Gráfico",
-        "titulo": "Diseñador/a Gráfico/a",
+        "nombre": "Licenciatura en Administración de Empresas",
+        "titulo": "Licenciado/a en Administración de Empresas",
         "duracionAnios": 4,
         "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Marketing",
+        "titulo": "Licenciado/a en Marketing",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Relaciones Laborales",
+        "titulo": "Licenciado/a en Relaciones Laborales",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Economía",
+        "titulo": "Licenciado/a en Economía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Lengua y Literatura Inglesa",
+        "titulo": "Licenciado/a en Lengua y Literatura Inglesa",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Nutrición",
+        "titulo": "Licenciado/a en Nutrición",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Derecho",
+        "titulo": "Abogado/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Martillero Público y Corredor Inmobiliario",
+        "titulo": "Martillero/a Público/a y Corredor/a Inmobiliario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
       }
     ],
     "featured": false,
@@ -1324,6 +2822,36 @@
         "titulo": "Médico/a",
         "duracionAnios": 6,
         "duracionLabel": "6 años"
+      },
+      {
+        "nombre": "Licenciatura en Enfermería",
+        "titulo": "Licenciado/a en Enfermería",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Psicología",
+        "titulo": "Licenciado/a en Psicología",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Odontología",
+        "titulo": "Odontólogo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
+      },
+      {
+        "nombre": "Licenciatura en Instrumentación Quirúrgica",
+        "titulo": "Licenciado/a en Instrumentación Quirúrgica",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Kinesiología y Fisiatría",
+        "titulo": "Kinesiólogo/a",
+        "duracionAnios": 5,
+        "duracionLabel": "5 años"
       }
     ],
     "featured": false,
@@ -1345,7 +2873,8 @@
         "alcance": "institucional",
         "descripcion": "Entre 30% y 50% de descuento en la cuota."
       }
-    ]
+    ],
+    "coverImage": null
   },
   {
     "id": "ugr-rosario",
@@ -1371,16 +2900,58 @@
     "orientaciones": [],
     "carreras": [
       {
-        "nombre": "Abogacía",
-        "titulo": "Abogado/a",
+        "nombre": "Licenciatura en Actividad Física",
+        "titulo": "Licenciado/a en Actividad Física",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Kinesiología y Fisiatría",
+        "titulo": "Kinesiólogo/a",
         "duracionAnios": 5,
         "duracionLabel": "5 años"
       },
       {
-        "nombre": "Contador Público",
-        "titulo": "Contador/a Público/a",
-        "duracionAnios": 5,
-        "duracionLabel": "5 años"
+        "nombre": "Licenciatura en Ortesis y Prótesis",
+        "titulo": "Licenciado/a en Ortesis y Prótesis",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Podología",
+        "titulo": "Licenciado/a en Podología",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Psicopedagogía",
+        "titulo": "Licenciado/a en Psicopedagogía",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Terapia Ocupacional",
+        "titulo": "Licenciado/a en Terapia Ocupacional",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Agrotecnología",
+        "titulo": "Licenciado/a en Agrotecnología",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Diseño de Moda",
+        "titulo": "Licenciado/a en Diseño de Moda",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Licenciatura en Diseño Gráfico",
+        "titulo": "Licenciado/a en Diseño Gráfico",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
       }
     ],
     "featured": false,
@@ -1620,7 +3191,8 @@
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -30.945717,
     "lon": -61.5627856,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "coverImage": null
   },
   {
     "id": "ispi-9195-cruz-roja",
@@ -1704,7 +3276,8 @@
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.6463758,
     "lon": -60.7082708,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "coverImage": null
   },
   {
     "id": "ispa-4097-mecanica-dental",
@@ -2035,7 +3608,8 @@
     "tipoSecundaria": "orientada",
     "lat": -32.9764777,
     "lon": -60.6372639,
-    "geoPrecision": "direccion"
+    "geoPrecision": "direccion",
+    "coverImage": null
   },
   {
     "id": "colegio-sagrado-corazon-santa-fe",
@@ -2222,7 +3796,8 @@
     "tipoSecundaria": "orientada",
     "lat": -31.6474914,
     "lon": -60.6428557,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "coverImage": null
   },
   {
     "id": "ees-2035-santa-rosa",
@@ -2605,7 +4180,8 @@
     "source": "Ministerio de Educación de Santa Fe (SPEP)",
     "lat": -31.6474914,
     "lon": -60.6428557,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "coverImage": null
   },
   {
     "id": "esc-2-belgrano",
@@ -4088,7 +5664,8 @@
     "tipoSecundaria": "orientada",
     "lat": -32.8234448,
     "lon": -61.3905125,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "coverImage": null
   },
   {
     "id": "canada-de-gomez-8055-san-antonio",
@@ -4123,7 +5700,8 @@
     "tipoSecundaria": "orientada",
     "lat": -32.8234448,
     "lon": -61.3905125,
-    "geoPrecision": "localidad"
+    "geoPrecision": "localidad",
+    "coverImage": null
   },
   {
     "id": "arequito-ees-219-sarmiento",
@@ -4194,5 +5772,2593 @@
     "lat": -33.227206,
     "lon": -60.3298225,
     "geoPrecision": "localidad"
+  },
+  {
+    "id": "unl-esperanza-veterinarias",
+    "name": "UNL — Facultad de Ciencias Veterinarias",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "publico",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "modalidad": null,
+    "barrio": null,
+    "phone": null,
+    "instagram": null,
+    "featured": false,
+    "verified": true,
+    "logoDomain": "unl.edu.ar",
+    "source": "Sitio oficial UNL",
+    "resourceLinks": [
+      {
+        "label": "Biblioteca Virtual UNL",
+        "url": "https://bibliotecavirtual.unl.edu.ar/",
+        "kind": "biblioteca"
+      }
+    ],
+    "becas": [
+      {
+        "nombre": "Beca Pablo Vrillaud",
+        "alcance": "institucional",
+        "descripcion": "Para ingresantes y estudiantes en situación de vulnerabilidad social y económica."
+      },
+      {
+        "nombre": "Becas de Comedor y de Residencia universitaria",
+        "alcance": "institucional",
+        "descripcion": null
+      }
+    ],
+    "localidad": "Esperanza",
+    "region": "Región Capital",
+    "address": "R.P. Kreder 2805",
+    "email": "facvete@fcv.unl.edu.ar",
+    "website": "https://www.fcv.unl.edu.ar",
+    "description": "Sede de la UNL en Esperanza dedicada a la formación en Medicina Veterinaria y a la producción animal, en el mismo campus que la Facultad de Ciencias Agrarias.",
+    "carreras": [
+      {
+        "nombre": "Tecnicatura en Higiene y Seguridad Alimentaria",
+        "titulo": "Técnico/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Administración de Empresas Agropecuarias",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Alimentación de Ganado Vacuno",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Producción Primaria de Leche",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Tecnología de Carnes",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencia y Tecnología de los Alimentos",
+        "titulo": "Licenciado/a en Ciencia y Tecnología de los Alimentos",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Medicina Veterinaria",
+        "titulo": "Médico/a Veterinario/a",
+        "duracionAnios": 6,
+        "duracionLabel": "5 años y medio"
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Distintivo",
+        "text": "Comparte campus con la Facultad de Ciencias Agrarias en la primera colonia agrícola organizada del país."
+      }
+    ],
+    "posgrados": [
+      "Doctorado en Ciencias Veterinarias",
+      "Especializaciones en Buiatría y en Cirugía de Caninos y Felinos"
+    ],
+    "lat": -31.4394028,
+    "lon": -60.9430733,
+    "geoPrecision": "direccion"
+  },
+  {
+    "id": "unl-reconquista-cura",
+    "name": "UNL — Centro Universitario Reconquista-Avellaneda (CURA)",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "publico",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "modalidad": null,
+    "barrio": null,
+    "phone": null,
+    "instagram": null,
+    "featured": false,
+    "verified": true,
+    "logoDomain": "unl.edu.ar",
+    "source": "Sitio oficial UNL",
+    "resourceLinks": [
+      {
+        "label": "Biblioteca Virtual UNL",
+        "url": "https://bibliotecavirtual.unl.edu.ar/",
+        "kind": "biblioteca"
+      }
+    ],
+    "becas": [
+      {
+        "nombre": "Beca Pablo Vrillaud",
+        "alcance": "institucional",
+        "descripcion": "Para ingresantes y estudiantes en situación de vulnerabilidad social y económica."
+      },
+      {
+        "nombre": "Becas de Comedor y de Residencia universitaria",
+        "alcance": "institucional",
+        "descripcion": null
+      }
+    ],
+    "localidad": "Reconquista",
+    "region": "Región Norte",
+    "address": "Laura Devetach 3535",
+    "email": "cu-ra@unl.edu.ar",
+    "website": "https://www.cu-ra.unl.edu.ar",
+    "foundedYear": 1973,
+    "description": "Sede de la UNL en el norte de la provincia, con carreras cortas y trayectos iniciales pensados para no tener que trasladarse a Santa Fe capital.",
+    "carreras": [
+      {
+        "nombre": "Tecnicatura Universitaria en Tecnología de Alimentos",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Licenciatura en Ciencia y Tecnología de los Alimentos",
+        "titulo": "Licenciado/a en Ciencia y Tecnología de los Alimentos",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Trayecto Curricular Inicial de Ingeniería Agronómica",
+        "titulo": "Ingreso a Ingeniería Agronómica (continúa en Esperanza)",
+        "duracionAnios": 1,
+        "duracionLabel": "1 años"
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Distintivo",
+        "text": "Funciona en Reconquista desde 1973, acercando la oferta de la UNL al norte de la provincia sin necesidad de mudarse a Santa Fe capital."
+      }
+    ],
+    "lat": -29.1857544,
+    "lon": -59.642485,
+    "geoPrecision": "direccion",
+    "posgrados": [
+      "Cursos y posgrados de la UNL con modalidad de acceso regional, coordinados por la Escuela de Posgrado de la UNL (especializaciones, maestrías y doctorados de las distintas facultades)."
+    ]
+  },
+  {
+    "id": "unl-galvez-cuga",
+    "name": "UNL — Centro Universitario Gálvez (CU-GA)",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "publico",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "modalidad": null,
+    "barrio": null,
+    "phone": null,
+    "instagram": null,
+    "featured": false,
+    "verified": true,
+    "logoDomain": "unl.edu.ar",
+    "source": "Sitio oficial UNL",
+    "resourceLinks": [
+      {
+        "label": "Biblioteca Virtual UNL",
+        "url": "https://bibliotecavirtual.unl.edu.ar/",
+        "kind": "biblioteca"
+      }
+    ],
+    "becas": [
+      {
+        "nombre": "Beca Pablo Vrillaud",
+        "alcance": "institucional",
+        "descripcion": "Para ingresantes y estudiantes en situación de vulnerabilidad social y económica."
+      },
+      {
+        "nombre": "Becas de Comedor y de Residencia universitaria",
+        "alcance": "institucional",
+        "descripcion": null
+      }
+    ],
+    "localidad": "Gálvez",
+    "region": "Región Capital",
+    "address": "Florentino Ameghino 50 bis",
+    "email": "cu-galvez@unl.edu.ar",
+    "website": "https://www.cu-galvez.unl.edu.ar",
+    "description": "Sede de la UNL en Gálvez, con carreras cortas orientadas a alimentos y enfermería para la región.",
+    "carreras": [
+      {
+        "nombre": "Analista Universitario de Alimentos",
+        "titulo": "Analista Universitario/a de Alimentos",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Licenciatura en Enfermería",
+        "titulo": "Licenciado/a en Enfermería",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Gastronomía",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Biocombustibles",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Elaboración y Producción",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Distintivo",
+        "text": "Lleva la oferta académica de la UNL a Gálvez, a mitad de camino entre Santa Fe y Rosario."
+      }
+    ],
+    "lat": -32.0253403,
+    "lon": -61.2196794,
+    "geoPrecision": "localidad",
+    "posgrados": [
+      "Cursos y posgrados de la UNL con modalidad de acceso regional, coordinados por la Escuela de Posgrado de la UNL (especializaciones, maestrías y doctorados de las distintas facultades)."
+    ]
+  },
+  {
+    "id": "unl-rafaela-curs",
+    "name": "UNL — Centro Universitario Rafaela-Sunchales (CURS)",
+    "levels": [
+      "universidad"
+    ],
+    "sector": "publico",
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "modalidad": null,
+    "barrio": null,
+    "phone": null,
+    "instagram": null,
+    "featured": false,
+    "verified": true,
+    "logoDomain": "unl.edu.ar",
+    "source": "Sitio oficial UNL",
+    "resourceLinks": [
+      {
+        "label": "Biblioteca Virtual UNL",
+        "url": "https://bibliotecavirtual.unl.edu.ar/",
+        "kind": "biblioteca"
+      }
+    ],
+    "becas": [
+      {
+        "nombre": "Beca Pablo Vrillaud",
+        "alcance": "institucional",
+        "descripcion": "Para ingresantes y estudiantes en situación de vulnerabilidad social y económica."
+      },
+      {
+        "nombre": "Becas de Comedor y de Residencia universitaria",
+        "alcance": "institucional",
+        "descripcion": null
+      }
+    ],
+    "localidad": "Rafaela",
+    "region": "Región Centro",
+    "address": "San Martín 221",
+    "email": "sede-rs@unl.edu.ar",
+    "website": "https://www.curs.unl.edu.ar",
+    "description": "Sede de la UNL en Rafaela, con oferta académica pensada para toda la región (incluida Sunchales) sin trasladarse a Santa Fe capital.",
+    "carreras": [
+      {
+        "nombre": "Tecnicatura Universitaria en Automatización y Robótica",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Comercio Internacional y Logística",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Licenciatura en Obstetricia",
+        "titulo": "Licenciado/a en Obstetricia",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      }
+    ],
+    "highlights": [
+      {
+        "label": "Distintivo",
+        "text": "Acerca la oferta de la UNL a toda la región Rafaela-Sunchales, con carreras cortas y de grado sin salir de la zona."
+      }
+    ],
+    "lat": -31.2521276,
+    "lon": -61.4890295,
+    "geoPrecision": "direccion",
+    "posgrados": [
+      "Cursos y posgrados de la UNL con modalidad de acceso regional, coordinados por la Escuela de Posgrado de la UNL (especializaciones, maestrías y doctorados de las distintas facultades)."
+    ]
+  },
+  {
+    "id": "esc-16-castañeda-rincon",
+    "name": "Escuela N°16 \"Fray Francisco de Paula Castañeda\"",
+    "region": "Región Capital",
+    "localidad": "San José del Rincón",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe / prensa local",
+    "geoPrecision": "direccion",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "address": "Busaniche 1950",
+    "description": "Escuela primaria pública en el barrio La Loma, una de las más antiguas de la provincia: fundada en 1823 por Fray Francisco de Paula Castañeda.",
+    "foundedYear": 1823,
+    "lat": -31.6050556,
+    "lon": -60.571876
+  },
+  {
+    "id": "jardin-130-baialardo-rincon",
+    "name": "Jardín de Infantes N°130 \"Jorge A. Baialardo\"",
+    "region": "Región Capital",
+    "localidad": "San José del Rincón",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe / prensa local",
+    "geoPrecision": "localidad",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "address": null,
+    "description": "Jardín de infantes público de San José del Rincón, sobre la costanera frente a Santa Fe capital.",
+    "lat": -31.6064264,
+    "lon": -60.5674713
+  },
+  {
+    "id": "eet-399-gori-recreo",
+    "name": "E.E.T. N°399 \"Gastón Gori\"",
+    "levels": [
+      "jardin",
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Recreo",
+    "region": "Región Capital",
+    "barrio": null,
+    "address": "Cafferata y Alfonsina Storni",
+    "phone": "0342 457-7109",
+    "email": "sec399_recreo@santafe.edu.ar",
+    "website": null,
+    "instagram": null,
+    "description": "Escuela pública de Recreo con jardín maternal y secundaria técnica, referente educativo de la localidad sobre la RN 11.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "tipoSecundaria": "tecnica",
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "lat": -31.4924995,
+    "lon": -60.7366448,
+    "geoPrecision": "direccion"
+  },
+  {
+    "id": "esc-6399-faa-sauceviejo",
+    "name": "Escuela N°6399 \"Fuerza Aérea Argentina\"",
+    "region": "Región Capital",
+    "localidad": "Sauce Viejo",
+    "barrio": null,
+    "phone": "(0342) 4572602",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "geoPrecision": "localidad",
+    "lat": -31.7710276,
+    "lon": -60.8372302,
+    "levels": [
+      "jardin",
+      "primaria"
+    ],
+    "sector": "publico",
+    "address": "Ruta 11 y Buenos Aires",
+    "description": "Escuela pública de Sauce Viejo, con jardín y primaria completa, cerca de la Ruta Nacional 11."
+  },
+  {
+    "id": "inst-pilares-sauceviejo",
+    "name": "Instituto de Educación Integral Pilares",
+    "region": "Región Capital",
+    "localidad": "Sauce Viejo",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "geoPrecision": "localidad",
+    "lat": -31.7710276,
+    "lon": -60.8372302,
+    "levels": [
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "address": "Ruta 11, Km 456 (Calle 18 s/n)",
+    "description": "Institución privada de Sauce Viejo con primaria y secundaria, sobre la Ruta Nacional 11."
+  },
+  {
+    "id": "jardin-92-aznares-montevera",
+    "name": "Jardín de Infantes N°92 \"José Aznares\"",
+    "region": "Región Capital",
+    "localidad": "Monte Vera",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Municipalidad de Monte Vera",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "address": null,
+    "description": "Jardín de infantes público de Monte Vera.",
+    "geoPrecision": "localidad",
+    "lat": -31.5168247,
+    "lon": -60.6758789
+  },
+  {
+    "id": "esc-40-rivadavia-montevera",
+    "name": "Escuela N°40 \"Bernardino Rivadavia\"",
+    "region": "Región Capital",
+    "localidad": "Monte Vera",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Municipalidad de Monte Vera",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "address": "Entre Ríos 1140",
+    "description": "Escuela primaria pública de Monte Vera.",
+    "geoPrecision": "direccion",
+    "lat": -31.5188008,
+    "lon": -60.6645767
+  },
+  {
+    "id": "esc-43-alem-montevera",
+    "name": "Escuela N°43 \"Leandro N. Alem\"",
+    "region": "Región Capital",
+    "localidad": "Monte Vera",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Municipalidad de Monte Vera",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "address": "Avenida General Paz 11600",
+    "description": "Escuela primaria pública de Monte Vera, en el barrio Central Guadalupe.",
+    "geoPrecision": "direccion",
+    "lat": -31.567907,
+    "lon": -60.6616942
+  },
+  {
+    "id": "esc-1440-migno-montevera",
+    "name": "Escuela Particular Incorporada N°1440 \"Julio Migno\"",
+    "region": "Región Capital",
+    "localidad": "Monte Vera",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Municipalidad de Monte Vera",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "privado",
+    "address": "Córdoba 1825",
+    "description": "Escuela primaria privada de Monte Vera.",
+    "geoPrecision": "direccion",
+    "lat": -31.5141446,
+    "lon": -60.6830342
+  },
+  {
+    "id": "eet-324-constituyentes-montevera",
+    "name": "E.E.T. N°324 \"Los Constituyentes\"",
+    "region": "Región Capital",
+    "localidad": "Monte Vera",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Municipalidad de Monte Vera",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "tipoSecundaria": "tecnica",
+    "address": "Río Negro 1591",
+    "description": "Escuela de educación técnica pública de Monte Vera.",
+    "geoPrecision": "direccion",
+    "lat": -31.521275,
+    "lon": -60.6759414
+  },
+  {
+    "id": "esc-agrotecnica-690-araoz-montevera",
+    "name": "Escuela Agrotécnica N°690 \"Lucía Araoz\"",
+    "region": "Región Capital",
+    "localidad": "Monte Vera",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Municipalidad de Monte Vera",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "tipoSecundaria": "tecnica",
+    "address": "Avenida Los Quinteros, Ángel Gallardo (km 11)",
+    "description": "Escuela secundaria agrotécnica pública, en la zona de Ángel Gallardo, Monte Vera.",
+    "geoPrecision": "localidad",
+    "lat": -31.555041,
+    "lon": -60.6760491
+  },
+  {
+    "id": "col-nazaret-funes",
+    "name": "Colegio Nazaret",
+    "barrio": null,
+    "phone": null,
+    "email": "prim1335_funes@santafe.edu.ar",
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Funes",
+    "region": "Región Rosario",
+    "address": "General Paz 1632",
+    "description": "Colegio privado de Funes, con jardín, primaria y secundaria en una misma sede histórica.",
+    "geoPrecision": "direccion",
+    "lat": -32.9144253,
+    "lon": -60.8096411
+  },
+  {
+    "id": "esc-1461-joanmiro-funes",
+    "name": "Escuela N°1461 \"Joan Miró\"",
+    "barrio": null,
+    "phone": "0341 4936094",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "levels": [
+      "jardin",
+      "primaria"
+    ],
+    "sector": "privado",
+    "localidad": "Funes",
+    "region": "Región Rosario",
+    "address": "Catamarca 1857",
+    "description": "Escuela privada de Funes con jardín y primaria.",
+    "geoPrecision": "direccion",
+    "lat": -32.9203883,
+    "lon": -60.8034332
+  },
+  {
+    "id": "esc-1209-chaco-perez",
+    "name": "Escuela N°1209 \"Provincia de Chaco\"",
+    "barrio": null,
+    "phone": "0341 4956219",
+    "email": "prim1209_perez@santafe.edu.ar",
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Pérez",
+    "region": "Región Rosario",
+    "address": "Perito Moreno y Hudson (Cabín 9)",
+    "description": "Escuela primaria pública de Pérez, fundada en 1975.",
+    "foundedYear": 1975,
+    "geoPrecision": "localidad",
+    "lat": -32.9982237,
+    "lon": -60.7708529
+  },
+  {
+    "id": "eem-225-sanmartin-perez",
+    "name": "E.E.S.O. N°225 \"General José de San Martín\"",
+    "barrio": null,
+    "phone": null,
+    "email": "sec225_perez@santafe.edu.ar",
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Pérez",
+    "region": "Región Rosario",
+    "address": "Sarmiento 949",
+    "description": "Escuela secundaria orientada pública de Pérez.",
+    "geoPrecision": "direccion",
+    "lat": -32.998839,
+    "lon": -60.7753176
+  },
+  {
+    "id": "jardin-158-sanlorenzo",
+    "name": "Jardín Nucleado N°158",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "San Lorenzo",
+    "address": "Boulevard Oroño y Casilda",
+    "description": "Jardín de infantes público de San Lorenzo.",
+    "geoPrecision": "localidad",
+    "lat": -32.7454865,
+    "lon": -60.743091
+  },
+  {
+    "id": "esc-113-cabral-sanlorenzo",
+    "name": "Escuela N°113 \"Sargento Cabral\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "San Lorenzo",
+    "address": "Hipólito Yrigoyen 2415",
+    "description": "Escuela primaria pública de San Lorenzo.",
+    "geoPrecision": "direccion",
+    "lat": -32.7380365,
+    "lon": -60.7362469
+  },
+  {
+    "id": "eem-439-hierro-sanlorenzo",
+    "name": "E.E.M. N°439 \"Doctor Melitón Francisco Hierro\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "San Lorenzo",
+    "address": "General López y Boulevard Eva Perón",
+    "description": "Escuela secundaria pública de San Lorenzo.",
+    "geoPrecision": "localidad",
+    "lat": -32.7454865,
+    "lon": -60.743091
+  },
+  {
+    "id": "esc-9020-peron-baigorria",
+    "name": "Hogar Escuela N°9020 \"Juan Domingo Perón\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "jardin",
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Granadero Baigorria",
+    "address": "Avenida San Martín 2051",
+    "description": "Escuela pública de Granadero Baigorria, con jardín y primaria, y régimen de hogar-escuela.",
+    "geoPrecision": "direccion",
+    "lat": -32.8526515,
+    "lon": -60.7062624
+  },
+  {
+    "id": "eem-422-baigorria",
+    "name": "E.E.M. N°422",
+    "barrio": null,
+    "phone": "0341 4711650",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Granadero Baigorria",
+    "address": "Eva Perón 370",
+    "description": "Institución pública de Granadero Baigorria que reúne jardín, primaria y secundaria.",
+    "geoPrecision": "direccion",
+    "lat": -32.8581462,
+    "lon": -60.7099476
+  },
+  {
+    "id": "esc-1270-lopez-vgg",
+    "name": "Escuela N°1270 \"Brigadier General Estanislao López\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Villa Gobernador Gálvez",
+    "address": "Chubut 1181",
+    "description": "Escuela primaria pública de Villa Gobernador Gálvez.",
+    "geoPrecision": "direccion",
+    "lat": -33.0339029,
+    "lon": -60.6253114
+  },
+  {
+    "id": "esc-1316-sanfrancisco-vgg",
+    "name": "Escuela Particular Incorporada N°1316 \"San Francisco de Asís\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "privado",
+    "localidad": "Villa Gobernador Gálvez",
+    "address": "Orán 1157",
+    "description": "Escuela primaria privada de Villa Gobernador Gálvez.",
+    "geoPrecision": "direccion",
+    "lat": -33.0346679,
+    "lon": -60.6249497
+  },
+  {
+    "id": "eeso-556-bicentenario-vgg",
+    "name": "E.E.S.O. N°556 \"Bicentenario de la Revolución de Mayo\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Villa Gobernador Gálvez",
+    "address": null,
+    "description": "Escuela secundaria orientada pública de Villa Gobernador Gálvez.",
+    "geoPrecision": "localidad",
+    "lat": -33.0250796,
+    "lon": -60.633744
+  },
+  {
+    "id": "eeso-254-fraylb",
+    "name": "E.E.S.O. N°254 \"Fray Luis Beltrán\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Fray Luis Beltrán",
+    "address": "M. Barragán 175",
+    "description": "Escuela secundaria orientada pública de Fray Luis Beltrán.",
+    "geoPrecision": "direccion",
+    "lat": -32.7895935,
+    "lon": -60.7270934
+  },
+  {
+    "id": "esc-1085-colombia-fraylb",
+    "name": "Escuela N°1085 \"República de Colombia\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Fray Luis Beltrán",
+    "address": "Teniente Agneta 279",
+    "description": "Escuela primaria pública de Fray Luis Beltrán, en el barrio Garibaldi.",
+    "geoPrecision": "direccion",
+    "lat": -32.7977705,
+    "lon": -60.7252035
+  },
+  {
+    "id": "esc-1288-sanjose-rufino",
+    "name": "Escuela Particular Incorporada N°1288 \"San José\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Sur",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "privado",
+    "localidad": "Rufino",
+    "address": "Benito A. Bianco 412",
+    "description": "Escuela primaria privada de Rufino.",
+    "geoPrecision": "direccion",
+    "lat": -34.2543699,
+    "lon": -62.7113328
+  },
+  {
+    "id": "jardin-116-rufino",
+    "name": "Jardín de Infantes N°116 \"20 de Noviembre\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Sur",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Rufino",
+    "address": null,
+    "description": "Jardín de infantes público de Rufino.",
+    "geoPrecision": "localidad",
+    "lat": -34.2617313,
+    "lon": -62.7110819
+  },
+  {
+    "id": "eem-271-rufino",
+    "name": "E.E.M. N°271",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Sur",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Rufino",
+    "address": null,
+    "description": "Escuela secundaria pública de Rufino.",
+    "geoPrecision": "localidad",
+    "lat": -34.2617313,
+    "lon": -62.7110819
+  },
+  {
+    "id": "esc-agrotecnica-335-rufino",
+    "name": "Escuela Agrotécnica N°335",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Sur",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "tipoSecundaria": "tecnica",
+    "localidad": "Rufino",
+    "address": "Avenida Cobo 1095",
+    "description": "Escuela secundaria agrotécnica pública de Rufino.",
+    "geoPrecision": "localidad",
+    "lat": -34.2617313,
+    "lon": -62.7110819
+  },
+  {
+    "id": "col-virgendelamerced-firmat",
+    "name": "Colegio \"Virgen de la Merced\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Sur",
+    "levels": [
+      "primaria",
+      "terciario"
+    ],
+    "sector": "privado",
+    "localidad": "Firmat",
+    "address": "Independencia 1329",
+    "description": "Institución privada de Firmat que reúne la Escuela Primaria N°1127 y el Instituto Superior Particular Incorporado N°9088, ambos bajo el mismo nombre y sede.",
+    "geoPrecision": "direccion",
+    "lat": -33.4606558,
+    "lon": -61.4887095
+  },
+  {
+    "id": "eeso-421-tiscornia-firmat",
+    "name": "E.E.S.O. N°421 \"Doctor Pablo Tiscornia\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Sur",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Firmat",
+    "address": "Matías Mussetto 550",
+    "description": "Escuela secundaria orientada pública de Firmat.",
+    "geoPrecision": "direccion",
+    "lat": -33.4642534,
+    "lon": -61.4947437
+  },
+  {
+    "id": "eet-420-brown-firmat",
+    "name": "E.E.T. N°420 \"Almirante Guillermo Brown\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Sur",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "tipoSecundaria": "tecnica",
+    "localidad": "Firmat",
+    "address": "Marcelo T. de Alvear y 25 de Mayo",
+    "description": "Escuela secundaria técnica pública de Firmat.",
+    "geoPrecision": "localidad",
+    "lat": -33.4581071,
+    "lon": -61.4860292
+  },
+  {
+    "id": "utn-firmat-extension",
+    "name": "UTN — Extensión Áulica Firmat",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": "https://www.frro.utn.edu.ar",
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Tecnicatura Universitaria en Programación",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 2,
+        "duracionLabel": "2 años"
+      }
+    ],
+    "featured": false,
+    "verified": true,
+    "logoDomain": "utn.edu.ar",
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Sur",
+    "levels": [
+      "terciario"
+    ],
+    "sector": "publico",
+    "localidad": "Firmat",
+    "description": "Extensión áulica de la UTN Facultad Regional Rosario en Firmat, con carreras cortas sin necesidad de trasladarse a Rosario.",
+    "geoPrecision": "localidad",
+    "lat": -33.4581071,
+    "lon": -61.4860292,
+    "coverImage": null
+  },
+  {
+    "id": "jardin-1213-sancarlos-sunchales",
+    "name": "Jardín N°1213 \"San Carlos\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Sunchales",
+    "address": "Rosario 107",
+    "description": "Jardín de infantes público de Sunchales.",
+    "geoPrecision": "direccion",
+    "lat": -30.9460467,
+    "lon": -61.570842
+  },
+  {
+    "id": "col-sanjose-sunchales",
+    "name": "Colegio \"San José\"",
+    "barrio": null,
+    "phone": "03493-420218",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Sunchales",
+    "address": "Estanislao López 85",
+    "description": "Colegio privado de Sunchales con jardín, primaria y secundaria en una misma sede.",
+    "geoPrecision": "direccion",
+    "lat": -30.9455315,
+    "lon": -61.5594115
+  },
+  {
+    "id": "esc-445-sunchales",
+    "name": "Escuela N°445",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Sunchales",
+    "address": "Cristóbal Colón 1284",
+    "description": "Escuela secundaria orientada pública de Sunchales, con orientaciones en Arte, Ciencias Sociales y Economía y Administración.",
+    "geoPrecision": "localidad",
+    "lat": -30.9450891,
+    "lon": -61.5608072
+  },
+  {
+    "id": "jardin-1332-sanmartindeporres-sancristobal",
+    "name": "Jardín N°1332 \"San Martín de Porres\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "San Cristóbal",
+    "address": "Las Heras 1354",
+    "description": "Jardín de infantes público de San Cristóbal.",
+    "geoPrecision": "direccion",
+    "lat": -30.3102023,
+    "lon": -61.2431752
+  },
+  {
+    "id": "primaria-1096-sancristobal",
+    "name": "Primaria N°1096",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "San Cristóbal",
+    "address": null,
+    "description": "Escuela primaria pública de San Cristóbal.",
+    "geoPrecision": "localidad",
+    "lat": -30.311107,
+    "lon": -61.2418955
+  },
+  {
+    "id": "eestp-474-tacuari-sancristobal",
+    "name": "E.E.S.T.P. N°474 \"Tambor de Tacuarí\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "tipoSecundaria": "tecnica",
+    "localidad": "San Cristóbal",
+    "address": "Hipólito Yrigoyen 1140",
+    "description": "Escuela secundaria técnico profesional pública de San Cristóbal.",
+    "geoPrecision": "localidad",
+    "lat": -30.311107,
+    "lon": -61.2418955
+  },
+  {
+    "id": "jardin-1103-ceres",
+    "name": "Jardín de Infantes N°1103",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Ceres",
+    "address": null,
+    "description": "Jardín de infantes público de Ceres.",
+    "geoPrecision": "localidad",
+    "lat": -29.8819399,
+    "lon": -61.9451954
+  },
+  {
+    "id": "esc-418-sanmartin-ceres",
+    "name": "Escuela de Enseñanza Media N°418 \"General San Martín\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "localidad": "Ceres",
+    "address": null,
+    "description": "Escuela secundaria pública de Ceres.",
+    "geoPrecision": "localidad",
+    "lat": -29.8819399,
+    "lon": -61.9451954
+  },
+  {
+    "id": "col-sagradafamiliabelen-ceres",
+    "name": "Colegio \"Sagrada Familia - Belén\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "católico",
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Ceres",
+    "address": null,
+    "description": "Colegio privado religioso de Ceres, con jardín, primaria (Sagrada Familia) y secundaria (Belén) en la misma comunidad educativa.",
+    "geoPrecision": "localidad",
+    "lat": -29.8819399,
+    "lon": -61.9451954
+  },
+  {
+    "id": "jardin-1474-santamaria-mariajuana",
+    "name": "Jardín de Infantes N°1474 \"Santa María de los Ángeles\"",
+    "barrio": null,
+    "phone": "03406-471223",
+    "email": "jardin1474_mariajuana@santafe.edu.ar",
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "María Juana",
+    "address": "Italia 237",
+    "description": "Jardín de infantes público de María Juana.",
+    "geoPrecision": "direccion",
+    "lat": -31.6779698,
+    "lon": -61.7544709
+  },
+  {
+    "id": "esc-398-sarmiento-mariajuana",
+    "name": "Escuela N°398 \"Domingo Faustino Sarmiento\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "María Juana",
+    "address": "Chacabuco 375",
+    "description": "Escuela primaria pública de María Juana.",
+    "geoPrecision": "direccion",
+    "lat": -31.6724505,
+    "lon": -61.7512637
+  },
+  {
+    "id": "jardin-241-belgrano-sanjorge",
+    "name": "Jardín de Infantes N°241 \"Gral. Manuel Belgrano\"",
+    "barrio": null,
+    "phone": "03406 444511",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "San Jorge",
+    "address": "San Juan 617",
+    "description": "Jardín de infantes público de San Jorge.",
+    "geoPrecision": "direccion",
+    "lat": -31.9009185,
+    "lon": -61.8516539
+  },
+  {
+    "id": "et-475-zimmermann-sanjorge",
+    "name": "Escuela Técnica N°475 \"Ingeniero Francisco Zimmermann\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "tipoSecundaria": "tecnica",
+    "localidad": "San Jorge",
+    "address": null,
+    "description": "Escuela secundaria técnica pública de San Jorge.",
+    "geoPrecision": "localidad",
+    "lat": -31.8962813,
+    "lon": -61.8597235
+  },
+  {
+    "id": "col-sagradocorazon-sanjorge",
+    "name": "Colegio \"Sagrado Corazón\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "católico",
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Centro",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "San Jorge",
+    "address": null,
+    "description": "Colegio privado religioso de San Jorge, con jardín, primaria y secundaria.",
+    "geoPrecision": "localidad",
+    "lat": -31.8962813,
+    "lon": -61.8597235
+  },
+  {
+    "id": "esc-94-nocturna-avellaneda",
+    "name": "Escuela Primaria Nocturna N°94",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Avellaneda",
+    "address": "Calle 10, 516 (Barrio Itatí)",
+    "turno": "noche",
+    "description": "Escuela primaria pública nocturna de Avellaneda, en el barrio Itatí.",
+    "geoPrecision": "direccion",
+    "lat": -29.117764,
+    "lon": -59.6602727
+  },
+  {
+    "id": "esc-1071-lourdes-avellaneda",
+    "name": "Escuela N°1071 \"Nuestra Señora de Lourdes\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "católico",
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "privado",
+    "localidad": "Avellaneda",
+    "address": "Calle 14, 557 (Barrio Lourdes)",
+    "description": "Jardín de infantes privado religioso de Avellaneda, en el barrio Lourdes.",
+    "geoPrecision": "direccion",
+    "lat": -29.1183697,
+    "lon": -59.6572767
+  },
+  {
+    "id": "jardin-39-montessori-vera",
+    "name": "Jardín de Infantes N°39 \"María Montessori\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Vera",
+    "address": null,
+    "description": "Jardín de infantes público de Vera.",
+    "geoPrecision": "localidad",
+    "lat": -29.4577916,
+    "lon": -60.2158054
+  },
+  {
+    "id": "esc-17-lavalle-vera",
+    "name": "Escuela Primaria N°17 \"General Juan Galo Lavalle\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Vera",
+    "address": null,
+    "description": "Escuela primaria pública de Vera.",
+    "geoPrecision": "localidad",
+    "lat": -29.4577916,
+    "lon": -60.2158054
+  },
+  {
+    "id": "esc-1056-sanjuanbautista-vera",
+    "name": "Escuela Particular Incorporada N°1056 \"San Juan Bautista\"",
+    "barrio": null,
+    "phone": "03483 420215",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "privado",
+    "localidad": "Vera",
+    "address": "Mariano Moreno 1835",
+    "description": "Escuela primaria privada de Vera.",
+    "geoPrecision": "direccion",
+    "lat": -29.4627396,
+    "lon": -60.2137715
+  },
+  {
+    "id": "esc-1061-inmaculada-vera",
+    "name": "Escuela N°1061 \"Inmaculada Concepción\"",
+    "barrio": null,
+    "phone": "03483 421555",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": "católico",
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "privado",
+    "localidad": "Vera",
+    "address": "Belgrano 1856",
+    "description": "Escuela primaria privada religiosa de Vera.",
+    "geoPrecision": "direccion",
+    "lat": -29.4630641,
+    "lon": -60.2122621
+  },
+  {
+    "id": "jardin-139-montessori-tostado",
+    "name": "Jardín N°139 \"María Montessori\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Tostado",
+    "address": null,
+    "description": "Jardín de infantes público de Tostado.",
+    "geoPrecision": "localidad",
+    "lat": -29.2323991,
+    "lon": -61.7710504
+  },
+  {
+    "id": "esc-680-sanmartin-tostado",
+    "name": "Escuela Primaria N°680 \"Libertador General San Martín\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Tostado",
+    "address": null,
+    "description": "Escuela primaria pública de Tostado.",
+    "geoPrecision": "localidad",
+    "lat": -29.2323991,
+    "lon": -61.7710504
+  },
+  {
+    "id": "eesopi-8237-regional-tostado",
+    "name": "E.E.S.O.P.I. N°8237 \"Regional Tostado\"",
+    "barrio": null,
+    "phone": "03491 470659",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Tostado",
+    "address": "Independencia 1312",
+    "description": "Escuela secundaria orientada privada de Tostado.",
+    "geoPrecision": "direccion",
+    "lat": -29.2347733,
+    "lon": -61.768483
+  },
+  {
+    "id": "jardin-1339-virgenniña-villaocampo",
+    "name": "Jardín N°1339 \"Santísima Virgen Niña\"",
+    "barrio": null,
+    "phone": "03482-492600",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Villa Ocampo",
+    "address": "Fray Luis Beltrán 1523",
+    "description": "Jardín de infantes público de Villa Ocampo.",
+    "geoPrecision": "direccion",
+    "lat": -28.4874057,
+    "lon": -59.3547999
+  },
+  {
+    "id": "esc-1150-obligado-villaocampo",
+    "name": "Escuela Particular N°1150 \"General Manuel Obligado\"",
+    "barrio": null,
+    "phone": "03482-466421",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "privado",
+    "localidad": "Villa Ocampo",
+    "address": "25 de Mayo 1530",
+    "description": "Escuela primaria privada de Villa Ocampo.",
+    "geoPrecision": "direccion",
+    "lat": -28.4905056,
+    "lon": -59.3544479
+  },
+  {
+    "id": "eesopi-3181-villaocampo",
+    "name": "E.E.S.O.P.I. N°3181",
+    "barrio": null,
+    "phone": "03482-469158",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Norte",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "privado",
+    "localidad": "Villa Ocampo",
+    "address": "25 de Mayo 1530",
+    "description": "Escuela secundaria orientada privada de Villa Ocampo.",
+    "geoPrecision": "direccion",
+    "lat": -28.4905056,
+    "lon": -59.3544479
+  },
+  {
+    "id": "esc-1496-sanmiguel-recreo",
+    "name": "Escuela Particular Incorporada N°1496 \"San Miguel Arcángel\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Capital",
+    "levels": [
+      "jardin",
+      "primaria"
+    ],
+    "sector": "privado",
+    "localidad": "Recreo",
+    "address": "José Ricardo Aldao 861",
+    "description": "Escuela privada de Recreo, con jardín y primaria.",
+    "geoPrecision": "localidad",
+    "lat": -31.4909067,
+    "lon": -60.7354891
+  },
+  {
+    "id": "esc-1297-peron-sauceviejo",
+    "name": "Escuela N°1297 \"Presidente Perón\"",
+    "barrio": null,
+    "phone": "0342 4572604",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Capital",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Sauce Viejo",
+    "address": "Los Paraísos y 3 de Febrero",
+    "description": "Escuela primaria pública de Sauce Viejo.",
+    "geoPrecision": "localidad",
+    "lat": -31.7710276,
+    "lon": -60.8372302
+  },
+  {
+    "id": "esc-360-sauceviejo",
+    "name": "Escuela N°360",
+    "barrio": null,
+    "phone": null,
+    "email": "prim360_sauceviejo@santafe.edu.ar",
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Capital",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Sauce Viejo",
+    "address": null,
+    "description": "Escuela primaria pública de Sauce Viejo.",
+    "geoPrecision": "localidad",
+    "lat": -31.7710276,
+    "lon": -60.8372302
+  },
+  {
+    "id": "jardin-362-funes",
+    "name": "Jardín de Infantes N°362",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Funes",
+    "address": "Vélez Sarsfield 600 (esquina Las Rosas)",
+    "description": "Jardín de infantes público de Funes.",
+    "geoPrecision": "localidad",
+    "lat": -32.9168704,
+    "lon": -60.8105603
+  },
+  {
+    "id": "jardin-101-pedroni-funes",
+    "name": "Jardín N°101 \"José Pedroni\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Funes",
+    "address": "Montevideo 1437",
+    "description": "Jardín de infantes público de Funes.",
+    "geoPrecision": "direccion",
+    "lat": -32.9144966,
+    "lon": -60.8071041
+  },
+  {
+    "id": "esc-1061-ingenieros-funes",
+    "name": "Escuela N°1061 \"José Ingenieros\"",
+    "barrio": null,
+    "phone": null,
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "region": "Región Rosario",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Funes",
+    "address": "El Palomar",
+    "description": "Escuela primaria pública de Funes, en el barrio El Palomar.",
+    "geoPrecision": "localidad",
+    "lat": -32.9168704,
+    "lon": -60.8105603
+  },
+  {
+    "id": "esc-1300-peron-perez",
+    "name": "Escuela N°1300 \"Presidente Perón\"",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Pérez",
+    "region": "Región Rosario",
+    "barrio": "El Fachinal",
+    "address": "Malvinas Argentinas 180",
+    "phone": "341-5260010",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela primaria pública de Pérez, en el barrio El Fachinal.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "geoPrecision": "direccion",
+    "lat": -33.002543,
+    "lon": -60.751424
+  },
+  {
+    "id": "jardin-253-baigorria",
+    "name": "Jardín de Infantes N°253",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Granadero Baigorria",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": "San Juan 2213",
+    "phone": "0341-156149972",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Jardín de infantes público de Granadero Baigorria.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "geoPrecision": "direccion",
+    "lat": -32.8500232,
+    "lon": -60.6995831
+  },
+  {
+    "id": "esc-1294-2deabril-baigorria",
+    "name": "Escuela N°1294 \"2 de Abril\"",
+    "levels": [
+      "primaria"
+    ],
+    "sector": "publico",
+    "localidad": "Granadero Baigorria",
+    "region": "Región Rosario",
+    "barrio": "Santa Rita",
+    "address": "Güemes 495",
+    "phone": "0341 4710367",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela primaria pública de Granadero Baigorria, en el barrio Santa Rita.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "geoPrecision": "direccion",
+    "lat": -32.8394751,
+    "lon": -60.7033113
+  },
+  {
+    "id": "jardin-89-trigales-fraylb",
+    "name": "Jardín de Infantes N°89 \"Los Trigales\"",
+    "levels": [
+      "jardin"
+    ],
+    "sector": "publico",
+    "localidad": "Fray Luis Beltrán",
+    "region": "Región Rosario",
+    "barrio": "Centro",
+    "address": "Juan Domingo Perón 613",
+    "phone": "341-4916900",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Jardín de infantes público de Fray Luis Beltrán.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "geoPrecision": "localidad",
+    "lat": -32.7874256,
+    "lon": -60.7295083
+  },
+  {
+    "id": "et-2040-santamariadelosangeles-mariajuana",
+    "name": "Escuela Técnica N°2040 \"Santa María de los Ángeles\"",
+    "levels": [
+      "secundaria"
+    ],
+    "sector": "publico",
+    "tipoSecundaria": "tecnica",
+    "localidad": "María Juana",
+    "region": "Región Centro",
+    "barrio": null,
+    "address": "Padre Calleri 272",
+    "phone": "03406-472318",
+    "email": null,
+    "website": null,
+    "instagram": null,
+    "description": "Escuela secundaria técnica pública de María Juana.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "geoPrecision": "direccion",
+    "lat": -31.677058,
+    "lon": -61.7538745
+  },
+  {
+    "id": "esc-1098-lamerced-avellaneda",
+    "name": "Escuela Particular Incorporada N°1098 \"Nuestra Señora de La Merced\"",
+    "levels": [
+      "jardin",
+      "primaria",
+      "secundaria"
+    ],
+    "sector": "privado",
+    "religioso": "católico",
+    "localidad": "Avellaneda",
+    "region": "Región Norte",
+    "barrio": "Port Arthur",
+    "address": "Calle 24, 723",
+    "email": null,
+    "website": "https://colegiolamerced.edu.ar",
+    "instagram": null,
+    "description": "Colegio privado religioso de Avellaneda, con jardín, primaria y secundaria orientada en Ciencias Sociales y Humanidades. Fundado en 1960.",
+    "foundedYear": 1960,
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [],
+    "featured": false,
+    "verified": true,
+    "logoDomain": null,
+    "source": "Ministerio de Educación de Santa Fe",
+    "geoPrecision": "direccion",
+    "lat": -29.1208553,
+    "lon": -59.6514247
   }
 ]

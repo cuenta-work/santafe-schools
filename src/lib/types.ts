@@ -74,6 +74,10 @@ export interface Institution {
   geoPrecision?: "direccion" | "localidad" | null;
   turno?: "mañana" | "tarde" | "noche" | "completo" | null;
   logoDomain?: string | null;
+  // Imagen de portada tomada del og:image del sitio oficial de la
+  // institución -- gratis, sin API key. Si no se encuentra, se usa el
+  // color + ícono de siempre.
+  coverImage?: string | null;
   source?: string | null;
   highlights?: Highlight[];
   resourceLinks?: ResourceLink[];

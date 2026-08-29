@@ -70,15 +70,25 @@ export default function Featured() {
               >
                 <div
                   className="relative flex h-16 items-center justify-end px-4"
-                  style={{ background: tint.bg }}
+                  style={
+                    i.coverImage
+                      ? {
+                          backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.35)), url(${i.coverImage})`,
+                          backgroundSize: "cover",
+                          backgroundPosition: "center",
+                        }
+                      : { background: tint.bg }
+                  }
                 >
-                  <LevelCoverIcon
-                    levels={i.levels}
-                    size={44}
-                    strokeWidth={1.25}
-                    style={{ color: tint.icon }}
-                    className="-mr-2 -mt-2 opacity-70"
-                  />
+                  {!i.coverImage && (
+                    <LevelCoverIcon
+                      levels={i.levels}
+                      size={44}
+                      strokeWidth={1.25}
+                      style={{ color: tint.icon }}
+                      className="-mr-2 -mt-2 opacity-70"
+                    />
+                  )}
                   <span
                     className="absolute left-4 z-10 rounded-xl ring-4 ring-card"
                     style={{ bottom: -24 }}

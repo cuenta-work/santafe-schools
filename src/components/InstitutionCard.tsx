@@ -49,15 +49,25 @@ export default function InstitutionCard({
     >
       <div
         className="relative flex h-20 items-center justify-end px-4"
-        style={{ background: tint.bg }}
+        style={
+          institution.coverImage
+            ? {
+                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.05), rgba(0,0,0,0.35)), url(${institution.coverImage})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }
+            : { background: tint.bg }
+        }
       >
-        <LevelCoverIcon
-          levels={institution.levels}
-          size={60}
-          strokeWidth={1.25}
-          style={{ color: tint.icon }}
-          className="-mr-2 -mt-2 opacity-70 transition group-hover:scale-110 group-hover:opacity-90"
-        />
+        {!institution.coverImage && (
+          <LevelCoverIcon
+            levels={institution.levels}
+            size={60}
+            strokeWidth={1.25}
+            style={{ color: tint.icon }}
+            className="-mr-2 -mt-2 opacity-70 transition group-hover:scale-110 group-hover:opacity-90"
+          />
+        )}
         <div className="absolute left-3 top-3 flex max-w-[calc(100%-2.5rem)] flex-row flex-wrap items-start gap-1">
           {institution.featured && (
             <span className="flex items-center gap-1 rounded-full bg-card/90 px-2 py-1 text-[10px] font-semibold text-gold shadow-sm">
