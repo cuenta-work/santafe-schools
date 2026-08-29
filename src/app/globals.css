@@ -315,6 +315,25 @@ body.modal-open {
   }
 }
 
+@keyframes edu-route-drift {
+  to {
+    stroke-dashoffset: -240;
+  }
+}
+
+.edu-route {
+  stroke-dasharray: 14 10;
+  animation-name: edu-route-drift;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .edu-route {
+    animation: none;
+  }
+}
+
 /* Al hacer click en un punto del mapa, el navegador le pone al <path> SVG
    de Leaflet el foco por teclado por defecto -- eso dibuja un cuadrado
    grande alrededor de todo el elemento en vez de un anillo prolijo sobre

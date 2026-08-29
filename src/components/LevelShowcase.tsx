@@ -25,7 +25,7 @@ export default function LevelShowcase() {
           Explorá por nivel
         </h2>
       </div>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
         {ORDER.map((level) => {
           const Icon = LEVEL_ICON[level];
           return (

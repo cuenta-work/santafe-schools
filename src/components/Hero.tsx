@@ -8,6 +8,7 @@ import { emptyFilters } from "@/lib/filters";
 import { capitalFirst } from "@/lib/localityPriority";
 import CustomSelect from "./CustomSelect";
 import SchoolMark from "./SchoolMark";
+import EduMapArt from "./EduMapArt";
 
 const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "universidad"];
 const SECTOR_ORDER: Sector[] = ["publico", "privado"];
@@ -69,6 +70,13 @@ export default function Hero() {
         style={{
           backgroundImage:
             "radial-gradient(circle at 15% 15%, var(--primary) 0, transparent 42%), radial-gradient(circle at 88% 8%, var(--gold) 0, transparent 35%), radial-gradient(circle at 75% 85%, var(--accent) 0, transparent 45%)",
+        }}
+      />
+      <EduMapArt
+        className="pointer-events-none absolute inset-y-0 right-0 hidden w-[40%] lg:block xl:w-[46%]"
+        style={{
+          maskImage: "linear-gradient(to right, transparent, black 22%)",
+          WebkitMaskImage: "linear-gradient(to right, transparent, black 22%)",
         }}
       />
       <div className="relative mx-auto flex w-full max-w-7xl flex-col gap-6 px-4 pb-14 pt-10 lg:px-8 lg:pb-20 lg:pt-16">
