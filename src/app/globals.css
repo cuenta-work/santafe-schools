@@ -314,3 +314,12 @@ body.modal-open {
     animation: none;
   }
 }
+
+/* Al hacer click en un punto del mapa, el navegador le pone al <path> SVG
+   de Leaflet el foco por teclado por defecto -- eso dibuja un cuadrado
+   grande alrededor de todo el elemento en vez de un anillo prolijo sobre
+   el círculo. El popup ya da suficiente feedback visual del click, así
+   que sacamos ese recuadro. */
+.leaflet-interactive:focus {
+  outline: none;
+}
