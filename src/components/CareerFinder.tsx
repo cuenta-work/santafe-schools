@@ -96,9 +96,9 @@ export default function CareerFinder() {
     [results]
   );
 
-  const openInstitution = (id: string) => {
+  const openInstitution = (id: string, careerName: string) => {
     const inst = institutions.find((i) => i.id === id);
-    if (inst) setSelected(inst);
+    if (inst) setSelected(inst, careerName);
   };
 
   const updateQuery = (v: string) => {
@@ -209,7 +209,7 @@ export default function CareerFinder() {
           {results.slice(0, visibleCount).map((c, idx) => (
             <button
               key={`${c.institutionId}-${c.nombre}-${idx}`}
-              onClick={() => openInstitution(c.institutionId)}
+              onClick={() => openInstitution(c.institutionId, c.nombre)}
               className="card-glow shine group flex flex-col gap-3 rounded-2xl border border-border bg-card p-4 text-left transition"
             >
               <div className="flex items-start justify-between gap-2">

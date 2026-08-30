@@ -55,9 +55,14 @@ const CityMap = dynamic(() => import("./CityMap"), {
 
 export default function InstitutionModal({
   institution,
+  highlightCareer = null,
   onClose,
 }: {
   institution: Institution;
+  // Carrera puntual clickeada para llegar acá (p. ej. desde el buscador de
+  // carreras) -- determina qué facultad abrir por defecto en el acordeón y
+  // cuál fila resaltar, en vez de siempre abrir la primera facultad.
+  highlightCareer?: string | null;
   onClose: () => void;
 }) {
   const { isFavorite, toggleFavorite } = useFilters();
@@ -464,9 +469,9 @@ export default function InstitutionModal({
 
                 {institution.carreras.length > 0 &&
                   (hasFacultades ? (
-                    <FacultadesAccordion groups={facultadGroups} />
+                    <FacultadesAccordion groups={facultadGroups} highlightCareer={highlightCareer} />
                   ) : (
-                    <CarrerasList carreras={institution.carreras} />
+                    <CarrerasList carreras={institution.carreras} highlightCareer={highlightCareer} />
                   ))}
               </div>
             )}

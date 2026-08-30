@@ -26,7 +26,12 @@ interface FiltersContextValue {
   religionCounts: Record<Religion, number>;
   showOnlyLevel: (level: Level) => void;
   selected: Institution | null;
-  setSelected: (v: Institution | null) => void;
+  // Carrera puntual que se clickeó para llegar a esta institución (p. ej.
+  // desde el buscador de carreras) -- el modal la usa para abrir la
+  // facultad correspondiente y resaltarla, en vez de siempre abrir la
+  // primera facultad de la lista.
+  selectedCareer: string | null;
+  setSelected: (v: Institution | null, careerName?: string | null) => void;
   favorites: Set<string>;
   isFavorite: (id: string) => boolean;
   toggleFavorite: (id: string) => void;
@@ -42,7 +47,13 @@ export function FiltersProvider({
   children: React.ReactNode;
 }) {
   const [filters, setFilters] = useState<FiltersState>(emptyFilters());
-  const [selected, setSelected] = useState<Institution | null>(null);
+  const [selected, setSelectedInstitution] = useState<Institution | null>(null);
+  const [selectedCareer, setSelectedCareer] = useState<string | null>(null);
+
+  const setSelected = (v: Institution | null, careerName: string | null = null) => {
+    setSelectedInstitution(v);
+    setSelectedCareer(v ? careerName : null);
+  };
 
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
   useEffect(() => {
@@ -201,6 +212,7 @@ export function FiltersProvider({
         religionCounts,
         showOnlyLevel,
         selected,
+        selectedCareer,
         setSelected,
         favorites,
         isFavorite,

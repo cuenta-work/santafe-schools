@@ -117614,5 +117614,87 @@
     "logoDomain": null,
     "source": "Padrón Oficial de Establecimientos Educativos (Ministerio de Capital Humano, actualizado 16/06/2026)",
     "coverImage": null
+  },
+  {
+    "id": "instituto-politecnico-superior-general-san-martin-ips-rosario",
+    "name": "Instituto Politécnico Superior \"General San Martín\" (IPS)",
+    "levels": [
+      "terciario"
+    ],
+    "sector": "publico",
+    "localidad": "Rosario",
+    "region": "Región Rosario",
+    "barrio": null,
+    "address": "Av Pellegrini 250",
+    "phone": "0341 4802641",
+    "email": "direccion@ips.edu.ar",
+    "website": "https://www.ips.edu.ar",
+    "instagram": null,
+    "description": "Instituto de nivel terciario dependiente de la Universidad Nacional de Rosario, con tecnicaturas universitarias en oficios industriales y la histórica carrera de Óptica y Contactología, además de la secundaria técnica que funciona en el mismo edificio.",
+    "modalidad": null,
+    "genero": "mixto",
+    "bilingue": null,
+    "religioso": null,
+    "costTier": null,
+    "orientaciones": [],
+    "carreras": [
+      {
+        "nombre": "Tecnicatura Universitaria en Óptica y Contactología",
+        "titulo": "Técnico/a Universitario/a en Óptica y Contactología",
+        "duracionAnios": 4,
+        "duracionLabel": "4 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Gestión y Producción",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Sistemas Electrónicos",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Construcciones",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Plásticos y Elastómeros",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Química",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Tecnicatura Universitaria en Mecatrónica",
+        "titulo": "Técnico/a Universitario/a",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      },
+      {
+        "nombre": "Analista Universitario/a en Sistemas",
+        "titulo": "Analista Universitario/a en Sistemas",
+        "duracionAnios": 3,
+        "duracionLabel": "3 años"
+      }
+    ],
+    "featured": false,
+    "verified": false,
+    "foundedYear": 1906,
+    "lat": -32.9593609,
+    "lon": -60.6617024,
+    "geoPrecision": "localidad",
+    "logoDomain": "ips.edu.ar",
+    "source": "Sitio oficial ips.edu.ar (consultado 30/08/2026)",
+    "coverImage": null
   }
 ]
