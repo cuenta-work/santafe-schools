@@ -13,7 +13,6 @@ import {
   type Sector,
   type TipoSecundaria,
 } from "@/lib/types";
-import type { Religion } from "@/lib/filters";
 import { RADII } from "@/lib/geo";
 import { capitalFirst } from "@/lib/localityPriority";
 import { useFilters } from "@/context/FiltersContext";
@@ -21,11 +20,6 @@ import CustomSelect from "./CustomSelect";
 
 const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "universidad"];
 const SECTOR_ORDER: Sector[] = ["publico", "privado"];
-const RELIGION_ORDER: Religion[] = ["religiosa", "laica"];
-const RELIGION_LABELS: Record<Religion, string> = {
-  religiosa: "Religiosa",
-  laica: "No religiosa",
-};
 const TIPO_SECUNDARIA_ORDER: TipoSecundaria[] = ["tecnica", "orientada"];
 const MODALIDADES = ["jornada simple", "jornada completa", "doble escolaridad"];
 const GENEROS = ["mixto", "solo mujeres", "solo varones"];
@@ -40,7 +34,6 @@ export default function FilterControls() {
     posgradoCount,
     becasCount,
     religiosoCount,
-    religionCounts,
   } = useFilters();
 
   const localidadesOrdenadas = useMemo(
@@ -207,26 +200,6 @@ export default function FilterControls() {
             >
               {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
               <span className="opacity-60">({sectorCounts[sector]})</span>
-            </button>
-          ))}
-        </div>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {RELIGION_ORDER.map((r) => (
-            <button
-              key={r}
-              type="button"
-              className="pill pill-accent"
-              data-active={filters.religion.has(r)}
-              onClick={() =>
-                applyFilters({
-                  ...filters,
-                  religion: toggleInSet(filters.religion, r) as Set<Religion>,
-                })
-              }
-            >
-              {r === "religiosa" && <Church size={13} className="inline -mt-0.5 mr-1" />}
-              {RELIGION_LABELS[r]}
-              <span className="opacity-60">({religionCounts[r]})</span>
             </button>
           ))}
         </div>

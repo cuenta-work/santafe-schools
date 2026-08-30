@@ -1,10 +1,10 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { Search, GraduationCap, SlidersHorizontal } from "lucide-react";
+import { Search, GraduationCap, SlidersHorizontal, Church } from "lucide-react";
 import { LEVEL_LABELS, LEVEL_EMOJI, SECTOR_LABELS, SECTOR_EMOJI, type Level, type Sector } from "@/lib/types";
 import { useFilters } from "@/context/FiltersContext";
-import { emptyFilters } from "@/lib/filters";
+import { emptyFilters, type Religion } from "@/lib/filters";
 import { capitalFirst } from "@/lib/localityPriority";
 import CustomSelect from "./CustomSelect";
 import SchoolMark from "./SchoolMark";
@@ -12,6 +12,11 @@ import EduMapArt from "./EduMapArt";
 
 const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "universidad"];
 const SECTOR_ORDER: Sector[] = ["publico", "privado"];
+const RELIGION_ORDER: Religion[] = ["religiosa", "laica"];
+const RELIGION_LABELS: Record<Religion, string> = {
+  religiosa: "Religiosa",
+  laica: "No religiosa",
+};
 
 export default function Hero() {
   const {
@@ -21,10 +26,12 @@ export default function Hero() {
     localidades,
     levelCounts,
     sectorCounts,
+    religionCounts,
     posgradoCount,
   } = useFilters();
   const [pendingLevels, setPendingLevels] = useState<Set<Level>>(new Set(filters.levels));
   const [pendingSectors, setPendingSectors] = useState<Set<Sector>>(new Set(filters.sectors));
+  const [pendingReligion, setPendingReligion] = useState<Set<Religion>>(new Set(filters.religion));
   const [pendingLocalidad, setPendingLocalidad] = useState<string>(filters.localidad ?? "");
   const [pendingPosgrado, setPendingPosgrado] = useState<boolean>(filters.posgradoOnly);
   const localidadesOrdenadas = useMemo(
@@ -52,11 +59,21 @@ export default function Hero() {
     });
   };
 
+  const toggleReligion = (r: Religion) => {
+    setPendingReligion((prev) => {
+      const next = new Set(prev);
+      if (next.has(r)) next.delete(r);
+      else next.add(r);
+      return next;
+    });
+  };
+
   const applyAndScroll = () => {
     setFilters({
       ...emptyFilters(),
       levels: pendingLevels,
       sectors: pendingSectors,
+      religion: pendingReligion,
       localidad: pendingLocalidad || null,
       posgradoOnly: pendingPosgrado,
     });
@@ -171,6 +188,21 @@ export default function Hero() {
                   >
                     {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
                     <span className="opacity-60">({sectorCounts[sector]})</span>
+                  </button>
+                ))}
+              </div>
+              <div className="mt-1.5 flex flex-wrap gap-1.5">
+                {RELIGION_ORDER.map((r) => (
+                  <button
+                    key={r}
+                    type="button"
+                    className="pill pill-accent !py-1.5 !text-xs"
+                    data-active={pendingReligion.has(r)}
+                    onClick={() => toggleReligion(r)}
+                  >
+                    {r === "religiosa" && <Church size={12} className="inline -mt-0.5 mr-1" />}
+                    {RELIGION_LABELS[r]}
+                    <span className="opacity-60">({religionCounts[r]})</span>
                   </button>
                 ))}
               </div>
