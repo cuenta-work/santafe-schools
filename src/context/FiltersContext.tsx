@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import type { Institution, Level, Sector } from "@/lib/types";
-import { emptyFilters, type FiltersState } from "@/lib/filters";
+import { emptyFilters, type FiltersState, type Religion } from "@/lib/filters";
 import { getLocalityNames } from "@/lib/localities";
 import { distanceKm } from "@/lib/geo";
 import { isCapital } from "@/lib/localityPriority";
@@ -22,6 +22,7 @@ interface FiltersContextValue {
   posgradoCount: number;
   becasCount: number;
   religiosoCount: number;
+  religionCounts: Record<Religion, number>;
   showOnlyLevel: (level: Level) => void;
   selected: Institution | null;
   setSelected: (v: Institution | null) => void;
@@ -105,6 +106,12 @@ export function FiltersProvider({
     [institutions]
   );
 
+  const religionCounts = useMemo(() => {
+    const counts: Record<Religion, number> = { religiosa: 0, laica: 0 };
+    institutions.forEach((i) => (counts[i.religioso ? "religiosa" : "laica"] += 1));
+    return counts;
+  }, [institutions]);
+
   const searchIndex = useMemo(() => {
     const index = new Map<string, string>();
     institutions.forEach((i) => {
@@ -134,6 +141,8 @@ export function FiltersProvider({
         if (!matches) return false;
       }
       if (filters.sectors.size > 0 && !filters.sectors.has(i.sector)) return false;
+      if (filters.religion.size > 0 && !filters.religion.has(i.religioso ? "religiosa" : "laica"))
+        return false;
       if (filters.localidad && i.localidad !== filters.localidad) return false;
       if (filters.modalidad && i.modalidad !== filters.modalidad) return false;
       if (filters.genero && i.genero !== filters.genero) return false;
@@ -181,6 +190,7 @@ export function FiltersProvider({
         posgradoCount,
         becasCount,
         religiosoCount,
+        religionCounts,
         showOnlyLevel,
         selected,
         setSelected,
