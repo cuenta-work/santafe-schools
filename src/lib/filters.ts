@@ -1,10 +1,6 @@
 import type { Level, Sector, TipoSecundaria } from "./types";
 import type { LatLon } from "./geo";
 
-// Derivado de "religioso" en los datos (no es un campo propio): "religiosa"
-// si la institución tiene algo cargado en `religioso`, "laica" si no.
-export type Religion = "religiosa" | "laica";
-
 export interface FiltersState {
   levels: Set<Level>;
   // false (default): institución con AL MENOS uno de los niveles marcados.
@@ -13,12 +9,12 @@ export interface FiltersState {
   // colegio, no cualquiera de las dos por separado.
   levelsMatchAll: boolean;
   sectors: Set<Sector>;
-  religion: Set<Religion>;
   localidad: string | null;
   modalidad: string | null;
   genero: string | null;
   tipoSecundaria: TipoSecundaria | null;
   bilingueOnly: boolean;
+  religiosoOnly: boolean;
   featuredOnly: boolean;
   posgradoOnly: boolean;
   becasOnly: boolean;
@@ -35,12 +31,12 @@ export function emptyFilters(): FiltersState {
     levels: new Set(),
     levelsMatchAll: false,
     sectors: new Set(),
-    religion: new Set(),
     localidad: null,
     modalidad: null,
     genero: null,
     tipoSecundaria: null,
     bilingueOnly: false,
+    religiosoOnly: false,
     featuredOnly: false,
     posgradoOnly: false,
     becasOnly: false,
@@ -54,12 +50,12 @@ export function hasActiveFilters(f: FiltersState): boolean {
   return (
     f.levels.size > 0 ||
     f.sectors.size > 0 ||
-    f.religion.size > 0 ||
     !!f.localidad ||
     !!f.modalidad ||
     !!f.genero ||
     !!f.tipoSecundaria ||
     f.bilingueOnly ||
+    f.religiosoOnly ||
     f.featuredOnly ||
     f.posgradoOnly ||
     f.becasOnly ||
@@ -72,12 +68,12 @@ export function countActiveFilters(f: FiltersState): number {
   return (
     f.levels.size +
     f.sectors.size +
-    f.religion.size +
     (f.localidad ? 1 : 0) +
     (f.modalidad ? 1 : 0) +
     (f.genero ? 1 : 0) +
     (f.tipoSecundaria ? 1 : 0) +
     (f.bilingueOnly ? 1 : 0) +
+    (f.religiosoOnly ? 1 : 0) +
     (f.featuredOnly ? 1 : 0) +
     (f.posgradoOnly ? 1 : 0) +
     (f.becasOnly ? 1 : 0) +

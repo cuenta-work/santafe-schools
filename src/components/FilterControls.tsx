@@ -13,7 +13,6 @@ import {
   type Sector,
   type TipoSecundaria,
 } from "@/lib/types";
-import type { Religion } from "@/lib/filters";
 import { RADII } from "@/lib/geo";
 import { capitalFirst } from "@/lib/localityPriority";
 import { useFilters } from "@/context/FiltersContext";
@@ -21,11 +20,6 @@ import CustomSelect from "./CustomSelect";
 
 const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "universidad"];
 const SECTOR_ORDER: Sector[] = ["publico", "privado"];
-const RELIGION_ORDER: Religion[] = ["religiosa", "laica"];
-const RELIGION_LABELS: Record<Religion, string> = {
-  religiosa: "Religiosa",
-  laica: "No religiosa",
-};
 const TIPO_SECUNDARIA_ORDER: TipoSecundaria[] = ["tecnica", "orientada"];
 const MODALIDADES = ["jornada simple", "jornada completa", "doble escolaridad"];
 const GENEROS = ["mixto", "solo mujeres", "solo varones"];
@@ -39,7 +33,7 @@ export default function FilterControls() {
     sectorCounts,
     posgradoCount,
     becasCount,
-    religionCounts,
+    religiosoCount,
   } = useFilters();
 
   const localidadesOrdenadas = useMemo(
@@ -209,26 +203,19 @@ export default function FilterControls() {
             </button>
           ))}
         </div>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {RELIGION_ORDER.map((r) => (
-            <button
-              key={r}
-              type="button"
-              className="pill pill-accent"
-              data-active={filters.religion.has(r)}
-              onClick={() =>
-                applyFilters({
-                  ...filters,
-                  religion: toggleInSet(filters.religion, r) as Set<Religion>,
-                })
-              }
-            >
-              {r === "religiosa" && <Church size={13} className="inline -mt-0.5 mr-1" />}
-              {RELIGION_LABELS[r]}
-              <span className="opacity-60">({religionCounts[r]})</span>
-            </button>
-          ))}
-        </div>
+        <label className="mt-2 flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
+          <span className="flex items-center gap-1.5">
+            Solo <strong className="font-semibold">religiosas</strong>{" "}
+            <Church size={13} />
+            <span className="opacity-60">({religiosoCount})</span>
+          </span>
+          <input
+            type="checkbox"
+            checked={filters.religiosoOnly}
+            onChange={(e) => applyFilters({ ...filters, religiosoOnly: e.target.checked })}
+            className="switch"
+          />
+        </label>
       </div>
 
       <div>
@@ -296,6 +283,19 @@ export default function FilterControls() {
             type="checkbox"
             checked={filters.bilingueOnly}
             onChange={(e) => applyFilters({ ...filters, bilingueOnly: e.target.checked })}
+            className="switch"
+          />
+        </label>
+        <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
+          <span className="flex items-center gap-1.5">
+            Solo <strong className="font-semibold">religiosas</strong>{" "}
+            <Church size={13} />
+            <span className="opacity-60">({religiosoCount})</span>
+          </span>
+          <input
+            type="checkbox"
+            checked={filters.religiosoOnly}
+            onChange={(e) => applyFilters({ ...filters, religiosoOnly: e.target.checked })}
             className="switch"
           />
         </label>
