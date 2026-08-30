@@ -275,7 +275,7 @@ export default function FilterControls() {
           />
         </label>
         <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
-          <span className="flex items-center gap-1.5">
+          <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo <strong className="font-semibold">religiosas</strong>{" "}
             <Church size={13} />
             <span className="opacity-60">({religiosoCount})</span>
@@ -288,7 +288,7 @@ export default function FilterControls() {
           />
         </label>
         <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
-          <span className="flex items-center gap-1.5">
+          <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo <strong className="font-semibold">virtuales</strong>{" "}
             <Laptop size={13} />
             <span className="opacity-60">({virtualCount})</span>
@@ -301,7 +301,7 @@ export default function FilterControls() {
           />
         </label>
         <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
-          <span className="flex items-center gap-1.5">
+          <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo <strong className="font-semibold">destacadas</strong>{" "}
             <Star size={13} className="text-gold" />
           </span>
@@ -313,7 +313,7 @@ export default function FilterControls() {
           />
         </label>
         <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
-          <span className="flex items-center gap-1.5">
+          <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo con <strong className="font-semibold">posgrado</strong> 🎓
             <span className="opacity-60">({posgradoCount})</span>
           </span>
@@ -325,7 +325,7 @@ export default function FilterControls() {
           />
         </label>
         <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
-          <span className="flex items-center gap-1.5">
+          <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo con <strong className="font-semibold">becas</strong> 💸
             <span className="opacity-60">({becasCount})</span>
           </span>
