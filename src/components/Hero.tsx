@@ -206,7 +206,11 @@ export default function Hero() {
                       data-active={pendingReligion.has(r)}
                       onClick={() => toggleReligion(r)}
                     >
-                      {r === "religiosa" && <Church size={12} className="inline -mt-0.5 mr-1" />}
+                      {r === "religiosa" ? (
+                        <Church size={12} className="inline -mt-0.5 mr-1" />
+                      ) : (
+                        "🔓 "
+                      )}
                       {RELIGION_LABELS[r]}
                       <span className="opacity-60">({religionCounts[r]})</span>
                     </button>
