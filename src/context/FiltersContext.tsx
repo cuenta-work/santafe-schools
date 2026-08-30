@@ -21,6 +21,7 @@ interface FiltersContextValue {
   sectorCounts: Record<Sector, number>;
   posgradoCount: number;
   becasCount: number;
+  religiosoCount: number;
   showOnlyLevel: (level: Level) => void;
   selected: Institution | null;
   setSelected: (v: Institution | null) => void;
@@ -99,6 +100,11 @@ export function FiltersProvider({
     [institutions]
   );
 
+  const religiosoCount = useMemo(
+    () => institutions.filter((i) => i.religioso).length,
+    [institutions]
+  );
+
   const searchIndex = useMemo(() => {
     const index = new Map<string, string>();
     institutions.forEach((i) => {
@@ -133,6 +139,7 @@ export function FiltersProvider({
       if (filters.genero && i.genero !== filters.genero) return false;
       if (filters.tipoSecundaria && i.tipoSecundaria !== filters.tipoSecundaria) return false;
       if (filters.bilingueOnly && !i.bilingue) return false;
+      if (filters.religiosoOnly && !i.religioso) return false;
       if (filters.featuredOnly && !i.featured) return false;
       if (filters.posgradoOnly && !(i.posgrados && i.posgrados.length > 0)) return false;
       if (filters.becasOnly && !(i.becas && i.becas.length > 0)) return false;
@@ -173,6 +180,7 @@ export function FiltersProvider({
         sectorCounts,
         posgradoCount,
         becasCount,
+        religiosoCount,
         showOnlyLevel,
         selected,
         setSelected,

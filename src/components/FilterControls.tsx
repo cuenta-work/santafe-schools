@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { GraduationCap, Star, MapPin, X, LocateFixed, Loader2 } from "lucide-react";
+import { GraduationCap, Star, MapPin, X, LocateFixed, Loader2, Church } from "lucide-react";
 import {
   LEVEL_LABELS,
   LEVEL_EMOJI,
@@ -33,6 +33,7 @@ export default function FilterControls() {
     sectorCounts,
     posgradoCount,
     becasCount,
+    religiosoCount,
   } = useFilters();
 
   const localidadesOrdenadas = useMemo(
@@ -269,6 +270,19 @@ export default function FilterControls() {
             type="checkbox"
             checked={filters.bilingueOnly}
             onChange={(e) => applyFilters({ ...filters, bilingueOnly: e.target.checked })}
+            className="switch"
+          />
+        </label>
+        <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
+          <span className="flex items-center gap-1.5">
+            Solo <strong className="font-semibold">religiosas</strong>{" "}
+            <Church size={13} />
+            <span className="opacity-60">({religiosoCount})</span>
+          </span>
+          <input
+            type="checkbox"
+            checked={filters.religiosoOnly}
+            onChange={(e) => applyFilters({ ...filters, religiosoOnly: e.target.checked })}
             className="switch"
           />
         </label>
