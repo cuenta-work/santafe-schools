@@ -49,6 +49,8 @@ export const LEVEL_SECTOR_TIPS: Partial<Record<LevelSectorKey, LevelTip>> = {
   "jardin:publico": {
     emoji: "👶",
     text: "Sala de 4 y sala de 5 son obligatorias por ley. En los jardines públicos la inscripción suele ser en un período fijo a mitad de año para el ciclo lectivo siguiente -- averiguá la fecha exacta en cada uno, no es la misma en todos.",
+    linkLabel: "Mesa de Orientación y Servicios (Ministerio)",
+    linkUrl: "https://educacion.santafe.gob.ar/moys/",
   },
   "jardin:privado": {
     emoji: "👶",
@@ -57,6 +59,8 @@ export const LEVEL_SECTOR_TIPS: Partial<Record<LevelSectorKey, LevelTip>> = {
   "primaria:publico": {
     emoji: "🏫",
     text: "En las escuelas públicas la vacante suele priorizarse por \"radio escolar\": la zona o domicilio más cercano a la escuela. Antes de anotarte, preguntá en la escuela si tu dirección entra dentro de su radio.",
+    linkLabel: "Mesa de Orientación y Servicios (Ministerio)",
+    linkUrl: "https://educacion.santafe.gob.ar/moys/",
   },
   "primaria:privado": {
     emoji: "🏫",

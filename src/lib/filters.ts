@@ -21,6 +21,7 @@ export interface FiltersState {
   tipoSecundaria: TipoSecundaria | null;
   bilingueOnly: boolean;
   religiosoOnly: boolean;
+  virtualOnly: boolean;
   featuredOnly: boolean;
   posgradoOnly: boolean;
   becasOnly: boolean;
@@ -44,6 +45,7 @@ export function emptyFilters(): FiltersState {
     tipoSecundaria: null,
     bilingueOnly: false,
     religiosoOnly: false,
+    virtualOnly: false,
     featuredOnly: false,
     posgradoOnly: false,
     becasOnly: false,
@@ -64,6 +66,7 @@ export function hasActiveFilters(f: FiltersState): boolean {
     !!f.tipoSecundaria ||
     f.bilingueOnly ||
     f.religiosoOnly ||
+    f.virtualOnly ||
     f.featuredOnly ||
     f.posgradoOnly ||
     f.becasOnly ||
@@ -83,6 +86,7 @@ export function countActiveFilters(f: FiltersState): number {
     (f.tipoSecundaria ? 1 : 0) +
     (f.bilingueOnly ? 1 : 0) +
     (f.religiosoOnly ? 1 : 0) +
+    (f.virtualOnly ? 1 : 0) +
     (f.featuredOnly ? 1 : 0) +
     (f.posgradoOnly ? 1 : 0) +
     (f.becasOnly ? 1 : 0) +

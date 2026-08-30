@@ -40,21 +40,21 @@ const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "
 const PRIORIDADES_BY_LEVEL: Record<Level, { key: Prioridad; label: string; emoji: string }[]> = {
   jardin: [
     { key: "cercania", label: "Que quede cerca de casa", emoji: "📍" },
-    { key: "jornada", label: "Jornada extendida o doble escolaridad", emoji: "⏰" },
+    { key: "jornada", label: "Jornada extendida o doble turno", emoji: "⏰" },
     { key: "bilingue", label: "Que sea bilingüe", emoji: "🌐" },
     { key: "religioso", label: "Con orientación religiosa", emoji: "🙏" },
     { key: "arancel", label: "Que la cuota sea accesible", emoji: "💸" },
   ],
   primaria: [
     { key: "cercania", label: "Que quede cerca de casa", emoji: "📍" },
-    { key: "jornada", label: "Jornada extendida o doble escolaridad", emoji: "⏰" },
+    { key: "jornada", label: "Jornada extendida o doble turno", emoji: "⏰" },
     { key: "bilingue", label: "Que sea bilingüe", emoji: "🌐" },
     { key: "religioso", label: "Con orientación religiosa", emoji: "🙏" },
     { key: "arancel", label: "Que la cuota sea accesible", emoji: "💸" },
   ],
   secundaria: [
     { key: "cercania", label: "Que quede cerca de casa", emoji: "📍" },
-    { key: "jornada", label: "Jornada extendida o doble escolaridad", emoji: "⏰" },
+    { key: "jornada", label: "Jornada extendida o doble turno", emoji: "⏰" },
     { key: "bilingue", label: "Que sea bilingüe", emoji: "🌐" },
     { key: "tecnica", label: "Orientación técnica", emoji: "⚙️" },
     { key: "arancel", label: "Que la cuota sea accesible", emoji: "💸" },
@@ -92,7 +92,7 @@ function scoreInstitution(inst: Institution, answers: Answers): number {
   if (answers.prioridad === "bilingue" && inst.bilingue) score += 5;
   if (
     answers.prioridad === "jornada" &&
-    (inst.modalidad === "jornada completa" || inst.modalidad === "doble escolaridad")
+    (inst.modalidad === "jornada completa" || inst.modalidad === "doble turno")
   )
     score += 5;
   if (answers.prioridad === "tecnica" && inst.tipoSecundaria === "tecnica") score += 5;

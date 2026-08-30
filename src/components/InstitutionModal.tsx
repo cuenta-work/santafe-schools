@@ -41,6 +41,8 @@ import { copyToClipboard } from "@/lib/share";
 import { AUTHOR } from "@/lib/author";
 import InstitutionLogo from "./InstitutionLogo";
 import SafeIframe from "./SafeIframe";
+import { CarrerasList, FacultadesAccordion } from "./CarrerasList";
+import { facultadGroupsOf } from "@/lib/carreras";
 
 const CityMap = dynamic(() => import("./CityMap"), {
   ssr: false,
@@ -110,6 +112,11 @@ export default function InstitutionModal({
   });
 
   const hasCurricula = institution.orientaciones.length > 0 || institution.carreras.length > 0;
+  // Instituciones con más de una facultad/unidad académica (hoy solo la
+  // UNL tiene este dato cargado) muestran la currícula agrupada por
+  // facultad en vez de una lista plana de decenas de carreras mezcladas.
+  const facultadGroups = facultadGroupsOf(institution.carreras);
+  const hasFacultades = facultadGroups.length > 1;
   const hasContact =
     institution.phone || institution.email || institution.website || institution.instagram;
   const highlights = institution.highlights ?? [];
@@ -455,31 +462,12 @@ export default function InstitutionModal({
                   </div>
                 )}
 
-                {institution.carreras.length > 0 && (
-                  <ul
-                    className={`scrollbar-thin flex flex-col divide-y divide-border overflow-hidden overflow-y-auto rounded-xl border border-border bg-card ${
-                      institution.carreras.length > 6 ? "max-h-72" : ""
-                    }`}
-                  >
-                    {institution.carreras.map((c) => (
-                      <li
-                        key={c.nombre}
-                        className="flex items-start justify-between gap-3 px-3.5 py-2.5 text-sm"
-                      >
-                        <div className="flex min-w-0 items-start gap-2">
-                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                          <div className="min-w-0">
-                            <p className="text-foreground">{c.nombre}</p>
-                            {c.titulo && <p className="text-xs text-muted">{c.titulo}</p>}
-                          </div>
-                        </div>
-                        <span className="flex shrink-0 items-center gap-1 rounded-full bg-accent/10 px-2 py-0.5 text-[11px] font-semibold text-accent-dark">
-                          <Clock size={11} /> {c.duracionLabel}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                {institution.carreras.length > 0 &&
+                  (hasFacultades ? (
+                    <FacultadesAccordion groups={facultadGroups} />
+                  ) : (
+                    <CarrerasList carreras={institution.carreras} />
+                  ))}
               </div>
             )}
 
@@ -622,3 +610,4 @@ function HighlightCard({ highlight }: { highlight: Highlight }) {
     </div>
   );
 }
+

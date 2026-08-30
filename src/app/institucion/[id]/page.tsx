@@ -7,7 +7,6 @@ import {
   Globe,
   Phone,
   Mail,
-  Clock,
   ArrowLeft,
   Star,
   Sparkles,
@@ -25,6 +24,8 @@ import { institutionTint } from "@/lib/institutionColor";
 import InstitutionLogo from "@/components/InstitutionLogo";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
+import { CarrerasList, FacultadesAccordion } from "@/components/CarrerasList";
+import { facultadGroupsOf } from "@/lib/carreras";
 
 const SITE_URL = "https://santafe-schools.vercel.app";
 
@@ -167,24 +168,16 @@ export default async function InstitutionPage({
                     ))}
                   </div>
                 )}
-                {institution.carreras.length > 0 && (
-                  <ul className="flex flex-col divide-y divide-border overflow-hidden rounded-xl border border-border bg-background">
-                    {institution.carreras.map((c) => (
-                      <li
-                        key={c.nombre}
-                        className="flex items-start justify-between gap-3 px-3.5 py-2.5 text-sm"
-                      >
-                        <div className="min-w-0">
-                          <p className="text-foreground">{c.nombre}</p>
-                          {c.titulo && <p className="text-xs text-muted">{c.titulo}</p>}
-                        </div>
-                        <span className="flex shrink-0 items-center gap-1 rounded-full bg-accent/10 px-2 py-0.5 text-[11px] font-semibold text-accent-dark">
-                          <Clock size={11} /> {c.duracionLabel}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
+                {institution.carreras.length > 0 &&
+                  (facultadGroupsOf(institution.carreras).length > 1 ? (
+                    <FacultadesAccordion
+                      groups={facultadGroupsOf(institution.carreras)}
+                      scroll={false}
+                      bg="bg-background"
+                    />
+                  ) : (
+                    <CarrerasList carreras={institution.carreras} scroll={false} bg="bg-background" />
+                  ))}
               </div>
             )}
 

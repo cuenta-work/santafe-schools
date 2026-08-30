@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import dynamic from "next/dynamic";
-import { Compass } from "lucide-react";
+import { Compass, ChevronDown } from "lucide-react";
 import { useFilters } from "@/context/FiltersContext";
 import { formatDistance } from "@/lib/geo";
 import FilterSidebar from "./FilterSidebar";
@@ -19,17 +19,26 @@ const CityMap = dynamic(() => import("./CityMap"), {
   ),
 });
 
+// Con miles de instituciones posibles en un mismo filtro (ej. "jardines"
+// en toda la provincia), renderizar todo el listado de una sola vez
+// trababa el scroll -- se muestra de a tandas y se van pidiendo más.
+const PAGE_SIZE = 24;
+
 export default function Explorer() {
   const { filtered, filters, distances, setSelected } = useFilters();
   const singleLevel = filters.levels.size === 1 ? Array.from(filters.levels)[0] : null;
   const sectionRef = useRef<HTMLElement>(null);
   const prevFiltered = useRef(filtered);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   useEffect(() => {
     if (prevFiltered.current === filtered) return;
     prevFiltered.current = filtered;
+    setVisibleCount(PAGE_SIZE);
     sectionRef.current?.scrollIntoView({ behavior: "instant", block: "start" });
   }, [filtered]);
+
+  const visible = filtered.slice(0, visibleCount);
 
   return (
     <section
@@ -83,23 +92,40 @@ export default function Explorer() {
               <p className="text-sm">probá aflojando algún filtro o cambiando de zona.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              {filtered.map((inst, i) => (
-                <div
-                  key={inst.id}
-                  className="fade-up min-w-0"
-                  style={{ animationDelay: `${Math.min(i, 8) * 40}ms` }}
-                >
-                  <InstitutionCard
-                    institution={inst}
-                    onOpen={setSelected}
-                    distanceLabel={
-                      filters.origin ? formatDistance(distances.get(inst.id) ?? 0) : undefined
-                    }
-                  />
+            <>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                {visible.map((inst, i) => (
+                  <div
+                    key={inst.id}
+                    className="fade-up min-w-0"
+                    style={{ animationDelay: `${Math.min(i, 8) * 40}ms` }}
+                  >
+                    <InstitutionCard
+                      institution={inst}
+                      onOpen={setSelected}
+                      distanceLabel={
+                        filters.origin ? formatDistance(distances.get(inst.id) ?? 0) : undefined
+                      }
+                    />
+                  </div>
+                ))}
+              </div>
+
+              {visibleCount < filtered.length && (
+                <div className="mt-6 flex flex-col items-center gap-2">
+                  <p className="text-xs text-muted">
+                    Mostrando {visible.length} de {filtered.length}
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setVisibleCount((v) => v + PAGE_SIZE)}
+                    className="inline-flex h-11 items-center justify-center gap-1.5 rounded-full border border-border bg-card px-6 text-sm font-semibold text-primary-dark transition hover:border-primary hover:bg-primary/5"
+                  >
+                    Cargar más <ChevronDown size={15} />
+                  </button>
                 </div>
-              ))}
-            </div>
+              )}
+            </>
           )}
         </div>
       </div>

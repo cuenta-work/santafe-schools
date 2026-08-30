@@ -2,7 +2,7 @@ export type Level = "jardin" | "primaria" | "secundaria" | "terciario" | "univer
 
 export type Sector = "publico" | "privado";
 
-export type Modalidad = "jornada simple" | "jornada completa" | "doble escolaridad" | null;
+export type Modalidad = "jornada simple" | "jornada completa" | "doble turno" | null;
 
 export type Genero = "mixto" | "solo mujeres" | "solo varones";
 
@@ -16,6 +16,11 @@ export interface Carrera {
   duracionAnios: number;
   duracionLabel: string;
   modalidad?: string | null;
+  // Solo cargado para instituciones con más de una facultad/unidad
+  // académica (ej. UNL) -- permite agrupar la currícula por facultad en
+  // vez de mostrar una lista plana. Si no está cargado, se asume que la
+  // institución es de una sola unidad académica.
+  facultad?: string | null;
 }
 
 export interface ResourceLink {
@@ -62,6 +67,11 @@ export interface Institution {
   orientaciones: string[];
   tipoSecundaria?: TipoSecundaria | null;
   carreras: Carrera[];
+  // true si al menos una carrera/oferta se cursa de forma virtual o a
+  // distancia (aunque el resto de la institución sea presencial) -- desde
+  // una tecnicatura a distancia dentro de una facultad presencial, hasta
+  // una sede que es 100% virtual (ej. un CAU de Siglo 21).
+  ofertaVirtual?: boolean;
   posgrados?: string[];
   featured?: boolean;
   // Pick personal del equipo (mismo criterio que "fungirakPick" en
