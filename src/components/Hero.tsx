@@ -173,38 +173,45 @@ export default function Hero() {
                 </button>
               </div>
             </div>
-            <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
-              <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
-                Gestión
-              </p>
-              <div className="flex flex-wrap gap-1.5">
-                {SECTOR_ORDER.map((sector) => (
-                  <button
-                    key={sector}
-                    type="button"
-                    className="pill pill-accent !py-1.5 !text-xs"
-                    data-active={pendingSectors.has(sector)}
-                    onClick={() => toggleSector(sector)}
-                  >
-                    {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
-                    <span className="opacity-60">({sectorCounts[sector]})</span>
-                  </button>
-                ))}
+            <div className="flex flex-col gap-3">
+              <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
+                <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
+                  Gestión
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {SECTOR_ORDER.map((sector) => (
+                    <button
+                      key={sector}
+                      type="button"
+                      className="pill pill-accent !py-1.5 !text-xs"
+                      data-active={pendingSectors.has(sector)}
+                      onClick={() => toggleSector(sector)}
+                    >
+                      {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
+                      <span className="opacity-60">({sectorCounts[sector]})</span>
+                    </button>
+                  ))}
+                </div>
               </div>
-              <div className="mt-1.5 flex flex-wrap gap-1.5">
-                {RELIGION_ORDER.map((r) => (
-                  <button
-                    key={r}
-                    type="button"
-                    className="pill pill-accent !py-1.5 !text-xs"
-                    data-active={pendingReligion.has(r)}
-                    onClick={() => toggleReligion(r)}
-                  >
-                    {r === "religiosa" && <Church size={12} className="inline -mt-0.5 mr-1" />}
-                    {RELIGION_LABELS[r]}
-                    <span className="opacity-60">({religionCounts[r]})</span>
-                  </button>
-                ))}
+              <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
+                <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
+                  Carácter
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {RELIGION_ORDER.map((r) => (
+                    <button
+                      key={r}
+                      type="button"
+                      className="pill pill-accent !py-1.5 !text-xs"
+                      data-active={pendingReligion.has(r)}
+                      onClick={() => toggleReligion(r)}
+                    >
+                      {r === "religiosa" && <Church size={12} className="inline -mt-0.5 mr-1" />}
+                      {RELIGION_LABELS[r]}
+                      <span className="opacity-60">({religionCounts[r]})</span>
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
             <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
