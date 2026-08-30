@@ -173,8 +173,8 @@ export default function Hero() {
                 </button>
               </div>
             </div>
-            <div className="flex flex-col gap-3">
-              <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
+            <div className="flex h-full flex-col gap-3">
+              <div className="flex flex-1 flex-col rounded-2xl border border-border/70 bg-background/60 p-3">
                 <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                   Gestión
                 </p>
@@ -193,7 +193,7 @@ export default function Hero() {
                   ))}
                 </div>
               </div>
-              <div className="rounded-2xl border border-border/70 bg-background/60 p-3">
+              <div className="flex flex-1 flex-col rounded-2xl border border-border/70 bg-background/60 p-3">
                 <p className="mb-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
                   Carácter
                 </p>
