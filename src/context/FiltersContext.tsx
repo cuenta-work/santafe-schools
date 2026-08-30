@@ -23,6 +23,7 @@ interface FiltersContextValue {
   becasCount: number;
   religiosoCount: number;
   virtualCount: number;
+  turnoNocheCount: number;
   religionCounts: Record<Religion, number>;
   showOnlyLevel: (level: Level) => void;
   selected: Institution | null;
@@ -123,6 +124,11 @@ export function FiltersProvider({
     [institutions]
   );
 
+  const turnoNocheCount = useMemo(
+    () => institutions.filter((i) => i.turno === "noche").length,
+    [institutions]
+  );
+
   const religionCounts = useMemo(() => {
     const counts: Record<Religion, number> = { religiosa: 0, laica: 0 };
     institutions.forEach((i) => (counts[i.religioso ? "religiosa" : "laica"] += 1));
@@ -167,6 +173,7 @@ export function FiltersProvider({
       if (filters.bilingueOnly && !i.bilingue) return false;
       if (filters.religiosoOnly && !i.religioso) return false;
       if (filters.virtualOnly && !i.ofertaVirtual) return false;
+      if (filters.turnoNocheOnly && i.turno !== "noche") return false;
       if (filters.featuredOnly && !i.featured) return false;
       if (filters.posgradoOnly && !(i.posgrados && i.posgrados.length > 0)) return false;
       if (filters.becasOnly && !(i.becas && i.becas.length > 0)) return false;
@@ -209,6 +216,7 @@ export function FiltersProvider({
         becasCount,
         religiosoCount,
         virtualCount,
+        turnoNocheCount,
         religionCounts,
         showOnlyLevel,
         selected,

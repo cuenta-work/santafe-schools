@@ -2,7 +2,11 @@ export type Level = "jardin" | "primaria" | "secundaria" | "terciario" | "univer
 
 export type Sector = "publico" | "privado";
 
-export type Modalidad = "jornada simple" | "jornada completa" | "doble turno" | null;
+export type Modalidad =
+  | "jornada simple"
+  | "doble jornada asistencial"
+  | "con turno mañana y tarde"
+  | null;
 
 export type Genero = "mixto" | "solo mujeres" | "solo varones";
 

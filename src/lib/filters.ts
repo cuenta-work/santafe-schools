@@ -22,6 +22,7 @@ export interface FiltersState {
   bilingueOnly: boolean;
   religiosoOnly: boolean;
   virtualOnly: boolean;
+  turnoNocheOnly: boolean;
   featuredOnly: boolean;
   posgradoOnly: boolean;
   becasOnly: boolean;
@@ -46,6 +47,7 @@ export function emptyFilters(): FiltersState {
     bilingueOnly: false,
     religiosoOnly: false,
     virtualOnly: false,
+    turnoNocheOnly: false,
     featuredOnly: false,
     posgradoOnly: false,
     becasOnly: false,
@@ -67,6 +69,7 @@ export function hasActiveFilters(f: FiltersState): boolean {
     f.bilingueOnly ||
     f.religiosoOnly ||
     f.virtualOnly ||
+    f.turnoNocheOnly ||
     f.featuredOnly ||
     f.posgradoOnly ||
     f.becasOnly ||
@@ -87,6 +90,7 @@ export function countActiveFilters(f: FiltersState): number {
     (f.bilingueOnly ? 1 : 0) +
     (f.religiosoOnly ? 1 : 0) +
     (f.virtualOnly ? 1 : 0) +
+    (f.turnoNocheOnly ? 1 : 0) +
     (f.featuredOnly ? 1 : 0) +
     (f.posgradoOnly ? 1 : 0) +
     (f.becasOnly ? 1 : 0) +

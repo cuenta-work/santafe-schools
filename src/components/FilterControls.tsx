@@ -1,7 +1,17 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { GraduationCap, Star, MapPin, X, LocateFixed, Loader2, Church, Laptop } from "lucide-react";
+import {
+  GraduationCap,
+  Star,
+  MapPin,
+  X,
+  LocateFixed,
+  Loader2,
+  Church,
+  Laptop,
+  Moon,
+} from "lucide-react";
 import {
   LEVEL_LABELS,
   LEVEL_EMOJI,
@@ -21,7 +31,7 @@ import CustomSelect from "./CustomSelect";
 const LEVEL_ORDER: Level[] = ["jardin", "primaria", "secundaria", "terciario", "universidad"];
 const SECTOR_ORDER: Sector[] = ["publico", "privado"];
 const TIPO_SECUNDARIA_ORDER: TipoSecundaria[] = ["tecnica", "orientada"];
-const MODALIDADES = ["jornada simple", "jornada completa", "doble turno"];
+const MODALIDADES = ["jornada simple", "doble jornada asistencial", "con turno mañana y tarde"];
 const GENEROS = ["mixto", "solo mujeres", "solo varones"];
 
 export default function FilterControls() {
@@ -35,6 +45,7 @@ export default function FilterControls() {
     becasCount,
     religiosoCount,
     virtualCount,
+    turnoNocheCount,
   } = useFilters();
 
   const localidadesOrdenadas = useMemo(
@@ -297,6 +308,19 @@ export default function FilterControls() {
             type="checkbox"
             checked={filters.virtualOnly}
             onChange={(e) => applyFilters({ ...filters, virtualOnly: e.target.checked })}
+            className="switch"
+          />
+        </label>
+        <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
+          <span className="flex items-center gap-1.5 whitespace-nowrap">
+            Solo <strong className="font-semibold">turno noche</strong>{" "}
+            <Moon size={13} />
+            <span className="opacity-60">({turnoNocheCount})</span>
+          </span>
+          <input
+            type="checkbox"
+            checked={filters.turnoNocheOnly}
+            onChange={(e) => applyFilters({ ...filters, turnoNocheOnly: e.target.checked })}
             className="switch"
           />
         </label>
