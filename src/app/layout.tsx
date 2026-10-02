@@ -23,6 +23,7 @@ const DESCRIPTION =
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
+  verification: { google: "ld3YereCoqDZ9o3RGkLHscmac9AnQd1IQqXa5Pc5EKE" },
   title: {
     default: TITLE,
     template: "%s — Santa Fe Schools",
