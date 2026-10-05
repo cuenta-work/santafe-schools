@@ -19,7 +19,7 @@ const inter = Inter({
 const SITE_URL = "https://santafe-schools.fungirak.com";
 const TITLE = "Santa Fe Schools — Guía de instituciones educativas de Santa Fe";
 const DESCRIPTION =
-  "Buscador de jardines, escuelas primarias y secundarias, institutos terciarios y universidades de la provincia de Santa Fe (Argentina): gestión, orientación, carreras y contacto de cada institución.";
+  "Buscador de jardines, escuelas, institutos terciarios y universidades de la provincia de Santa Fe: gestión, orientación, carreras y contacto.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
