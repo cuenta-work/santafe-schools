@@ -16,7 +16,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const SITE_URL = "https://santafe-schools.vercel.app";
+const SITE_URL = "https://santafe-schools.fungirak.com";
 const TITLE = "Santa Fe Schools — Guía de instituciones educativas de Santa Fe";
 const DESCRIPTION =
   "Buscador de jardines, escuelas primarias y secundarias, institutos terciarios y universidades de la provincia de Santa Fe (Argentina): gestión, orientación, carreras y contacto de cada institución.";

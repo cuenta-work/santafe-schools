@@ -28,12 +28,12 @@ export default function GabiCredit({ className = "" }: { className?: string }) {
         <span className="block whitespace-nowrap">
           Lo hice posible con{" "}
           <a
-            href="https://santafe-schools.vercel.app"
+            href="https://santafe-schools.fungirak.com"
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-primary underline underline-offset-2 hover:text-primary-dark"
           >
-            santafe-schools.vercel.app
+            santafe-schools.fungirak.com
           </a>{" "}
           🎓&rdquo;
         </span>

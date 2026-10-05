@@ -27,7 +27,7 @@ import Footer from "@/components/Footer";
 import { CarrerasList, FacultadesAccordion } from "@/components/CarrerasList";
 import { facultadGroupsOf } from "@/lib/carreras";
 
-const SITE_URL = "https://santafe-schools.vercel.app";
+const SITE_URL = "https://santafe-schools.fungirak.com";
 
 export function generateStaticParams() {
   return institutions.map((i) => ({ id: i.id }));

@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { institutions } from "@/lib/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://santafe-schools.vercel.app";
+  const base = "https://santafe-schools.fungirak.com";
   const lastModified = new Date();
   return [
     {
