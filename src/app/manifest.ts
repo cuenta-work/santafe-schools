@@ -11,13 +11,12 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: "#f4f7fb",
     theme_color: "#1e4fa3",
     lang: "es-AR",
+    // como Team Joy: PNG redondeados para compu (Windows, Linux, Mac), uno cuadrado «maskable» para Android y el SVG de respaldo
     icons: [
-      {
-        src: "/icon.svg",
-        sizes: "any",
-        type: "image/svg+xml",
-        purpose: "any",
-      },
+      { src: "/icons/icon-192.png", sizes: "192x192", type: "image/png", purpose: "any" },
+      { src: "/icons/icon-512.png", sizes: "512x512", type: "image/png", purpose: "any" },
+      { src: "/icons/maskable-512.png", sizes: "512x512", type: "image/png", purpose: "maskable" },
+      { src: "/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any" },
     ],
   };
 }
