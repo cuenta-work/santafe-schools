@@ -22,14 +22,16 @@ export default function Home() {
       />
       <div className="flex flex-1 flex-col bg-background">
         <NavBar />
-        <Hero />
-        <LevelShowcase />
-        <Featured />
-        <FamilyWizard />
-        <CareerFinder />
-        <NearMe />
-        <Explorer />
-        <ContactCTA />
+        <main className="flex flex-1 flex-col">
+          <Hero />
+          <LevelShowcase />
+          <Featured />
+          <FamilyWizard />
+          <CareerFinder />
+          <NearMe />
+          <Explorer />
+          <ContactCTA />
+        </main>
         <Footer />
         <ModalHost />
       </div>

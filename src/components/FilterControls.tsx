@@ -174,7 +174,7 @@ export default function FilterControls() {
               }
             >
               {LEVEL_EMOJI[level]} {LEVEL_LABELS[level]}
-              <span className="opacity-60">({levelCounts[level]})</span>
+              <span className="opacity-70">({levelCounts[level]})</span>
             </button>
           ))}
         </div>
@@ -211,7 +211,7 @@ export default function FilterControls() {
               }
             >
               {SECTOR_EMOJI[sector]} {SECTOR_LABELS[sector]}
-              <span className="opacity-60">({sectorCounts[sector]})</span>
+              <span className="opacity-70">({sectorCounts[sector]})</span>
             </button>
           ))}
         </div>
@@ -289,7 +289,7 @@ export default function FilterControls() {
           <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo <strong className="font-semibold">religiosas</strong>{" "}
             <Church size={13} />
-            <span className="opacity-60">({religiosoCount})</span>
+            <span className="opacity-70">({religiosoCount})</span>
           </span>
           <input
             type="checkbox"
@@ -302,7 +302,7 @@ export default function FilterControls() {
           <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo <strong className="font-semibold">virtuales</strong>{" "}
             <Laptop size={13} />
-            <span className="opacity-60">({virtualCount})</span>
+            <span className="opacity-70">({virtualCount})</span>
           </span>
           <input
             type="checkbox"
@@ -315,7 +315,7 @@ export default function FilterControls() {
           <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo <strong className="font-semibold">turno noche</strong>{" "}
             <Moon size={13} />
-            <span className="opacity-60">({turnoNocheCount})</span>
+            <span className="opacity-70">({turnoNocheCount})</span>
           </span>
           <input
             type="checkbox"
@@ -339,7 +339,7 @@ export default function FilterControls() {
         <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
           <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo con <strong className="font-semibold">posgrado</strong> 🎓
-            <span className="opacity-60">({posgradoCount})</span>
+            <span className="opacity-70">({posgradoCount})</span>
           </span>
           <input
             type="checkbox"
@@ -351,7 +351,7 @@ export default function FilterControls() {
         <label className="flex cursor-pointer items-center justify-between gap-2.5 text-sm text-foreground">
           <span className="flex items-center gap-1.5 whitespace-nowrap">
             Solo con <strong className="font-semibold">becas</strong> 💸
-            <span className="opacity-60">({becasCount})</span>
+            <span className="opacity-70">({becasCount})</span>
           </span>
           <input
             type="checkbox"

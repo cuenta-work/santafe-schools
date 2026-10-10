@@ -168,7 +168,7 @@ export default function InstitutionCard({
                 toggleFavorite(institution.id);
               }
             }}
-            className="mt-0.5 shrink-0 p-0.5 transition hover:scale-110 active:scale-95"
+            className="-mx-1.5 -mb-1.5 -mt-1 shrink-0 p-2 transition hover:scale-110 active:scale-95"
           >
             <Heart size={18} className={favorite ? "fill-accent text-accent" : "text-muted"} />
           </span>
