@@ -4,60 +4,64 @@ import { AUTHOR } from "@/lib/author";
 import { FungirakBadge, FungirakFullCredit } from "./FungirakCredit";
 import GabiCredit from "./GabiCredit";
 
+import RedFungirak from "./RedFungirak";
 export default function Footer() {
   return (
-    <footer className="border-t border-border bg-card">
-      <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
-        <div>
-          <Logo size={32} />
-          <p className="mt-3 max-w-xs text-sm text-muted">
-            Guía independiente de instituciones educativas de la provincia de Santa Fe, para
-            ayudar a las familias a elegir con información real.
-          </p>
+    <>
+      <RedFungirak />
+      <footer className="border-t border-border bg-card">
+        <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
+          <div>
+            <Logo size={32} />
+            <p className="mt-3 max-w-xs text-sm text-muted">
+              Guía independiente de instituciones educativas de la provincia de Santa Fe, para
+              ayudar a las familias a elegir con información real.
+            </p>
+          </div>
+  
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">Niveles</p>
+            <ul className="flex flex-col gap-2 text-sm text-foreground/80">
+              {Object.entries(LEVEL_LABELS).map(([key, label]) => (
+                <li key={key}>
+                  <a href="#niveles" className="hover:text-primary-dark">
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+  
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">
+              Sobre la guía
+            </p>
+            <p className="text-sm text-muted">
+              Cada ficha combina datos públicos del Ministerio de Educación de Santa Fe y de las
+              propias instituciones. Es un punto de partida para investigar — antes de decidir,
+              confirmá siempre los datos directamente con cada institución.
+            </p>
+          </div>
+  
+          <div>
+            <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">
+              Estudio
+            </p>
+            <FungirakFullCredit />
+          </div>
         </div>
-
-        <div>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">Niveles</p>
-          <ul className="flex flex-col gap-2 text-sm text-foreground/80">
-            {Object.entries(LEVEL_LABELS).map(([key, label]) => (
-              <li key={key}>
-                <a href="#niveles" className="hover:text-primary-dark">
-                  {label}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="flex flex-col items-center gap-3 border-t border-border px-4 py-5 text-center text-xs text-muted sm:flex-row sm:justify-between sm:gap-4 lg:px-8">
+          <span className="order-1 leading-relaxed sm:order-none sm:flex-1 sm:text-left">
+            <span className="block whitespace-nowrap font-semibold">· Santa Fe Schools ·</span>
+            <span className="block">Guía educativa independiente, hecha en Santa Fe</span>
+          </span>
+          <GabiCredit className="order-2 sm:order-none sm:flex-[1.4]" />
+          <FungirakBadge
+            href={`mailto:${AUTHOR.email}`}
+            className="order-3 mt-7 sm:order-none sm:mt-0 sm:flex-1 sm:justify-end"
+          />
         </div>
-
-        <div>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">
-            Sobre la guía
-          </p>
-          <p className="text-sm text-muted">
-            Cada ficha combina datos públicos del Ministerio de Educación de Santa Fe y de las
-            propias instituciones. Es un punto de partida para investigar — antes de decidir,
-            confirmá siempre los datos directamente con cada institución.
-          </p>
-        </div>
-
-        <div>
-          <p className="mb-3 text-xs font-semibold uppercase tracking-wide text-muted">
-            Estudio
-          </p>
-          <FungirakFullCredit />
-        </div>
-      </div>
-      <div className="flex flex-col items-center gap-3 border-t border-border px-4 py-5 text-center text-xs text-muted sm:flex-row sm:justify-between sm:gap-4 lg:px-8">
-        <span className="order-1 leading-relaxed sm:order-none sm:flex-1 sm:text-left">
-          <span className="block whitespace-nowrap font-semibold">· Santa Fe Schools ·</span>
-          <span className="block">Guía educativa independiente, hecha en Santa Fe</span>
-        </span>
-        <GabiCredit className="order-2 sm:order-none sm:flex-[1.4]" />
-        <FungirakBadge
-          href={`mailto:${AUTHOR.email}`}
-          className="order-3 mt-7 sm:order-none sm:mt-0 sm:flex-1 sm:justify-end"
-        />
-      </div>
-    </footer>
+      </footer>
+    </>
   );
 }
