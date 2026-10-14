@@ -15,9 +15,11 @@ export default function RedFungirak() {
       const t = a?.querySelector<HTMLElement>(".rfk-tip");
       if (!t) return;
       t.style.setProperty("--dx", "0px");
+      t.style.display = "block";
       const r = t.getBoundingClientRect(), m = 10;
       const d = r.left < m ? m - r.left : r.right > innerWidth - m ? innerWidth - m - r.right : 0;
       t.style.setProperty("--dx", Math.round(d) + "px");
+      t.style.display = "";
     };
     document.addEventListener("pointerover", ajustar);
     document.addEventListener("focusin", ajustar);
