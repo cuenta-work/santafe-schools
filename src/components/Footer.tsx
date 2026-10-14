@@ -8,7 +8,6 @@ import RedFungirak from "./RedFungirak";
 export default function Footer() {
   return (
     <>
-      <RedFungirak />
       <footer className="border-t border-border bg-card">
         <div className="mx-auto grid w-full max-w-7xl gap-8 px-4 py-10 sm:grid-cols-2 lg:grid-cols-4 lg:px-8">
           <div>
@@ -50,6 +49,7 @@ export default function Footer() {
             <FungirakFullCredit />
           </div>
         </div>
+        <div className="mx-auto w-full max-w-7xl px-4 lg:px-8"><RedFungirak /></div>
         <div className="flex flex-col items-center gap-3 border-t border-border px-4 py-5 text-center text-xs text-muted sm:flex-row sm:justify-between sm:gap-4 lg:px-8">
           <span className="order-1 leading-relaxed sm:order-none sm:flex-1 sm:text-left">
             <span className="block whitespace-nowrap font-semibold">· Santa Fe Schools ·</span>

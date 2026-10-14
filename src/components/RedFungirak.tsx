@@ -22,5 +22,5 @@ export default function RedFungirak() {
     document.addEventListener("pointerover", ajustar);
     document.addEventListener("focusin", ajustar);
   }, []);
-  return <div dangerouslySetInnerHTML={{ __html: RED_HTML }} />;
+  return <div style={{ display: "contents" }} dangerouslySetInnerHTML={{ __html: RED_HTML }} />;
 }
