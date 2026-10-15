@@ -21,11 +21,11 @@ export default function GabiCredit({ className = "" }: { className?: string }) {
     >
       <WhatsAppIcon size={13} className="mt-0 shrink-0 text-[#25D366]" />
       <span className="min-w-0 text-center leading-snug">
-        <span className="block whitespace-nowrap">
+        <span className="block sm:whitespace-nowrap">
           Gabi: &ldquo;¿Y si elegir colegio para tus hijos fuera tan fácil como elegir dónde
           comer?
         </span>
-        <span className="block whitespace-nowrap">
+        <span className="block sm:whitespace-nowrap">
           Lo hice posible con{" "}
           <a
             href="https://santafe-schools.fungirak.com"
