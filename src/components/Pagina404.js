@@ -3,6 +3,7 @@ import Link from "next/link";
 // Página «esto no existe», animada (inspirada en la de Team Joy): el ícono de la app rebota y late, el 404 con degradé,
 // adornos que flotan alrededor y el botón principal que late. Con «reducir movimiento» queda quieta.
 // icono: imagen de la app · figura: un dibujo propio en vez del ícono (p. ej. Pipa en MiTour) · acciones: [{ href, t }]
+/** @param {{ icono?: string, figura?: import("react").ReactNode, titulo: string, texto: string, acciones?: { href: string, t: string }[], adornos?: string[], clase?: string, clase2?: string, color?: string }} p */
 export default function Pagina404({ icono, figura, titulo, texto, acciones = [], adornos = [], clase = "btn", clase2 = "btn btn-ghost", color }) {
   return (
     <section className="p404" style={color ? { "--p404": color } : undefined}>
