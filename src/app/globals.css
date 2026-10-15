@@ -348,3 +348,7 @@ body.modal-open {
 .fk-from { display: block; margin-top: 4px; padding-left: 1px; font: 700 8.5px/1 var(--font-sans, system-ui), system-ui, sans-serif; font-variation-settings: normal; letter-spacing: .2em; text-transform: uppercase; color: color-mix(in srgb, currentColor 62%, transparent); white-space: nowrap; }
 .fk-from b { font-weight: 900; background: linear-gradient(120deg, #00a957, #1690a8 45%, #7346e8); -webkit-background-clip: text; background-clip: text; color: transparent; }
 :root[data-theme="dark"] .fk-from b { background-image: linear-gradient(120deg, #00e676, #22b8cf 45%, #8b5cf6); }
+
+/* Pie alineado con la franja «Más de FUNGIRAK Studio»: el contenido usa la misma caja centrada (1070 px), así nada queda tirado a la izquierda */
+footer > .mx-auto.max-w-7xl { max-width: 1134px; }
+@media (min-width: 1100px) { footer > .flex.flex-col.items-center { padding-left: calc((100% - 1070px) / 2); padding-right: calc((100% - 1070px) / 2); } }
