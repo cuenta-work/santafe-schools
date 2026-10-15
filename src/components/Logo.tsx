@@ -34,9 +34,11 @@ export function LogoMark({ size = 36 }: { size?: number }) {
 export default function Logo({
   size = 36,
   withTagline = false,
+  withFrom = false,
 }: {
   size?: number;
   withTagline?: boolean;
+  withFrom?: boolean;
 }) {
   return (
     <div className="flex items-center gap-2.5">
@@ -45,6 +47,7 @@ export default function Logo({
         <span className="font-display text-lg font-semibold tracking-tight text-foreground">
           Santa Fe <span className="italic text-primary-dark">Schools</span>
         </span>
+        {withFrom && <span className="fk-from">from <b>FUNGIRAK</b></span>}
         {withTagline && (
           <p className="mt-0.5 text-[11px] uppercase tracking-[0.16em] text-muted">
             Guía educativa de la provincia

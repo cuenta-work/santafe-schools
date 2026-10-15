@@ -25,7 +25,7 @@ export default function NavBar() {
     <div className="sticky top-0 z-[1500] border-b border-border bg-card/90 backdrop-blur supports-[backdrop-filter]:bg-card/80">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between gap-6 px-4 py-3 lg:px-8">
         <a href="#top" className="shrink-0">
-          <Logo size={32} />
+          <Logo size={32} withFrom />
         </a>
         <nav className="hidden items-center gap-4 xl:flex xl:gap-4 2xl:gap-6">
           {LINKS.map((l) => (
