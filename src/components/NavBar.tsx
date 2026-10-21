@@ -15,6 +15,7 @@ const LINKS = [
   { href: "#niveles", label: "Niveles", icon: LayoutGrid },
   { href: "#orientador", label: "Orientador", icon: MessageCircleHeart },
   { href: "#carreras", label: "Carreras", icon: GraduationCap },
+  { href: "/practica", label: "Practicá el ingreso", icon: GraduationCap },
   { href: "#cercademi", label: "Cerca tuyo", icon: MapPin },
   { href: "#buscador", label: "Buscador", icon: Compass },
   { href: "#contacto", label: "Sumá tu institución", icon: PlusCircle },
