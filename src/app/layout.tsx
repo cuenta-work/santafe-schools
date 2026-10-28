@@ -101,6 +101,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         {children}
         <InstallPrompt />
         <Analytics />
+      {/* Cookies de medición (Google Analytics) con consentimiento: cuenta.fungirak.com/fk-ga.js */}
+        <script async src="https://cuenta.fungirak.com/fk-ga.js" data-privacidad="https://cuenta.fungirak.com/legal/cookies" />
       </body>
     </html>
   );
