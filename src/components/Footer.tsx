@@ -54,6 +54,7 @@ export default function Footer() {
           <span className="order-1 leading-relaxed sm:order-none sm:flex-1 sm:text-left">
             <span className="block whitespace-nowrap font-semibold">· Santa Fe Schools ·</span>
             <span className="block">Guía educativa independiente, hecha en Santa Fe</span>
+            <span className="mt-1 block"><a className="underline hover:text-foreground" href="https://cuenta.fungirak.com/legal/sitios" target="_blank" rel="noopener">Términos y privacidad</a> · <a className="underline hover:text-foreground" href="#cookies">Cookies</a></span>
           </span>
           <GabiCredit className="order-2 sm:order-none sm:flex-[1.4]" />
           <FungirakBadge
