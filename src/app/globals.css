@@ -381,3 +381,7 @@ footer > .mx-auto.max-w-7xl { max-width: 1134px; }
 
 /* PROP-004: instalada en el celu (modo app), la franja de la red no ocupa el pie de cada pantalla; en la web sigue igual (Google la ve) */
 @media (display-mode: standalone) { .rfk { display: none !important; } }
+
+/* Celu: sin el recuadro de color al tocar botones y enlaces (el menú de abajo, el del medio y todos); con teclado el foco se sigue viendo */
+html { -webkit-tap-highlight-color: transparent; }
+.abajo a:focus:not(:focus-visible), .abajo-mas:focus:not(:focus-visible), .abajo button:focus:not(:focus-visible) { outline: none; }
